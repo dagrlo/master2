@@ -1,0 +1,37 @@
+Especifica la gestión del proyecto:
+? Objetivos
+? Enumera los entregables que tendrían sentido en
+cada una de las fases del proyecto cada una de las fases del proyecto
+? Restricciones a considerar en el proyecto
+? Identificar sub
+problemas
+? Selección de perfiles de los trabajadores
+? Selección de herramientas y técnicas
+*Identificar actores
+? Indica qué tipo de ciclo de vida elegirías y por
+qué. Es decir, las ventajas que aporta ese ciclo de
+vida con respecto a los otros para este desarrollo vida con respecto
+a los otros para este desarrollo
+en concreto.
+? Indica
+q p g py ué ti
+po de or
+ganización de
+pro
+yecto
+elegirías y por qué. Es decir, las ventajas que
+aporta ese tipo de organización con respecto a los
+otros para este desarrollo en concreto otros para este desarrollo en concreto.
+
+
+
+*objetivos: desarrollar la web,ajustar
+*se al tiempo,calidad (que no peta)
+*entregables en cada fase del proyecto
+*restricciones (plazo, costes, personal...)
+*problemas: desarrollar la web-> desmontar en tareas. hay que identificarls
+*perfiles: quien lo hace
+*
+*actores:verlos
+*
+*justificarlo

@@ -1,0 +1,43 @@
+OBJETIVOS:
+Desarrollo de la página web. Desarrollo de bases de datos. Soporte de venta, horarios y atencion al cliente.  Ajustarse al tiempo.
+
+ENUMERACION DE ENTREGABLES:   (justificarlos. ponemos titulo y por que se pone, para que lo usare)
+
+Fase de inicio: Diagrama de Gantt (tareas, recursos), planes de recursos y contingencias, especificacion
+tecnica, plan de negocio, presupuesto, plan de calidad.
+
+Fase de definición: Definir el coste del proyecto y de las tareas, definir tareas, definir fechas de
+entrega, asignar responsables de las tareas, detallar procedimientos.
+
+Fase de ejecución: Desarrollo del producto, documentación del producto y de problemas,
+documentar cambios respeco a la planificacion inicial y aplicarlos.
+
+Fase de entrega: Pruebas (aceptacion, demostracion operativa, funcionales), producto,
+acta de entrega y documentacion del producto.
+
+Fase de soporte: Plan de soporte y planes de mantenimiento.
+
+Fase de cierre: Evaluacion, medida de satisfaccion del cliente, lecciones aprendidas.
+
+RESTRICCIONES:
+
+Como restricciones se pueden encontrar los equipo necesarios para el desarrollo
+del proyecto, los equipos que se tendrá que comprar el cliente y empleados que
+necesitará renfe para ofrecer soporte a sus clientes.
+
+IDENTIFICAR SUBPROBLEMAS:
+
+?
+
+SELECCION DE PERFILES DE LOS TRABAJADORES:
+
+Harán falta diseñadores, diseñadores web, programadores, programadores para la
+base de datos, tecnicos de telematica, telefonistas.
+
+SELECCION DE HERRAMIENTAS Y TECNICAS:
+
+Herramientas de diseño gráfico, herramientas de programación, servidores, equipos
+informáticos, centralitas de telefonia.
+
+
+
