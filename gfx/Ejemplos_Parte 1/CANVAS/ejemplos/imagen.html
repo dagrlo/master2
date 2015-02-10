@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+	
+<p>Draw a part of this image on the canvas:</p>
+
+<img id="scream" src="the_scream.jpg" alt="The Scream" width="220" height="277" />
+
+<canvas id="myCanvas" width="220" height="277" style="border:1px solid grey">
+  your browser does not support the canvas tag 
+</canvas>
+
+<script type="text/javascript">
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  
+  var img2=new Image();
+  img2.src="img_flwr.png";
+
+  img2.onload = function(){
+    ctx.drawImage(img2,0,0);
+  };
+
+  document.getElementById("scream").onload=function() {
+    var img=document.getElementById("scream");
+    ctx.drawImage(img,90,130,50,60,60,150,100,120);
+  };
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="100" style="border:3px solid blue;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  ctx.shadowColor="black";
+  ctx.shadowBlur=1;
+  ctx.lineWidth=10;
+  ctx.lineCap='round';
+  ctx.lineJoin='round';
+  ctx.fillStyle="#FF0000";
+  ctx.fillRect(0,0,150,75);
+  ctx.clearRect (20,20,20,20);
+  ctx.globalAlpha=0.4;
+  ctx.strokeStyle="#FFFF00";
+  ctx.fillStyle="#FFFFFF";
+  ctx.strokeRect(10,60,25,25);
+
+  ctx.lineWidth = 20;
+  ctx.strokeStyle = "#0000ff";
+
+  // butt line cap (top line)
+  ctx.beginPath();
+  ctx.moveTo(200, c.height / 2 - 30);
+  ctx.lineTo(c.width - 200, c.height / 2 - 30);
+  ctx.lineCap = 'butt';
+  ctx.stroke();
+
+  // round line cap (middle line)
+  ctx.beginPath();
+  ctx.moveTo(200, c.height / 2);
+  ctx.lineTo(c.width - 200, c.height / 2);
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // square line cap (bottom line)
+  ctx.shadowBlur=10;
+  ctx.beginPath();
+  ctx.moveTo(200, c.height / 2 + 30);
+  ctx.lineTo(c.width - 200, c.height / 2 + 30);
+  ctx.lineCap = "square";
+  ctx.stroke();
+
+</script>
+
+</body>
+</html> 

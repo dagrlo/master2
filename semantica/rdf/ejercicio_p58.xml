@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Resume xmlns="http://www.resume.org#"
+  xmlns:rdf="http...">
+ <Person xmlns="http://www.person.org#">
+ <name>John Smith</name>
+ <phone>555-1212</phone>
+ <email>abc@def.com</email>
+ </Person>
+ <experience rdf:parseType="Collection">
+ <Job>
+ <startDate>1995-01-01</startDate>
+ <endDate>1999-01-01</endDate>
+ <title>researcher</title>
+ <employer>Some Corp</employer>
+ <employerHomepage>http://www.company.org</employerHomepage>
+ <description>Cool stuff</description>
+ </Job>
+ </experience>
+ <skills rdf:parseType="Collection">
+ <Skill name="Oracle" yrs="13"/>
+ <Skill name="Java" yrs="3"/>
+ </skills>
+ <education rdf:parseType="Collection">
+ <Degree type="BS" school="RPI" year="1987"/>
+ </education>
+</Resume>

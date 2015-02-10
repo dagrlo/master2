@@ -1,0 +1,199 @@
+feb 09, 2015 5:50:49 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:50:49 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | []
+feb 09, 2015 5:51:11 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:51:11 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [start=Start WebGoat]
+feb 09, 2015 5:57:03 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:57:03 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | [Screen=48,menu=5]
+feb 09, 2015 5:57:07 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:57:07 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.UsefulTools | [Screen=5,menu=5]
+feb 09, 2015 5:57:42 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:57:42 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.NewLesson | [Screen=42,menu=5]
+feb 09, 2015 5:57:46 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:57:46 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5]
+feb 09, 2015 5:58:06 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:58:06 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100]
+feb 09, 2015 5:58:09 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:58:09 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.NewLesson | [Screen=42,menu=5]
+feb 09, 2015 5:58:23 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:58:23 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5]
+feb 09, 2015 5:59:17 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:59:17 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=Params]
+feb 09, 2015 5:59:30 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:59:30 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=Cookies]
+feb 09, 2015 5:59:34 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:59:34 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=Params]
+feb 09, 2015 5:59:38 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:59:38 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=Cookies]
+feb 09, 2015 5:59:44 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 17:59:44 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=Cookies]
+feb 09, 2015 6:00:00 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:00:00 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=NextHint]
+feb 09, 2015 6:00:03 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:00:03 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=NextHint]
+feb 09, 2015 6:00:05 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:00:05 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5,show=NextHint]
+feb 09, 2015 6:00:08 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:00:08 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | [Screen=48,menu=5]
+feb 09, 2015 6:06:11 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:06:11 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | [action=Logout]
+feb 09, 2015 6:06:16 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:06:16 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | []
+feb 09, 2015 6:06:18 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:06:18 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | [action=Logout]
+feb 09, 2015 6:07:09 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:07:09 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | []
+feb 09, 2015 6:09:02 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:09:02 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HowToWork | [Screen=32,menu=5]
+feb 09, 2015 6:09:35 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:09:35 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.TomcatSetup | [Screen=48,menu=5]
+feb 09, 2015 6:09:55 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:09:55 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.UsefulTools | [Screen=5,menu=5]
+feb 09, 2015 6:10:28 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:10:28 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.NewLesson | [Screen=42,menu=5]
+feb 09, 2015 6:11:45 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:11:45 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100]
+feb 09, 2015 6:12:37 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:12:37 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=asdf,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:12:40 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:12:40 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=Params]
+feb 09, 2015 6:12:45 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:12:45 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=Cookies]
+feb 09, 2015 6:13:06 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:06 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=Params]
+feb 09, 2015 6:13:11 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:11 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=asdf,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:13:20 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:20 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=fdsa,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:13:22 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:22 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=Params]
+feb 09, 2015 6:13:28 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:28 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=asdf,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:13:36 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:36 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=Cookies]
+feb 09, 2015 6:13:40 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:40 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=<zxc,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:13:51 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:13:51 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=qwe,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:16:00 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:00 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,menu=100]
+feb 09, 2015 6:16:07 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:07 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100]
+feb 09, 2015 6:16:09 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:09 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:16:13 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:13 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:16:17 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:17 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:16:19 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:19 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:16:26 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:26 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:16:27 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:27 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:16:29 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:16:29 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100,show=NextHint]
+feb 09, 2015 6:19:08 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:19:08 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100]
+feb 09, 2015 6:19:54 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:19:54 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=qwerty,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:30:01 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:30:01 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=ytrewq,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:33:56 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:33:56 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=qwerty,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:34:45 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:34:45 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=ytrewq,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:35:02 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:35:02 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=qwerty,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:50:24 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:50:24 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=ytrewq,SUBMIT=Go!,menu=100]
+feb 09, 2015 6:57:47 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 18:57:47 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=qwerty,SUBMIT=Go!,menu=100]
+feb 09, 2015 7:03:31 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:03:31 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=ytrewq,SUBMIT=Go!,menu=100]
+feb 09, 2015 7:11:16 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:11:16 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=kaspa,SUBMIT=Go!,menu=100]
+feb 09, 2015 7:12:14 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:12:14 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,menu=100]
+feb 09, 2015 7:13:04 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:13:04 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,menu=100]
+feb 09, 2015 7:16:18 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:16:18 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpBasics | [Screen=16,person=lalo,SUBMIT=Go!,menu=100]
+feb 09, 2015 7:16:29 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:16:29 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,menu=100]
+feb 09, 2015 7:19:12 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:19:12 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=english
+]
+feb 09, 2015 7:21:43 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:21:43 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=en
+
+
+]
+feb 09, 2015 7:23:28 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:23:28 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=perico]
+feb 09, 2015 7:26:16 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:26:16 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=perico]
+feb 09, 2015 7:29:02 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:29:02 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=en
+
+
+]
+feb 09, 2015 7:30:19 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:30:19 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=foobar
+Content-Length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 47
+
+<html>Hacked J</html>]
+feb 09, 2015 7:31:51 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:31:51 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=foobar
+Content-Length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 47
+
+<html>Hacked J</html>]
+feb 09, 2015 7:33:13 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:33:13 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=en]
+feb 09, 2015 7:33:43 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:33:43 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=restart]
+feb 09, 2015 7:33:59 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:33:59 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,menu=100]
+feb 09, 2015 7:54:21 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:54:21 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=lili]
+feb 09, 2015 7:56:15 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 19:56:15 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=en
+
+
+]
+feb 09, 2015 8:00:23 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 20:00:23 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=foobar
+Content-Length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 47
+
+<html>Hacked J</html>]
+feb 09, 2015 8:01:21 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 20:01:21 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=
+Content-Length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 47
+
+<html>Hacked J</html>]
+feb 09, 2015 8:01:41 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 20:01:41 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=Content-Length: 0HTTP/1.1 200 OKContent-Type: text/htmlContent-Length: 47<html>Hacked J</html>]
+feb 09, 2015 8:01:50 PM org.apache.catalina.core.ApplicationContext log
+Información: WebGoat: Mon Feb 09 20:01:50 CET 2015 | 127.0.0.1:127.0.0.1 | org.owasp.webgoat.lessons.HttpSplitting | [Screen=3,fromRedirect=yes,menu=100,language=foobar
+Content-Length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 47
+
+<html>Hacked J</html>]

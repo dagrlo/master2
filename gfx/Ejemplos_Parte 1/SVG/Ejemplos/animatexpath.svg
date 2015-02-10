@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="8cm" height="6cm"  viewBox="0 0 800 600"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<path d="M0 0 v -2.5 h10 v-5 l5 7.5 l-5 7.5 v-5 h-10 v-2.5" style="fill:red">
+  <animateMotion dur="10s" repeatCount="indefinite" 
+   path="M 5 420 c 0 -40 120 -80 120 -40 c 0 40 120 80 120 40 
+         c 0 -60 -120 -100 -120 -40 c 0 60 -120 100 -120 40"
+   rotate="auto" />
+</path>
+
+
+</svg>

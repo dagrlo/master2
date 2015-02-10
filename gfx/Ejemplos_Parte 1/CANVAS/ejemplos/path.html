@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="150" height="150" style="border:3px solid blue;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+
+  ctx.beginPath();  
+  ctx.moveTo(75,50);  
+  ctx.lineTo(100,75);  
+  ctx.lineTo(100,35);  
+  ctx.closePath();  
+  ctx.fill();  
+  
+  ctx.beginPath();
+  ctx.rect(100,100,20,20);
+  ctx.fill();
+  
+  ctx.beginPath();  
+  ctx.moveTo(10,25);  
+  ctx.quadraticCurveTo(25,10,40,25);
+  ctx.stroke();
+  
+  ctx.beginPath();  
+  ctx.moveTo(60,25);  
+  ctx.bezierCurveTo(60,10,100,10,100,25);
+  ctx.stroke();
+  
+  var radians = (Math.PI/180)*90; 
+  ctx.beginPath(); 
+  ctx.arc(40,80,30,0,radians,false);  // clockwise
+  ctx.stroke();
+  
+</script>
+
+</body>
+</html> 

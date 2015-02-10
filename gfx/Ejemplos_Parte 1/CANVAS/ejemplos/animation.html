@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Canvas tutorial template</title>
+    <script type="text/javascript">
+
+      var canvas;	
+      var ctx;
+      var i=0;
+
+      function draw() {
+	      ctx.save();
+	      ctx.clearRect(0,0,150,150);
+          ctx.translate(10*i,10*i)
+          ctx.fillStyle = "rgb(200,0,0)";
+          ctx.fillRect (10, 10, 55, 50);
+          ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+          ctx.fillRect (30, 30, 55, 50);
+          ctx.restore();
+	      i = (i + 1) % 6;
+      }
+
+      function init() {  
+	    canvas = document.getElementById('tutorial');
+        if (canvas.getContext) {
+          ctx = canvas.getContext('2d');
+          setInterval(draw, 1000);   // Cada segundo
+        }  
+      }
+
+    </script>
+
+    <style type="text/css">
+      canvas { border: 2px solid black; }
+    </style>
+
+  </head>
+
+  <body onload="init();">
+    <canvas id="tutorial" width="150" height="150"></canvas>
+  </body>
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Canvas tutorial template</title>
+    <script type="text/javascript">
+
+      var canvas;	
+      var ctx;        
+
+      function getPosition(event) {
+        var x = new Number();
+        var y = new Number();
+
+        if (event.x != undefined && event.y != undefined) {
+          x = event.x;
+          y = event.y;
+        } else { // Firefox method to get the position
+          x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+        x -= canvas.offsetLeft;
+        y -= canvas.offsetTop;
+	    alert("x: " + x + "  y: " + y);
+      }
+      
+      function doKeyDown(event){
+		  alert("Codigo de tecla: " + event.keyCode);
+	  }
+
+      function init() {  
+		canvas = document.getElementById('tutorial');
+        if (canvas.getContext) {
+          ctx = canvas.getContext('2d');
+		  canvas.addEventListener("mouseup", getPosition, false);
+	      canvas.onmousedown = function(e) {
+	        ctx.fillStyle = "rgb(200,0,0)";
+	        ctx.fillRect (10, 10, 55, 50);
+            ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+	        ctx.fillRect (30, 30, 55, 50);
+      	  };
+      	  canvas.addEventListener('keydown', doKeyDown, false);
+        }  
+      }
+
+    </script>
+
+  </head>
+
+  <body onload="init();">
+    <canvas id="tutorial" width="150" height="150" style="border:1px solid black;" tabindex="1000"></canvas>
+  </body>
+
+</html>

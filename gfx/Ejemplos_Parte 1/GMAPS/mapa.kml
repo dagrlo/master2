@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Sin título</name>
+  <description><![CDATA[]]></description>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+  </Style>
+  <Style id="style3">
+  </Style>
+  <Style id="style2">
+  </Style>
+  <Style id="style5">
+    <LineStyle>
+      <color>40000000</color>
+      <width>3</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>73FF0000</color>
+      <fill>1</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Placemark>
+    <name>Marca de posición 1</name>
+    <description><![CDATA[<br>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-0.422974,39.454754,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Burjassot</name>
+    <Snippet>Campus de Burjassot</Snippet>
+    <description><![CDATA[Campus de Burjassot]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-0.420400,39.508499,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Blasco Ibañez</name>
+    <Snippet>Campus de Blasco Ibanez</Snippet>
+    <description><![CDATA[<b>Campus de <font color="#cc33cc">Blasco Ibanez</font></b>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-0.359840,39.478039,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tarongers</name>
+    <Snippet>Campus de Tarongers</Snippet>
+    <description><![CDATA[Campus de Tarongers]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-0.339800,39.478100,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Forma 1</name>
+    <description><![CDATA[]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Polygon>
+      <outerBoundaryIs>
+        <LinearRing>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -0.415792,39.511723,0.000000
+            -0.413046,39.507484,0.000000
+            -0.408239,39.510265,0.000000
+            -0.406151,39.511459,0.000000
+            -0.405807,39.514637,0.000000
+            -0.412846,39.516357,0.000000
+            -0.415792,39.511723,0.000000
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
+</Document>
+</kml>
