@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    border-bottom: 1px black dashed;
+    background: linear-gradient(to bottom, #627d4d 0%,#1f3b08 100%);
+    color:#fff;
+    padding:8px;
+}
+
+h1{
+    display: inline-block;
+}
+
+h2 {
+    float:right;
+    line-height: 44px;
+}
+
+fieldset{
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: 22px;
+    background-color:  #001600;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 24px;
+    color:#fff;
+    background-color: #001600;
+}
+
+.actividad{
+    background-color:  #1f3b08;
+    border: 2px #627d4d solid;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 20px;
+}
+
+.tituloA{
+    font-size: 20px;
+    color: #fff;
+    font-style:  italic;        
+}
+
+a{
+    text-decoration: none;
+    color: #bbb;
+    padding-right: 12px;
+}
+
+a:hover{
+    color: #99ff99;
+    text-decoration: underline;
+}
+
