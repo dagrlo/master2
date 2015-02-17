@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid black;">
+            Your browser does not support the canvas element.
+        </canvas>
+        <script type="text/javascript">
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var imgP = new Image();
+            imgP.src = "img_lamp.jpg";
+            imgP.onload = function () {
+                var pat = ctx.createPattern(imgP, "repeat");
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.fillStyle = pat;
+                ctx.arc(40, 130, 20, 0, 2 * Math.PI);
+                ctx.stroke();
+                ctx.fill();
+            };
+            ctx.fillStyle = "orange";
+            ctx.fillRect(80, 180, 40, 200);
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.moveTo(0, 100);
+            ctx.lineTo(200, 100);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(100, 100, 20, 0, Math.PI);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = "red";
+            ctx.moveTo(0, 0);
+            ctx.quadraticCurveTo(150, 50, 200, 200);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(0, 200);
+            ctx.strokeStyle = "green";
+            ctx.bezierCurveTo(20, 150, 180, 150, 200, 200);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.lineWidth = 8;
+            ctx.strokeStyle = "yellow";
+            ctx.fillStyle = "purple";
+            ctx.lineCap = "square";
+            ctx.lineJoin = "miter";
+            ctx.moveTo(140, 20);
+            ctx.lineTo(160, 50);
+            ctx.lineTo(140, 50);
+            ctx.lineTo(140, 20);
+            ctx.stroke();
+            ctx.fill();
+            ctx.font = "30px Arial";
+            ctx.shadowColor = "black";
+            ctx.shadowOffsetX = 2;
+            ctx.shadowOffsetY = 2;
+            ctx.shadowBlur = 8;
+            ctx.fillStyle = "blue";
+            ctx.fillText("Texto", 10, 80);
+
+            var img = new Image();
+            img.src = "the_scream.jpg";
+            img.onload = function () {
+                ctx.drawImage(img, 10, 10, 40, 40);
+            };
+
+
+        </script>
+    </body>
+
+</html>

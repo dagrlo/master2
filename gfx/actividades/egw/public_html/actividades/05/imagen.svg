@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <pattern id="fondo" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+        <circle cx="10" cy="10" r="8" 
+            style="stroke:black;fill:red"/>
+        <line x1="0" y1="0" x2="20" y2="20" style="stroke:green;width:2"/>
+        <line x1="20" y1="0" x2="0" y2="20" style="stroke:green;width:2"/>
+    </pattern>
+    </defs>
+    
+    <rect x="10" y="10" width="180" height="180" style="stroke:none;fill:url(#fondo)"/>
+    
+    <image x="40" y="40" width="40" height="40" xlink:href="the_scream.jpg"></image>
+</svg>
