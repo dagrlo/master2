@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<svg width="640" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <rect width="640" height="50"
+          style="fill:cyan">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="cyan" to="red"/>
+    </rect>
+
+    <rect width="640" height="50" y="50"
+          style="fill:red">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="red" to="cyan"/>
+    </rect>
+    <rect width="640" height="50" y="100"
+          style="fill:cyan">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="cyan" to="red"/>
+    </rect>
+    <rect width="640" height="50" y="150"
+          style="fill:red">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="red" to="cyan"/>
+    </rect>
+    <rect width="640" height="50" y="200"
+          style="fill:cyan">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="cyan" to="red"/>
+    </rect>
+    <rect width="640" height="50" y="250"
+          style="fill:red">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="red" to="cyan"/>
+    </rect>
+    <rect width="640" height="50" y="300"
+          style="fill:cyan">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="cyan" to="red"/>
+    </rect>
+    <rect width="640" height="50" y="350"
+          style="fill:red">
+        <animate attributeName="fill" attributeType="XML"
+                 dur="1s" repeatCount="indefinite" fill="restore" calcMode="discrete"
+                 from="red" to="cyan"/>
+    </rect>
+    
+    <rect width="540" height="340" x="50" y="30" style="fill:white"/>
+    
+    <line x1="50" y1="30" x2="590" y2="30" style="stroke:white;stroke-width:2">
+        <animate attributeName="stroke" attributeType="CSS"
+            dur="3s" fill="freeze" from="white" to="black"/>
+        <animate attributeName="y1" attributeType="XML"
+            dur="3.5s" fill="freeze" from="30" to="320"/>
+        <animate attributeName="y2" attributeType="XML"
+            dur="3.5s" fill="freeze" from="30" to="320"/>
+    </line>
+    
+    <text x="60" y="350" style="font-size:20px" fill="white">
+            <set attributeName="fill" attributeType="CSS" 
+                to="black" begin="3.5s" />
+        Intrucciones:
+    </text>
+    
+    <text x="180" y="350" style="font-size:16px" fill="white">
+            <set attributeName="fill" attributeType="CSS"
+                to="black" begin="3.9s" />
+        El cuadrado verde cambia de color al pasar el ratón sobre él.
+    </text>
+    
+    <g visibility="hidden" stroke="yellow">
+        <line y2="224" x2="170" y1="62" x1="170" stroke-width="6" />
+        <line y2="138" x2="273.08694" y1="138" x1="66" stroke-width="6"/>
+        <line y2="199" x2="243" y1="77" x1="95" stroke-width="6"/>
+        <line y2="212" x2="89" y1="75" x1="239" stroke-width="6"/>
+        <line y2="166" x2="262" y1="113" x1="83" stroke-width="6"/>
+        <line y2="67" x2="207" y1="213" x1="132" stroke-width="6"/>
+        <line y2="105" x2="264" y1="169" x1="80" stroke-width="6"/>
+        <line y2="211" x2="209" y1="64" x1="129" stroke-width="6"/>
+        <circle stroke="#ffffff" id="svg_9" r="41.44366" cy="138" cx="170" stroke-width="2" fill="#ffffff"/>
+            <set attributeName="visibility" attributeType="CSS"
+                to="visible" begin="4.4s"/>
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                from="360 170 138"
+                to="0 170 138"
+                dur="6s" repeatCount="indefinite"/>
+    </g>
+    
+    <polygon stroke-width="2"  points="207.59152221679688,138 181.61642456054688,
+        173.75167846679688 139.58779907226562,160.0957489013672 139.58779907226562,
+        115.90425109863281 181.61642456054688,102.24832153320312 207.59152221679688,138 " 
+        strokeWidth="2"  fill="white" edge="44.1915" orient="x" sides="5" 
+        shape="regularPoly" id="svg_10" cy="113" cx="294" visibility="hidden">
+            <set attributeName="visibility" attribute="CSS" to="visible" begin="4s"/>
+            <animate attributeName="fill" attributeType="CSS"
+                begin="4s" dur="5s" fill="freeze" values="white;yellow;#dddd00;red;orange"/>
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                from="0 170 138"
+                to="360 170 138"
+                dur="4s" repeatCount="indefinite"/>                
+    </polygon>
+    
+   <rect x="280" y="160" width="100" height="50" fill="green" visibility="hidden">
+        <set attributeName="visibility" attribute="CSS" to="visible" begin="2.6s"/>
+        <animate attributeName="y" attributeType="XML"
+            begin="3s" dur="3s" from="160" to="285" fill="freeze"/>
+        <animate attributeName="height" attributeType="XML"
+            begin="5.7s" dur="0.5s" from="50" to="30"/>
+        <animate attributeName="height" attributeType="XML"
+            begin="6.2s" dur="0.5s" from="30" to="50"/>
+        <animate attributeName="y" attributeType="XML"
+            begin="6.3s" dur="3s" from="285" to="160" fill="freeze"/>                        
+        <set begin="mouseover" end="mouseout" 
+            attributeName="fill" to="red"/>
+   </rect>
+    
+    <g visibility="hidden">
+        <circle r="18" cy="0" cx="0" fill="#0000ff"/>
+        <ellipse ry="7" rx="40" cy="0" cx="0" fill="#007fff"/>
+        <line stroke="red"  x1="-40" x2="40" y1="0" y2="0" stroke-width="2">
+            <animate attributeName="stroke" attributeType="CSS"
+                dur="5s" fill="restore" repeatCount="indefinite"
+                values="blue;green;red"/>
+        </line>
+        <set attributeName="visibility" attribute="CSS" to="visible" begin="4.3s"/>
+        <animateMotion
+            path="m147.72478,242.3098c28.61765,-50.63123 126.94493,-36.68929 126.94493,
+            -36.68929c0,0 -23.48116,101.26245 71.91098,20.54601c95.39221,-80.71645 -26.41626,
+            -104.19757 -26.41626,-104.19757c0,0 28.61765,-116.67193 96.12598,-49.89743c67.50824,
+            66.77452 69.70959,207.66136 69.70959,207.66136c0,0 -12.47433,55.03394 -67.50824,
+            66.77451c-55.034,11.74057 -171.70592,-54.30017 -171.70592,-54.30017c0,0 -16.14325,
+            -32.28653 -30.819,6.60406c-14.6757,38.89066 -66.77448,12.4744 -74.84613,-2.20135c-8.07164,
+            -14.67569 6.60406,-54.30013 6.60406,-54.30013z" dur="8s" repeatCount="indefinite" rotate="auto"/>            
+    </g>
+    
+    
+
+            
+</svg>                                                                                
+                                                                                
