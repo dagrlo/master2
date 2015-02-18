@@ -1,0 +1,512 @@
+  * Home <../../index.html>
+  * Autor <../../about>
+  * Contacto <../../contact>
+
+
+  El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen
+  <../../index.html>
+
+
+    Videojuegos desde los 8 bits hasta las consolas de nueva generación
+
+  * Arcade Hits <../../category/arcade-hits>
+  * Artículos <../../category/articulo>
+  * Cine <../../category/cine>
+  * Coleccionismo <../../category/coleccionismo-2>
+  * Humor <../../category/tira-comica>
+  * Next-Gen <../../category/next-gen>
+  * Old-gen <../../category/retro>
+  * Pixeblog <../../category/pixeblog>
+  * Reseñas <../../category/recomendacion-semanal>
+  * Review <../../category/review>
+  * Soccer <../../category/soccer>
+
+
+    Unreal Tournament (1999) <unreal-tournament-1999.html>
+
+Publicado por Pedja <http://elpixeblogdepedja.com/author/admin> 17 -
+julio - 2013
+
+Unreal Tournament 99
+<http://elpixeblogdepedja.com/wp-content/uploads/2013/07/Unreal_Tournament_99.jpg>
+
+En 1999, los canadienses *Digital Extremes*, asociados con *Epic Games*
+(/MegaGames/ en los albores de su trayectoria) desde que ejercían como
+distribuidores �Sshareware�� de títulos como *Epic Pinball* -carne de
+venta en Cd-Rom en las ferias del Libro más cutres que tu vista podía
+alcanzar a ver- convirtieron la denominación *Unreal* en una saga
+mediante una iteración muy distinta al primer título, centrándose a
+muerte en la *acción multijugador*.
+
+*Unreal Tournament* desprendía un aroma característico, rápidamente
+reconocible. Bastaba con adentrarse en unas pocas partidas contra seres
+humanos de otras partes del mundo para comprobar cómo supuraba óxido,
+para degustar el frío sabor metálico y el entorno industrial que
+abanderaba todos y cada uno de sus mapas.
+
+La sensación nos invadía desde el primer momento en el que cargaba su
+intro, en la que una demo nos metía directamente en faena, navegando con
+el piloto automático a través de los asépticos túneles de uno de sus
+niveles; el tema principal de la banda sonora echaba el resto, siendo
+hoy sus percursiones y sus notas sintéticas un tremendo clásico entre
+los veteranos combatientes de los Deathmatch y derivados.
+
+La banda sonora del título venía firmada principalmente por*Alexander
+Brandon*, con la participación de otros músicos como *Michiel Van den
+Bos*, ambos partícipes también en la música que sonaba en el primer
+*Unreal*.
+
+Unreal Tournament 99
+<http://elpixeblogdepedja.com/wp-content/uploads/2013/07/ut99_11.jpg>
+
+Para ello, utilizaron trackers en formato /.MOD/, una técnica que, años
+atrás, popularizaría el maestro *Chris Huëlsbeck* con sus composiciones
+para *Commodore 64* y *Amiga*. La explosiva mezcla del sintetizador y el
+secuenciador, a los mandos de *Brandon* y cía., derivó en una suerte de
+melodías que encajaban como un guante en el estilo del presente juego.
+
+Pero lo verdaderamente importante era su mecánica jugable, la cual tuvo
+que enfrentarse directamente y de manera contemporánea a la de *Quake
+III Arena*, un título que *Id Software* lanzó con idéntica filosofía:
+una especie de spin-off de la saga que se enfocara al enfrentamiento
+online. Las comparaciones no tardaron en llegar, y el versus se antojaba
+épico, con gente que defendía encarnizadamente su juego favorito y
+trataba de sepultar bajo improperios a su rival.
+
+Yo tenía un claro vencedor. Siempre me encantó el ritmo de juego
+de*Unreal Tournament*, ya que, sin llegar a perder en ningún momento la
+sensación de permanecer en tensión sin un segundo de respiro, sí que era
+más pausado que el título de *Id*, el cual, por momentos, era una puta
+locura.
+
+Unreal Tournament 99
+<http://elpixeblogdepedja.com/wp-content/uploads/2013/07/unreal-tournament_redentor.jpg>
+
+En *Unreal Tournament*, a través de míticos mapas como *Deck16* -el cual
+fue heredándose entrega tras entrega, siendo remozado y reconvertido en
+Deck17-, permitía la ejecución de ciertas tácticas de combate, premiando
+así la habilidad y la inteligencia a la hora de moverse y posicionarse
+en el campo de batalla. Conseguía eludir por momentos la brutal inercia
+de una partida de *Quake III Arena*, la cual derivaba en muchas
+ocasiones en matanzas prácticamente aleatorias.
+
+¿Y qué decir de las *armas*? Es curioso comprobar como la saga tuvo tres
+iteraciones más, y ninguna pudo superar el arsenal mostrado en esta
+primera entrega. Las más carismáticas se mantuvieron, como el cañón
+*antiaéreo*, capaz de ser letal tanto en el cuerpo a cuerpo -cuidado con
+el rebote de las esquirlas de metralla- como a distancia, o el temido
+*Redentor*: recordad la primera vez que encontrasteis este preciado
+artilugio, un misil capaz de barrer con su onda expansiva a varios
+enemigos; recordad el alucine a la hora de dirigirlo en primera persona
+con una cámara subjetiva que poseía el misil, viendo en primer plano la
+cara de la incauta víctima justo antes de volarlo en mil pedazos.
+
+Sin embargo, mi favorito era el *Ripper / Destripador*, el cual eché de
+menos en cantidades industriales en sucesivas entregas. Permitía
+disparar afilados discos que rebotaban en las paredes, propiciando el
+separar la cabeza del tronco de nuestros enemigos si teníamos la
+puntería adecuada, mientras una infame voz en off percutía en nuestros
+oídos: �S*Disparo a la cabeza*�� -posteriormente traducido en *UT2003*
+como /Disparo de Cabeza/, a lo *Santillana*-.
+
+El juego de*Digital Extremes* ofrecía modos de juego bastante
+innovadores, en especial *Asalto*: un equipo defendía y otro atacaba,
+debiendo seguir una serie de objetivos secuenciales para finalizar la
+partida, tales como romper puentes o deshabilitar defensas. Todos los
+modos de juego podían practicarse con bots, los cuales desplegaban
+cierta habilidad. Esta pericia artificial se debía al trabajo de Steve
+Polge <http://epicgames.com/community/tag/steve-polge/>, contratado por
+*Epic* tras desarrollar /Reaper/, un bot para el modo multijugador del
+*Quake* original.
+
+*Unreal Tournament* coincidió con los primeros pasos de Internet por
+cable en nuestro país: el paso del módem de *56K* a la velocidad de esta
+tecnología fue clave para que títulos como el que hoy hemos recordado
+pudieran desplegar toda su potencia multijugador, evitando el temido
+*lag* que tornaba la experiencia de juego a un término situado entre
+random y ruinoso.
+
+Aunque se portaron versiones a *Dreamcast* y *Playstation 2*, no
+alcanzaron ni de lejos el éxito y popularidad de la versión original
+para *PC*. De hecho, en dicha plataforma aún existen servidores que
+alojan partidas actualmente. Lo que desconozco es si cierto niño loco
+alemán seguirá machacando teclados debido a su impaciencia con el juego…
+
+El juego ha estado incluido en las rebajas veraniegas de *Steam*, con un
+precio para su edición “GOTY” de unos suculentos 4,99 euros.
+
+
+      digital extremes
+      <http://elpixeblogdepedja.com/tag/digital-extremes>, epic games
+      <http://elpixeblogdepedja.com/tag/epic-games>, unreal
+      <http://elpixeblogdepedja.com/tag/unreal>, unreal tournament
+      <http://elpixeblogdepedja.com/tag/unreal-tournament>
+
+
+      Posts relacionados
+
+  * Juegos de lucha especiales #1: ClayFighter
+    <http://elpixeblogdepedja.com/2008/07/juegos-de-lucha-especiales-1-clayfighter.html>Juegos
+    de lucha ‘especiales’ #1: ClayFighter
+    <http://elpixeblogdepedja.com/2008/07/juegos-de-lucha-especiales-1-clayfighter.html>
+  * La historia de Q*Bert
+    <http://elpixeblogdepedja.com/2013/10/la-historia-de-qbert.html>La
+    historia de Q*Bert
+    <http://elpixeblogdepedja.com/2013/10/la-historia-de-qbert.html>
+  * Superado el récord mundial de videojuegos gracias a Sabrina y sus
+    dos& cintas
+    <http://elpixeblogdepedja.com/2013/12/superado-el-record-mundial-de-videojuegos-gracias-sabrina-y-sus-dos-cintas.html>Superado
+    el récord mundial de videojuegos gracias a Sabrina y sus dos… cintas
+    <http://elpixeblogdepedja.com/2013/12/superado-el-record-mundial-de-videojuegos-gracias-sabrina-y-sus-dos-cintas.html>
+  * Cuando el videojuego se convirtió en publicidad
+    <http://elpixeblogdepedja.com/2013/11/videojuegos-y-publicidad.html>Cuando
+    el videojuego se convirtió en publicidad
+    <http://elpixeblogdepedja.com/2013/11/videojuegos-y-publicidad.html>
+  * Retrovisión RetroCompo 2007: Amotos Puff
+    <http://elpixeblogdepedja.com/2007/09/retrovision-retrocompo-2007-amotos-puff.html>Retrovisión
+    RetroCompo 2007: Amoto’s Puff
+    <http://elpixeblogdepedja.com/2007/09/retrovision-retrocompo-2007-amotos-puff.html>
+
+﻿
+
+
+      7 comentarios en “Unreal Tournament (1999)”
+
+ 1.
+    Unreal Tournament (1999)
+    <http://www.meneame.net/story/unreal-tournament-1999> dice:	
+    julio 17, 2013 a las 1:55 am
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-349765>
+
+
+    [...] Unreal Tournament (1999) [...]
+
+ 2.
+    Taiyou dice:	
+    julio 17, 2013 a las 9:08 am
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-349803>
+
+
+    Yo en esa época más o menos dejé de darle a los shooters, y al único
+    al que jugué online fue al maravilloso shooter polaco Soldat que era
+    divertidísimo.
+
+    Por cierto, brutal la referencia al Epic Pinball y derivados en las
+    ferias XD
+
+ 3.
+    kr0n dice:	
+    julio 17, 2013 a las 11:51 pm
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-349889>
+
+
+    Buenísimo el post, recordando a este gran juego. Se te olvidó
+    mencionar la mas famosa arma que trajo este juego, el Shock Rifle o
+    Rifle de choque que permitía realizar combos con el disparo primario
+    y secundario haciéndola sin duda la mejor arma del juego.
+
+    Por cierto, el mapa original de la primera versión de Unreal
+    Tournament, se llamaba Deck16, no 17. El 17 fue el que incluyeron en
+    posteriores entregas.
+
+ 4.
+    <http://elpixeblogdepedja.com>Pedja <http://elpixeblogdepedja.com>
+    dice:	
+    julio 18, 2013 a las 8:47 am
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-349920>
+
+
+    Modificado, gracias por los detalles kr0n!
+
+ 5.
+    Togus dice:	
+    julio 20, 2013 a las 3:41 pm
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-350132>
+
+
+    Gran post, yo que soy carne de los multijugadores con este
+    descubrimos los colegas y yo un mundo de posibilidades y diversion,
+    cuando he visto la portada del post me ha venido a la mente todas
+    esas horas en los cibercafes, mortal.
+    Si q es verdad q en cuestion de armas y arsenal como este, ninguno,
+    pero para mi, en las ediciones posteriores me molo bastante el
+    trabajo q hicieron. Para mi personalmente fue y será una saga q
+    crecio en cada entrega.
+
+ 6.
+    Anónimo dice:	
+    agosto 18, 2013 a las 12:34 am
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-353038>
+
+
+    Headshot!!!, me encantaba ese juego, me acuerdo de todas las horas
+    que le dedique. buenos recuerdos gracias.
+
+ 7.
+    <http://hgx.com.mx/blog/>Yipie <http://hgx.com.mx/blog/> dice:	
+    septiembre 12, 2013 a las 5:53 am
+    <http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#comment-356253>
+
+
+    Yo también fui fan de este juego. Aunque debo admitir que me aleje
+    de los FPS un buen rato después de Wolfenstein y algunos más de
+    consola. Gracias a Unreal Tournament volví a los FPS en la PC y
+    sobre todo para jugarlos como debe ser, con teclado y mouse! Por
+    otro lado, las personalizaciones que permitía y los mapas que subían
+    los fans me impulsaron a entrarle a los mods. Y la diversión no paró.
+
+
+      Comenta lo que quieras respecto a este artículo...
+
+Clic para cancelar respuesta.
+<http://elpixeblogdepedja.com/2013/07/unreal-tournament-1999.html#respond>
+
+Name (required)
+
+Mail (will not be published) (required)
+
+Website
+
+  *
+
+
+        Killzone 2: diez impresiones de mis primeras ...
+        <http://elpixeblogdepedja.com/2009/01/killzone-2-diez-impresiones-de-mis-primeras-horas-de-juego.html>
+
+    Artículos <../../category/articulo>, Next-Gen <../../category/next-gen>
+  *
+
+
+        Juegos del Terror: Vampire Rain
+        <http://elpixeblogdepedja.com/2009/01/juegos-del-terror-vampire-rain.html>
+
+    Artículos <../../category/articulo>, Next-Gen <../../category/next-gen>
+  *
+
+
+        Crónicas de Ricardo Cancho, grafista de Topo...
+        <http://elpixeblogdepedja.com/2010/02/cronicas-de-ricardo-cancho-grafista-de-topo-soft.html>
+
+    Artículos <../../category/articulo>, Old-gen <../../category/retro>
+  *
+
+
+        Mi Amstrad CPC, el misterioso interlocutor
+        <http://elpixeblogdepedja.com/2009/03/mi-amstrad-cpc-el-misterioso-interlocutor.html>
+
+    Artículos <../../category/articulo>, Pixeblog <../../category/pixeblog>
+
+  * VIDEO <javascript:void(null);>
+  * LO + NUEVO <javascript:void(null);>
+  * TAGS <javascript:void(null);>
+
+
+    VIDEO
+
+
+    LO + NUEVO
+
+  * Gear Up en Steam, tanques contra tanques al estilo cartoon… ¡gratis!
+    <../../2015/02/gear-en-steam-tanques-contra-tanques-al-estilo-cartoon-gratis.html>
+  * The Zodiac Saints: los santos descienden al infierno
+    <../../2015/01/zodiac-saints-los-santos-descienden-al-infierno.html>
+  * Bob Winner de Loriciels para Amstrad CPC
+    <../../2015/01/bob-winner-de-loriciels-para-amstrad-cpc.html>
+  * Análisis Funk of Titans Xbox One
+    <../../2015/01/analisis-funk-titans-xbox-one.html>
+  * ¡Feliz año nuevo 2015! <../../2014/12/feliz-ano-nuevo-2015.html>
+  * Review DriveClub PS4 <../../2014/12/review-driveclub-ps4.html>
+  * Nuevo libro: 10000 juegos que ni de coña jugarás antes de espicharla
+    <../../2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html>
+  * Review Dragon Age Inquisition Xbox One
+    <../../2014/12/review-dragon-age-inquisition-xbox-one.html>
+  * RetroSevilla 2014: la primera piedra
+    <../../2014/12/retrosevilla-2014-la-primera-piedra.html>
+  * Entrevista a Pedro Sudón, programador de Dinamic
+    <../../2014/12/entrevista-pedro-sudon-programador-de-dinamic.html>
+
+
+    TAGS
+
+activision <../../tag/activision> amstrad <../../tag/amstrad> amstrad
+cpc <../../tag/amstrad-cpc> arcade <../../tag/arcade> Arcade Hits
+<../../tag/arcade-hits> azpiri <../../tag/azpiri> batman
+<../../tag/batman> capcom <../../tag/capcom> Codemasters
+<../../tag/codemasters> coleccionismo <../../tag/coleccionismo>
+commodore 64 <../../tag/commodore-64> cpc <../../tag/cpc> dinamic
+<../../tag/dinamic> e3 2008 <http://elpixeblogdepedja.com/tag/e3-2008>
+EA Games <http://elpixeblogdepedja.com/tag/ea-games> ea sports
+<http://elpixeblogdepedja.com/tag/ea-sports> FPS
+<http://elpixeblogdepedja.com/tag/fps> fx interactive
+<http://elpixeblogdepedja.com/tag/fx-interactive> indie
+<http://elpixeblogdepedja.com/tag/indie> konami
+<http://elpixeblogdepedja.com/tag/konami> mercadillo
+<http://elpixeblogdepedja.com/tag/mercadillo> msx
+<http://elpixeblogdepedja.com/tag/msx> nintendo
+<http://elpixeblogdepedja.com/tag/nintendo> ocean
+<http://elpixeblogdepedja.com/tag/ocean> ocean software
+<http://elpixeblogdepedja.com/tag/ocean-software> Old-gen
+<http://elpixeblogdepedja.com/tag/retro> opera soft
+<http://elpixeblogdepedja.com/tag/opera-soft> opinión
+<http://elpixeblogdepedja.com/tag/opinion> pc
+<http://elpixeblogdepedja.com/tag/pc> Pixeblog
+<http://elpixeblogdepedja.com/tag/pixeblog> playstation 3
+<http://elpixeblogdepedja.com/tag/playstation-3> playstation 4
+<http://elpixeblogdepedja.com/tag/playstation-4> ps4
+<http://elpixeblogdepedja.com/tag/ps4> sandbox
+<http://elpixeblogdepedja.com/tag/sandbox> sega
+<http://elpixeblogdepedja.com/tag/sega> sony
+<http://elpixeblogdepedja.com/tag/sony> spectrum
+<http://elpixeblogdepedja.com/tag/spectrum> steam <../../tag/steam>
+super nintendo <http://elpixeblogdepedja.com/tag/super-nintendo> topo
+soft <http://elpixeblogdepedja.com/tag/topo-soft> ubisoft
+<http://elpixeblogdepedja.com/tag/ubisoft> xbox 360
+<http://elpixeblogdepedja.com/tag/xbox-360> xbox live arcade
+<http://elpixeblogdepedja.com/tag/xbox-live-arcade> xbox one
+<../../tag/xbox-one> zigurat <http://elpixeblogdepedja.com/tag/zigurat>
+
+WP Cumulus Flash tag cloud by Roy Tanck <http://www.roytanck.com> and
+Luke Morton <http://lukemorton.co.uk/> requires Flash Player
+<http://www.macromedia.com/go/getflashplayer> 9 or better.
+
+------------------------------------------------------------------------
+*FACEBOOK*
+------------------------------------------------------------------------
+﻿
+Destacados
+Ediciones Arcade <http://edicionesarcade.com>
+------------------------------------------------------------------------
+
+  * Chicas sexys en videojuegos españoles
+    <http://elpixeblogdepedja.com/2009/01/heroinas-made-in-spain-en-los-videojuegos-sin-tetas-no-hay-paraiso.html>
+  * Impresiones Xbox One
+    <http://elpixeblogdepedja.com/2013/11/impresiones-xbox-one.html>
+  * Presentación PS4 en Sevilla
+    <http://elpixeblogdepedja.com/2013/10/presentacion-sony-playstation-4-en-sevilla.html>
+  * Videojuegos de tragaperras
+    <http://elpixeblogdepedja.com/2014/03/videojuegos-de-tragaperras.html>
+  * Ocean Software, de película
+    <http://elpixeblogdepedja.com/2013/03/ocean-software-de-pelicula-parte-i-1985-1987.html>
+    ------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+﻿
+
+
+    Blogroll
+
+  *
+      o Blog de Manu <http://elblogdemanu.com>
+      o Blog der JuMaFas <http://jumafas.blogvideojuegos.com>
+      o Frostias <http://www.frostias.com>
+      o Google + Mi Perfil
+        <https://plus.google.com/108451085987227805779?rel=author>
+      o Insert Coin <http://insertcoinclasicos.com>
+      o Maquinitas <http://www.maquinitas.org>
+      o Mercaconsolas <http://mercaconsolas.com>
+      o Metodologic <http://www.metodologic.com>
+      o Museo del Videojuego <http://museodelvideojuego.com>
+      o Otakufreaks <http://www.otakufreaks.com/>
+      o Paisdelosjuegos.com.mx <http://www.paisdelosjuegos.com.mx/>
+      o PixFans <http://www.pixfans.com>
+      o Press Play Then Any Key <http://www.pressplaythenanykey.com>
+      o Relatos de José Manuel Relinque
+        <http://charpentierdeslettres.blogspot.com>
+      o Rincones Gaditanos <http://rinconesgaditanos.blogspot.com>
+      o Sopla el Cartucho <http://www.soplaelcartucho.blogspot.com/>
+      o Universo Friki <http://eluniversofriki.blogspot.com>
+      o Vida Extra <http://vidaextra.com>
+
+
+    Lo + comentado
+
+  * Impresiones demo PES 2010
+    <http://elpixeblogdepedja.com/2009/09/impresiones-demo-pes-2010.html> (152)
+  * Opinión: El secreto de Super Mario World
+    <http://elpixeblogdepedja.com/2007/05/opinin-el-secreto-de-super-mario-world.html>
+    (58)
+  * Ganador carátula concurso Battlefield Bad Company + Participantes
+    sorteo
+    <http://elpixeblogdepedja.com/2008/08/ganador-caratula-concurso-battlefield-bad-company-participantes-sorteo.html>
+    (46)
+  * Review Pro Evolution Soccer 2009 – PS3 / Xbox 360
+    <http://elpixeblogdepedja.com/2008/10/review-pro-evolution-soccer-2009-ps3-xbox-360.html>
+    (38)
+  * Navy Moves beta 3.2: regresan el arcade y las minas del terror
+    <http://elpixeblogdepedja.com/2009/05/navy-moves-beta-32-vuelven-el-arcade-y-las-minas-del-terror.html>
+    (36)
+
+  *
+
+
+        �altimos posts
+
+      o The Zodiac Saints: los santos descienden al infierno
+        <../../2015/01/zodiac-saints-los-santos-descienden-al-infierno.html>
+
+      o Bob Winner de Loriciels para Amstrad CPC
+        <../../2015/01/bob-winner-de-loriciels-para-amstrad-cpc.html>
+      o Análisis Funk of Titans Xbox One
+        <../../2015/01/analisis-funk-titans-xbox-one.html>
+      o ¡Feliz año nuevo 2015! <../../2014/12/feliz-ano-nuevo-2015.html>
+      o Review DriveClub PS4 <../../2014/12/review-driveclub-ps4.html>
+      o Nuevo libro: 10000 juegos que ni de coña jugarás antes de
+        espicharla
+        <../../2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html>
+      o Review Dragon Age Inquisition Xbox One
+        <../../2014/12/review-dragon-age-inquisition-xbox-one.html>
+      o RetroSevilla 2014: la primera piedra
+        <../../2014/12/retrosevilla-2014-la-primera-piedra.html>
+
+  *
+
+
+        Opinen, opinen...
+
+      o *Pedja*: Hola Rocio. El juego al que te refieres...
+        <http://elpixeblogdepedja.com/2014/03/los-videojuegos-antiguos-reflejada-espejo.html#comment-503105>
+      o *Rocio*: Hola quiero localizar un videojuego que...
+        <http://elpixeblogdepedja.com/2014/03/los-videojuegos-antiguos-reflejada-espejo.html#comment-502341>
+      o *Papurri*: Siempre me ha gustado la velocidad en...
+        <http://elpixeblogdepedja.com/2014/12/review-driveclub-ps4.html#comment-499263>
+      o *Goro*: Jajaja que divertido
+        <http://elpixeblogdepedja.com/2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html#comment-494598>
+      o *primy*: jajajaja me la habéis colado de lleno...
+        <http://elpixeblogdepedja.com/2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html#comment-491179>
+
+
+    Sobre el PixeBlog
+
+*El PixeBlog* nació una tarde de Noviembre de 2006, motivado por el
+deseo de su autor, *Jesús Relinque
+-PEDJA-*, en pos de rememorar sus vivencias sobre juegos olvidados y
+remotos.
+
+Hoy, los artículos publicados en el blog compaginan lo Retro con la
+presente generación de videojuegos. Siéntete libre de compartir tu opinión.
+
+
+    Meta
+
+<http://feeds.feedburner.com/ElPixeblogDePedja> 	
+Pedja has 461 followers on Twitter
+<http://twittercounter.com/pedjapixeblog?utm_source=referring%2Bsites&utm_medium=organic%2Blinks&utm_campaign=twittercounter%2Bbutton>
+	Obra bajo licencia de Creative Commons
+<http://creativecommons.org/licenses/by-nc-nd/3.0/es/>
+
+Pedja Wichu <http://zaamit.com/content/gamercards.aspx>
+
+<http://feeds.feedburner.com/ElPixeblogDePedja>
+<http://www.facebook.com/pages/El-Pixeblog-de-Pedja/96534023102>
+Google+ <https://plus.google.com/108451085987227805779?rel=author>
+
+
+    Twitter
+
+Tweets por @PedjaPixeblog <https://twitter.com/PedjaPixeblog>
+Design : WordPress themes <http://www.web2feel.com> Code support CD
+Rates <http://www.emoneycentral.com/>, NET-TEC Internetagentur
+<http://www.net-tec-ag.de/> soegemaskineoptimering
+<http://www.net-tec-online.dk/>
+Diseño actual por *Pedja* a partir del tema Scarlett de WordPress themes
+<http://www.web2feel.com>

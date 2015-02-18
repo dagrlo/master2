@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" prefix="og: http://ogp.me/ns#">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen  amstrad cpc Archives &raquo; El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen</title>
+<!-- eqb03UlAR5Tu8yB6a2fZTXvhk6M -->
+<meta name="generator" content="WordPress 3.9.3" /> <!-- leave this for stats -->
+<link rel="stylesheet" href="http://elpixeblogdepedja.com/wp-content/themes/scarlett/style.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://elpixeblogdepedja.com/wp-content/themes/scarlett/boxCiao_140.css" media="screen" />
+
+<link rel="alternate" type="application/rss+xml" title="El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen RSS Feed" href="http://elpixeblogdepedja.com/feed" />
+<link rel="pingback" href="http://elpixeblogdepedja.com/xmlrpc.php" />
+<link href="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/favicon.ico" rel="icon" type="image/ico" />
+
+<script type="text/javascript" src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/js/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/js/spy.js"></script>
+<script type="text/javascript" src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/js/tabber.js"></script>
+<script type="text/javascript" src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/js/scroll.js"></script>
+
+<script type="text/javascript" > jQuery.noConflict();</script>
+<link rel="stylesheet" type="text/css" href="http://elpixeblogdepedja.com/wp-content/themes/scarlett/banner.css" media="screen" />	
+<link rel="stylesheet" type="text/css" href="http://elpixeblogdepedja.com/wp-content/themes/scarlett/tabs.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://elpixeblogdepedja.com/wp-content/themes/scarlett/featlist.css" media="screen" />
+
+
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+sfHover = function() {
+	if (!document.getElementsByTagName) return false;
+	var sfEls = document.getElementById("catmenu").getElementsByTagName("li");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+//--><!]]></script>
+
+	<link rel="archives" title="febrero 2015" href="http://elpixeblogdepedja.com/2015/02" />
+	<link rel="archives" title="enero 2015" href="http://elpixeblogdepedja.com/2015/01" />
+	<link rel="archives" title="diciembre 2014" href="http://elpixeblogdepedja.com/2014/12" />
+	<link rel="archives" title="noviembre 2014" href="http://elpixeblogdepedja.com/2014/11" />
+	<link rel="archives" title="octubre 2014" href="http://elpixeblogdepedja.com/2014/10" />
+	<link rel="archives" title="septiembre 2014" href="http://elpixeblogdepedja.com/2014/09" />
+	<link rel="archives" title="agosto 2014" href="http://elpixeblogdepedja.com/2014/08" />
+	<link rel="archives" title="julio 2014" href="http://elpixeblogdepedja.com/2014/07" />
+	<link rel="archives" title="junio 2014" href="http://elpixeblogdepedja.com/2014/06" />
+	<link rel="archives" title="mayo 2014" href="http://elpixeblogdepedja.com/2014/05" />
+	<link rel="archives" title="abril 2014" href="http://elpixeblogdepedja.com/2014/04" />
+	<link rel="archives" title="marzo 2014" href="http://elpixeblogdepedja.com/2014/03" />
+	<link rel="archives" title="febrero 2014" href="http://elpixeblogdepedja.com/2014/02" />
+	<link rel="archives" title="enero 2014" href="http://elpixeblogdepedja.com/2014/01" />
+	<link rel="archives" title="diciembre 2013" href="http://elpixeblogdepedja.com/2013/12" />
+	<link rel="archives" title="noviembre 2013" href="http://elpixeblogdepedja.com/2013/11" />
+	<link rel="archives" title="octubre 2013" href="http://elpixeblogdepedja.com/2013/10" />
+	<link rel="archives" title="septiembre 2013" href="http://elpixeblogdepedja.com/2013/09" />
+	<link rel="archives" title="agosto 2013" href="http://elpixeblogdepedja.com/2013/08" />
+	<link rel="archives" title="julio 2013" href="http://elpixeblogdepedja.com/2013/07" />
+	<link rel="archives" title="junio 2013" href="http://elpixeblogdepedja.com/2013/06" />
+	<link rel="archives" title="mayo 2013" href="http://elpixeblogdepedja.com/2013/05" />
+	<link rel="archives" title="abril 2013" href="http://elpixeblogdepedja.com/2013/04" />
+	<link rel="archives" title="marzo 2013" href="http://elpixeblogdepedja.com/2013/03" />
+	<link rel="archives" title="febrero 2013" href="http://elpixeblogdepedja.com/2013/02" />
+	<link rel="archives" title="enero 2013" href="http://elpixeblogdepedja.com/2013/01" />
+	<link rel="archives" title="diciembre 2012" href="http://elpixeblogdepedja.com/2012/12" />
+	<link rel="archives" title="noviembre 2012" href="http://elpixeblogdepedja.com/2012/11" />
+	<link rel="archives" title="octubre 2012" href="http://elpixeblogdepedja.com/2012/10" />
+	<link rel="archives" title="septiembre 2012" href="http://elpixeblogdepedja.com/2012/09" />
+	<link rel="archives" title="agosto 2012" href="http://elpixeblogdepedja.com/2012/08" />
+	<link rel="archives" title="julio 2012" href="http://elpixeblogdepedja.com/2012/07" />
+	<link rel="archives" title="junio 2012" href="http://elpixeblogdepedja.com/2012/06" />
+	<link rel="archives" title="mayo 2012" href="http://elpixeblogdepedja.com/2012/05" />
+	<link rel="archives" title="abril 2012" href="http://elpixeblogdepedja.com/2012/04" />
+	<link rel="archives" title="marzo 2012" href="http://elpixeblogdepedja.com/2012/03" />
+	<link rel="archives" title="febrero 2012" href="http://elpixeblogdepedja.com/2012/02" />
+	<link rel="archives" title="enero 2012" href="http://elpixeblogdepedja.com/2012/01" />
+	<link rel="archives" title="diciembre 2011" href="http://elpixeblogdepedja.com/2011/12" />
+	<link rel="archives" title="noviembre 2011" href="http://elpixeblogdepedja.com/2011/11" />
+	<link rel="archives" title="octubre 2011" href="http://elpixeblogdepedja.com/2011/10" />
+	<link rel="archives" title="septiembre 2011" href="http://elpixeblogdepedja.com/2011/09" />
+	<link rel="archives" title="agosto 2011" href="http://elpixeblogdepedja.com/2011/08" />
+	<link rel="archives" title="julio 2011" href="http://elpixeblogdepedja.com/2011/07" />
+	<link rel="archives" title="junio 2011" href="http://elpixeblogdepedja.com/2011/06" />
+	<link rel="archives" title="mayo 2011" href="http://elpixeblogdepedja.com/2011/05" />
+	<link rel="archives" title="abril 2011" href="http://elpixeblogdepedja.com/2011/04" />
+	<link rel="archives" title="marzo 2011" href="http://elpixeblogdepedja.com/2011/03" />
+	<link rel="archives" title="febrero 2011" href="http://elpixeblogdepedja.com/2011/02" />
+	<link rel="archives" title="enero 2011" href="http://elpixeblogdepedja.com/2011/01" />
+	<link rel="archives" title="diciembre 2010" href="http://elpixeblogdepedja.com/2010/12" />
+	<link rel="archives" title="noviembre 2010" href="http://elpixeblogdepedja.com/2010/11" />
+	<link rel="archives" title="octubre 2010" href="http://elpixeblogdepedja.com/2010/10" />
+	<link rel="archives" title="septiembre 2010" href="http://elpixeblogdepedja.com/2010/09" />
+	<link rel="archives" title="agosto 2010" href="http://elpixeblogdepedja.com/2010/08" />
+	<link rel="archives" title="julio 2010" href="http://elpixeblogdepedja.com/2010/07" />
+	<link rel="archives" title="junio 2010" href="http://elpixeblogdepedja.com/2010/06" />
+	<link rel="archives" title="mayo 2010" href="http://elpixeblogdepedja.com/2010/05" />
+	<link rel="archives" title="abril 2010" href="http://elpixeblogdepedja.com/2010/04" />
+	<link rel="archives" title="marzo 2010" href="http://elpixeblogdepedja.com/2010/03" />
+	<link rel="archives" title="febrero 2010" href="http://elpixeblogdepedja.com/2010/02" />
+	<link rel="archives" title="enero 2010" href="http://elpixeblogdepedja.com/2010/01" />
+	<link rel="archives" title="diciembre 2009" href="http://elpixeblogdepedja.com/2009/12" />
+	<link rel="archives" title="noviembre 2009" href="http://elpixeblogdepedja.com/2009/11" />
+	<link rel="archives" title="octubre 2009" href="http://elpixeblogdepedja.com/2009/10" />
+	<link rel="archives" title="septiembre 2009" href="http://elpixeblogdepedja.com/2009/09" />
+	<link rel="archives" title="agosto 2009" href="http://elpixeblogdepedja.com/2009/08" />
+	<link rel="archives" title="julio 2009" href="http://elpixeblogdepedja.com/2009/07" />
+	<link rel="archives" title="junio 2009" href="http://elpixeblogdepedja.com/2009/06" />
+	<link rel="archives" title="mayo 2009" href="http://elpixeblogdepedja.com/2009/05" />
+	<link rel="archives" title="abril 2009" href="http://elpixeblogdepedja.com/2009/04" />
+	<link rel="archives" title="marzo 2009" href="http://elpixeblogdepedja.com/2009/03" />
+	<link rel="archives" title="febrero 2009" href="http://elpixeblogdepedja.com/2009/02" />
+	<link rel="archives" title="enero 2009" href="http://elpixeblogdepedja.com/2009/01" />
+	<link rel="archives" title="diciembre 2008" href="http://elpixeblogdepedja.com/2008/12" />
+	<link rel="archives" title="noviembre 2008" href="http://elpixeblogdepedja.com/2008/11" />
+	<link rel="archives" title="octubre 2008" href="http://elpixeblogdepedja.com/2008/10" />
+	<link rel="archives" title="septiembre 2008" href="http://elpixeblogdepedja.com/2008/09" />
+	<link rel="archives" title="agosto 2008" href="http://elpixeblogdepedja.com/2008/08" />
+	<link rel="archives" title="julio 2008" href="http://elpixeblogdepedja.com/2008/07" />
+	<link rel="archives" title="junio 2008" href="http://elpixeblogdepedja.com/2008/06" />
+	<link rel="archives" title="mayo 2008" href="http://elpixeblogdepedja.com/2008/05" />
+	<link rel="archives" title="abril 2008" href="http://elpixeblogdepedja.com/2008/04" />
+	<link rel="archives" title="marzo 2008" href="http://elpixeblogdepedja.com/2008/03" />
+	<link rel="archives" title="febrero 2008" href="http://elpixeblogdepedja.com/2008/02" />
+	<link rel="archives" title="enero 2008" href="http://elpixeblogdepedja.com/2008/01" />
+	<link rel="archives" title="diciembre 2007" href="http://elpixeblogdepedja.com/2007/12" />
+	<link rel="archives" title="noviembre 2007" href="http://elpixeblogdepedja.com/2007/11" />
+	<link rel="archives" title="octubre 2007" href="http://elpixeblogdepedja.com/2007/10" />
+	<link rel="archives" title="septiembre 2007" href="http://elpixeblogdepedja.com/2007/09" />
+	<link rel="archives" title="agosto 2007" href="http://elpixeblogdepedja.com/2007/08" />
+	<link rel="archives" title="julio 2007" href="http://elpixeblogdepedja.com/2007/07" />
+	<link rel="archives" title="junio 2007" href="http://elpixeblogdepedja.com/2007/06" />
+	<link rel="archives" title="mayo 2007" href="http://elpixeblogdepedja.com/2007/05" />
+	<link rel="archives" title="abril 2007" href="http://elpixeblogdepedja.com/2007/04" />
+	<link rel="archives" title="marzo 2007" href="http://elpixeblogdepedja.com/2007/03" />
+	<link rel="archives" title="febrero 2007" href="http://elpixeblogdepedja.com/2007/02" />
+	<link rel="archives" title="enero 2007" href="http://elpixeblogdepedja.com/2007/01" />
+	<link rel="archives" title="diciembre 2006" href="http://elpixeblogdepedja.com/2006/12" />
+	<link rel="archives" title="noviembre 2006" href="http://elpixeblogdepedja.com/2006/11" />
+
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.19 - http://yoast.com/wordpress/seo/ -->
+<link rel="canonical" href="amstrad-cpc" />
+<link rel="next" href="http://elpixeblogdepedja.com/tag/amstrad-cpc/page/2" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="amstrad cpc Archives - El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen" />
+<meta property="og:url" content="http://elpixeblogdepedja.com/tag/amstrad-cpc" />
+<meta property="og:site_name" content="El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen" />
+<meta property="article:publisher" content="https://www.facebook.com/pages/El-Pixeblog-de-Pedja/96534023102" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen � amstrad cpc RSS de la etiqueta" href="http://elpixeblogdepedja.com/tag/amstrad-cpc/feed" />
+<link rel="stylesheet" id="NextGEN-css" href="http://elpixeblogdepedja.com/wp-content/plugins/nextgen-gallery/css/nggallery.css?ver=1.0.0" type="text/css" media="screen" />
+<link rel="stylesheet" id="shutter-css" href="http://elpixeblogdepedja.com/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.css?ver=1.3.0" type="text/css" media="screen" />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"L O A D I N G","msgClose":"Click to Close","imageCount":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://elpixeblogdepedja.com/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.js?ver=1.3.0"></script>
+<script type="text/javascript" src="http://elpixeblogdepedja.com/wp-includes/js/swfobject.js?ver=2.2-20120417"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://elpixeblogdepedja.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://elpixeblogdepedja.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.9.3" />
+<script type="text/javascript">
+	window._wp_rp_static_base_url = 'https://wprp.zemanta.com/static/';
+	window._wp_rp_wp_ajax_url = "http://elpixeblogdepedja.com/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '3.5.1';
+	window._wp_rp_post_id = '6237';
+	window._wp_rp_num_rel_posts = '5';
+	window._wp_rp_thumbnails = true;
+	window._wp_rp_post_title = 'Entrevista+con+Jos%C3%A9+Ram%C3%B3n+Fern%C3%A1ndez+Maquieira+de+Opera+Soft';
+	window._wp_rp_post_tags = ['opera+soft', 'indescomp', 'msx', 'pc', 'amstrad+cpc', 'old-gen', 'art%C3%ADculos', 'en', 'diaz', 'jess', 'jo', 'la', 'softwar', 'lo', 'opera', 'carlo', 'el', 'de', 'como', 'semana', 'del', 'le'];
+	window._wp_rp_promoted_content = true;
+</script>
+<script type="text/javascript" src="https://wprp.zemanta.com/static/js/loader.js?version=3.5.1" async></script>
+<link rel="stylesheet" href="http://elpixeblogdepedja.com/wp-content/plugins/wordpress-23-related-posts-plugin/static/themes/momma.css?version=3.5.1" />
+<style type="text/css">
+ul.related_post {
+padding: 10px !important;
+}
+ul.related_post li {
+}
+ul.related_post li a {
+}
+ul.related_post li img {
+}
+.related_post_title {
+font-size: 1.7em !important;
+padding: 15px 15px 5px !important;
+}</style>
+<meta name="keywords" content="amstrad cpc, indescomp, msx, opera soft, pc" />
+<link id="MediaRSS" rel="alternate" type="application/rss+xml" title="NextGEN Gallery RSS Feed" href="http://elpixeblogdepedja.com/wp-content/plugins/nextgen-gallery/xml/media-rss.php" />
+
+<!-- NextGeEN Gallery CoolIris/PicLens support -->
+<script type="text/javascript" src="http://lite.piclens.com/current/piclens_optimized.js"></script>
+<!-- /NextGEN Gallery CoolIris/PicLens support -->
+<meta name='NextGEN' content='1.5.3' />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="menu">
+	<ul>
+        <li class="page_item "><a href="../index.html" title="Home">Home</a></li>
+		<li class="page_item page-item-2"><a href="../about">Autor</a></li>
+<li class="page_item page-item-258"><a href="../contact">Contacto</a></li>
+	</ul>
+</div>		
+
+<div class="clear"></div>
+
+<div id="top1">
+<!-- <div id="top">  -->
+<div id="search">
+			<form method="get" id="searchform" action="http://elpixeblogdepedja.com">
+					<input id="s" type="text" name="s" value="" />
+					<!--<input id="searchsubmit" type="submit" value="" /> -->
+			<input type="image" class="boton" src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/lupa.png" />
+				</form>
+				
+</div><div class="blogname">
+	<h1><a href="../index.html" title="El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen">El PixeBlog de Pedja: Blog de Videojuegos Retro y Next-Gen</a></h1>
+	<h2>Videojuegos desde los 8 bits hasta las consolas de nueva generación</h2>
+</div>
+
+<div class="headbanner">
+
+
+				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   
+
+
+</div>
+<div class="clear"></div></div>
+
+
+<div id="catmenucontainer">
+
+	<div id="catmenu">
+			<ul>
+					<li class="cat-item cat-item-555"><a href="../category/arcade-hits" title="Colección de artículos sobre las mejores máquinas recreativas de la historia">Arcade Hits</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/articulo" title="Ver todas las entradas archivadas en Artículos">Artículos</a>
+</li>
+	<li class="cat-item cat-item-127"><a href="../category/cine" title="Ver todas las entradas archivadas en Cine">Cine</a>
+</li>
+	<li class="cat-item cat-item-766"><a href="../category/coleccionismo-2" title="Joyas de la historia del videojuego. Coleccionismo puro y duro">Coleccionismo</a>
+</li>
+	<li class="cat-item cat-item-133"><a href="../category/tira-comica" title="Tiras cómicas basadas en videojuegos">Humor</a>
+</li>
+	<li class="cat-item cat-item-131"><a href="../category/next-gen" title="Ver todas las entradas archivadas en Next-Gen">Next-Gen</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="../category/retro" title="Ver todas las entradas archivadas en Old-gen">Old-gen</a>
+</li>
+	<li class="cat-item cat-item-88"><a href="../category/pixeblog" title="Ver todas las entradas archivadas en Pixeblog">Pixeblog</a>
+</li>
+	<li class="cat-item cat-item-96"><a href="../category/recomendacion-semanal" title="Ver todas las entradas archivadas en Reseñas">Reseñas</a>
+</li>
+	<li class="cat-item cat-item-101"><a href="../category/review" title="Ver todas las entradas archivadas en Review">Review</a>
+</li>
+	<li class="cat-item cat-item-132"><a href="../category/soccer" title="Ver todas las entradas archivadas en Soccer">Soccer</a>
+</li>
+			</ul>
+	</div>	
+		
+</div>
+<div class="clear"></div>
+<div id="casing">		
+<div id="content"><a name="content"></a>
+<div class="breadcrumb">
+</div>
+
+		 
+		<div class="single" id="post-6237">
+<div class="title">
+
+<h2><a href="http://elpixeblogdepedja.com/2014/09/entrevista-con-jose-ramon-fernandez-maquieira-de-opera-soft.html" rel="bookmark" title="Permanent Link to Entrevista con José Ramón Fernández Maquieira de Opera Soft">Entrevista con José Ramón Fernández Maquieira de Opera Soft</a></h2>
+<div class="date"><span class="author">Publicado por Pedja</span> <span class="clock"> On septiembre - 8 - 2014</span></div>	
+</div>
+
+<div class="cover">
+<div class="entry">
+					<p><a href="http://elpixeblogdepedja.com/wp-content/uploads/2014/09/Ferrotipo.jpg"><img class="aligncenter size-medium wp-image-6239" src="http://elpixeblogdepedja.com/wp-content/uploads/2014/09/Ferrotipo.jpg" alt="Fernández Maquieira" /></a></p>
+<p>Tras ponerme en contacto con <strong>Carlos Díaz de Castro</strong> hace unas semanas y hacerle unas preguntas <a title="Entrevista a Carlos Diaz Opera Soft" href="http://elpixeblogdepedja.com/2014/08/entrevista-carlos-diaz-de-castro-grafista-de-opera-soft.html" target="_blank">la mar de jugosas</a>, le toca el turno ahora a otro de los integrantes del equipo que fundó <strong>Opera Soft</strong>. En este caso, <strong>José Ramón Fernández Maquieira</strong> se dedicaba a labores de programación. Tanto Carlos como José Ramón siguieron una hoja de ruta muy similar en la década de los ochenta, coincidiendo en la lista de créditos de numerosos videojuegos de <strong>Indescomp</strong> primero y de Opera más tarde.</p>
+<p>A la hora de pedirle una fotografía para ilustrar el presente artículo, Fernández Maquieira me envió un escaneado de un ferrotipo realizado el pasado año, una de las técnicas fotográficas más populares del siglo XIX. Resultará perfecto para dotar de un toque aún más <em>vintage</em> a la entrevista, la cual,  sin más dilación, transcribo de forma completa en las siguientes líneas.</p>
+<p> <a href="http://elpixeblogdepedja.com/2014/09/entrevista-con-jose-ramon-fernandez-maquieira-de-opera-soft.html#more-6237" class="more-link">Read the rest of this entry &raquo;</a></p>
+				 <div class="clear"></div>
+</div>
+
+</div>
+
+<div class="singleinfo">
+					<div class="category"><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a>, <a href="../category/retro" title="Ver todas las entradas en Old-gen" rel="category tag">Old-gen</a> </div>
+				
+</div>
+
+
+</div>
+		<div class="single" id="post-5758">
+<div class="title">
+
+<h2><a href="http://elpixeblogdepedja.com/2014/04/retrovision-corsarios-opera-soft-1989.html" rel="bookmark" title="Permanent Link to Retrovisión: Corsarios Opera Soft (1989)">Retrovisión: Corsarios Opera Soft (1989)</a></h2>
+<div class="date"><span class="author">Publicado por Pedja</span> <span class="clock"> On abril - 21 - 2014</span></div>	
+</div>
+
+<div class="cover">
+<div class="entry">
+					<p><a href="http://elpixeblogdepedja.com/wp-content/uploads/2014/04/Corsarios-Cassete-Portada-550.jpg"><img class="aligncenter size-full wp-image-5759" alt="Corsarios, Opera Soft" src="http://elpixeblogdepedja.com/wp-content/uploads/2014/04/Corsarios-Cassete-Portada-550.jpg" width="550" height="453" /></a></p>
+<p>Repasando una vez más la <strong>juegoteca</strong> que nos dejaron los equipos de desarrollo españoles en la era de los microordenadores de <strong>8 bits</strong>, uno se da cuenta de que había ciertos <strong>géneros de videojuego</strong> a los que se apuntaba con tremenda frecuencia, mientras que <strong>otras tipologías y mecánicas se ignoraban prácticamente por completo</strong>. De esta manera, en el primer saco podemos meter a todo tipo de juegos deportivos, aventuras conversacionales o arcades de <em>avanza/salta/dispara</em>, mientras que en el baúl de los géneros olvidados reinaba el <strong>beat�"em-up</strong>, mecánica compleja de encajar en los exiguos bancos de memoria de los que disponían aquellos añejos sistemas de ocio electrónico.</p>
+<p> <a href="http://elpixeblogdepedja.com/2014/04/retrovision-corsarios-opera-soft-1989.html#more-5758" class="more-link">Read the rest of this entry &raquo;</a></p>
+				 <div class="clear"></div>
+</div>
+
+</div>
+
+<div class="singleinfo">
+					<div class="category"><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a>, <a href="../category/retro" title="Ver todas las entradas en Old-gen" rel="category tag">Old-gen</a> </div>
+				
+</div>
+
+
+</div>
+		<div class="single" id="post-5557">
+<div class="title">
+
+<h2><a href="http://elpixeblogdepedja.com/2013/12/feliz-ano-nuevo-2014.html" rel="bookmark" title="Permanent Link to ¡¡¡Feliz año nuevo 2014!!!">¡¡¡Feliz año nuevo 2014!!!</a></h2>
+<div class="date"><span class="author">Publicado por Pedja</span> <span class="clock"> On diciembre - 31 - 2013</span></div>	
+</div>
+
+<div class="cover">
+<div class="entry">
+					<p><a href="http://elpixeblogdepedja.com/wp-content/uploads/2013/12/Feliz-2014.png"><img class="aligncenter size-full wp-image-5558" alt="Feliz año nuevo 2014" src="http://elpixeblogdepedja.com/wp-content/uploads/2013/12/Feliz-2014.png" width="550" height="333" /></a></p>
+<p>&nbsp;</p>
+<p><strong>Feliz año nuevo 2014 a tod@s las lectoras y lectores del PixeBlog.</strong> Espero que hayáis jugado convenientemente al año que ya finaliza, y que la ejecución del programa <strong>2014.BAS</strong> sea divertida, feliz y saludable para todos; tened en cuenta que el juego nos va a durar 365 días, así que ¡cuidado con los errores de carga!</p>
+				 <div class="clear"></div>
+</div>
+
+</div>
+
+<div class="singleinfo">
+					<div class="category"><a href="../category/pixeblog" title="Ver todas las entradas en Pixeblog" rel="category tag">Pixeblog</a> </div>
+				
+</div>
+
+
+</div>
+		<div class="single" id="post-5225">
+<div class="title">
+
+<h2><a href="http://elpixeblogdepedja.com/2013/07/black-beard-topo-soft.html" rel="bookmark" title="Permanent Link to Retrovisión: Black Beard, Topo Soft (1988)">Retrovisión: Black Beard, Topo Soft (1988)</a></h2>
+<div class="date"><span class="author">Publicado por Pedja</span> <span class="clock"> On julio - 11 - 2013</span></div>	
+</div>
+
+<div class="cover">
+<div class="entry">
+					<p><a href="http://elpixeblogdepedja.com/wp-content/uploads/2013/07/Black-Beard-Topo-Soft.jpg"><img class="aligncenter size-full wp-image-5226" alt="Black Beard Topo Soft" src="http://elpixeblogdepedja.com/wp-content/uploads/2013/07/Black-Beard-Topo-Soft.jpg" width="550" height="762" /></a></p>
+<p><strong>Barbarroja</strong> y <strong>Barbanegra</strong> tenían muchas cosas en común. Ambos reconocidos filibusteros, cazadores insaciables de tesoros y regocijantes catadores de ron, quedaron una noche para contarse sus batallitas en torno a unos suculentos barriles provistos de bebidas espirituosas. No contaba <strong>Barbanegra</strong> con que su colega le engañara, dejándole que se emborrachara para robarle el mapa del tesoro y poner a toda la tripulación de su imponente navío en su contra. Recuperado de la brutal resaca que le propinó aquel ron de baja estofa, <strong>Barbanegra</strong> comprendió que había llegado la hora de ajustar cuentas y realizar un peligroso abordaje&#8230; a su propio barco.<br />
+ <a href="http://elpixeblogdepedja.com/2013/07/black-beard-topo-soft.html#more-5225" class="more-link">Read the rest of this entry &raquo;</a></p>
+				 <div class="clear"></div>
+</div>
+
+</div>
+
+<div class="singleinfo">
+					<div class="category"><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a>, <a href="../category/retro" title="Ver todas las entradas en Old-gen" rel="category tag">Old-gen</a> </div>
+				
+</div>
+
+
+</div>
+		<div class="single" id="post-33">
+<div class="title">
+
+<h2><a href="http://elpixeblogdepedja.com/2011/06/retrovisin-oh-mummy-una-momia-que-habla.html" rel="bookmark" title="Permanent Link to Retrovisión: Oh Mummy! ¡Una momia que habla!">Retrovisión: Oh Mummy! ¡Una momia que habla!</a></h2>
+<div class="date"><span class="author">Publicado por Pedja</span> <span class="clock"> On junio - 22 - 2011</span></div>	
+</div>
+
+<div class="cover">
+<div class="entry">
+					<p><span class="summarypost"> </span><a href="http://elpixeblogdepedja.com/wp-content/uploads/2007/01/ohmummy-Covers.jpg"><img class="aligncenter size-full wp-image-4267" title="ohmummy-Covers" src="http://elpixeblogdepedja.com/wp-content/uploads/2007/01/ohmummy-Covers.jpg" alt="" width="550" height="399" /></a><br />
+<span class="fullpost">Toca de nuevo afinar en la puntería que dispara el arco de la nostalgia. Los ocho bits, nuestra habitual diana marcada con cuatro colores bien representados, de los cuales en esta ocasión nos quedaremos con la tonalidad del <span style="font-weight: bold;">Amstrad CPC,</span><span style="font-weight: bold;"> aunque seguro que podemos marcar un par de colores más</span><span style="font-weight: bold;">. </span><span style="font-weight: bold;">Si</span><span style="font-weight: bold;"> </span><span style="font-weight: bold;">es cuestión de afinar, como digo, rotularemos nuestra flecha con el nombre de</span><span style="font-weight: bold;"> </span><strong>Oh Mummy!,</strong> exclamación que cualquiera podría gritar al ver el producto de <span style="font-weight: bold;">Gem Software, </span><span style="font-weight: bold;">o, concretando mucho más, al escuchar un par de veces </span>su hipnótica melodía. No era demasiado larga. Más bien intensa. Duraba diez segundos, pero ¿a que era fácil de aprender?</span></p>
+<p><span class="fullpost"> <a href="http://elpixeblogdepedja.com/2011/06/retrovisin-oh-mummy-una-momia-que-habla.html#more-33" class="more-link">Read the rest of this entry &raquo;</a></span></p>
+				 <div class="clear"></div>
+</div>
+
+</div>
+
+<div class="singleinfo">
+					<div class="category"><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a>, <a href="../category/retro" title="Ver todas las entradas en Old-gen" rel="category tag">Old-gen</a> </div>
+				
+</div>
+
+
+</div>
+		
+ <div id="navigation">
+		  
+                  <a href="http://elpixeblogdepedja.com/tag/amstrad-cpc/page/2">Entradas más antiguas</a>  
+</div>
+
+	
+</div>
+<div id="rightcol">
+<div id="postlist">
+
+<ul class="spy">
+<li>
+
+<img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/timthumb.php?src=&h=60&w=100&zc=1" alt="" /> 
+
+
+<h2><a href="http://elpixeblogdepedja.com/2013/12/review-fifa-14-playstation-4-y-xbox-one.html" title="Review FIFA 14 Playstation 4 y Xbox One">Review FIFA 14 Playstation 4 y Xbox One</a></h2>
+<div class="fcats"><img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/category.png" /><a href="../category/next-gen" title="Ver todas las entradas en Next-Gen" rel="category tag">Next-Gen</a> </div> 
+<!--
+<div class="auth">/* Posted by Pedja  */
+Publicada el 31 - diciembre - 2013</div>
+-->  
+
+</li>
+<li>
+
+<img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/timthumb.php?src=&h=60&w=100&zc=1" alt="" /> 
+
+
+<h2><a href="http://elpixeblogdepedja.com/2008/05/lo-mejor-del-playstation-day-killzone-2-vs-mirrors-edge.html" title="Lo mejor del Playstation Day: Killzone 2 VS Mirrors Edge">Lo mejor del Playstation Day: Killzone 2 VS M...</a></h2>
+<div class="fcats"><img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/category.png" /><a href="../category/next-gen" title="Ver todas las entradas en Next-Gen" rel="category tag">Next-Gen</a> </div> 
+<!--
+<div class="auth">/* Posted by Pedja  */
+Publicada el 7 - mayo - 2008</div>
+-->  
+
+</li>
+<li>
+
+<img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/timthumb.php?src=&h=60&w=100&zc=1" alt="" /> 
+
+
+<h2><a href="http://elpixeblogdepedja.com/2008/03/ovejas-negras-en-la-edad-de-oro-del-software-espanol.html" title="Ovejas negras en la Edad de Oro del software español">Ovejas negras en la Edad de Oro del software ...</a></h2>
+<div class="fcats"><img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/category.png" /><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a>, <a href="../category/retro" title="Ver todas las entradas en Old-gen" rel="category tag">Old-gen</a> </div> 
+<!--
+<div class="auth">/* Posted by Pedja  */
+Publicada el 5 - marzo - 2008</div>
+-->  
+
+</li>
+<li>
+
+<img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/timthumb.php?src=&h=60&w=100&zc=1" alt="" /> 
+
+
+<h2><a href="http://elpixeblogdepedja.com/2007/12/logramos-hacer-funcionar-crysis-en-un-msx.html" title="Logramos hacer funcionar Crysis en un MSX">Logramos hacer funcionar Crysis en un MSX</a></h2>
+<div class="fcats"><img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/category.png" /><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a> </div> 
+<!--
+<div class="auth">/* Posted by Pedja  */
+Publicada el 28 - diciembre - 2007</div>
+-->  
+
+</li>
+<li>
+
+<img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/timthumb.php?src=http://elpixeblogdepedja.com/wp-content/uploads/2009/11/forza200.jpg&h=60&w=100&zc=1" alt="" /> 
+
+
+<h2><a href="http://elpixeblogdepedja.com/2009/11/review-forza-motorsport-3.html" title="Review Forza Motorsport 3">Review Forza Motorsport 3</a></h2>
+<div class="fcats"><img src="http://elpixeblogdepedja.com/wp-content/themes/scarlett/images/category.png" /><a href="../category/articulo" title="Ver todas las entradas en Artículos" rel="category tag">Artículos</a>, <a href="../category/next-gen" title="Ver todas las entradas en Next-Gen" rel="category tag">Next-Gen</a>, <a href="../category/review" title="Ver todas las entradas en Review" rel="category tag">Review</a> </div> 
+<!--
+<div class="auth">/* Posted by Pedja  */
+Publicada el 30 - noviembre - 2009</div>
+-->  
+
+</li>
+
+</ul>
+</div>
+<div class="clear"></div><div class="clear"></div>
+
+		
+<div class="tabber">
+
+<div class="tabbertab">
+<h2>     VIDEO</h2>
+		     					   				   <object width="330" height="248"><param name="movie" value="//www.youtube.com/v/ZgpybT06dhI?version=3&hl=es_ES"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ZgpybT06dhI?version=3&hl=es_ES" type="application/x-shockwave-flash" width="330" height="248" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+  
+</div>
+<div class="tabbertab">
+
+<h2> LO + NUEVO</h2>
+<ul>
+<li><a href="../2015/02/gear-en-steam-tanques-contra-tanques-al-estilo-cartoon-gratis.html">Gear Up en Steam, tanques contra tanques al estilo cartoon&#8230; ¡gratis!</a></li>
+<li><a href="../2015/01/zodiac-saints-los-santos-descienden-al-infierno.html">The Zodiac Saints: los santos descienden al infierno</a></li>
+<li><a href="../2015/01/bob-winner-de-loriciels-para-amstrad-cpc.html">Bob Winner de Loriciels para Amstrad CPC</a></li>
+<li><a href="../2015/01/analisis-funk-titans-xbox-one.html">Análisis Funk of Titans Xbox One</a></li>
+<li><a href="../2014/12/feliz-ano-nuevo-2015.html">¡Feliz año nuevo 2015!</a></li>
+<li><a href="../2014/12/review-driveclub-ps4.html">Review DriveClub PS4</a></li>
+<li><a href="../2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html">Nuevo libro: 10000 juegos que ni de coña jugarás antes de espicharla</a></li>
+<li><a href="../2014/12/review-dragon-age-inquisition-xbox-one.html">Review Dragon Age Inquisition Xbox One</a></li>
+<li><a href="../2014/12/retrosevilla-2014-la-primera-piedra.html">RetroSevilla 2014: la primera piedra</a></li>
+<li><a href="../2014/12/entrevista-pedro-sudon-programador-de-dinamic.html">Entrevista a Pedro Sudón, programador de Dinamic</a></li>
+</ul>
+
+</div>
+
+<div class="tabbertab">
+
+<h2>   TAGS</h2>
+     		 
+	
+<!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/swfobject/ --><script type="text/javascript" src="http://elpixeblogdepedja.com/wp-content/plugins/wp-cumulus/swfobject.js"></script><div id="wpcumuluscontent4413256"><p style="display:none;"><a href="activision" class="tag-link-217" title="14 temas" style="font-size: 14.222222222222pt;">activision</a>
+<a href="amstrad" class="tag-link-266" title="19 temas" style="font-size: 16.088888888889pt;">amstrad</a>
+<a href="amstrad-cpc" class="tag-link-377" title="10 temas" style="font-size: 12.044444444444pt;">amstrad cpc</a>
+<a href="arcade" class="tag-link-150" title="25 temas" style="font-size: 17.8pt;">arcade</a>
+<a href="arcade-hits" class="tag-link-555" title="7 temas" style="font-size: 9.8666666666667pt;">Arcade Hits</a>
+<a href="azpiri" class="tag-link-170" title="9 temas" style="font-size: 11.422222222222pt;">azpiri</a>
+<a href="batman" class="tag-link-138" title="7 temas" style="font-size: 9.8666666666667pt;">batman</a>
+<a href="capcom" class="tag-link-181" title="15 temas" style="font-size: 14.533333333333pt;">capcom</a>
+<a href="codemasters" class="tag-link-204" title="6 temas" style="font-size: 9.0888888888889pt;">Codemasters</a>
+<a href="coleccionismo" class="tag-link-244" title="8 temas" style="font-size: 10.644444444444pt;">coleccionismo</a>
+<a href="commodore-64" class="tag-link-265" title="9 temas" style="font-size: 11.422222222222pt;">commodore 64</a>
+<a href="cpc" class="tag-link-267" title="9 temas" style="font-size: 11.422222222222pt;">cpc</a>
+<a href="dinamic" class="tag-link-141" title="40 temas" style="font-size: 20.911111111111pt;">dinamic</a>
+<a href="http://elpixeblogdepedja.com/tag/e3-2008" class="tag-link-134" title="5 temas" style="font-size: 8pt;">e3 2008</a>
+<a href="http://elpixeblogdepedja.com/tag/ea-games" class="tag-link-281" title="7 temas" style="font-size: 9.8666666666667pt;">EA Games</a>
+<a href="http://elpixeblogdepedja.com/tag/ea-sports" class="tag-link-208" title="12 temas" style="font-size: 13.133333333333pt;">ea sports</a>
+<a href="http://elpixeblogdepedja.com/tag/fps" class="tag-link-166" title="12 temas" style="font-size: 13.133333333333pt;">FPS</a>
+<a href="http://elpixeblogdepedja.com/tag/fx-interactive" class="tag-link-189" title="7 temas" style="font-size: 9.8666666666667pt;">fx interactive</a>
+<a href="http://elpixeblogdepedja.com/tag/indie" class="tag-link-671" title="8 temas" style="font-size: 10.644444444444pt;">indie</a>
+<a href="http://elpixeblogdepedja.com/tag/konami" class="tag-link-235" title="22 temas" style="font-size: 17.022222222222pt;">konami</a>
+<a href="http://elpixeblogdepedja.com/tag/mercadillo" class="tag-link-177" title="5 temas" style="font-size: 8pt;">mercadillo</a>
+<a href="http://elpixeblogdepedja.com/tag/msx" class="tag-link-179" title="29 temas" style="font-size: 18.888888888889pt;">msx</a>
+<a href="http://elpixeblogdepedja.com/tag/nintendo" class="tag-link-202" title="6 temas" style="font-size: 9.0888888888889pt;">nintendo</a>
+<a href="http://elpixeblogdepedja.com/tag/ocean" class="tag-link-188" title="9 temas" style="font-size: 11.422222222222pt;">ocean</a>
+<a href="http://elpixeblogdepedja.com/tag/ocean-software" class="tag-link-285" title="7 temas" style="font-size: 9.8666666666667pt;">ocean software</a>
+<a href="http://elpixeblogdepedja.com/tag/retro" class="tag-link-9" title="6 temas" style="font-size: 9.0888888888889pt;">Old-gen</a>
+<a href="http://elpixeblogdepedja.com/tag/opera-soft" class="tag-link-147" title="14 temas" style="font-size: 14.222222222222pt;">opera soft</a>
+<a href="http://elpixeblogdepedja.com/tag/opinion" class="tag-link-163" title="9 temas" style="font-size: 11.422222222222pt;">opinión</a>
+<a href="http://elpixeblogdepedja.com/tag/pc" class="tag-link-160" title="14 temas" style="font-size: 14.222222222222pt;">pc</a>
+<a href="http://elpixeblogdepedja.com/tag/pixeblog" class="tag-link-88" title="6 temas" style="font-size: 9.0888888888889pt;">Pixeblog</a>
+<a href="http://elpixeblogdepedja.com/tag/playstation-3" class="tag-link-158" title="34 temas" style="font-size: 19.822222222222pt;">playstation 3</a>
+<a href="http://elpixeblogdepedja.com/tag/playstation-4" class="tag-link-658" title="10 temas" style="font-size: 12.044444444444pt;">playstation 4</a>
+<a href="http://elpixeblogdepedja.com/tag/ps4" class="tag-link-657" title="7 temas" style="font-size: 9.8666666666667pt;">ps4</a>
+<a href="http://elpixeblogdepedja.com/tag/sandbox" class="tag-link-211" title="7 temas" style="font-size: 9.8666666666667pt;">sandbox</a>
+<a href="http://elpixeblogdepedja.com/tag/sega" class="tag-link-194" title="8 temas" style="font-size: 10.644444444444pt;">sega</a>
+<a href="http://elpixeblogdepedja.com/tag/sony" class="tag-link-199" title="20 temas" style="font-size: 16.4pt;">sony</a>
+<a href="http://elpixeblogdepedja.com/tag/spectrum" class="tag-link-247" title="33 temas" style="font-size: 19.666666666667pt;">spectrum</a>
+<a href="steam" class="tag-link-664" title="6 temas" style="font-size: 9.0888888888889pt;">steam</a>
+<a href="http://elpixeblogdepedja.com/tag/super-nintendo" class="tag-link-367" title="8 temas" style="font-size: 10.644444444444pt;">super nintendo</a>
+<a href="http://elpixeblogdepedja.com/tag/topo-soft" class="tag-link-145" title="33 temas" style="font-size: 19.666666666667pt;">topo soft</a>
+<a href="http://elpixeblogdepedja.com/tag/ubisoft" class="tag-link-224" title="7 temas" style="font-size: 9.8666666666667pt;">ubisoft</a>
+<a href="http://elpixeblogdepedja.com/tag/xbox-360" class="tag-link-174" title="47 temas" style="font-size: 22pt;">xbox 360</a>
+<a href="http://elpixeblogdepedja.com/tag/xbox-live-arcade" class="tag-link-161" title="6 temas" style="font-size: 9.0888888888889pt;">xbox live arcade</a>
+<a href="xbox-one" class="tag-link-682" title="13 temas" style="font-size: 13.755555555556pt;">xbox one</a>
+<a href="http://elpixeblogdepedja.com/tag/zigurat" class="tag-link-148" title="7 temas" style="font-size: 9.8666666666667pt;">zigurat</a></p><p>WP Cumulus Flash tag cloud by <a href="http://www.roytanck.com">Roy Tanck</a> and <a href="http://lukemorton.co.uk/">Luke Morton</a> requires <a href="http://www.macromedia.com/go/getflashplayer">Flash Player</a> 9 or better.</p></div><script type="text/javascript">var so5773348 = new SWFObject("http://elpixeblogdepedja.com/wp-content/plugins/wp-cumulus/tagcloud.swf?r=4903139", "tagcloudflash", "330", "300", "9", "#333333");so5773348.addParam("allowScriptAccess", "always");so5773348.addVariable("tcolor", "0xffffff");so5773348.addVariable("tcolor2", "0xffffff");so5773348.addVariable("hicolor", "0xffffff");so5773348.addVariable("tspeed", "100");so5773348.addVariable("distr", "");so5773348.addVariable("mode", "tags");so5773348.addVariable("tagcloud", "%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Factivision%27+class%3D%27tag-link-217%27+title%3D%2714+temas%27+style%3D%27font-size%3A+14.222222222222pt%3B%27%3Eactivision%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Famstrad%27+class%3D%27tag-link-266%27+title%3D%2719+temas%27+style%3D%27font-size%3A+16.088888888889pt%3B%27%3Eamstrad%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Famstrad-cpc%27+class%3D%27tag-link-377%27+title%3D%2710+temas%27+style%3D%27font-size%3A+12.044444444444pt%3B%27%3Eamstrad+cpc%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Farcade%27+class%3D%27tag-link-150%27+title%3D%2725+temas%27+style%3D%27font-size%3A+17.8pt%3B%27%3Earcade%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Farcade-hits%27+class%3D%27tag-link-555%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3EArcade+Hits%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fazpiri%27+class%3D%27tag-link-170%27+title%3D%279+temas%27+style%3D%27font-size%3A+11.422222222222pt%3B%27%3Eazpiri%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fbatman%27+class%3D%27tag-link-138%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Ebatman%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fcapcom%27+class%3D%27tag-link-181%27+title%3D%2715+temas%27+style%3D%27font-size%3A+14.533333333333pt%3B%27%3Ecapcom%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fcodemasters%27+class%3D%27tag-link-204%27+title%3D%276+temas%27+style%3D%27font-size%3A+9.0888888888889pt%3B%27%3ECodemasters%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fcoleccionismo%27+class%3D%27tag-link-244%27+title%3D%278+temas%27+style%3D%27font-size%3A+10.644444444444pt%3B%27%3Ecoleccionismo%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fcommodore-64%27+class%3D%27tag-link-265%27+title%3D%279+temas%27+style%3D%27font-size%3A+11.422222222222pt%3B%27%3Ecommodore+64%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fcpc%27+class%3D%27tag-link-267%27+title%3D%279+temas%27+style%3D%27font-size%3A+11.422222222222pt%3B%27%3Ecpc%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fdinamic%27+class%3D%27tag-link-141%27+title%3D%2740+temas%27+style%3D%27font-size%3A+20.911111111111pt%3B%27%3Edinamic%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fe3-2008%27+class%3D%27tag-link-134%27+title%3D%275+temas%27+style%3D%27font-size%3A+8pt%3B%27%3Ee3+2008%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fea-games%27+class%3D%27tag-link-281%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3EEA+Games%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fea-sports%27+class%3D%27tag-link-208%27+title%3D%2712+temas%27+style%3D%27font-size%3A+13.133333333333pt%3B%27%3Eea+sports%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Ffps%27+class%3D%27tag-link-166%27+title%3D%2712+temas%27+style%3D%27font-size%3A+13.133333333333pt%3B%27%3EFPS%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Ffx-interactive%27+class%3D%27tag-link-189%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Efx+interactive%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Findie%27+class%3D%27tag-link-671%27+title%3D%278+temas%27+style%3D%27font-size%3A+10.644444444444pt%3B%27%3Eindie%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fkonami%27+class%3D%27tag-link-235%27+title%3D%2722+temas%27+style%3D%27font-size%3A+17.022222222222pt%3B%27%3Ekonami%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fmercadillo%27+class%3D%27tag-link-177%27+title%3D%275+temas%27+style%3D%27font-size%3A+8pt%3B%27%3Emercadillo%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fmsx%27+class%3D%27tag-link-179%27+title%3D%2729+temas%27+style%3D%27font-size%3A+18.888888888889pt%3B%27%3Emsx%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fnintendo%27+class%3D%27tag-link-202%27+title%3D%276+temas%27+style%3D%27font-size%3A+9.0888888888889pt%3B%27%3Enintendo%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Focean%27+class%3D%27tag-link-188%27+title%3D%279+temas%27+style%3D%27font-size%3A+11.422222222222pt%3B%27%3Eocean%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Focean-software%27+class%3D%27tag-link-285%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Eocean+software%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fretro%27+class%3D%27tag-link-9%27+title%3D%276+temas%27+style%3D%27font-size%3A+9.0888888888889pt%3B%27%3EOld-gen%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fopera-soft%27+class%3D%27tag-link-147%27+title%3D%2714+temas%27+style%3D%27font-size%3A+14.222222222222pt%3B%27%3Eopera+soft%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fopinion%27+class%3D%27tag-link-163%27+title%3D%279+temas%27+style%3D%27font-size%3A+11.422222222222pt%3B%27%3Eopini%C3%B3n%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fpc%27+class%3D%27tag-link-160%27+title%3D%2714+temas%27+style%3D%27font-size%3A+14.222222222222pt%3B%27%3Epc%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fpixeblog%27+class%3D%27tag-link-88%27+title%3D%276+temas%27+style%3D%27font-size%3A+9.0888888888889pt%3B%27%3EPixeblog%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fplaystation-3%27+class%3D%27tag-link-158%27+title%3D%2734+temas%27+style%3D%27font-size%3A+19.822222222222pt%3B%27%3Eplaystation+3%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fplaystation-4%27+class%3D%27tag-link-658%27+title%3D%2710+temas%27+style%3D%27font-size%3A+12.044444444444pt%3B%27%3Eplaystation+4%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fps4%27+class%3D%27tag-link-657%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Eps4%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fsandbox%27+class%3D%27tag-link-211%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Esandbox%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fsega%27+class%3D%27tag-link-194%27+title%3D%278+temas%27+style%3D%27font-size%3A+10.644444444444pt%3B%27%3Esega%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fsony%27+class%3D%27tag-link-199%27+title%3D%2720+temas%27+style%3D%27font-size%3A+16.4pt%3B%27%3Esony%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fspectrum%27+class%3D%27tag-link-247%27+title%3D%2733+temas%27+style%3D%27font-size%3A+19.666666666667pt%3B%27%3Espectrum%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fsteam%27+class%3D%27tag-link-664%27+title%3D%276+temas%27+style%3D%27font-size%3A+9.0888888888889pt%3B%27%3Esteam%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fsuper-nintendo%27+class%3D%27tag-link-367%27+title%3D%278+temas%27+style%3D%27font-size%3A+10.644444444444pt%3B%27%3Esuper+nintendo%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Ftopo-soft%27+class%3D%27tag-link-145%27+title%3D%2733+temas%27+style%3D%27font-size%3A+19.666666666667pt%3B%27%3Etopo+soft%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fubisoft%27+class%3D%27tag-link-224%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Eubisoft%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fxbox-360%27+class%3D%27tag-link-174%27+title%3D%2747+temas%27+style%3D%27font-size%3A+22pt%3B%27%3Exbox+360%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fxbox-live-arcade%27+class%3D%27tag-link-161%27+title%3D%276+temas%27+style%3D%27font-size%3A+9.0888888888889pt%3B%27%3Exbox+live+arcade%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fxbox-one%27+class%3D%27tag-link-682%27+title%3D%2713+temas%27+style%3D%27font-size%3A+13.755555555556pt%3B%27%3Exbox+one%3C%2Fa%3E%0A%3Ca+href%3D%27http%3A%2F%2Felpixeblogdepedja.com%2Ftag%2Fzigurat%27+class%3D%27tag-link-148%27+title%3D%277+temas%27+style%3D%27font-size%3A+9.8666666666667pt%3B%27%3Ezigurat%3C%2Fa%3E%3C%2Ftags%3E");so5773348.write("wpcumuluscontent4413256");</script> 
+
+
+   </div>
+
+   
+
+
+
+</div>
+	
+
+		
+<hr/>
+<div id="sidebar">
+<div class="sidebar3"><b>FACEBOOK</b></div>
+
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FEl-Pixeblog-de-Pedja%2F96534023102&amp;layout=standard&amp;show_faces=true&amp;width=350&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=85" scrolling="no" frameborder="0" style="border:none; overflow:hidden; margin-top:15px; margin-bottom:5px; width:350px; height:85px;" allowTransparency="true"></iframe>
+
+
+</div>
+<hr/>
+
+
+
+<div id="sidebar">
+﻿<div class="listi"> Destacados </div>
+ <!-- Artículos destacados permanentes -->
+ <div class="sidebar3">
+ <div class="edicionesArcade">
+ <a href="http://edicionesarcade.com" target="_blank"><img src="http://elpixeblogdepedja.com/wp-content/uploads/2014/11/Ediciones_Arcade_Banner-300x300.jpg" alt="Ediciones Arcade" title="Ediciones Arcade" /></a> 
+ </div>
+<hr>
+ <ul>
+  
+ <li><a href="http://elpixeblogdepedja.com/2009/01/heroinas-made-in-spain-en-los-videojuegos-sin-tetas-no-hay-paraiso.html" title="Chicas sexys en videojuegos españoles">Chicas sexys en videojuegos españoles</a></li>
+ <li><a href="http://elpixeblogdepedja.com/2013/11/impresiones-xbox-one.html" title="Impresiones Xbox One">Impresiones Xbox One</a></li>
+<li><a href="http://elpixeblogdepedja.com/2013/10/presentacion-sony-playstation-4-en-sevilla.html" title="Presentación PS4 en Sevilla">Presentación PS4 en Sevilla</a></li>
+<li><a href="http://elpixeblogdepedja.com/2014/03/videojuegos-de-tragaperras.html" title="Videojuegos de tragaperras">Videojuegos de tragaperras</a></li>
+<li><a href="http://elpixeblogdepedja.com/2013/03/ocean-software-de-pelicula-parte-i-1985-1987.html" title="Ocean Software, de película">Ocean Software, de película</a></li>
+<hr>
+</ul>
+</div>
+
+
+
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9119207666889418";
+/* Pixeblog lateral */
+google_ad_slot = "3518049694";
+google_ad_width = 200;
+google_ad_height = 200;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+<hr>
+
+﻿<div class="sidebar3"><h2>Blogroll</h2><ul><li>
+	<ul class='xoxo blogroll'>
+<li><a href="http://elblogdemanu.com" title="Manu y su blog: juegos, cine y tecnología">Blog de Manu</a></li>
+<li><a href="http://jumafas.blogvideojuegos.com" title="JuMaFas y su blog">Blog der JuMaFas</a></li>
+<li><a href="http://www.frostias.com" title="Jarkendias Forum">Frostias</a></li>
+<li><a href="https://plus.google.com/108451085987227805779?rel=author" rel="me" title="Mi perfil en Google+" target="_blank">Google + Mi Perfil</a></li>
+<li><a href="http://insertcoinclasicos.com" title="Blog de Jaimixx">Insert Coin</a></li>
+<li><a href="http://www.maquinitas.org" rel="acquaintance" title="Blog sobre videojuegos retro" target="_blank">Maquinitas</a></li>
+<li><a href="http://mercaconsolas.com" title="Mercaconsolas" target="_blank">Mercaconsolas</a></li>
+<li><a href="http://www.metodologic.com" title="La web sobre videojuegos más metodológica">Metodologic</a></li>
+<li><a href="http://museodelvideojuego.com" title="Museo del Videojuego">Museo del Videojuego</a></li>
+<li><a href="http://www.otakufreaks.com/" title="Otakufreaks">Otakufreaks</a></li>
+<li><a href="http://www.paisdelosjuegos.com.mx/" target="_blank">Paisdelosjuegos.com.mx</a></li>
+<li><a href="http://www.pixfans.com" title="PixFans">PixFans</a></li>
+<li><a href="http://www.pressplaythenanykey.com" title="Reviews y artículos de juegos 8 bits" target="_blank">Press Play Then Any Key</a></li>
+<li><a href="http://charpentierdeslettres.blogspot.com" title="Mi tío José Manuel y sus relatos de evasión" target="_blank">Relatos de José Manuel Relinque</a></li>
+<li><a href="http://rinconesgaditanos.blogspot.com" title="Rincones fotográficos de Cádiz">Rincones Gaditanos</a></li>
+<li><a href="http://www.soplaelcartucho.blogspot.com/" title="Sopla el Cartucho">Sopla el Cartucho</a></li>
+<li><a href="http://eluniversofriki.blogspot.com" title="Chico y los temas Frikis">Universo Friki</a></li>
+<li><a href="http://vidaextra.com" title="Blog de Vida Extra">Vida Extra</a></li>
+
+	</ul>
+</li></ul></div>
+ <div class="sidebar3">
+				<h2>Lo + comentado</h2>
+
+	    <ul>
+  
+		 <li><a href="http://elpixeblogdepedja.com/2009/09/impresiones-demo-pes-2010.html" title="Impresiones demo PES 2010">Impresiones demo PES 2010</a> (152)</li><li><a href="http://elpixeblogdepedja.com/2007/05/opinin-el-secreto-de-super-mario-world.html" title="Opinión: El secreto de Super Mario World">Opinión: El secreto de Super Mario World</a> (58)</li><li><a href="http://elpixeblogdepedja.com/2008/08/ganador-caratula-concurso-battlefield-bad-company-participantes-sorteo.html" title="Ganador carátula concurso Battlefield Bad Company + Participantes sorteo">Ganador carátula concurso Battlefield Bad Company + Participantes sorteo</a> (46)</li><li><a href="http://elpixeblogdepedja.com/2008/10/review-pro-evolution-soccer-2009-ps3-xbox-360.html" title="Review Pro Evolution Soccer 2009  PS3 / Xbox 360">Review Pro Evolution Soccer 2009 &#8211; PS3 / Xbox 360</a> (38)</li><li><a href="http://elpixeblogdepedja.com/2009/05/navy-moves-beta-32-vuelven-el-arcade-y-las-minas-del-terror.html" title="Navy Moves beta 3.2: regresan el arcade y las minas del terror">Navy Moves beta 3.2: regresan el arcade y las minas del terror</a> (36)</li>                 
+        </ul>
+	
+</div><div class="sidebar2">
+<ul>
+
+ <li>
+	<h2>�altimos posts</h2>	
+<ul>
+	<li>
+	<a href="../2015/01/zodiac-saints-los-santos-descienden-al-infierno.html">The Zodiac Saints: los santos descienden al infierno</a>
+</li>
+<li>
+	<a href="../2015/01/bob-winner-de-loriciels-para-amstrad-cpc.html">Bob Winner de Loriciels para Amstrad CPC</a>
+</li>
+<li>
+	<a href="../2015/01/analisis-funk-titans-xbox-one.html">Análisis Funk of Titans Xbox One</a>
+</li>
+<li>
+	<a href="../2014/12/feliz-ano-nuevo-2015.html">¡Feliz año nuevo 2015!</a>
+</li>
+<li>
+	<a href="../2014/12/review-driveclub-ps4.html">Review DriveClub PS4</a>
+</li>
+<li>
+	<a href="../2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html">Nuevo libro: 10000 juegos que ni de coña jugarás antes de espicharla</a>
+</li>
+<li>
+	<a href="../2014/12/review-dragon-age-inquisition-xbox-one.html">Review Dragon Age Inquisition Xbox One</a>
+</li>
+<li>
+	<a href="../2014/12/retrosevilla-2014-la-primera-piedra.html">RetroSevilla 2014: la primera piedra</a>
+</li>
+</ul>
+</li>
+
+
+	</ul>
+
+</div><div class="sidebar1">
+	
+	<ul>
+	<li id="get-recent-comments" class="widget widget_get_recent_comments"><h2 class="widgettitle">Opinen, opinen...</h2>
+<div id="get_recent_comments_wrap"><ul>	<li><a href="http://elpixeblogdepedja.com/2014/03/los-videojuegos-antiguos-reflejada-espejo.html#comment-503105" title="Los videojuegos antiguos y su imagen reflejada en el espejo, marzo 13, 2014"><b>Pedja</b>: Hola Rocio. El juego al que te refieres...</a></li>
+	<li><a href="http://elpixeblogdepedja.com/2014/03/los-videojuegos-antiguos-reflejada-espejo.html#comment-502341" title="Los videojuegos antiguos y su imagen reflejada en el espejo, marzo 13, 2014"><b>Rocio</b>: Hola quiero localizar un videojuego que...</a></li>
+	<li><a href="http://elpixeblogdepedja.com/2014/12/review-driveclub-ps4.html#comment-499263" title="Review DriveClub PS4, diciembre 30, 2014"><b>Papurri</b>: Siempre me ha gustado la velocidad en...</a></li>
+	<li><a href="http://elpixeblogdepedja.com/2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html#comment-494598" title="Nuevo libro: 10000 juegos que ni de coña jugarás antes de espicharla, diciembre 28, 2014"><b>Goro</b>: Jajaja que divertido</a></li>
+	<li><a href="http://elpixeblogdepedja.com/2014/12/libro-10000-juegos-jugaras-antes-de-espicharla.html#comment-491179" title="Nuevo libro: 10000 juegos que ni de coña jugarás antes de espicharla, diciembre 28, 2014"><b>primy</b>: jajajaja me la habéis colado de lleno...</a></li>
+</ul></div></li>
+	</ul>
+
+</div>
+	
+	
+</div>
+</div> <div class="clear"></div>
+ 
+
+ <div id="footbar">
+
+ 
+ <div class="barone">
+				<h2 class="am">Sobre el PixeBlog</h2>
+
+	       
+		
+<img src="http://elpixeblogdepedja.com/wp-content/uploads/2009/08/zx290por90.jpg" alt="" />	
+<p class="text padding5">
+				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   				   <b>El PixeBlog</b> nació una tarde de Noviembre de 2006, motivado por el deseo de su autor, <b>Jesús Relinque<br> -PEDJA-</b>, en pos de rememorar sus vivencias sobre juegos olvidados y remotos. <br><br>Hoy, los artículos publicados en el blog compaginan lo Retro con la presente generación de videojuegos. Siéntete libre de compartir tu opinión. 
+</p>
+
+
+		
+		</div>
+
+ <div class="barone" >
+
+              <h2 class="meta">Meta</h2>
+              <div align="center">
+              <table><tr><td><a href="http://feeds.feedburner.com/ElPixeblogDePedja"><img src="http://feeds.feedburner.com/~fc/ElPixeblogDePedja?bg=FF9900&fg=000000&anim=0" height="26" width="88" style="border:0" alt="" /></a></td>
+              <td><script type="text/javascript" language="JavaScript" src="http://twittercounter.com/embed/pedjapixeblog/ffffff/003399"></script></td>
+              <td><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/es/"><img alt="Obra bajo licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/es/88x31.png" /></a></td>
+              </tr></table>
+              </div>                  
+              <center><p>
+              <a href="http://zaamit.com/content/gamercards.aspx"><img src="http://gamercard.zaamit.com/nxe/Pedja%20Wichu.jpg" alt="Pedja Wichu" /></a>
+              </p></center>
+              <div align="center">
+              <table><tr><td><a href="http://feeds.feedburner.com/ElPixeblogDePedja"><img title="RSS PixeBlog" alt="" src="http://elpixeblogdepedja.com/wp-content/uploads/2009/12/rsstrans.png" style="border:0" alt="" /></a></td>
+              <td><a href="http://www.facebook.com/pages/El-Pixeblog-de-Pedja/96534023102"><img title="FaceBook del PixeBlog" alt="" src="http://elpixeblogdepedja.com/wp-content/uploads/2009/12/facetrans.png" style="border:0" alt="" /></a></td>              
+              <td><a href="https://plus.google.com/108451085987227805779?rel=author"><img title="Google+" alt="Google+" src="http://elpixeblogdepedja.com/wp-content/uploads/2008/02/GooglePlus-Icon-Small.png" style="border:0" alt="Google+" /></a></td>              
+              </tr></table>
+              </div>        
+		</div>
+ <div class="barone">
+					<h2 class="tu">Twitter</h2>
+<div width="300px;">
+<a class="twitter-timeline" href="https://twitter.com/PedjaPixeblog" data-widget-id="262114511534817280">Tweets por @PedjaPixeblog</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+		
+		</div>
+
+  		
+ 
+		</div>
+		
+</div>	
+<div id="footer">
+
+<span class="fleft">
+	Design : <a href="http://www.web2feel.com">WordPress themes</a> 
+</span>
+
+<span class="fright">
+    Code support <a href="http://www.emoneycentral.com/">CD Rates</a>, <!--start--> <a href="http://www.net-tec-ag.de/" title="NET-TEC Internetagentur">NET-TEC Internetagentur</a> <a href="http://www.net-tec-online.dk/" title="soegemaskineoptimering">soegemaskineoptimering</a> <!--end-->
+ 
+</span>	
+		
+</div>
+</div>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201508.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'6328735',v:'ext',post:'0'});
+var load_cmc = function(){linktracker_init(6328735,0,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+</body>
+</html> 
+     
+<!-- Dynamic Page Served (once) in 1.534 seconds -->
+                                                                                                                                                                                                                                                                                                                                          
