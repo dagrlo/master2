@@ -4,9 +4,34 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1>Actividad 5</h1>
-		<p><EMBED NAME="dibujo" width="640" height="400" SRC="imagen.svg" TYPE="image/svg+xml"></p>
+        <style type="text/css">
+            #iSVG {
+                color: purple;
+                background-color: #d8da3d;
+                padding:12px;
+                border: 3px solid blue;
+            }
+            </style>
+            <script>
+                function inicia() {
+                    imagen = document.getElementById("iSVG");
+                    svgDoc = imagen.getSVGDocument();
+                    //console.log(svgDoc.getElementById("circuloM").setAttribute("cy","260"));
+                    svgDoc.onmousemove = raton;
+                }
+
+                function raton(e) {
+
+                    svgDoc.getElementById("circuloM").setAttribute("cx", e.clientX);
+                    svgDoc.getElementById("circuloM").setAttribute("cy", e.clientY);
+                }
+            </script>
+        </head>
+        <body >
+            <h1>Actividad 5</h1>
+            <p><EMBED id="iSVG" NAME="dibujo" width="500" height="550" SRC="imagen.svg" TYPE="image/svg+xml" onload="inicia()"></p>
+
+
     </body>
+
 </html>

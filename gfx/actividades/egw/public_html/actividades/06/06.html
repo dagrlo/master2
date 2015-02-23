@@ -12,12 +12,21 @@
         <script type="text/javascript">
             var c = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
+            ctx.save();
             ctx.fillStyle = "red";
             ctx.translate(70,70);
             ctx.rotate(45);
             ctx.transform(1,0.51,0,1,0,0);
-            ctx.fillRect(10, 10, 150, 75);      
-            
+            ctx.fillRect(10, 10, 150, 75);    
+            ctx.fillStyle="green";
+            ctx.translate(100,10);
+            ctx.rotate(-90);
+            ctx.transform(0.2,0.2,0,1,0,0);
+            ctx.fillRect(30, 0, 150, 150);    
+            ctx.restore();
+            ctx.fillStyle="purple";            
+            ctx.rotate(-45);
+            ctx.fillRect(-50,150,120,120);            
         </script>
     </body>
 
