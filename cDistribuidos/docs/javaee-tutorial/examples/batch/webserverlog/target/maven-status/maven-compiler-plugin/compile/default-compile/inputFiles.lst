@@ -1,0 +1,11 @@
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/items/LogFilteredLine.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/LogLineReader.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/LogLineProcessor.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/InfoJobListener.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/ItemNumberCheckpoint.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/beans/JsfBean.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/tools/WebServerLogCreator.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/MobileBatchlet.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/items/LogLine.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/LogFilteredLineWriter.java
+/home/isaw/Documentos/master2/cDistribuidos/docs/javaee-tutorial/examples/batch/webserverlog/src/main/java/javaeetutorial/batch/webserverlog/InfoItemProcessListener.java

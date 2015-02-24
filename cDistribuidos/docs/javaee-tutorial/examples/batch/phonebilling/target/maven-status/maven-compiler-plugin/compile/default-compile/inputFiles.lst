@@ -1,0 +1,12 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/tools/CallRecordLogCreator.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/beans/JsfBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/CallRecordWriter.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/BillProcessor.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/items/CallRecord.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/BillPartitionMapper.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/CallRecordReader.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/CallRecordProcessor.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/BillWriter.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/items/PhoneBill.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/BillReader.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/batch/phonebilling/src/main/java/javaeetutorial/batch/phonebilling/ItemNumberCheckpoint.java

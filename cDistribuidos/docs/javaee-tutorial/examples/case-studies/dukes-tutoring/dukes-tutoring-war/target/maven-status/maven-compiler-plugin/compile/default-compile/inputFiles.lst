@@ -1,0 +1,14 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/websocket/StatusEndpoint.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/GuardianManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/StatusManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/AdminManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/StudentManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/util/StudentConverter.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/util/EntityConverter.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/AddressManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/events/StatusEvent.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/ejb/AdminBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/ejb/ConfigBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/ejb/RequestBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/LocaleBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-war/src/main/java/javaeetutorial/dukestutoring/web/util/GuardianConverter.java

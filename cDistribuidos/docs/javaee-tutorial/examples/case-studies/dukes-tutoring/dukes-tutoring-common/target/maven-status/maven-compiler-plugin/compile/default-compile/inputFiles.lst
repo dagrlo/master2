@@ -1,0 +1,12 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/TutoringSession.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/util/CalendarUtil.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/util/DigestUtil.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/Student.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/PersonDetails.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/util/StatusType.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/Administrator.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/util/Email.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/Address.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/Guardian.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/StatusEntry.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-tutoring/dukes-tutoring-common/src/main/java/javaeetutorial/dukestutoring/entity/Person.java

@@ -1,0 +1,10 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/outbound/TradeConnectionImpl.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/api/TradeConnectionFactory.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/api/TradeResponse.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/TradeResourceAdapter.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/outbound/TradeManagedConnection.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/api/TradeProcessingException.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/api/TradeConnection.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/api/TradeOrder.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/outbound/TradeConnectionFactoryImpl.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/connectors/trading/trading-rar/src/main/java/javaeetutorial/trading/rar/outbound/TradeManagedConnectionFactory.java

@@ -1,0 +1,10 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/Administrator.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/OrderDetailPK.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/OrderDetail.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/Product.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/CustomerOrder.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/Person.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/Customer.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/Groups.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/Category.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/entities/src/main/java/com/forest/entity/OrderStatus.java

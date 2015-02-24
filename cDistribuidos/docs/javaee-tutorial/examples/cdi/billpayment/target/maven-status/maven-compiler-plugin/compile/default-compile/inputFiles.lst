@@ -1,0 +1,7 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/interceptor/LoggedInterceptor.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/payment/PaymentBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/interceptor/Logged.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/payment/Debit.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/event/PaymentEvent.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/listener/PaymentHandler.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/billpayment/src/main/java/javaeetutorial/billpayment/payment/Credit.java

@@ -1,0 +1,10 @@
+com/forest/shipment/session/AbstractFacade.class
+com/forest/qualifiers/LoggedIn.class
+com/forest/shipment/ejb/OrderBrowser.class
+com/forest/shipment/web/UserController.class
+com/forest/shipment/web/ShippingBean$Status.class
+com/forest/shipment/session/UserBean.class
+com/forest/shipment/web/util/JsfUtil.class
+com/forest/shipment/web/LocaleBean.class
+com/forest/shipment/web/ShippingBean$1.class
+com/forest/shipment/web/ShippingBean.class

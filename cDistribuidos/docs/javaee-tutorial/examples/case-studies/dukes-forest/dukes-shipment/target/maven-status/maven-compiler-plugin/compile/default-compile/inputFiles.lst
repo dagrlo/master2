@@ -1,0 +1,8 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/session/AbstractFacade.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/web/util/JsfUtil.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/web/LocaleBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/qualifiers/LoggedIn.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/session/UserBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/web/ShippingBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/ejb/OrderBrowser.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/case-studies/dukes-forest/dukes-shipment/src/main/java/com/forest/shipment/web/UserController.java

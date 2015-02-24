@@ -1,0 +1,9 @@
+javaeetutorial/helloservice/endpoint/HelloResponse.class
+javaeetutorial/helloservice/endpoint/HelloService.class
+javaeetutorial/hello/webclient/HelloServlet.class
+javaeetutorial/helloservice/endpoint/ObjectFactory.class
+javaeetutorial/helloservice/endpoint/SayHello.class
+javaeetutorial/helloservice/endpoint/Hello_Type.class
+javaeetutorial/helloservice/endpoint/Hello.class
+javaeetutorial/helloservice/endpoint/package-info.class
+javaeetutorial/helloservice/endpoint/SayHelloResponse.class

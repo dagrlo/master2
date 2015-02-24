@@ -1,0 +1,6 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/customer/src/main/java/javaeetutorial/customer/resource/CustomerApplication.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/customer/src/main/java/javaeetutorial/customer/data/Address.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/customer/src/main/java/javaeetutorial/customer/resource/CustomerService.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/customer/src/main/java/javaeetutorial/customer/ejb/CustomerManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/customer/src/main/java/javaeetutorial/customer/ejb/CustomerBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/customer/src/main/java/javaeetutorial/customer/data/Customer.java

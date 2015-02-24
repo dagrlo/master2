@@ -1,0 +1,10 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/entity/Event.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/web/StatusManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/ejb/ResponseBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/ejb/ConfigBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/entity/Response.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/rest/RsvpApplication.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/web/EventManager.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/util/ResponseEnum.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/ejb/StatusBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/jaxrs/rsvp/src/main/java/javaeetutorial/rsvp/entity/Person.java

@@ -1,0 +1,14 @@
+javaeetutorial/dukestutoring/web/GuardianManager.class
+javaeetutorial/dukestutoring/web/AddressManager.class
+javaeetutorial/dukestutoring/web/util/EntityConverter.class
+javaeetutorial/dukestutoring/web/StudentManager.class
+javaeetutorial/dukestutoring/web/util/GuardianConverter.class
+javaeetutorial/dukestutoring/ejb/ConfigBean.class
+javaeetutorial/dukestutoring/web/websocket/StatusEndpoint.class
+javaeetutorial/dukestutoring/web/StatusManager.class
+javaeetutorial/dukestutoring/web/util/StudentConverter.class
+javaeetutorial/dukestutoring/web/AdminManager.class
+javaeetutorial/dukestutoring/ejb/RequestBean.class
+javaeetutorial/dukestutoring/ejb/AdminBean.class
+javaeetutorial/dukestutoring/web/LocaleBean.class
+javaeetutorial/dukestutoring/events/StatusEvent.class

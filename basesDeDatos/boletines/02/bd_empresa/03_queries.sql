@@ -8,7 +8,7 @@ SELECT idEmpleado, nombre, apellidos, fechaContrato, puesto
 SELECT nombre, apellidos, sueldo + complemento AS salario_total
   FROM Empleados;
 -- Eliminación de columnas duplicadas
-SELECT DISTINCT administrador
+SELECT DISTINCT manager
   FROM Departamentos;
 -- Concatenacion
 SELECT CONCAT(apellidos,',',nombre) AS Nombre

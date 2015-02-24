@@ -1,0 +1,418 @@
+MariaDB [empresa]> \. 03_queries.sql
++----------------+------------------------+---------+
+| idDepartamento | nombre                 | manager |
++----------------+------------------------+---------+
+|              1 | DIRECCION              |      20 |
+|              2 | PLANIFICACION          |      11 |
+|              3 | CENTRO DE INFORMACION  |      13 |
+|              4 | SISTEMAS DE PRODUCCION |       3 |
+|              5 | SOPORTE DE SOFTWARE    |      38 |
++----------------+------------------------+---------+
+5 rows in set (0.00 sec)
+
++------------+-------------------+--------------------+---------------+--------+
+| idEmpleado | nombre            | apellidos          | fechaContrato | puesto |
++------------+-------------------+--------------------+---------------+--------+
+|          1 | JURGEN            | LOPEZ NAVARRO      | 2006-06-21    | SLS    |
+|          2 | JOSE LUIS         | TORRES TORRES      | 2007-04-05    | SLS    |
+|          3 | PABLO             | IVARS SORIANO      | 2006-07-06    | MGR    |
+|          4 | SERGIO            | LLOPIS BARBERA     | 2005-05-10    | FLD    |
+|          5 | ALFONSO CHRISTIAN | LOPEZ TROYANO      | 2004-11-26    | DES    |
+|          6 | FRANCISCO JAVIER  | PEREZ PRUDENCIO    | 2006-04-22    | ANL    |
+|          7 | JORGE             | GIL BAILEN         | 2006-07-15    | FLD    |
+|          8 | ALEJANDRO         | SEVADILLA PICAZO   | 2007-11-25    | FLD    |
+|          9 | CRISTOBAL         | MARTINEZ AGUT      | 2006-01-27    | MGR    |
+|         10 | IVAN              | SOLER LOPEZ        | 2004-11-18    | FLD    |
+|         11 | ANA ISABEL        | GANDIA BARROSO     | 2004-08-25    | ANL    |
+|         12 | ROSA ARANCHA      | HENNCHEN BELENGUER | 2004-10-04    | MGR    |
+|         13 | JUAN              | ANGULLO GARCIA     | 2005-06-19    | DES    |
+|         14 | REBECA            | ANGULO SANCHEZ     | 2004-09-04    | FLD    |
+|         15 | ANTONIO           | RAMON ABAD         | 2007-08-10    | DES    |
+|         16 | MERCEDES          | PASCUAL ESTEVE     | 2004-07-01    | ANL    |
+|         17 | JAIME             | MUÑOZ MENENDEZ     | 2007-11-06    | SLS    |
+|         18 | JOSE              | SORIANO SANZ       | 2004-04-07    | FLD    |
+|         19 | ANA FELICIA       | STURM CLIMENT      | 2007-12-08    | DES    |
+|         20 | LUCIA             | CASCALES ABAD      | 2005-11-18    | SLS    |
+|         21 | DAVID             | ALFARO VIDAL       | 2005-10-23    | ANL    |
+|         22 | FERNANDO AGUSTIN  | LLUNA IRANZO       | 2006-01-04    | PRES   |
+|         23 | EDUARD            | BENET TORAN        | 2007-07-05    | MGR    |
+|         24 | MIGUEL ANGEL      | SANCHO             | 2007-09-24    | SLS    |
+|         25 | EDUARDO           | TELLEZ GARCIA      | 2006-11-24    | FLD    |
+|         26 | MARIA DEL CARMEN  | OSUNA SANZ         | 2007-03-18    | DES    |
+|         27 | SERGIO            | MARQUEZ            | 2007-08-27    | SLS    |
+|         28 | FRANCISCO LAZARO  | ALGARIN LOPEZ      | 2006-12-05    | DES    |
+|         29 | ELVIRA            | FUSTER CAMPOS      | 2005-07-09    | SLS    |
+|         30 | JOAQUIN           | COLLADO LOPEZ      | 2006-08-23    | DES    |
+|         31 | DARIO             | ROIG SANCHEZ       | 2005-06-23    | SLS    |
+|         32 | GEMA              | MARTINEZ ARIAS     | 2005-03-10    | FLD    |
+|         33 | RAFAEL            | BOLUDA ALVAREZ     | 2004-04-02    | SLS    |
+|         34 | JESUS             | SORLI ADAME        | 2007-05-24    | ANL    |
+|         35 | MARIA AMPARO      | PRIETO AGUILA      | 2005-10-16    | MGR    |
+|         36 | CHRISTOPHE        | ESTEVE CARBO       | 2007-01-03    | SLS    |
+|         37 | EUSTASIO          | PERIS BOU          | 2005-07-27    | FLD    |
+|         38 | ZULEMA            | GARCIA FONFRIA     | 2006-04-06    | SLS    |
+|         39 | MARIA TERESA      | RODRIGUEZ FAYOS    | 2004-07-24    | SLS    |
+|         40 | DAVINIA           | MAESO SORIANO      | 2005-07-15    | DES    |
+|         41 | SERGIO            | EDO LORENTE        | 2005-03-12    | SLS    |
+|         42 | BLANCA            | RIBERA HERRERO     | 2004-03-11    | SLS    |
+|         43 | LUIS              | ROMERO MARCH       | 2004-12-04    | FLD    |
+|         44 | FRANCISCO JAVIER  | ANSON FERRER       | 2005-08-19    | FLD    |
+|         45 | LUIS FRANCISCO    | RAMON MORENO       | 2004-04-15    | DES    |
+|         46 | ROBERTO           | LUCAS MERENCIANO   | 2005-02-27    | PRES   |
+|         47 | ANGEL             | CRUZ               | 2004-01-09    | DES    |
+|         48 | JORGE             | PERIS GIMENO       | 2004-12-13    | DES    |
+|         49 | MARIA             | ALMENAR BALLESTER  | 2005-03-18    | DES    |
+|         50 | SERGIO            | TUDELA MORELL      | 2005-02-11    | SLS    |
+|         51 | DAVID             | BOU VILAR          | 2007-06-22    | PRES   |
+|         52 | ENRIQUE CARLOS    | LLOREDA BOU        | 2006-05-08    | MGR    |
+|         53 | ENRIQUE           | LOPEZ PENALVA      | 2007-09-02    | ANL    |
+|         54 | VANESA            | SURIA NAVAS        | 2004-06-10    | SLS    |
+|         55 | CARLOS            | ARANDIGA SANCHEZ   | 2007-11-20    | FLD    |
+|         56 | TOBIAS            | JORNET ALOCEN      | 2006-01-09    | FLD    |
+|         57 | ABRAHAM           | NUÑEZ MONTERDE     | 2007-12-08    | ANL    |
+|         58 | JAVIER            | OLIVER GRAU        | 2006-03-20    | SLS    |
+|         59 | JOSE IGNACIO      | BARBERA RUIZ       | 2004-02-04    | MGR    |
+|         60 | RAUL              | SORIANO IVARS      | 2006-11-27    | SLS    |
+|         61 | AARON             | PEREZ SANCHEZ      | 2005-07-03    | SLS    |
+|         62 | ADOLFO JOSE       | GARCIA SOLER       | 2004-08-24    | DES    |
++------------+-------------------+--------------------+---------------+--------+
+62 rows in set (0.00 sec)
+
++-------------------+--------------------+---------------+
+| nombre            | apellidos          | salario_total |
++-------------------+--------------------+---------------+
+| JURGEN            | LOPEZ NAVARRO      |      34460.00 |
+| JOSE LUIS         | TORRES TORRES      |      45082.00 |
+| PABLO             | IVARS SORIANO      |      31505.00 |
+| SERGIO            | LLOPIS BARBERA     |      39281.00 |
+| ALFONSO CHRISTIAN | LOPEZ TROYANO      |      40920.00 |
+| FRANCISCO JAVIER  | PEREZ PRUDENCIO    |      33734.00 |
+| JORGE             | GIL BAILEN         |      41901.00 |
+| ALEJANDRO         | SEVADILLA PICAZO   |      34544.00 |
+| CRISTOBAL         | MARTINEZ AGUT      |      24446.00 |
+| IVAN              | SOLER LOPEZ        |      36921.00 |
+| ANA ISABEL        | GANDIA BARROSO     |      39577.00 |
+| ROSA ARANCHA      | HENNCHEN BELENGUER |      20512.00 |
+| JUAN              | ANGULLO GARCIA     |      28682.00 |
+| REBECA            | ANGULO SANCHEZ     |      47393.00 |
+| ANTONIO           | RAMON ABAD         |      20929.00 |
+| MERCEDES          | PASCUAL ESTEVE     |      30738.00 |
+| JAIME             | MUÑOZ MENENDEZ     |      53469.00 |
+| JOSE              | SORIANO SANZ       |      32942.00 |
+| ANA FELICIA       | STURM CLIMENT      |      41278.00 |
+| LUCIA             | CASCALES ABAD      |      34259.00 |
+| DAVID             | ALFARO VIDAL       |      41338.00 |
+| FERNANDO AGUSTIN  | LLUNA IRANZO       |      46619.00 |
+| EDUARD            | BENET TORAN        |      39830.00 |
+| MIGUEL ANGEL      | SANCHO             |      40209.00 |
+| EDUARDO           | TELLEZ GARCIA      |      23506.00 |
+| MARIA DEL CARMEN  | OSUNA SANZ         |      32161.00 |
+| SERGIO            | MARQUEZ            |      30565.00 |
+| FRANCISCO LAZARO  | ALGARIN LOPEZ      |      22791.00 |
+| ELVIRA            | FUSTER CAMPOS      |      30246.00 |
+| JOAQUIN           | COLLADO LOPEZ      |      44733.00 |
+| DARIO             | ROIG SANCHEZ       |      31712.00 |
+| GEMA              | MARTINEZ ARIAS     |      15439.00 |
+| RAFAEL            | BOLUDA ALVAREZ     |      14756.00 |
+| JESUS             | SORLI ADAME        |      42044.00 |
+| MARIA AMPARO      | PRIETO AGUILA      |      40403.00 |
+| CHRISTOPHE        | ESTEVE CARBO       |      26000.00 |
+| EUSTASIO          | PERIS BOU          |      45614.00 |
+| ZULEMA            | GARCIA FONFRIA     |      45688.00 |
+| MARIA TERESA      | RODRIGUEZ FAYOS    |      29786.00 |
+| DAVINIA           | MAESO SORIANO      |      44882.00 |
+| SERGIO            | EDO LORENTE        |      18948.00 |
+| BLANCA            | RIBERA HERRERO     |      47141.00 |
+| LUIS              | ROMERO MARCH       |      45575.00 |
+| FRANCISCO JAVIER  | ANSON FERRER       |      31654.00 |
+| LUIS FRANCISCO    | RAMON MORENO       |      42363.00 |
+| ROBERTO           | LUCAS MERENCIANO   |      34307.00 |
+| ANGEL             | CRUZ               |      42046.00 |
+| JORGE             | PERIS GIMENO       |      50316.00 |
+| MARIA             | ALMENAR BALLESTER  |      32266.00 |
+| SERGIO            | TUDELA MORELL      |      39783.00 |
+| DAVID             | BOU VILAR          |      42702.00 |
+| ENRIQUE CARLOS    | LLOREDA BOU        |      16003.00 |
+| ENRIQUE           | LOPEZ PENALVA      |      52501.00 |
+| VANESA            | SURIA NAVAS        |      36020.00 |
+| CARLOS            | ARANDIGA SANCHEZ   |      35924.00 |
+| TOBIAS            | JORNET ALOCEN      |      27990.00 |
+| ABRAHAM           | NUÑEZ MONTERDE     |      37317.00 |
+| JAVIER            | OLIVER GRAU        |      35768.00 |
+| JOSE IGNACIO      | BARBERA RUIZ       |      23241.00 |
+| RAUL              | SORIANO IVARS      |      32207.00 |
+| AARON             | PEREZ SANCHEZ      |      26071.00 |
+| ADOLFO JOSE       | GARCIA SOLER       |      29037.00 |
++-------------------+--------------------+---------------+
+62 rows in set (0.00 sec)
+
++---------+
+| manager |
++---------+
+|       3 |
+|      11 |
+|      13 |
+|      20 |
+|      38 |
++---------+
+5 rows in set (0.00 sec)
+
++----------------------------------+
+| Nombre                           |
++----------------------------------+
+| LOPEZ NAVARRO,JURGEN             |
+| TORRES TORRES,JOSE LUIS          |
+| IVARS SORIANO,PABLO              |
+| LLOPIS BARBERA,SERGIO            |
+| LOPEZ TROYANO,ALFONSO CHRISTIAN  |
+| PEREZ PRUDENCIO,FRANCISCO JAVIER |
+| GIL BAILEN,JORGE                 |
+| SEVADILLA PICAZO,ALEJANDRO       |
+| MARTINEZ AGUT,CRISTOBAL          |
+| SOLER LOPEZ,IVAN                 |
+| GANDIA BARROSO,ANA ISABEL        |
+| HENNCHEN BELENGUER,ROSA ARANCHA  |
+| ANGULLO GARCIA,JUAN              |
+| ANGULO SANCHEZ,REBECA            |
+| RAMON ABAD,ANTONIO               |
+| PASCUAL ESTEVE,MERCEDES          |
+| MUÑOZ MENENDEZ,JAIME             |
+| SORIANO SANZ,JOSE                |
+| STURM CLIMENT,ANA FELICIA        |
+| CASCALES ABAD,LUCIA              |
+| ALFARO VIDAL,DAVID               |
+| LLUNA IRANZO,FERNANDO AGUSTIN    |
+| BENET TORAN,EDUARD               |
+| SANCHO,MIGUEL ANGEL              |
+| TELLEZ GARCIA,EDUARDO            |
+| OSUNA SANZ,MARIA DEL CARMEN      |
+| MARQUEZ,SERGIO                   |
+| ALGARIN LOPEZ,FRANCISCO LAZARO   |
+| FUSTER CAMPOS,ELVIRA             |
+| COLLADO LOPEZ,JOAQUIN            |
+| ROIG SANCHEZ,DARIO               |
+| MARTINEZ ARIAS,GEMA              |
+| BOLUDA ALVAREZ,RAFAEL            |
+| SORLI ADAME,JESUS                |
+| PRIETO AGUILA,MARIA AMPARO       |
+| ESTEVE CARBO,CHRISTOPHE          |
+| PERIS BOU,EUSTASIO               |
+| GARCIA FONFRIA,ZULEMA            |
+| RODRIGUEZ FAYOS,MARIA TERESA     |
+| MAESO SORIANO,DAVINIA            |
+| EDO LORENTE,SERGIO               |
+| RIBERA HERRERO,BLANCA            |
+| ROMERO MARCH,LUIS                |
+| ANSON FERRER,FRANCISCO JAVIER    |
+| RAMON MORENO,LUIS FRANCISCO      |
+| LUCAS MERENCIANO,ROBERTO         |
+| CRUZ,ANGEL                       |
+| PERIS GIMENO,JORGE               |
+| ALMENAR BALLESTER,MARIA          |
+| TUDELA MORELL,SERGIO             |
+| BOU VILAR,DAVID                  |
+| LLOREDA BOU,ENRIQUE CARLOS       |
+| LOPEZ PENALVA,ENRIQUE            |
+| SURIA NAVAS,VANESA               |
+| ARANDIGA SANCHEZ,CARLOS          |
+| JORNET ALOCEN,TOBIAS             |
+| NUÑEZ MONTERDE,ABRAHAM           |
+| OLIVER GRAU,JAVIER               |
+| BARBERA RUIZ,JOSE IGNACIO        |
+| SORIANO IVARS,RAUL               |
+| PEREZ SANCHEZ,AARON              |
+| GARCIA SOLER,ADOLFO JOSE         |
++----------------------------------+
+62 rows in set (0.00 sec)
+
+Empty set (0.00 sec)
+
++------------+-----------+-------------+-----------+---------+
+| sueldoSuma | sueldoMin | sueldoMedio | sueldoMax | nominas |
++------------+-----------+-------------+-----------+---------+
+|       NULL |      NULL |        NULL |      NULL |       0 |
++------------+-----------+-------------+-----------+---------+
+1 row in set (0.00 sec)
+
++--------------------+
+| ultimaContratacion |
++--------------------+
+|               NULL |
++--------------------+
+1 row in set (0.00 sec)
+
++------------------------+
+| FORMAT(AVG(sueldo), 2) |
++------------------------+
+| 29,513.97              |
++------------------------+
+1 row in set (0.00 sec)
+
++-------------------+--------------------+------------+
+| nombre            | apellidos          | Educacion  |
++-------------------+--------------------+------------+
+| JURGEN            | LOPEZ NAVARRO      | Diplomado  |
+| JOSE LUIS         | TORRES TORRES      | Doctor     |
+| PABLO             | IVARS SORIANO      | Diplomado  |
+| SERGIO            | LLOPIS BARBERA     | Diplomado  |
+| ALFONSO CHRISTIAN | LOPEZ TROYANO      | Licenciado |
+| FRANCISCO JAVIER  | PEREZ PRUDENCIO    | Doctor     |
+| JORGE             | GIL BAILEN         | Licenciado |
+| ALEJANDRO         | SEVADILLA PICAZO   | FP         |
+| CRISTOBAL         | MARTINEZ AGUT      | Doctor     |
+| IVAN              | SOLER LOPEZ        | FP         |
+| ANA ISABEL        | GANDIA BARROSO     | Licenciado |
+| ROSA ARANCHA      | HENNCHEN BELENGUER | Diplomado  |
+| JUAN              | ANGULLO GARCIA     | Licenciado |
+| REBECA            | ANGULO SANCHEZ     | Licenciado |
+| ANTONIO           | RAMON ABAD         | Licenciado |
+| MERCEDES          | PASCUAL ESTEVE     | FP         |
+| JAIME             | MUÑOZ MENENDEZ     | Diplomado  |
+| JOSE              | SORIANO SANZ       | Doctor     |
+| ANA FELICIA       | STURM CLIMENT      | Diplomado  |
+| LUCIA             | CASCALES ABAD      | Licenciado |
+| DAVID             | ALFARO VIDAL       | Diplomado  |
+| FERNANDO AGUSTIN  | LLUNA IRANZO       | Licenciado |
+| EDUARD            | BENET TORAN        | FP         |
+| MIGUEL ANGEL      | SANCHO             | Licenciado |
+| EDUARDO           | TELLEZ GARCIA      | Diplomado  |
+| MARIA DEL CARMEN  | OSUNA SANZ         | FP         |
+| SERGIO            | MARQUEZ            | FP         |
+| FRANCISCO LAZARO  | ALGARIN LOPEZ      | Licenciado |
+| ELVIRA            | FUSTER CAMPOS      | Licenciado |
+| JOAQUIN           | COLLADO LOPEZ      | FP         |
+| DARIO             | ROIG SANCHEZ       | Licenciado |
+| GEMA              | MARTINEZ ARIAS     | Licenciado |
+| RAFAEL            | BOLUDA ALVAREZ     | FP         |
+| JESUS             | SORLI ADAME        | Doctor     |
+| MARIA AMPARO      | PRIETO AGUILA      | Diplomado  |
+| CHRISTOPHE        | ESTEVE CARBO       | Doctor     |
+| EUSTASIO          | PERIS BOU          | Licenciado |
+| ZULEMA            | GARCIA FONFRIA     | Doctor     |
+| MARIA TERESA      | RODRIGUEZ FAYOS    | Doctor     |
+| DAVINIA           | MAESO SORIANO      | Doctor     |
+| SERGIO            | EDO LORENTE        | Diplomado  |
+| BLANCA            | RIBERA HERRERO     | Diplomado  |
+| LUIS              | ROMERO MARCH       | Diplomado  |
+| FRANCISCO JAVIER  | ANSON FERRER       | Diplomado  |
+| LUIS FRANCISCO    | RAMON MORENO       | Doctor     |
+| ROBERTO           | LUCAS MERENCIANO   | Diplomado  |
+| ANGEL             | CRUZ               | Licenciado |
+| JORGE             | PERIS GIMENO       | Diplomado  |
+| MARIA             | ALMENAR BALLESTER  | Doctor     |
+| SERGIO            | TUDELA MORELL      | Diplomado  |
+| DAVID             | BOU VILAR          | Doctor     |
+| ENRIQUE CARLOS    | LLOREDA BOU        | Doctor     |
+| ENRIQUE           | LOPEZ PENALVA      | Doctor     |
+| VANESA            | SURIA NAVAS        | Licenciado |
+| CARLOS            | ARANDIGA SANCHEZ   | Licenciado |
+| TOBIAS            | JORNET ALOCEN      | FP         |
+| ABRAHAM           | NUÑEZ MONTERDE     | Diplomado  |
+| JAVIER            | OLIVER GRAU        | FP         |
+| JOSE IGNACIO      | BARBERA RUIZ       | Diplomado  |
+| RAUL              | SORIANO IVARS      | Licenciado |
+| AARON             | PEREZ SANCHEZ      | Doctor     |
+| ADOLFO JOSE       | GARCIA SOLER       | Diplomado  |
++-------------------+--------------------+------------+
+62 rows in set (0.01 sec)
+
++-------------------+--------------------+---------------+
+| nombre            | apellidos          | fechaContrato |
++-------------------+--------------------+---------------+
+| ALFONSO CHRISTIAN | LOPEZ TROYANO      | 2004-11-26    |
+| IVAN              | SOLER LOPEZ        | 2004-11-18    |
+| ANA ISABEL        | GANDIA BARROSO     | 2004-08-25    |
+| ROSA ARANCHA      | HENNCHEN BELENGUER | 2004-10-04    |
+| REBECA            | ANGULO SANCHEZ     | 2004-09-04    |
+| MERCEDES          | PASCUAL ESTEVE     | 2004-07-01    |
+| JOSE              | SORIANO SANZ       | 2004-04-07    |
+| RAFAEL            | BOLUDA ALVAREZ     | 2004-04-02    |
+| MARIA TERESA      | RODRIGUEZ FAYOS    | 2004-07-24    |
+| BLANCA            | RIBERA HERRERO     | 2004-03-11    |
+| LUIS              | ROMERO MARCH       | 2004-12-04    |
+| LUIS FRANCISCO    | RAMON MORENO       | 2004-04-15    |
+| ANGEL             | CRUZ               | 2004-01-09    |
+| JORGE             | PERIS GIMENO       | 2004-12-13    |
+| VANESA            | SURIA NAVAS        | 2004-06-10    |
+| JOSE IGNACIO      | BARBERA RUIZ       | 2004-02-04    |
+| ADOLFO JOSE       | GARCIA SOLER       | 2004-08-24    |
++-------------------+--------------------+---------------+
+17 rows in set (0.00 sec)
+
++--------------+------------+
+| departamento | idEmpleado |
++--------------+------------+
+|            2 |          9 |
+|            2 |         12 |
+|            3 |         52 |
+|            4 |          3 |
+|            5 |         59 |
++--------------+------------+
+5 rows in set (0.01 sec)
+
++-------------------+---------------+--------------+
+| nombre            | apellidos     | departamento |
++-------------------+---------------+--------------+
+| JURGEN            | LOPEZ NAVARRO |            1 |
+| ALFONSO CHRISTIAN | LOPEZ TROYANO |            2 |
+| ENRIQUE           | LOPEZ PENALVA |            3 |
++-------------------+---------------+--------------+
+3 rows in set (0.00 sec)
+
+Empty set, 1 warning (0.00 sec)
+
+Empty set, 3 warnings (0.00 sec)
+
+Empty set (0.00 sec)
+
+Empty set, 2 warnings (0.00 sec)
+
++--------------------+------------------+----------------+
+| apellidos          | nombre           | diasTrabajados |
++--------------------+------------------+----------------+
+| ALGARIN LOPEZ      | FRANCISCO LAZARO |              5 |
+| ALMENAR BALLESTER  | MARIA            |            161 |
+| ANGULO SANCHEZ     | REBECA           |             69 |
+| ARANDIGA SANCHEZ   | CARLOS           |             22 |
+| BARBERA RUIZ       | JOSE IGNACIO     |            176 |
+| BENET TORAN        | EDUARD           |            134 |
+| BOLUDA ALVAREZ     | RAFAEL           |            478 |
+| EDO LORENTE        | SERGIO           |             86 |
+| ESTEVE CARBO       | CHRISTOPHE       |            199 |
+| FUSTER CAMPOS      | ELVIRA           |             19 |
+| GANDIA BARROSO     | ANA ISABEL       |            111 |
+| GARCIA SOLER       | ADOLFO JOSE      |             37 |
+| HENNCHEN BELENGUER | ROSA ARANCHA     |            154 |
+| NUÑEZ MONTERDE     | ABRAHAM          |            145 |
+| OSUNA SANZ         | MARIA DEL CARMEN |            407 |
+| PASCUAL ESTEVE     | MERCEDES         |             66 |
+| PEREZ PRUDENCIO    | FRANCISCO JAVIER |            159 |
+| PEREZ SANCHEZ      | AARON            |            201 |
+| RAMON ABAD         | ANTONIO          |            157 |
+| RAMON MORENO       | LUIS FRANCISCO   |             73 |
+| RIBERA HERRERO     | BLANCA           |            304 |
+| ROIG SANCHEZ       | DARIO            |            201 |
+| SANCHO             | MIGUEL ANGEL     |            108 |
+| SEVADILLA PICAZO   | ALEJANDRO        |             30 |
+| SOLER LOPEZ        | IVAN             |            139 |
+| SORIANO IVARS      | RAUL             |            432 |
+| SORLI ADAME        | JESUS            |             72 |
+| TELLEZ GARCIA      | EDUARDO          |            141 |
+| TORRES TORRES      | JOSE LUIS        |            171 |
+| TUDELA MORELL      | SERGIO           |             31 |
++--------------------+------------------+----------------+
+30 rows in set (0.00 sec)
+
++------------+--------------------------+---------------+
+| idProyecto | nombre                   | diasDedicados |
++------------+--------------------------+---------------+
+|          1 | SERVICIO DE CONSULTA     |           852 |
+|          2 | FORMACION DE USUARIOS    |           906 |
+|          3 | DOCUMENTACION            |           406 |
+|          4 | PROGRAMACION DE SISTEMAS |          NULL |
+|          5 | SOPORTE DE SISTEMAS      |           800 |
+|          6 | SOPORTE DE APLICACIONES  |          1524 |
++------------+--------------------------+---------------+
+6 rows in set (0.06 sec)
+
+MariaDB [empresa]> \t

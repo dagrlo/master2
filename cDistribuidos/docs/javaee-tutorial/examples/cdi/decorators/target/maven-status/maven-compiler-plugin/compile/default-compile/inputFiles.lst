@@ -1,0 +1,6 @@
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/decorators/src/main/java/javaeetutorial/decorators/CoderBean.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/decorators/src/main/java/javaeetutorial/decorators/CoderDecorator.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/decorators/src/main/java/javaeetutorial/decorators/Logged.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/decorators/src/main/java/javaeetutorial/decorators/CoderImpl.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/decorators/src/main/java/javaeetutorial/decorators/Coder.java
+/home/isaw/opt/glassfish4/docs/javaee-tutorial/examples/cdi/decorators/src/main/java/javaeetutorial/decorators/LoggedInterceptor.java
