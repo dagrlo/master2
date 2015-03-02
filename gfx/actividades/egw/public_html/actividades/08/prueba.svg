@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<svg width="500" height="550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <rect width="20" height="20" x="0" y="0" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="0" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="20" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="20" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="40" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="40" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="60" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="60" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="80" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="80" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="100" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="100" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="120" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="120" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="140" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="140" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <rect width="20" height="20" x="0" y="160" style="fill:blue">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="0" to="520" repeatDur="indefinite"/>        
+    </rect>    
+    <rect width="20" height="20" x="520" y="160" style="fill:yellow">
+        <animate attributeName="x" attributeType="XML"
+                 begin="0s" dur="4s"
+                 fill="freeze" from="520" to="0" repeatDur="indefinite"/>        
+    </rect>
+    
+    <g>
+        <path id="svg_1" d="m198.00999,203.88l29.4389,-29.43927l0,14.72017l11.80411,0l0,-23.53879l23.53792,0l0,-11.80394l-14.71817,0l29.43781,-29.43818l29.439,29.43818l-14.71924,0l0,11.80394l23.53943,0l0,23.53879l11.80319,0l0,-14.72017l29.43707,29.43927l-29.43707,29.43915l0,-14.71973l-11.80319,0l0,23.53853l-23.53943,0l0,11.80341l14.71924,0l-29.439,29.43901l-29.43781,-29.43901l14.71817,0l0,-11.80341l-23.53792,0l0,-23.53853l-11.80411,0l0,14.71973l-29.4389,-29.43915z" stroke-width="5" stroke="#000000" fill="#FF0000" transform="translate(10,10)"/>
+        
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                from="360 170 138"
+                to="0 170 138"
+                dur="6s" repeatCount="indefinite"/>
+    </g>
+    
+    <g>
+        <path id="svg_1" d="m198.00999,203.88l29.4389,-29.43927l0,14.72017l11.80411,0l0,-23.53879l23.53792,0l0,-11.80394l-14.71817,0l29.43781,-29.43818l29.439,29.43818l-14.71924,0l0,11.80394l23.53943,0l0,23.53879l11.80319,0l0,-14.72017l29.43707,29.43927l-29.43707,29.43915l0,-14.71973l-11.80319,0l0,23.53853l-23.53943,0l0,11.80341l14.71924,0l-29.439,29.43901l-29.43781,-29.43901l14.71817,0l0,-11.80341l-23.53792,0l0,-23.53853l-11.80411,0l0,14.71973l-29.4389,-29.43915z" stroke-width="5" stroke="#000000" fill="#FF0000" transform="translate(140,140)"/>
+        
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                
+                from="0 170 138"
+                to="360 170 138"
+                dur="6s" repeatCount="indefinite"/>
+    </g>
+    
+    <g>
+        <path id="svg_1" d="m198.00999,203.88l29.4389,-29.43927l0,14.72017l11.80411,0l0,-23.53879l23.53792,0l0,-11.80394l-14.71817,0l29.43781,-29.43818l29.439,29.43818l-14.71924,0l0,11.80394l23.53943,0l0,23.53879l11.80319,0l0,-14.72017l29.43707,29.43927l-29.43707,29.43915l0,-14.71973l-11.80319,0l0,23.53853l-23.53943,0l0,11.80341l14.71924,0l-29.439,29.43901l-29.43781,-29.43901l14.71817,0l0,-11.80341l-23.53792,0l0,-23.53853l-11.80411,0l0,14.71973l-29.4389,-29.43915z" stroke-width="5" stroke="#000000" fill="#FF0000" />
+        
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                
+                from="0 0 0"
+                to="360 0 0"
+                dur="6s" repeatCount="indefinite"/>
+    </g>
+    
+    <image x="5" y="15" width="440" height="440"  xlink:href="the_scream.jpg">
+         <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                
+                from="0 0 0"
+                to="360 0 0"
+                dur="6s" repeatCount="indefinite"/>
+    </image>
+    <image x="165" y="215" width="440" height="440"  xlink:href="the_scream.jpg">
+         <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+                
+                from="360 0 0"
+                to="0 0 0"
+                dur="6s" repeatCount="indefinite"/>
+    </image>
+    
+    
+</svg>

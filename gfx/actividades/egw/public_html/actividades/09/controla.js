@@ -1,17 +1,23 @@
 var context;
+var efecto=false;
 var estrellas = [];
 var MAXESTRELLAS = 300;
 var player1 = {x: 30, y: 240};
 var enemy = {x: 0, y: 0, vivo: false};
 var bala = {x: 0, y: 0};
+var explosion={x:0,y:0,anim:false};
 var disparo = false;
+var p1Explotando=false;
 var vidas;
 var puntos;
 var loop, loop2;
 var p1Anim = [];
+var expAnim=[];
 var shoot;
 var malo;
 var p1Frame;
+var expFrame;
+var loopExp;
 var p1Dir = 0;
 var p1Move = false;
 
@@ -27,6 +33,7 @@ function init(objeto) {
     puntos = 0;
     loop = 0;
     creaMalo();
+    context.font="12pt arial";
 }
 
 
@@ -76,6 +83,10 @@ function cargaP1() {
     img = new Image();
     img2 = new Image();
     img3 = new Image();
+    e1=new Image();
+    e2=new Image();
+    e3=new Image();
+    e4=new Image();
     shoot = new Image();
     malo = new Image();
     img.src = "./gfx/player.png";
@@ -87,6 +98,14 @@ function cargaP1() {
     img3.src = "./gfx/player_down.png";
     p1Anim.push(img3);
 
+    e1.src="./gfx/exp_01.png";
+    e2.src="./gfx/exp_02.png";
+    e3.src="./gfx/exp_03.png";
+    e4.src="./gfx/exp_04.png";
+    expAnim.push(e1);
+    expAnim.push(e2);
+    expAnim.push(e3);
+    expAnim.push(e4);
     shoot.src = "./gfx/tiro.png";
     malo.src = "./gfx/malor.png";
 }
@@ -122,9 +141,19 @@ function pintaBala() {
         if (impactoMalo()) {
             enemy.vivo = false;
             disparo = false;
+            explota(enemy.x,enemy.y);
             calculaMalo();
+            puntos=puntos+10;
         }
     }
+}
+
+function explota(x,y){
+    explosion.x=x;
+    explosion.y=y;
+    explosion.anim=true;
+    expFrame=0;
+    loopExp=0;   
 }
 
 function creaEstrellas() {
@@ -154,15 +183,29 @@ function pintaEstrellas() {
     }
 }
 
+function ponEfecto(){
+    efecto=!efecto;
+    if (efecto){
+        context.globalAlpha=0.5;
+    } else {
+        context.globalAlpha=1.0;
+    }
+}
+
 function pintaFondo() {
+    
     context.fillStyle = "black";
     context.fillRect(0, 0, 640, 480);
     pintaEstrellas();
     scrollEstrellas();
+    ponTexto();
     pintaBala();
     pintaP1();
     if (chocar()===true){
-        muere();
+        if (!p1Explotando){
+            muere();
+        }
+        
     }
     if (loop < 1000) {
         loop++;
@@ -170,6 +213,25 @@ function pintaFondo() {
         loop = 0;
     }    
     pintaMalo();
+    if (explosion.anim===true){
+        
+        context.beginPath();
+        context.drawImage(expAnim[expFrame],explosion.x,explosion.y);
+        
+        if (loopExp<2){
+            loopExp++;
+        } else {
+            loopExp=0;
+            if (expFrame<4){
+                expFrame++;
+            } else {
+                explosion.anim=false;
+                if (p1Explotando===true){
+                    p1Explotando=false;
+                }
+            }
+        }
+    }
 }
 
 function calculaMalo() {
@@ -198,7 +260,16 @@ function chocar(){
 }
 
 function muere(){
-    
+    p1Explotando=true;
+    explota(player1.x,player1.y-60);
+    enemy.vivo=false;
+    calculaMalo();
+    vidas--;
+}
+
+function ponTexto(){
+    context.fillStyle='red';
+    context.fillText("Puntos:"+puntos+"  Vidas:"+vidas,10,20);
 }
 
 function impactoMalo() {
