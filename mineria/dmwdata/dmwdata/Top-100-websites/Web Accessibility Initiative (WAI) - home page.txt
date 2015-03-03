@@ -1,0 +1,127 @@
+Web Accessibility Initiative (WAI) - home page Skip to content | Change text 
+  size or colors 
+WAI: Strategies, guidelines, resources to make the Web accessible to people with 
+disabilities
+What WAI DoesWAI develops...
+  guidelines widely regarded as the international standard for Web accessibility 
+
+  support materials to help understand and implement Web accessibility 
+  resources, through international collaboration 
+WAI welcomes...
+  participation from around the world 
+  volunteers to review, implement, and promote guidelines 
+  dedicated participants in working groups 
+Site NavigationW3C Home
+Web Accessibility Initiative (WAI) Home 
+  Introducing Accessibility 
+  Guidelines & Techniques 
+  Managing Accessibility 
+  Evaluating Accessibility 
+  WAI Groups 
+  About WAI 
+  WAI Site Map 
+  Help with WAI Site 
+   Translations 
+   About RSS 
+   Search 
+Web Accessibility Initiative (WAI)
+Announcements
+  WAI Web Accessibility Engineer position open 
+Events, Meetings, Presentations
+  "Evaluating for Accessibility, Usability Testing in Diverse Situations" 
+  workshop lead by Shawn Henry at UPA 2006 on 13 June 2006 in Denver, CO, USA 
+  "Redesigning www.w3.org/WAI: A Tale of Two Sites" presentation lead by Shawn 
+  Henry at UPA 2006 on 14 June 2006 in Denver, CO, USA 
+[Past WAI Events] 
+[Search Presentations of W3C Team]
+Documents in Progress
+  Web Content Accessibility Guidelines 2.0 Working Draft 23 November 2005 (WCAG 
+  Call for Review) 
+  Authoring Tool Accessibility Guidelines 2.0 Working Draft 22 November 2005 
+  (ATAG Call for Review) 
+  Evaluation and Report Language (EARL) 1.0 Schema Working Draft 09 September 
+  2005 (EARL Schema Call for Review) 
+[More documents listed on the WAI IG page]SidebarThe power of the Web is in its 
+universality. Access by everyone regardless of disability is an essential 
+aspect. 
+-- Tim Berners-Lee, W3C Director and inventor of the World Wide WebHighlights
+For Review: Updated WCAG 2.0 Working Drafts
+Web Content Accessibility Guidelines 2.0 (WCAG 2.0) Working Draft documents were 
+published 23 November 2005. See:
+  Call for Review: WCAG 2.0 Working Drafts 
+  Introduction to Web Content Accessibility Guidelines (WCAG) 2.0 Working Draft 
+  Documents 
+Please send comments by 21 December 2005.   (2005-11-25) 
+For Review: Updated ATAG 2.0 Working Drafts
+Authoring Tool Accessibility Guidelines 2.0 (ATAG 2.0) Working Draft documents 
+were published 22 November 2005. See:
+  Call for Review: ATAG 2.0 Working Drafts 
+  Authoring Tool Accessibility Guidelines Overview 
+Please send comments by 21 December 2005.   (2005-11-25) 
+Want to know how people with disabilities use your Web site? Ask.
+Web accessibility guidelines, techniques, and tools provide the basis for Web 
+accessibility. Including people with disabilities in the Web development process 
+helps to understand the "why" behind accessibility. It leads to more effective 
+accessibility solutions, developed more efficiently. See "Involving Users in Web 
+Accessibility Evaluation".   (2005-11-02)
+Web Accessibility 101: The Basics and Beyond
+WAI's recently updated "Introduction to Web Accessibility" addresses key issues 
+of making the Web accessible, including:
+  An accessible Web is essential for equal opportunities for people with 
+  disabilities 
+  Web accessibility benefits others, such as older people with changing 
+  abilities due to aging 
+  Web software has a vital role in Web accessibility    (2005-09-12) 
+W3C Replies: Single Browser Bad for Accessibility
+W3C responded to a US Copyright Office notice asking about making an application 
+work only through a single Web browser. W3C comments explain that "requiring use 
+of a particular software product for accessing Copyright Office services... 
+could put Web users with disabilities at a significant disadvantage."    
+(2005-09-06)
+The Business Case for Web Accessibility: Three Carrots and a Stick
+"Developing a Web Accessibility Business Case for Your Organization" describes 
+the social, technical, financial, and legal and policy factors relevant to 
+developing a customized business case for Web accessibility for a specific 
+organization.    (2005-08-23)
+Finding Your WAI: Exploring the New Web Site
+WAI's new Web site has been carefully designed to make it easier for you to find 
+information on making the Web accessible to people with disabilities.
+WAI Web Site Redesign Project lists on-going development to refine the markup, 
+design, and features.    (2005-07-22) 
+Web Accessibility: The Fellowship of the Guidelines
+Many people know about WAI's Web Content Accessibility Guidelines (WCAG) and the 
+responsibilities of Web developers in making the Web accessible to people with 
+disabilities. But Web developers alone cannot make the Web accessible. 
+Web browsers, assistive technologies, and authoring tools also have a vital role 
+in Web accessibility. Essential Components of Web Accessibility describes these 
+roles along with the WAI guidelines.    (2005-07-22)
+Blogs, Wikis, CMS... Got ATAG?
+Web content is created by many different types of tools these days: Web log 
+(blog) comment features, Wikis for editing Web pages, content management systems 
+(CMS), e-mail archivers, word processors, and more.
+All of these tool are covered by WAI's Authoring Tool Accessibility Guidelines 
+(ATAG), which explain: 
+  how tools should help Web developers produce accessible Web content, 
+  how to make tools accessible to people with disabilities. 
+Does your tool know ATAG?    (2005-07-22) 
+
+
+
+[Highlights Archive] WAI home page Highlights are edited by Shawn Lawton Henry, 
+WAI's Education and Outreach Working Group, and other WAI Team and Working 
+Groups. 
+Sponsors
+WAI is supported in part by: the U.S. Department of Education's National 
+Institute on Disability and Rehabilitation Research, European Commission's 
+Information Society Technologies Programme, Canada's Assistive Devices Industry 
+Office, CA, Fundación ONCE, HP, IBM, Microsoft Corporation, SAP, Verizon 
+Foundation, and Wells Fargo.
+WAI welcomes additional sponsors and contributors.
+Validation Logos  
+Document Information[Contacting WAI] Comments about this Web site: 
+wai-site-comments@w3.org (a publicly archived list).
+Copyright © 1994-2006 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C 
+liability, trademark, document use and software licensing rules apply. Your 
+interactions with this site are in accordance with our public and Member privacy 
+statements.
+Last updated: $Date: 2006/03/31 04:05:02 $ by $Author: shawn $

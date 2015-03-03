@@ -1,0 +1,64 @@
+MySQL AB :: The world's most popular open source database The world's most 
+popular open source database    Login / Register    MySQL.com
+   MySQL Network
+   Developer Zone
+   Partners
+   Online Shop
+   Products Training Consulting Support OEM News & Events Customers Why MySQL? 
+  How to Buy  
+
+      Over 110 in-depth tutorials and sessions! 
+      Sell-Out Expected!
+      Reserve Your Space Today!  »
+
+      April 24-27, 2006
+      Santa Clara, California News 
+        Capgemini Selects MySQL Cluster for Great Britain Seat Reservation 
+        System 
+        IBM & EMC Join the MySQL Network Certified Partner Program 
+        MySQL Joins the Eclipse Foundation 
+      Articles 
+        MySQL 5.1 New Features: MySQL Events 
+        The MaxDB series on PlanetMySQL 
+      Products 
+      MySQL 5.0    New! 
+      MySQL Cluster 
+      Migration Toolkit 
+      Downloads » 
+      Documentation » 
+      White Papers » 
+      Developer Zone » 
+      Jobs at MySQL » 
+            Industries 
+            Retail
+                Case Studies »
+            Telecom
+                Case Studies »
+            Travel
+                Case Studies »
+            Embedded
+                Case Studies »
+            Web Seminars 
+            What's New in MySQL 5.1? Partitioning, Row-based Replication and 
+            more...
+             Register Now » 
+
+
+            Coding and Indexing Strategies for Optimal Performance with Jay 
+            Pipes 
+             Register Now » MySQL Training 
+            MySQL 5.0 High Availability 
+
+            May 31: Washington DC
+            Jun 13: London
+
+            MySQL 5.0 Performance Tuning 
+
+            Jun 06: Minneapolis
+            Jul 24: Stuttgart
+            May 09: London
+
+
+          
+© 1995-2006 MySQL AB. All rights reserved.About MySQL Careers Site Map Contact 
+  Us Privacy Policy Legal   

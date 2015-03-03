@@ -1,0 +1,315 @@
+Java Technology Java Solaris Communities Sun Store Join SDN My Profile Why 
+      Join? 
+
+    » search tips 
+
+      APIsDownloadsTechnologiesProductsSupportSun.com
+      Developers Home > Products & Technologies >  
+
+  
+
+Java Technology
+
+
+      Products & Technologies 
+            - J2SE (Core/Desktop)
+            - J2EE (Enterprise/Server)
+            - J2ME (Mobile/Wireless)
+            - Java Card
+            - Java Web Services
+            - Java Business Integration
+            - XML
+            - Other Java Technologies
+       
+
+
+
+      Downloads 
+            - Early Access
+            - Tools
+       
+
+
+
+      Reference 
+            - API Specifications
+            - Code Samples & Apps
+            - Documentation
+            - BluePrints
+            - Technical Themes
+            - Technical Articles & Tips
+            - » See all
+       
+
+
+
+      Community 
+            - Forums
+            - Bug Database
+            - Ask the Experts
+            - Chats
+            - User Groups
+            - Newsletters
+            - Books & Authors
+            - Java Technology Blogs
+       
+
+
+
+      News & Updates 
+       
+
+
+
+      Learning 
+            - New to Java Center
+            - JavaOne Technical Sessions
+            - Tutorials
+            - Training
+            - Certification
+            - Quizzes
+       
+
+
+
+      Regional Sites 
+            - 
+            - 
+            - 
+       
+
+
+
+       
+            Java.sun.com: The Source for Java Developers
+       
+                  Get the Preview of the Java EE 5 SDK! Download the Java EE 5 
+                  SDK preview and get a feel for the next generation Java EE 5 
+                  platform. 
+
+       
+            What's New 
+       
+              April 13, 2006
+            The Power of Java Hits San Francisco Thousands of Java technology 
+            advocates, developers, and experts from across the globe will 
+            descend upon the Moscone Center from May 16 to 19, 2006, for the 
+            annual JavaOne conference. Here's a preview of the expert-led 
+            technical sessions, real-world examples, hands-on labs, previews of 
+            technical advances, and exciting events with industry leaders. 
+       
+              April 11, 2006
+            Bootstrap Interfaces Definition by Leveraging OSS Common JSR Design 
+            and Shared Entities The OSS through Java initiative (OSS/J) is 
+            focused on the operations and business support systems (back office 
+            systems) of service providers. This article provides users with 
+            guidelines about how to extend the OSS Common API. 
+       
+            April 6, 2006
+            Programming in Real-Time Specification for Java (RTSJ): A 
+            Conversation with Distinguished Engineer Greg Bollella Sun 
+            Microsystems Distinguished Engineer, Greg Bollella, explains how 
+            programming with Real-Time Specification for Java (RTSJ) has gotten 
+            easier and talks about the 2006 JavaOne Conference Slot Car 
+            Programming Challenge. 
+       
+
+       » More 
+       
+            Events 
+       
+
+      2006 JavaOne Conference
+      Register by May 15th to save $100 off most of the 2006 JavaOne conference 
+      packages. Also, be sure to register for your hotel to obtain the 
+      Conference discount and be entered into our hotel sweepstakes. 
+       
+
+      NetBeans Software Day at the 2006 JavaOne Conference 
+      Learn about web-application development for Java EE and rich-client 
+      development for Java SE using the NetBeans IDE. Join James Gosling, 
+      Jonathan Schwartz, Tim Cramer, and others from Sun and the NetBeans 
+      community on Monday, May 15, 2006 at the Argent Hotel in San Francisco. 
+       
+
+      Free Bonus Class for Java University Attendees During 2006 JavaOne 
+      Conference 
+      Java Univeristy has just added a free bonus evening course "Exploring Ajax 
+      & JavaServer Faces (JSF)". This course is only available to those 
+      attending one of the four Java University courses held during the day on 
+      May 15. 
+       
+            Java Learning 
+       
+
+      Java Studio Creator Training: Build Web Applications in a Snap
+      Java Studio Creator training is coming to a city near you! Learn to 
+      develop visual web applications and portlets in just three days. You'll 
+      use the tool's bundled JavaServer Faces components to build applications 
+      that access a database, EJB components, and Web services 
+       
+
+      New Course: Developing Secure Java Web Services
+      This new 2 day workshop is for business component and client developers 
+      who are creating web services and are interested in implementing standard 
+      security mechanisms. 
+       
+
+      On-line Learning Series for Open ESB and JBI
+      Learn how to leverage JBI and Project Open ESB to implement right-sized 
+      integration solutions based on SOA. 
+       
+
+      Java Tutorial Update: J2SE 5.0
+      The Java Tutorial, a practical guide for programmers with hundreds of 
+      complete working examples, has recently been updated to include J2SE 5.0. 
+       
+
+      New to Java Center
+      Make sense of many Java technologies and acronyms with Unraveling Java 
+      Terminology and the Java Concept Map. Also learn how to set up the lastest 
+      Java platform software using Getting Started as a guide. 
+       
+            Java Community 
+       
+
+      Java Platform, Standard Edition 6 (Java SE 6) Beta Now Available
+      The much anticipated beta of Java SE 6 (code named "Mustang") has been 
+      launched. Check out this release, the result of unprecedented levels of 
+      collaboration between Sun engineers, registered researchers, and the Java 
+      community. 
+       
+
+      Migrate to J2SE 5.0
+      Our latest spotlight page collects J2SE 5.0 articles, tips, features, 
+      white papers and more to make it easier for you to decide.  » See all 
+       
+
+      "Get Java" Software Button Now Available
+      Host the new "Get Java" software button on your web site and ensure your 
+      customers have an easy way to get the latest version of the Java Runtime 
+      Environment (JRE). 
+
+              
+       
+            Popular Downloads
+                  - J2SE 5.0
+                  - J2SE 5.0 ()
+                  - NetBeans IDE
+                  - J2EE 1.4 SDK
+                  - Java WSDP 2.0
+                  - Sun Java Studio Creator Free
+                  - Sun Java Studio Enterprise Free
+                  - Sun Java System Application Server
+                  - Sun Java System Web Server
+                  - StarOffice 8 SDK
+
+       
+        
+                  Sun Developer Expert Assistance
+                  Have a question about using a Sun developer tool or 
+                  technology? Get help from a dedicated Sun engineer through the 
+                  Sun Developer Expert Assistance program. 
+
+       
+
+
+      Get the Java EE 5 SDK
+      Download the Java EE 5 SDK and you could win a Sun Ultra 20 workstation!
+      » Download Now
+       
+            Related Links
+                  Technical Topics
+                  - Desktop
+                  - Performance
+                  - Security
+                  - Mobility
+                  - Web Services
+                  - GlassFish Project
+                   
+                  Sun Resources
+                  - Developer Events
+                  - java.net
+                  - java.com
+                  - Professional Training
+                  - Java Community Process
+
+       
+
+
+
+
+
+
+
+
+            About Sun  |  About This Site  |  Newsletters  |  Contact Us  |  
+            Employment
+            How to Buy  |  Licensing  |  Terms of Use  |  Privacy  |  Trademarks 
+
+             
+
+             
+            Copyright 1994-2006 Sun Microsystems, Inc. A Sun Developer Network 
+            Site
+
+            Unless otherwise licensed, code in all technical manuals herein 
+            (including articles, FAQs, samples) is provided under this License. 
+             
+             Content Feeds 
+
+
+
+Java SE
+Java EE
+Java ME
+Java Card
+Web Services
+Solaris
+Sun Studio Compilers
+See All »
+        
+
+Java SE
+Java EE
+Java ME
+Solaris
+Java Studio Enterprise
+Java Studio Creator
+NetBeans Mobility Pack
+Sun Studio Compilers
+Early Access
+See All »
+        
+
+Java SE
+Java EE
+Java ME
+Solaris
+Mobility
+See All »
+        
+
+Java Studio Creator
+Java Studio Enterprise
+NetBeans Mobility Packs
+Sun Studio Compilers
+Java Enterprise Systems
+See All »
+        
+
+Forums
+Developer Services
+Big Admin
+See All »
+        
+
+Products
+Downloads
+Services & Solutions
+Support
+Training
+About Sun
+See All »
+        
+ 

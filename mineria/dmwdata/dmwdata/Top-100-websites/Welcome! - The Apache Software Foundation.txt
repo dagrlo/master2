@@ -1,0 +1,115 @@
+Welcome! - The Apache Software Foundation 
+
+
+
+      Apache Projects
+        HTTP Server 
+        Ant 
+        APR 
+        Beehive 
+        Cocoon 
+        DB 
+        Directory 
+        Excalibur 
+        Forrest 
+        Geronimo 
+        Gump 
+        iBATIS 
+        Incubator 
+        Jackrabbit 
+        Jakarta 
+        James 
+        Lenya 
+        Logging 
+        Lucene 
+        Maven 
+        MyFaces 
+        Perl 
+        Portals 
+        SpamAssassin 
+        Struts 
+        TCL 
+        Tomcat 
+        Web Services 
+        XML 
+        XMLBeans 
+        XML Graphics 
+      Apache-wide
+        Conferences 
+        Foundation 
+        Infrastructure 
+        JCP 
+      Sister Projects
+        Bookstore 
+        PlanetApache 
+        PHP 
+        Module Registry 
+        Apache-SSL 
+        mod_ssl 
+       Welcome! 
+      The Apache Software Foundation provides support for the Apache community 
+      of open-source software projects. The Apache projects are characterized by 
+      a collaborative, consensus based development process, an open and 
+      pragmatic software license, and a desire to create high quality software 
+      that leads the way in its field. We consider ourselves not simply a group 
+      of projects sharing a server, but rather a community of developers and 
+      users.
+       Support the Apache Software Foundation 
+      You are invited to participate in The Apache Software Foundation. Our 
+      membership consists of those individuals who have demonstrated a 
+      commitment to collaborative open-source software development through 
+      sustained participation and contributions within the Foundation's 
+      projects. Of course, you can contribute to the foundation in many ways:
+            Buy Apache GearDonate your old carDonate via PayPalSupport FAQ
+
+       Latest News 
+      If you would like to keep up with news and announcements from the 
+      foundation and all its projects, you can subscribe to the new Apache 
+      Announcements List.
+      projects.apache.org Now Open 
+      Have you ever wondered how to get an idea of all the different projects 
+      under the Apache Software Foundation umbrella? Many interesting hours can 
+      be spent browsing our project websites to find those interesting gems. But 
+      now there is also an alternative.
+      We are happy to introduce the projects.apache.org website. This site 
+      contains a catalog of Apache projects and the resources they provide. It 
+      is not yet comprehensive, so if you see a project that is missing, ask 
+      them to get themselves listed.
+      Call for Papers for ApacheCon Europe 2006 
+      ApacheCon Europe 2006 will be held at the Burlington Hotel in Dublin, 
+      Ireland, June 26-30, 2006. The Call for Papers is open until March 27.
+       Links about the Apache People 
+      Inde (Apache) Literature Foundation
+        FAQ 
+        Licenses 
+        Public Records 
+        Donations 
+        Thanks 
+        Contact 
+      News
+        Conferences 
+        Other Events 
+      How it works
+        Introduction 
+        Meritocracy 
+        Structure 
+        Roles 
+        Collaboration 
+        Infrastructure 
+        Incubator 
+        Other entities 
+        Glossary 
+        Voting 
+      Get Involved
+        Mailing Lists 
+        Version Control 
+        Developer Info 
+      Download
+        from a mirror 
+      Search apache.org
+       
+
+
+
+      Copyright © 1999-2005, The Apache Software Foundation
+      Licensed under the Apache License, Version 2.0. 

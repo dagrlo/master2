@@ -1,0 +1,98 @@
+Webmonkey: The Web Developer's Resource          the web developer's 
+      resource
+
+       
+      Nitty Gritty Ajax
+      Adam DuVander shows us how to implement Ajax drop down boxes in this 
+      beginner's tutorial. All you need is a little bit of JavaScript knowledge 
+      and you can join the Ajax revolution.  12 Apr 2006 
+
+The Monkey Bites Blog
+Check out the Monkey Bites blog hosted by our friends at Wired News. Join the 
+Webmonkey staff as we serve up fresh, piping hot stacks of webdev news and 
+commentary on a daily basis. 
+
+       
+      More Effective Images
+      Dane Howard tells us how changing our habits behind the viewfinder can 
+      result in better and more spontaneous digital photographs. Excerpted from 
+      his book, The Future of Memories.  10 April 2006 
+
+       
+      What Is A Ning?
+      A new browser-based building tool makes developing social web apps 
+      incredibly easy. Ning handles the backend dirty work — all you need to do 
+      is innovate and create. By Paul Adams.  5 Apr 2006 
+      recent  articles » 
+      HOW-TO LIBRARY
+       
+      Authoring 
+      HTML Basics
+      Tables
+      Frames
+      Browsers
+      Tools
+      Stylesheets
+      DHTML
+      XML 
+      Design 
+      Site Building
+      Graphics
+      Fonts 
+      Multimedia 
+      Audio/MP3
+      Shockwave/Flash
+      Video
+      Animation 
+      E-Business 
+      Building
+      Marketing
+      Tracking 
+      Programming 
+      JavaScript
+      Java
+      ASP
+      PHP
+      ColdFusion
+      Perl/CGI 
+      Backend 
+      Databases
+      Apache/XSSI
+      Unix
+      Security
+      Networks
+      Protocols 
+      Jobs 
+      Tips
+
+      About Us 
+      Staff Hideout
+      Link to Us
+      Webmonkey Latin America
+      Webmonkey Japan QUICK REFERENCE
+       JavaScript Library
+      HTML Cheatsheet
+      Special Characters
+      Color Codes 
+      Browser Chart
+      Stylesheets Guide
+      Unix Guide
+      Glossary
+      Domain Registries 
+        
+       
+ 
+
+
+           » Lycos Worldwide © Copyright 2005, Lycos, Inc. All Rights Reserved.  
+      Lycos® is a registered trademark of Carnegie Mellon University.
+
+           About Terra Lycos | Help | Feedback | Jobs | Advertise | Business 
+      Development
+
+
+     Your use of this website constitutes acceptance of the Lycos Network 
+Privacy Policy and Terms & Conditions. 
+
+ [an error occurred while processing this directive] 
+ 

@@ -1,0 +1,120 @@
+Digital Web Magazine The web professional's online magazine of choice.This week
+Building Your Own Start-up Technology Company, Part 2
+In: Columns > Innovating the Web Experience
+ Time for the fun stuff! OK, not quite yet. This week, Dirk Knemeyer covers the 
+side of business creative folks tend to find the least exciting—legal, financial 
+and human resources. It’s the second part in his four-part in-depth look at 
+starting your own technology, software or Web design business. Read more 
+Published on April 10, 2006Dirk Knemeyer6 CommentsMuch of this will be the 
+  farthest from your personal experience and comfort level, so—just like in high 
+  school calculus—this is the time to pay attention!
+  — Dirk Knemeyer. Read morePrevious weeks
+Campaign Monitor review
+In: Reviews > Product Reviews
+ Whether it’s you or your clients who need email campaign management and 
+tracking, you owe it to your sanity to look into hosted applications. Digital 
+Web Magazine product reviewer Ken Westin takes a peek at Campaign Monitor’s 
+price-to-performance ratio. Read more 
+Published on April 3, 2006Ken Westin3 CommentsPreparing for Widescreen
+In: Articles
+ You can’t ignore them anymore—Web users with high-resolution widescreen 
+monitors are no longer a trifling group. And to them, your 800×600-proof layouts 
+are floating in an ocean of white space. Find out how to take advantage of 
+screen real estate when you’ve got it—without breaking your site on last year’s 
+monitors. Read more 
+Published on March 27, 2006Mike Madaio41 CommentsCSS Mastery
+In: Reviews > Book Reviews
+ Many of us have become intimate with Web standards only through trial and 
+error, and rely on a handful of techniques to make things work and look good. If 
+you could use a little book-based back-to-the-basics, dive into Andy Budd’s CSS 
+Mastery. Read more 
+Published on March 20, 2006James McNally12 CommentsBuilding Your Own Start-up 
+Technology Company, Part 1
+In: Columns > Innovating the Web Experience
+ Want to break those corporate-world shackles? Do you dream of enjoying your 
+job? Start with five essential planning steps, and learn how to get from here to 
+there in part one of a three-parter on building your own start-up tech company. 
+Read more 
+Published on March 14, 2006Dirk Knemeyer11 CommentsJust Build It: HTML 
+Prototyping and Agile Development
+In: Columns > View Source
+ Everyone’s talking about agile Web development, but misconceptions abound. Do 
+you need to shun traditional planning and design documents just to stay 
+competitive? And what do your clients really want? Garrett Dimon clears things 
+up with a look at how HTML prototyping help you save time and avoid “document 
+debt.” Read more 
+Published on March 6, 2006Garrett Dimon22 CommentsDerek Featherstone
+In: Interviews
+ This week, we crack Derek Featherstone’s playbook for his best accessibility 
+tips—from evaluating features with disabled users to creating micro-layouts and 
+marking up links. Jump in and find out what’s up Feather’s sleeve in 2006. Read 
+more 
+Published on February 27, 2006Carolyn Wood6 CommentsUsability for Rich Internet 
+Applications
+In: Articles
+ So you’ve stopped cringing at the term “Ajax” and you’re ready to start 
+building. But, aside from studying a handful of well-designed sites, how do you 
+figure out how to build usability into your rich Internet applications? Donna 
+Maurer offers tips on designing pages and visual processes for a new generation 
+of apps. Read more 
+Published on February 20, 2006Donna Maurer17 CommentsMore Articles By DateDaily 
+News2005 Reader Survey Results
+Well, some things are better done late than never. I finally got around to 
+publishing the results of the 2005 Digital Web Magazine Reader Survey that we 
+took in December 2005 and January 2006. Some quick take-aways from this year's 
+survey:
+  The 25 to 34 age bracket seems to be growing even more this year 
+  There's a slight increase in women reading Digial Web Magazine 
+  Two to four-person companies seem to be on the upraise 
+  More readers are adopting 1280x1024 for their display area size 
+  DSL is becoming slightly more adopted where Cable is remaining consistant with 
+  last year 
+  Firefox usage keeps increasing this year where IE and Safari usage is 
+  decreasing 
+  Stylesheets, User Experience Design, and User-Centered Design are the top 
+  three topics of choice 
+Those are just some quick indicators. Go ahead and check out the results 
+yourself and make your own calls.
+April 11, 2006 at 10:12 PMNick Finck3 CommentsArticle: Building Your Own 
+Start-up Technology Company, Part 2
+This week, Innovating the Web Experience columnist and Involution Studios 
+partner Dirk Knemeyer shares his knowledge on the legal, financial and human 
+resources aspects of starting your own business in this second part of a 
+four-part series on Building a Start-Up Tech Company. Read more...
+April 10, 2006 at 8:30 PMKrista Stevens0 CommentsComet, the compliment of AJAX
+My good friend, Ross Olson tells me that there is a new acronym in town. Hot on 
+the heels of the hype for AJAX comes ...Comet, Low Latency Data for the Browser. 
+Ross goes on to say "Ajax is good for the browser, but doesn't allow the server 
+to have it's say. Comet allows the server to push asynchronously. Ajax allows 
+the browser to pull asynchronously. Two great tastes that taste great together. 
+They compliment each other." Just like AJAX the technology is nothing new, but 
+simply a repackaging of something that has been around for a while. Alex Russell 
+is the guy behind Comet and if all goes well he may be giving Comet workshops 
+and traveling the world on book tours in about a year.
+April 10, 2006 at 3:22 PMNick Finck0 CommentsApple, Microsoft, and Linux all in 
+bed together?
+On the heels of the Microsoft does Linux announcement comes the Apple does 
+Microsoft announcement. No folks, this is not some idiot April Fools joke, it's 
+April 5th and I assure you this is very real. Which will, of course, beg the 
+question What if Microsoft Bought Apple? Yikes. [thanks for the tips Tristan 
+Louis, Garrett Dimon, and Thomas Vander Wal]
+April 5, 2006 at 7:19 AMNick Finck3 CommentsOmni starts blogging
+Linda Sharps, "The Marketing Weasel" at The Omni Group, tells us that they now 
+have a blog up.. so now you can hear all your Omni related news directly from, 
+well, The Omni Mouth. Linda goes on to say "However, lack of demand WILL NOT 
+STOP US. No, indeed, we are barging straight ahead into the magical world of 
+blogging. Because we are focused on community! And we like talking with our 
+users! And, well, some of us have too much time on our hands."
+April 4, 2006 at 3:11 PMNick Finck1 CommentSubscribe with Bloglines - Technorati 
+Profile - Technorati Cosmos
+More News By Date
+Advertise with us
+Copyright © 1994-2006 Digital Web Magazine. All Rights Reserved.Home 
+  Contribute Subscribe Contact About Articles by topic Articles by date Articles 
+  by author Articles by title Articles by type Search   
+Advertise with us
+Photos provided courtesy of iStockPhoto.com
+
+Publication managed with the help of Basecamp
+
+Newsletter powered by Campaign Monitor 

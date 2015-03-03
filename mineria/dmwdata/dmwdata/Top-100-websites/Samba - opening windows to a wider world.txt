@@ -1,0 +1,118 @@
+Samba - opening windows to a wider worldsearch samba.org:  |  Choose A Mirror 
+  Australia Australia Austria Belgium Bolivia Canada China Denmark Finland 
+  France Germany Germany Germany Germany Greece Hong Kong Hungary Ireland Italy 
+  Korea Lithuania Netherlands Netherlands Norway Poland Russia Russia Singapore 
+  Sweden Switzerland Taiwan USA (East Coast) USA (Midwest) USA (Midwest) USA 
+  (West Coast) USA (West Coast) Opening Windows to a Wider World 
+  What Is Samba? 
+  Latest News 
+  FAQ 
+ 
+  Download Info 
+  Binaries 
+  How To Install 
+  GUIs 
+ 
+  Official HOWTO 
+  By Example 
+  Using Samba 
+  Docs And Books 
+ 
+  List Subscribe 
+  List Archives 
+  IRC 
+  Etiquette 
+ 
+  Devel Overview 
+  SVN Source 
+  Historical CVS Source 
+  Build Farm 
+  Bug Reports 
+ 
+  Samba Team 
+  Donations 
+  T-shirts, etc 
+  Contacts For... 
+Current Stable Releases
+  Samba 3.0.22 (gzipped) 
+  Release Notes 
+  Signature 
+Historical
+  Samba 2.2.12 (gzipped) 
+  Release Notes 
+  Signature 
+Maintenance
+  Patches 
+  Security Updates 
+  GPG Key 
+  Release History 
+Beyond samba.org
+  Commercial Support 
+  Samba-related Products 
+  Mirroring Info 
+  samba eXPerience 
+Related Sites
+  linux-cifs.samba.org 
+  survey.samba.org 
+  jcifs.samba.org 
+  rsync.samba.org 
+  ccache.samba.org 
+  distcc.samba.org 
+  ppp.samba.org 
+International Sites
+  Deutsch: samba.sernet.de 
+  Italiano: samba.xsec.it 
+  Hebrew: linux.israel.net 
+  Chinese: hk.samba.org 
+Samba is an Open Source/Free Software suite that has, since 1992, provided file 
+and print services to all manner of SMB/CIFS clients, including the numerous 
+versions of Microsoft Windows operating systems. Samba is freely available under 
+the GNU General Public License.
+Latest News
+  12 April 2006 mod_ntlm_winbind Updated for Apache2 
+  6 April 2006 Golden Penguin Bowl Boston '06 
+  5 April 2006 ZDNet on Samba's Quick Response 
+  3 April 2006 FSFE's Counsel Carlo Piana Groklaw Interview 
+  30 March 2006 Security Release: Samba 3.0.22 Available for Download 
+  28 March 2006 Reminder: Samba eXPerience 2006 
+  23 March 2006 Samba 4.0.0TP2 Available for Download 
+  17 March 2006 Low Point Archive Update 
+  15 March 2006 Coverity Bugs Down to Zero 
+  7 March 2006 samba4WINS, Replicating WINS Server 
+Current Release
+30 Mar 2006
+Security Release: Samba 3.0.22 Available for Download
+This is a security release of Samba. The Samba 3.0.21 release series (including 
+the patch releases a through c) has been discovered to expose the clear text of 
+the server's machine account credentials in the winbind log files when the log 
+level is set to 5 or higher. Details can be found in the online release notes or 
+in the original security announcement for CAN-2006-1059.
+The Samba 3.0.22 source code can be downloaded now. The GnuPG signature for the 
+uncompressed tarball is also available. If you prefer to download just the diff 
+from 3.0.21c to 3.0.22, the patch file (gpg signature) is also available. 
+Precompiled packages for Fedora Core 4, RedHat 9, all SuSE platforms, and 
+Solaris are available in the Binary_Packages download area. Packages for other 
+platforms will be available shortly.
+23 Mar 2006
+Samba 4.0.0TP2 Available for Download
+Samba 4 is the ambitious next version of the Samba suite that is being developed 
+in parallel to the stable 3.0 series. The main emphasis in this branch is 
+support for the Active Directory logon protocols used by Windows 2000 and above.
+Samba 4 is currently not yet in a state where it is usable in production 
+environments. Note the STATUS file, which aims to document what should and 
+should not work.
+With 3 years of development under our belt since Tridge first proposed a new 
+Virtual File System (VFS) layer for Samba3 (a project which eventually lead to 
+our Active Directory efforts), it was felt that we should create something we 
+could 'show off' to our users. This is the second Technology Preview (TP), aimed 
+at allowing users, managers and developers to see how we have progressed, and to 
+invite feedback and support.
+The uncompressed tarball and patch files have been signed with the Samba Release 
+Key (ID 157BC95E). The source code can be downloaded now. See the release notes 
+for more information.
+ 
+Samba T-shirts and mugs are available!
+http://samba.org/ is automatically redirected to one of our US mirrors. To 
+change to a mirror closer to your location, choose a mirror site from the 
+drop-down menu above. The popularity of Samba puts a strain on our network. By 
+using a mirror site you can do your bit to reduce the load.

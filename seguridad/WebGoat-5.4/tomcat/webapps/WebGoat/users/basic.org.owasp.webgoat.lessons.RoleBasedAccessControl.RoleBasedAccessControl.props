@@ -1,11 +1,13 @@
 #basic
-#Mon Feb 23 18:14:12 CET 2015
-LAB\:\ Role\ Based\ Access\ Control.numVisits=1
+#Sun Mar 01 18:39:29 CET 2015
+LAB\:\ Role\ Based\ Access\ Control.numVisits=28
+LAB\:\ Role\ Based\ Access\ Control.Bypass\ Data\ Layer\ Access\ Control.completed=true
 LAB\:\ Role\ Based\ Access\ Control.completed=false
 LAB\:\ Role\ Based\ Access\ Control.viewedLessonPlan=false
 LAB\:\ Role\ Based\ Access\ Control.maxHintLevel=0
+LAB\:\ Role\ Based\ Access\ Control.Bypass\ Business\ Layer\ Access\ Control.completed=true
 LAB\:\ Role\ Based\ Access\ Control.viewedCookies=false
-LAB\:\ Role\ Based\ Access\ Control.stage=Bypass Business Layer Access Control
+LAB\:\ Role\ Based\ Access\ Control.stage=Add Data Layer Access Control
 LAB\:\ Role\ Based\ Access\ Control.viewedParameters=false
 LAB\:\ Role\ Based\ Access\ Control.viewedHtml=false
 LAB\:\ Role\ Based\ Access\ Control.viewedSource=false

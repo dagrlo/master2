@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            html { height: 100% }
+            body { height: 100%; margin: 0px; padding: 0px }
+        </style>
+        <script type="text/javascript"
+                src="https://maps.google.com/maps/api/js?sensor=false">
+        </script>
+        <script type="text/javascript">
+            function initialize() {
+                var latlng = new google.maps.LatLng(39.51303, -0.42590);
+                var myOptions = {
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+                        position: google.maps.ControlPosition.BOTTOM_CENTER,
+                        mapTypeIds: [google.maps.MapTypeId.ROADMAP, google.maps.MapTypeId.TERRAIN, google.maps.MapTypeId.SATELLITE, google.maps.MapTypeId.HYBRID]
+                    },
+                    zoomControl: true,
+                    overViewMapControl: false,
+                    panControl: false,
+                    scaleControl: false,
+                    rotateControl: false,
+                    zoom: 8, center: latlng,
+                    mapTypeId: google.maps.MapTypeId.TERRAIN};
+                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+                //poniendo un marcador
+                var marker = new google.maps.Marker({
+                    position: latlng,
+                    title: "Marcador centrado en la posicion"
+                });
+
+                var espiral = {
+                    path: d = 'm1.63636,3.63636c1.00697,-0.6 1.8031,-0.92106 2.63345,-1.14255c0.86298,-0.23019 1.69929,-0.6046 2.54458,-0.67564c0.85339,-0.07172 1.75205,-0.17408 2.64394,-0.18182c0.90139,-0.00783 1.71842,0.28091 2.43912,0.72073c0.70628,0.43102 1.51453,0.77027 2.12315,1.4303c0.55945,0.60671 1.3961,0.90529 1.76727,1.66715c0.36896,0.75732 0.39969,1.69283 0.21209,2.55973c-0.18071,0.83504 -0.75007,1.52323 -1.3493,2.16027c-0.6025,0.64051 -1.30366,1.13087 -1.95976,1.68c-0.70719,0.59189 -1.29191,1.26118 -2.1137,1.48897c-0.88396,0.24502 -1.76369,0.20262 -2.63567,0.29288c-0.88291,0.09139 -1.8494,0.49695 -2.63706,0.10252c-0.74336,-0.37225 -1.33455,-1.12756 -1.81964,-1.89042c-0.45555,-0.71641 -0.60408,-1.54958 -0.75761,-2.4303c-0.15296,-0.87746 -0.21365,-1.7824 -0.18179,-2.64676c0.03249,-0.88149 0.57191,-1.57027 1.36742,-1.95324c0.79739,-0.38387 1.60013,-0.72774 2.45455,-0.81818c0.87954,-0.0931 1.76526,0.12652 2.57342,0.46812c0.80597,0.34067 1.57666,0.7831 2.16533,1.31394c0.649,0.58524 1.18643,1.31835 1.25745,2.18109c0.07167,0.87051 -0.02763,1.7962 -0.49358,2.49406c-0.4682,0.70125 -0.98236,1.48216 -1.72852,1.88433c-0.7478,0.40306 -1.76664,0.4237 -2.59342,0.10039c-0.81202,-0.31754 -1.52338,-0.75553 -2.09736,-1.35103c-0.60358,-0.6262 -1.00129,-1.47792 -0.90506,-2.37309c0.09045,-0.84135 0.54308,-1.66906 1.30909,-1.97503c0.78817,-0.31482 1.74006,-0.407 2.59976,-0.10642c0.7751,0.271 1.48544,1.16011 1.18018,2.02776c-0.27938,0.79411 -1.41858,1.10235 -2.27109,0.78664c-0.78367,-0.29022 -0.7057,-1.60645 0.02473,-1.81439c0.86805,-0.24713 1.99273,0.17762 1.70255,1.00291c-0.26951,0.76648 -1.27248,0.47224 -1.05455,-0.27564l-0.31176,0.18158',
+                    scale: 2,
+                    strokeColor: "red",
+                    strokeWeight: 2
+                };
+
+                var marker2 = new google.maps.Marker({
+                    position: new google.maps.LatLng(39.6130, -0.42580),
+                    icon: espiral
+
+                });
+
+                var image = "http://mural.uv.es/dagraulo/egw/actividades/12/god.png";
+                var marker3 = new google.maps.Marker({
+                    position: new google.maps.LatLng(39.7, -0.40),
+                    icon: image,
+                    title: "Grrrr!!!"
+                });
+
+              
+                marker.setMap(map);
+                marker2.setMap(map);
+                marker3.setMap(map);
+            
+            }
+            // para que funcione TERRAIN hay que ponerlo por defecto
+        </script>
+    </head>
+    <body onload="initialize()">
+        <div id="map_canvas" style="width:100%; height:100%"></div>
+
+    </body>
+</html>

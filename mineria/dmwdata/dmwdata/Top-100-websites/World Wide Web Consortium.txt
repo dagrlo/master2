@@ -1,0 +1,224 @@
+World Wide Web Consortium
+Leading the Web to Its Full Potential...
+  Skip to Technologies | Activities | Technical Reports | Site Index | New 
+  Visitors | About W3C | Join W3C | Contact W3C 
+The World Wide Web Consortium (W3C) develops interoperable technologies 
+(specifications, guidelines, software, and tools) to lead the Web to its full 
+potential. W3C is a forum for information, commerce, communication, and 
+collective understanding. On this page, you'll find W3C news, links to W3C 
+technologies and ways to get involved. New visitors can find help in Finding 
+Your Way at W3C. We encourage organizations to learn more about W3C and about 
+W3C Membership.
+W3C Supporters ProgramW3C thanks W3C Members and the individuals and 
+organizations who contribute to the Consortium through the W3C Supporters 
+Program.
+EmploymentCurrent job opportunities at W3C are Web Architecture Specialist, Web 
+Accessibility Engineer, and the W3C Fellows Program.
+Mobile Web InitiativeThe goal of the Mobile Web Initiative is to make Web access 
+from a mobile device as simple, easy, and convenient as Web access from a 
+desktop device. Read about MWI and learn how to sponsor MWI.
+W3C A to ZSkip to News 
+  Accessibility 
+  Amaya 
+  Annotea 
+  CC/PP 
+  Compound Document Formats 
+  CSS 
+  CSS Validator 
+  Databinding 
+  Device Independence 
+  DOM 
+  Efficient XML Interchange 
+  Health Care and Life Sciences 
+  HTML 
+  HTML Tidy 
+  HTML Validator 
+  HTTP 
+  Incubator 
+  InkML 
+  Internationalization 
+  Jigsaw 
+  Libwww 
+  MathML 
+  Mobile Web Initiative (W3C-MWI) 
+  Multimodal Interaction 
+  OWL 
+  Patent Policy 
+  PICS 
+  PNG 
+  Privacy and P3P 
+  Quality Assurance (QA) 
+  RDF 
+  Rich Web Clients 
+  Rules 
+  Semantic Web 
+  SMIL 
+  SOAP/XMLP 
+  SPARQL 
+  Style 
+  SVG 
+  Timed Text 
+  URI/URL 
+  Validators 
+  Voice 
+  WAI 
+  Web APIs 
+  Web Application Formats 
+  Web Architecture (TAG) 
+  WebCGM 
+  Web Services 
+  XForms 
+  XHTML 
+  XLink 
+  XML 
+  XML Base 
+  XML Encryption 
+  XML Key Management 
+  XML Processing 
+  XML Query 
+  XML Schema 
+  XML Signature 
+  XPath 
+  XPointer 
+  XSL and XSLT 
+More topics...NewsSkip to Search
+SPARQL Specifications Are W3C Candidate Recommendations
+2006-04-06: W3C is pleased to announce the advancement of the SPARQL 
+specifications to Candidate Recommendations. With SPARQL (pronounced "sparkle"), 
+developers and end users can write and consume search results across a wide 
+range of information such as personal data, social networks and metadata about 
+digital artifacts like music and images. SPARQL Query Language for RDF specifies 
+syntax for authoring, matching and testing. SPARQL Protocol for RDF describes 
+remote data access and transmission of queries from clients to processors. The 
+SPARQL Query Results XML Format is provided for search results. Visit the 
+Semantic Web home page. (News archive)
+Note: Multimodal Developer Feedback
+2006-04-17: The Multimodal Interaction Working Group has released Multimodal 
+Application Developer Feedback as a Working Group Note. The Note documents 
+feedback for the W3C Multimodal Interaction and Voice Browser Working Groups to 
+consider when specifying future multimodal and voice authoring capabilities. It 
+includes features developers liked about their development environments as well 
+as features they thought were lacking. Visit the Multimodal Interaction home 
+page. (News archive)
+Working Draft: Multimodal Architecture and Interfaces
+2006-04-14: The Multimodal Interaction Working Group has released an updated 
+Working Draft of Multimodal Architecture and Interfaces. The draft is a 
+framework and platform for the creation and development of user interfaces that 
+allow multiple ways to interact with the Web. With multimodal interaction users 
+choose the way or "mode" of access that suits their current needs. Developers 
+can provide user interfaces and output for each mode, including displays, 
+tactile mechanisms, speech and audio. (News archive)
+Working Draft: Internationalization Tag Set
+2006-04-14: The Internationalization Tag Set Working Group has published an 
+updated Working Draft of the Internationalization Tag Set (ITS). Organized by 
+data categories, this set of elements and attributes supports the 
+internationalization and localization of schemas and documents. Implementations 
+are provided for DTDs, XML Schema and Relax NG, and for existing vocabularies 
+like XHTML, DocBook and OpenDocument. Visit the Internationalization home page. 
+(News archive)
+Advance Notice: Workshop on Device Description Repository
+2006-04-13: W3C plans an International Workshop on the Implementation of a 
+Device Description Repository on 12-13 July in Madrid, Spain, hosted by 
+Telefónica Investigación y Desarrollo. Participants will discuss the design, 
+implementation and use of a Device Description Repository (DDR) being proposed 
+by the Device Description Working Group. The proposed DDR will provide device 
+information to content and service providers for adapting content to suit client 
+devices. A Call for Participation for this Workshop is expected in April. Read 
+about W3C Workshops and the Mobile Web Initiative. (News archive)
+Working Draft: DOM Level 3 Events
+2006-04-13: The Web API Working Group has released a Working Draft of Document 
+Object Model (DOM) Level 3 Events. Language and platform neutral, the system 
+allows registration of event handlers, describes event flow through a tree 
+structure, and provides context for each event. The previous version of this 
+document was a Working Group Note from the Document Object Model (DOM) Working 
+Group. Read about the Rich Web Clients Activity. (News archive)
+Note: Defining N-ary Relations on the Semantic Web
+2006-04-13: The Semantic Web Best Practices and Deployment (SWBPD) Working Group 
+has published Defining N-ary Relations on the Semantic Web as a Working Group 
+Note. In Semantic Web languages like RDF and OWL, a property links two 
+individuals or an individual and a value. The Note presents patterns and 
+considerations for representing relations between more than two individuals or 
+values. Visit the Semantic Web home page. (News archive)
+Last Call: Mobile Web Best Practices
+2006-04-12: The Mobile Web Best Practices Working Group has released a second 
+Last Call Working Draft of Mobile Web Best Practices 1.0. The draft describes 
+how to produce Web content and Web sites intended for delivery to mobile and 
+small-screen devices. Written for all participants in the mobile value chain, 
+the document is designed to improve user experience. Comments are welcome 
+through 3 May. Read about the W3C Mobile Web Initiative, a joint effort by 
+authoring tool vendors, content providers, handset manufacturers, browser 
+vendors and mobile operators. (News archive)
+Past NewsSearchSkip to Contents
+
+Search W3C
+ 
+  
+Search W3C Mailing Lists
+TestimonialsOracle Corporation
+
+Oracle is committed to preserving the open standards-based philosophy that has 
+made the World Wide Web so successful. We believe the W3C's open, 
+consensus-driven process and associated rigorous public reviews make it uniquely 
+positioned to guide the Web's technical evolution. (Member testimonials)
+MembersMember Home Page 
+  Member Submissions 
+  Current Members 
+  Meetings 
+  Fellows 
+Get InvolvedW3C Membership Benefits 
+  Reasons to Join W3C 
+  Mailing Lists 
+  Translations 
+  Workshops 
+  Liaisons 
+  Donations to W3C 
+  Open Source Software 
+  Employment 
+  More ways to participate 
+IntroductionAbout W3C 
+  Frequently Asked Questions (FAQ) 
+  Glossary 
+  Process Document 
+  Tutorials 
+  More... 
+W3C TeamPeople 
+  Team Submissions 
+PresentationsPublic Presentations 
+News RoomW3C News Archive (RSS) 
+  Subscribe to W3C Weekly News 
+  Press Releases 
+  Multilingual Press Release RSS 
+  W3C in the Press 
+World OfficesThe W3C Offices translate many W3C home page news items. W3C 
+Offices are located in these parts of the world:
+  Australia 
+  Benelux/Bénélux 
+  中国 (China) 
+  Suomi (Finland) 
+  Deutschland und Österreich (Germany and Austria) 
+  Ελλάδα (Greece) 
+  香港 (Hong Kong) 
+  Magyarország (Hungary) 
+  भारत (India) 
+  ישראל (Israel) 
+  Italia (Italy) 
+  한국 (Korea) 
+  المغرب (Morocco) 
+  España (Spain) 
+  Sverige (Sweden) 
+  United Kingdom and Ireland 
+SystemsGet Member Password 
+  System Status 
+
+
+
+W3C would like to thank the Supporters who have contributed financially or 
+through a donation of goods to W3C.
+Read about the layout and send comments about this page. Syndicate this page 
+with RSS 1.0, an RDF vocabulary used for site summaries.
+Webmaster · Last modified: $Date: 2006/04/17 17:00:10 $ |
+ |  |  | 
+Copyright © 1994-2006 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C 
+liability, trademark, document use and software licensing rules apply. Your 
+interactions with this site are in accordance with our public and Member privacy 
+statements.

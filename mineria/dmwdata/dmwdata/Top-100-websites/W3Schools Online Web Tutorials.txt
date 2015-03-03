@@ -1,0 +1,168 @@
+W3Schools Online Web Tutorials
+      HTML Tutorials 
+      Learn HTML
+      Learn XHTML
+      Learn CSS
+      Learn TCP/IP
+
+      XML Tutorials 
+      Learn XML
+      Learn XSL
+      Learn XSLT
+      Learn XSL-FO
+      Learn XPath
+      Learn XQuery
+      Learn XLink
+      Learn XPointer
+      Learn DTD
+      Learn Schema
+      Learn XML DOM
+      Learn XForms
+      Learn SOAP
+      Learn WSDL
+      Learn RDF
+      Learn RSS
+      Learn WAP
+      Learn Web Services
+
+      Browser Scripting 
+      Learn JavaScript
+      Learn HTML DOM
+      Learn DHTML
+      Learn VBScript
+      Learn AJAX
+      Learn E4X
+      Learn WMLScript 
+
+      Server Scripting 
+      Learn SQL
+      Learn ASP
+      Learn ADO
+      Learn PHP
+
+      .NET (dotnet) 
+      .NET Microsoft
+      .NET ASP
+      .NET Mobile
+
+      Multimedia 
+      Learn Media
+      Learn SMIL
+      Learn SVG
+      Learn Flash
+
+      Web Building 
+      Web Building
+      Web W3C
+      Web Browsers
+      Web Quality
+      Web Semantic
+      Web Careers
+      Web Hosting
+      Web Certification
+       THE LARGEST WEB DEVELOPER'S SITE ON THE NET
+
+                  Full Web Building Tutorials - All Free
+                  At W3Schools you will find all the Web-building tutorials you 
+                  need, from basic HTML and XHTML to advanced XML, SQL, 
+                  Database, Multimedia and WAP. 
+                  Select your tutorial from the menu on the left!
+
+                  :::
+                  Full Web Building References
+                  Our references cover all Web-building technologies, including 
+                  W3C standards like HTML, XHTML, CSS, XML and other 
+                  technologies like JavaScript, PHP, ASP, SQL and much more. 
+                  Try-It-Yourself On-Line Examples
+                  At W3schools you will find thousands of cut-and-paste 
+examples.
+                  With our on-line HTML editor you can edit the examples and 
+                  experiment with the code on-line. 
+                  :::
+                  Quick and Easy Learning
+                  Because time is valuable, we deliver quick and easy learning. 
+                  At W3Schools, you can study everything you need to learn, in 
+                  an accessible and handy format.
+                  "Never increase, beyond what is necessary, the number of 
+                  entities required to explain anything" --- William of Ockham 
+                  (1285-1349)
+
+                  :::
+                  Where to Start
+                  What does a Web developer have to know?
+                  W3Schools will answer this, and help you become a professional 
+                  Web developer, well prepared for the future.
+                        For the beginner:  Go to our Web Building Primer
+                        For the developer:  Go to our Web Building Tutorial
+                   
+
+                  :::
+                  Internet Joke
+                  Customer: "I want to download the Internet. Do I need a bigger 
+                  hard disk?" 
+                  Download the Internet here
+
+                  :::
+                  W3Schools provides material for training only. We do not 
+                  warrant the correctness of its contents. The risk from using 
+                  it lies entirely with the user. While using this site, you 
+                  agree to have read and accepted our terms of use and privacy 
+                  policy. 
+                  Copyright 1999-2006 by Refsnes Data. All Rights Reserved.
+                  Logo Courtesy - Abhijeet Mhapsekar
+
+            SITE SEARCH
+               
+            About W3Schools
+            W3Schools Forum 
+            REFERENCES
+            HTML 4.01
+            XHTML 1.0
+            CSS 2.0
+            JavaScript
+            HTML DOM
+            XSLT 1.0
+            XPath 2.0
+            XSL-FO
+            WML 1.1
+            ASCII Reference
+            Entity Reference
+            HTML Color Names 
+            EXAMPLES
+            HTML Examples
+            CSS Examples
+            XML Examples
+            DOM Examples
+            WAP Examples
+            JavaScript Examples
+            DHTML Examples
+            VBScript Examples
+            ASP Examples
+            ADO Examples
+            ASP.NET Examples
+            SVG Examples 
+            QUIZZES
+            HTML Quiz
+            XHTML Quiz
+            CSS Quiz
+            XML Quiz
+            JavaScript Quiz
+            ASP Quiz
+            SQL Quiz 
+            CERTIFICATION
+            HTML Certification
+            XML Certification
+            ASP Certification 
+            QUICK STARTERS
+            MyFirst HTML
+            MyFirst CSS
+            MyFirst JavaScript
+            MyFirst VBScript 
+            VALIDATION
+            Validate HTML
+            Validate CSS
+            Validate XHTML
+            Validate XML
+            Validate WML 
+            Larger Text? 
+       

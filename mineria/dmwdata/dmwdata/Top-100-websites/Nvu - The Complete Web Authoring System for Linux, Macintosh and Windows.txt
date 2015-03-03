@@ -1,0 +1,108 @@
+Nvu - The Complete Web Authoring System for Linux, Macintosh and WindowsHome 
+       |  Screenshots  |  Developers  |  Downloads  |  FAQ  |  Support  |  About 
+      Nvu 
+English
+Français
+Italiano
+Nederlands
+Deutsch
+&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+Suomi
+&#20013;&#25991;(&#32321;)
+Polski
+&#26085;&#26412;&#35486;
+Español
+Catalan
+
+
+ 
+
+
+
+      Nvu features
+        Designed for Linux Desktop 
+        Easy to use 
+        Powerful 
+        Ideal for non-programmers 
+        Open Source 
+
+Nvu
+Finally! A complete Web Authoring System for Linux Desktop users as well as 
+Microsoft Windows and Macintosh users to rival programs like FrontPage and 
+Dreamweaver. 
+Nvu (pronounced N-view, for a "new view") makes managing a web site a snap. Now 
+anyone can create web pages and manage a website with no technical expertise or 
+knowledge of HTML.
+New Announcement June 28, 2005:
+Nvu 1.0 is now available for download. To download the installation files for 
+available platforms visit the download section.
+Announcement Apr 14, 2005:
+We have a new "demo" page where you can see demo web pages on things you can do 
+with Nvu. We need your help! If you have some ideas on cool things you can do 
+with Nvu please contact us!
+Announcement July 18, 2004:
+We now have a forum for you all to use. Visit http://forum.nvudev.org and sign 
+in today. Our forums is the best place to go to ask questions and to communicate 
+with other people who are using Nvu.
+
+Announcement: Please sign up for our mailing list so that you can be kept 
+informed about new versions as well as other general points of interest for Nvu. 
+Sign up here.
+Supporting Nvu with Donations:
+Many people have asked how they can help support the Nvu project with cash 
+donations. Currently Linspire, Inc. is the chief financial sponsor for Nvu. 
+Linspire believes strongly in open source software and has committed to continue 
+its financial support to the Nvu project. To see other projects that Linspire 
+has contributed to visit www.linspire.com/opensource. The best way to support 
+Nvu is by supporting Linspire through the purchase of their products and 
+services at www.linspire.com/buy. We thank you for your support!
+
+
+
+      Made with NVU!
+
+We really got a lot of feedback asking for an official "Made with Nvu" button so 
+here is a code snippet you can include in your web pages to support Nvu and tell 
+the world that you like it.
+
+<a href="http://www.nvu.com" hreflang="en"><img src="http://www.nvu.com/made-with-Nvu-t.png" alt="Document made with Nvu" border="0"></a>Please do not make a local copy of the image since we would like to use our web 
+server logs to count how many pages include the "Made with Nvu" button. Thanks a 
+lot!
+In addition to the above "Made with Nvu" graphic, we have included two smaller 
+icons for people to use. Use the same procedure described above but replace the 
+"src=" line with:
+      English
+      src="http://www.nvu.com/images/madewithNvu80x15dark.png"
+      src="http://www.nvu.com/images/madewithNvu80x15clear.png"
+      ...
+      French / Français
+      src=http://www.nvu.com/images/FaitAvecNvu80x15clair.png
+      src=http://www.nvu.com/images/FaitAvecNvu80x15fonce.png
+
+
+ Nvu Features
+Check out the latest features and screenshots for Nvu here! 
+
+  WYSIWYG editing of pages, making web creation as easy as typing a letter with 
+  your word processor. 
+  Integrated file management via FTP. Simply login to your web site and navigate 
+  through your files, editing web pages on the fly, directly from your site. 
+  Reliable HTML code creation that will work with all of today's most popular 
+  browsers. 
+  Jump between WYSIWYG Editing Mode and HTML using tabs. 
+  Tabbed editing to make working on multiple pages a snap. 
+  Powerful support for forms, tables, and templates. 
+  The easiest-to-use, most powerful Web Authoring System available for Desktop 
+  Linux, Microsoft Windows and Apple Macintosh users.
+  . 
+Open Source
+Nvu is 100% open source. Anyone is welcome to download Nvu at no charge, 
+including the source code if you need to make special changes. 
+Developers can get involved and help make Nvu even better.
+
+
+
+Sign up to our mailing list today!
+Copyright. © 2003-2006 Linspire, Inc.  All rights reserved.
+Nvu is a trademark of Linspire, Inc
+Contact Us .. Privacy Policy

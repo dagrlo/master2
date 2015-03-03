@@ -1,0 +1,78 @@
+The Web Standards ProjectThe Web Standards ProjectThe Web Standards Project is 
+  a grassroots coalition fighting for standards which ensure simple, affordable 
+  access to web technologies for all.Skip to content SearchSearch WaSP    About 
+  Learn Action Buzz Press 
+
+Task Forces' Latest
+Accessibility TF
+The Accessibility Task Force works with accessibility organizations, technology 
+vendors and others to help promote Web accessibility.
+First ATF F2F Meeting
+The ATF had its first chance to meet face-to-face during SxSW Interactive in 
+Austin, Texas. 
+By Matt May | March 13th, 2006ACID2
+Acid2 is a test page, written to help browser vendors ensure proper support for 
+Web and related standards in their products.
+Acid2 Supported in Opera One Year Later
+Opera 9 passes Acid2, next step for Opera is mobile, and preliminary mumblings 
+about Acid3 have begun. 
+By Molly E. Holzschlag | March 28th, 2006DOM Scripting TF
+The DOM Scripting Task Force evangelizes unobtrusive scripting and facilitates 
+knowledge sharing. 
+DOM Builder
+Now here’s a script we can get behind… Dan Webb’s DOM Builder combines the ease 
+of innerHTML with the precision of DOM methods. 
+By Jeremy Keith | April 13th, 2006Dreamweaver TF
+The Dreamweaver Task Force works with Macromedia's engineers to improve 
+standards compliance and accessibility in Dreamweaver.
+Microformat Extensions for Dreamweaver
+As part of our remit to encourage the use of web standards amongst the 
+Dreamweaver community, the DWTF has produced a suite of extensions to help make 
+working with Microformats easy. 
+By Drew McLellan | March 30th, 2006Education TF
+The Education Task Force works with institutions of higher education to promote 
+instruction of Web standards and standards-compliant public sites.
+Notre Dame Web Group
+Lead Web developer Steve Smith and the University of Notre Dame Web Group tackle 
+web standards and accessibility in original and exciting ways. 
+By Holly Marie Koltz | April 12th, 2006Microsoft TF
+WaSP and Microsoft work collaboratively on issues related to Web standards 
+support in Microsoft products, including Internet Explorer.
+Microsoft IE7 Progress: Sneak Preview of MIX06 Release
+I'm sitting here with Malarkey and Markus Mielke in Mandelieu, a beautiful town 
+in the south of France. We're here attending the W3C Technical Plenary and 
+Markus has been kind enough to give us a sneak preview of the ...
+By Molly E. Holzschlag | March 5th, 2006The Web Standards Project is a 
+grassroots coalition fighting for standards which ensure simple, affordable 
+access to web technologies for all.
+Recent Buzz
+Print-ready poster: separation in a nutshell
+By Ben Henick | April 17th, 2006
+Natalie Jost put together a print-ready poster, available as a PDF file, which 
+describes the benefit of standards-friendly development techniques in a visual 
+way. It’s behind a link within the entry in question.
+Try it, you might like it. It’s one of those "I wish I’d thought of that" 
+things.
+I’d first thought not to mention the poster here, but then I considered all of 
+the programmers I’ve worked with over the years who think "oh, we need to 
+include content or interface bits that are laid out a certain way, so let’s use 
+a table to specify their layout."
+Stretch tnings out across enough includes and all of those tables start to run 
+together. Thence hilarity ensues the first time a producer makes a mistake, or 
+something on the server breaks… and this "nutshell" poster makes it easy to 
+grasp how simply that outcome can be avoided.
+Filed in CSS, HTML/XHTML, DOM, Outreach
+More Buzz articles
+      TitleAuthor
+      DOM BuilderJeremy Keith
+      Notre Dame Web GroupHolly Marie Koltz
+      Spiffy Markup?Ian Lloyd
+      Blogger - Can I get in please?Ian Lloyd
+      Show Us Yer White Bits!Ian Lloyd
+
+
+Back to TopAll of the entries posted in WaSP Buzz express the opinions of their 
+individual authors. They do not necessarily reflect the plans or positions of 
+the Web Standards Project as a group.
+This site is valid XHTML 1.0 Strict, CSS | Get Buzz via RSS or Atom | Colophon | 
+Legal

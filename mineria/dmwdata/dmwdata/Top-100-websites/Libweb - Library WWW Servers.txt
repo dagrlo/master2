@@ -1,0 +1,58 @@
+Libweb - Library WWW ServersLibweb
+Library Servers via WWW
+Updated daily. 
+Libweb currently lists over 7400 pages from libraries in over 125 countries. 
+
+
+
+Contents
+  Keyword Search for location, library type, name or other information. 
+   
+  United States
+    Academic Libraries 
+    Public Libraries 
+    National Libraries and Library Organizations 
+    State Libraries 
+    Regional Consortia 
+    Special and School Libraries 
+  Europe 
+  Africa and the Middle East 
+  Asia 
+  Australia, New Zealand, and the Pacific 
+  Canada 
+  Mexico, the Caribbean, Central America, and South America 
+  Submission Form for New or Revised Entries 
+Related Sites
+Many thanks to the people who maintain these resources.
+  UK Higher Education and Research Libraries, maintained by Ian Tilsed of the 
+  University of Exeter. 
+  The Australian Libraries Gateway, maintained by the National Library of 
+  Australia 
+  lib-web-cats, a research listing of library pages, catalogs, and system 
+  profiles, maintained by Marshall Breeding of Vanderbilt University 
+Official Mirror Sites
+USA
+University of Missouri–St. Louis
+trexel.net, Massachusetts
+rtin.bz, Philadelphia, Pennsylvania
+Rvh9
+namesdatabase.com, Cambridge, Massachusetts 
+Canada
+Paracoda.com, Montréal, Québec
+Europe
+Kelkoo.com, Netherlands
+Institut für Strahlen- und Kernphysik, University of Bonn
+tuxparty.de, Berlin, Germany
+miscellaneousmirror.org, Germany
+very-clever.com, Germany
+Autinity Systems, Chemnitz, Germany
+Xedio Mediastudios, Germany
+Helvetic Association for Open Source Development, Neuchatel, Switzerland 
+Create a Libweb mirror on your site
+
+
+
+© 1995 - 2004. All rights reserved. Document maintained on server 
+<lists.webjunction.org> by Thomas Dowling. Please see the FAQ and contact 
+information.
+Adding your library to the lists? Please use this form.

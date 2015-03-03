@@ -1,0 +1,177 @@
+Web Style Guide, 2nd Edition
+
+
+
+
+
+            WEB STYLE GUIDE, 2nd edition
+            By Patrick Lynch and Sarah Horton
+            Front matter
+              Foreword by Lou Rosenfeld 
+              Preface to the second edition 
+              Preface to the first edition 
+            Chapter 1: PROCESS
+              Before you begin 
+                Planning 
+                Developing a site specification 
+              The site development process 
+                Site definition and planning 
+                Information architecture 
+                Site design 
+                Site construction 
+                Site marketing 
+                Tracking, evaluation, & maintenance 
+              References 
+            Chapter 2: INTERFACE DESIGN
+              Web page design versus conventional document design 
+              Make your Web pages freestanding 
+              Basic interface design 
+                User-centered design 
+                Accessibility 
+              Navigation 
+              References 
+            Chapter 3: SITE DESIGN
+              Organizing information 
+                "Chunking" information 
+              Site structure 
+                Basic information structures 
+                Creating site diagrams 
+              Site design themes 
+                Training 
+                Teaching 
+                Continuing education 
+                Reference 
+                Entertainment and magazine sites 
+                News sites 
+                E-commerce 
+              Site elements 
+                Home pages 
+                Menus and subsites 
+                Resource lists, "other related sites" pages 
+                Site guides 
+                "What's new?" pages 
+                Search features 
+                Contact information and user feedback 
+                Bibliographies and appendixes 
+                FAQ pages 
+                Custom server error pages 
+              Internet versus intranet design 
+                Design standards 
+              References 
+            Chapter 4: PAGE DESIGN
+              Visual hierarchy 
+              Consistency 
+              Page dimensions 
+              Page length 
+              Design grids for Web pages 
+              Page headers and footers 
+              Page layout 
+                Layout tables 
+                Fixed versus flexible 
+                Other uses for tables 
+              Frames 
+              General design considerations 
+              Cross-platform issues 
+              Accessibility 
+              References 
+            Chapter 5: TYPOGRAPHY
+              Characteristics of type on the Web 
+              Content structure and visual logic 
+                Cascading style sheets 
+              Legibility 
+                Alignment 
+                Line length 
+                White space 
+                Typefaces 
+                Type size 
+                Case 
+                Emphasis 
+              Consistency 
+              Cross-platform issues 
+              Accessibility 
+              Type graphics 
+              References 
+            Chapter 6: EDITORIAL STYLE
+              Organizing your prose 
+              Online style 
+              Titles and subtitles 
+              Links 
+              References 
+            Chapter 7: GRAPHICS
+              Characteristics of Web graphics 
+                Color displays 
+                "Browser-safe" colors 
+                Dithering 
+                Screen resolution 
+                Gamma 
+                Graphics and network bandwidth 
+              Graphic file formats 
+                GIF files 
+                JPEG graphics 
+                PNG graphics 
+                Imaging strategies 
+                Summary: File formats 
+              Images on the screen 
+                The screen versus printed color artwork 
+                Complex illustrations or photographs 
+                Diagrams for the computer screen 
+              HTML and graphics 
+              Accessibility 
+              References 
+            Chapter 8: MULTIMEDIA
+              Applications for multimedia 
+              Web multimedia strategies 
+                Audio only 
+                Slide shows 
+                Video 
+                Animation 
+              Preparing multimedia 
+                Processing 
+                Delivery 
+              Design and multimedia 
+              Accessibility 
+              References 
+            Back matter
+              Illustration credits 
+              References 
+            About the site
+              Help using the site 
+              Feedback 
+              Copyright information 
+
+       PROCESS
+            INTERFACE DESIGN
+            SITE DESIGN
+            PAGE DESIGN
+            TYPOGRAPHY
+            EDITORIAL STYLE
+            GRAPHICS
+            MULTIMEDIA
+
+            Search:
+             Web
+             Web Style Guide
+              
+
+            Buy Web Style Guide, 2nd edition at Amazon.com 
+
+            Buy Pat Lynch's new book, Field Guide to North Atlantic Wildlife, at 
+            Amazon.com 
+
+            Buy Sarah Horton's new book, Access by Design, at Amazon.com 
+
+
+             
+
+            Print table of contentsJump to top
+            Buy Web Style Guide, 2nd edition at Amazon.com
+
+
+
+            | NEXT: Foreword
+
+
+            Copyright 2002 Lynch and Horton
+            Send questions and comments to help@webstyleguide.com
+            Last updated 12 July 2005HOME | HELP | FEEDBACK | COPYRIGHT
+

@@ -1,0 +1,87 @@
+Firefox - Rediscover the Web
+  Products Extensions Support Developers 
+Home » Products » Firefox 
+ 
+
+The award-winning, free Web browser is better than ever. Browse the Web with 
+confidence - Firefox protects you from viruses, spyware and pop-ups. Enjoy 
+improvements to performance, ease of use and privacy. It's easy to import your 
+favorites and settings and get started. Download Firefox now and get the most 
+out of the Web.
+Download Firefox 
+1.5.0.2 for Windows, English (4.9MB) 
+System Requirements - Release Notes - Other Systems & Languages 
+
+
+
+Awards
+ 
+Learn More
+  Tabbed Browsing   Integrated Search   Live Bookmarks A Better Web Experience 
+
+  Firefox 1.5 has an intuitive interface and blocks viruses, spyware, and popup 
+  ads. It delivers Web pages faster than ever. And it’s easy to install and 
+  import your favorites. Packed with useful features like tabbed browsing, Live 
+  Bookmarks, and an integrated Search bar, Firefox will change the way you 
+  experience the Web, for the better. 
+  Faster Browsing 
+  Enjoy quick page loading as you navigate back and forward in a browsing 
+  session. Improvements to the engine that powers Firefox deliver more accurate 
+  display of complex Web sites, support for new Web standards, and better 
+  overall performance. 
+  Automatic Updates 
+  The new Software Update feature makes it easy to get the latest security and 
+  feature updates to Firefox. Firefox automatically downloads these small 
+  updates in the background and prompts you when they are ready to be installed. 
+
+  Tabbed Browsing 
+  Use tabbed browsing to open multiple Web pages in a single browser window, and 
+  quickly flip back and forth. Drag and drop open tabs to keep related pages 
+  together. 
+  Improved Pop-up Blocking 
+  Firefox’s built-in pop-up blocker has been enhanced to block more unwanted 
+  pop-up and pop-under ads. 
+  Integrated Search 
+  Tap into the power of the Web’s most popular search engines with the built-in 
+  Search bar, and easily add new engines. 
+  Stronger Security 
+  Firefox keeps you more secure when you’re browsing the Web, closing the door 
+  on spyware, worms, and viruses. The Firefox community of developers and 
+  security experts works around the clock to monitor security issues and release 
+  updates to better protect you. 
+  Clear Private Data 
+  Protect your privacy with the new Clear Private Data tool. With a single 
+  click, you can delete all personal data, including browsing history, cookies, 
+  Web form entries and passwords. 
+  Live Bookmarks 
+  Stay up to date with your favorite Web sites and blogs. Use Live Bookmarks 
+  that update themselves automatically with the latest content from the Web. 
+  Accessibility 
+  Firefox 1.5 delivers easier navigation for everyone, including those who are 
+  visually or motor-impaired. Firefox is the first browser to support DHTML 
+  accessibility, which, when enabled by Web authors, allows rich Web 
+  applications to be read aloud. Users may navigate with keystrokes rather than 
+  mouse clicks, reducing the tabbing required to navigate documents such as 
+  spreadsheets. Firefox 1.5 (Windows version) is also the first browser to meet 
+  US federal government requirements that software be easily accessible to users 
+  with physical impairments. 
+  Customize Firefox 
+  Select new button controls for your toolbars, install extensions to add new 
+  features, or change the look of your browser with themes - the way Firefox 
+  looks and works is under your control. 
+  Next Generation Web Support 
+  Innovative new Web applications and services deliver a richer Web experience. 
+  Support for open Web standards in Firefox ensures you can get the most out of 
+  this emerging class of Web-based tools. 
+
+
+  About Us Privacy Policy Legal Notices 
+Other Languages:Català Čeština Dansk Deutsch Ελληνική Español Euskara Français 
+  Italiano Lietuvių Magyar Nederlands Norsk Polski Português (do Brasil) 
+  Português (Europeu) Română Slovenský Shqip Suomi Türkçe 中文 (简体) (China) 日本語 
+  (Japan) 한국어 (Korea) 正體中文 (繁體) (Taiwan) 
+International Affiliates: Mozilla Europe  Mozilla Japan  Mozilla China 
+Mozilla Corporation is a wholly-owned subsidiary of the Mozilla Foundation.
+Copyright © 2005–2006 Mozilla Corporation. All rights reserved.
+  Document History 
+  Edit 

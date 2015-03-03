@@ -1,0 +1,221 @@
+Dr. Dobb's
+  
+         
+        
+
+      ABOUT US | CONTACT | ADVERTISE | SUBSCRIBE | SOURCE CODE | CURRENT PRINT 
+      ISSUE | FORUMS | NEWSLETTERS 
+
+
+      IN THE NEWS show me more
+      Cross-platform Virus Infects Linux And Windows 
+      A Russian security company announced Friday that it had found a cross-over 
+      virus that can infect PCs running either the open-source Linux or 
+      Microsoft Windows operating systems.
+      April 7, 2006 
+
+       
+            Mac Users May Meet Windows Threats
+
+            By applying Apple Computer's just-released Boot Camp, Mac owners can 
+            now create a dual-boot system that runs either Mac OS X or Windows 
+            XP. It's the latter that worries some in the security field, since 
+            it makes Mac users vulnerable to XP exploits. Others suggest the 
+            dual-boot may offer useful resiliency and a fallback mechanism.
+            April 6, 2006 
+            NIS Releases Biometric Face and Signature Software
+            April 14, 2006 
+            Web App Hack Incidents Are Up As Businesses Take Cover
+            April 12, 2006 
+            JBoss CEO Fleury Sets Record Straight On Company’s Sale To Red Hat
+            April 11, 2006 
+            Embedded experts: Fix code bugs or cost lives
+            April 10, 2006 
+
+
+            VIEWPOINTS more 
+              EDITOR'S EYE
+            by Jon Erickson
+
+            Google Launches Summer of Code 2006
+            Google has launched its Summer of Code 2006, a program that offers 
+            student developers stipends to create new open source programs or to 
+            help currently established projects. (Dr. Dobb's provided extensive 
+            coverage of last year's Summer of Code 2005, including... April 17, 
+            2006 EVENTS
+
+            DR. DOBB'S ARCHITECTURE & DESIGN WORLD 2006
+            July 17-20, 2006
+            Chicago, IL.
+
+            Full conference details and online registration will be available 
+            here in mid-April. Please sign up for our mailing list if you'd like 
+            to receive a copy of the Architecture & Design World catalog.
+
+            SD BEST PRACTICES 2006
+            September 11-14, 2006
+            Hynes Convention Center, Boston, MA.
+
+            More details will be available here in May 2006.
+
+            TOP 5 ARTICLES
+            Translating .NET to .NET 
+            A Frame-Based Message-Passing Parser for C 
+            Accelerating Compute Intensive Functions Using C 
+            And the Scales Fell From Java's Eyes 
+            Consuming .NET Web Services in Oracle JDeveloper 
+      RESEARCH PAPERS & REPORTS
+      Find white papers, case studies, Webcasts and analyst reports on 
+      everything from design through development to testing and implementation.
+      Mobile Location Services: location-based technology and vision for the 
+      next-generation of enhanced services 
+      Cost Control Through Remote Control: A Practical Approach to Reducing the 
+      Cost of Supporting PCs in a Multi-Platform Environment 
+      Management Alert: The Sarbanes-Oxley Act Will Affect Your Enterprise 
+      Common Sense Security Auditing ON THE NEWSTAND show me more 
+       
+      Dependency Injection & Testable Objects
+      Dependency injection is a pattern for designing loosely coupled and 
+      testable objects. 
+      Postmortem Debugging
+      This postmortem analysis approach lets you identify and resolve hidden 
+      errors, but with little impact on the program. 
+      Performance Analysis & Multicore Processors Gary and Walter describe how 
+      to use runtime performance analysis to make single-threaded applications 
+      multithreaded. 
+      Incrementally Updating Software
+      Providing downloadable updates for selected portions of an application is 
+      critical to the development process. 
+      Domain-Specific Languages & DSL Workbench
+      Domain-specific languages can enable richer development environments than 
+      those provided by general-purpose languages. 
+      I, Testbot
+      Testbots let you move the effort of building and testing from your 
+      shoulders to that of software robots. 
+      Message Handling Without Dependencies
+      You can use the full power of C++ to pass messages while maintaining type 
+      safety and avoiding monolithic functions. 
+
+            DDJ MEDIA CENTER more 
+            Multimedia
+            Translating .NET to .NET
+            A talk with Dave Doknjas of Tangible Software Solutions, developer 
+            of Instant C#, Instant C++ and Instant VB. Dave discusses converting 
+            .NET applications from VB.NET to C#, or C# to VB.NET with an 
+            overview of the challenges of translating .NET languages. (MP3, 
+            14:54 mins.)
+
+            Multimedia
+            VB6 to .NET: A Look Back at the Road Ahead
+            Hybrid Interop or Total Rewrite? Refactoring or "Prefactoring"? 
+            Hosts Mark Baker and Nik Hemdal review the series of shows on 
+            migrating Visual Basic 6.0 applications to .NET.
+
+            Multimedia
+            Infrastructure Management Institute Launched
+            Tim Ferguson explains the goals of the recently launched 
+            Infrastructure Management Institute. (MP3, 4:41 mins.)
+
+            Multimedia
+            Debugging and Full System Simulation
+            Peter Magnusson explains how multiprocessing is driving the need for 
+            simulation in systems-level debugging. (MP3, 4:37 mins.)
+
+                                                     DEPARTMENTS
+            Home
+
+            C/C++
+
+            Java
+
+            Architecture & Design
+
+            Eclipse & Open Source
+
+            Windows/.NET
+
+            Database
+
+            Testing & Debugging
+
+            SOA, Web Services & XML
+
+            Mobility
+
+            Security
+
+            Global Developer
+
+            64-bit/Multicore
+
+            Embedded Systems
+
+            Lightweight Languages
+
+            AI and Robotics
+
+            Linux/UNIX
+
+
+
+                   More Media  |  Help
+
+                        Dr. Dobb's TV Video Tutorials
+                        Refactoring in Document Outline
+
+                   
+
+
+
+
+       
+            MOST RECENT ARTICLES
+            Offshoring confidential 
+            Postmortem Debugging 
+            Of Interest 
+            Dependency Injection & Testable Objects 
+            Putting Portable Storage in Perspective HOT FORUM TOPICS INFO-LINK 
+            HP Workstations for Software Developers. Great Value at PC Prices. 
+             
+            Linux/UNIX Developers - Check out the Developer::Linux/UNIX Pipeline
+             
+            Need C/C++ Information? Visit the Developer::C++ Pipeline
+             
+            Dr. Dobb's Developer Library DVD: Release 1 - BUY YOUR COPY TODAY
+              
+
+
+ 
+ 
+      MARKETPLACE 
+      Ensure global WAN & LAN network availability 
+      Find out how to ensure global WAN and LAN network availability for all 
+      networked financial and banking applications across distributed 
+      organizations. Free white papers from NetScout. 
+      White paper: Collaboration in Financial Services 
+      A top industry consultant recommends that financial companies implement 
+      collaboration technologies such as workflow, instant messaging and virtual 
+      workspaces. Download this free white paper to learn more about 
+      collaboration in financial markets. 
+      Recovery Management-When Backup Alone Isn't Enough 
+      Today's businesses can no longer rely on traditional backup or data 
+      replication methodologies alone. Learn how EMC recovery management enables 
+      you to deliver higher levels of recovery services and enhance data 
+      protection strategies. 
+      HP Workstations with Intel(R) Xeon(TM) Processors 
+      High computing needs for Financial Applications? HP Workstations provide 
+      the solutions for you. We understand the tradersý workspace limitations 
+      and design our workstations to maximize productivity. Click now to see 
+      great offers. 
+      Try WebEx Web Conferencing Free 
+      WebEx online meetings and web conferencing solutions: Meet colleagues 
+      online, host web events, train your staff, provide live support. Try it 
+      out free now. 
+
+ 
+ | 
+Copyright © 2006 CMP Media, LLC, Privacy Policy, Your California Privacy Rights, 
+Terms of Service
+Comments about the web site: webmaster@ddj.com 
+SDMG Websites: BYTE.com, DotNetJunkies, MSDN Magazine, Sys Admin, SD Expo, 
+SqlJunkies, Unixreview  
