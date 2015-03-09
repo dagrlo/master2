@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="i15331150347">
+
+	<name>Document_0003</name>
+	<open>1</open>
+	<atom:author>
+		<atom:name>Created using KML Builder</atom:name>
+		<atom:uri>http://www.northgates.ca/kmlbuilder</atom:uri>
+	</atom:author>
+	<GroundOverlay id="i15331149341">
+		<name>KmlGroundOverlay_0001</name>
+		<Icon id="i15331149342">
+			<href>http://upload.wikimedia.org/wikipedia/commons/d/d4/Orbital_Observations_of_Santa_Maria_crater.jpg</href>
+		</Icon>
+		<LatLonBox>
+			<north>39.51228248091359</north>
+			<south>39.51371441210007</south>
+			<east>-0.428657798812816</east>
+			<west>-0.426686924059181</west>
+		</LatLonBox>
+	</GroundOverlay>
+	<Placemark>
+		<name>Polygon_0007</name>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-0.4289582190047192,39.51502276684052,11 -0.4282331608361045,39.51543828924952,11 -0.4275612165225939,39.51577924286494,11 -0.4268358360490565,39.51527146639179,11 -0.4270768698331184,39.51475234659656,11 -0.4279770008403794,39.51416861210444,11 -0.4289582190047192,39.51502276684052,11 -0.4289582190047192,39.51502276684052,11 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Polygon_0009</name>
+		<Style>
+			<IconStyle>
+				<color>ff0099ff</color>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<color>ff000000</color>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<div>
+	1</div>
+<div>
+	2</div>
+<div>
+	3</div>
+<div>
+	4354</div>]]></text>
+				<textColor>ff000000</textColor>
+				<displayMode>default</displayMode>
+			</BalloonStyle>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<bgColor>ff669933</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+			<LineStyle>
+				<color>fff5f5f5</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>8000ffff</color>
+			</PolyStyle>
+		</Style>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-0.4267299935080049,39.51808878900036,0 -0.4260816779797727,39.51796197354465,0 -0.4257132686688547,39.51860893592063,0 -0.425461453868603,39.5176973116705,0 -0.4247325744956954,39.51755939934481,0 -0.4255484139766474,39.51721153168114,0 -0.4254602494342807,39.51639944592682,0 -0.425926066162261,39.51716360565244,0 -0.4265171449968885,39.51655156360607,0 -0.4263015747468979,39.51753822649347,0 -0.4267299935080049,39.51808878900036,0 -0.4267299935080049,39.51808878900036,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

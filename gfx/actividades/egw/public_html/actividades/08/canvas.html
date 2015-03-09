@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script>
+            var MAXRECT = 100000;
+            var tIni = 0;
+            var tFin = 0;
+
+            function escribeTiempo(tiempo){
+                caja=document.getElementById("tiempo");
+                caja.innerHTML=tiempo;
+            }
+
+            function inicia() {
+                context = document.getElementById("myCanvas").getContext('2d');
+                tIni=dameTiempo();
+                for (var i=0;i<MAXRECT;i++){
+                    ponPunto(damePos(),damePos(),dameColor());
+                }
+                tFin=dameTiempo();
+                
+                var duracion=tFin-tIni;
+                escribeTiempo("Dibujados "+MAXRECT+". Duracion del proceso:"+duracion+" ms.");
+            }
+
+            function dameTiempo() {
+                var d = new Date();
+                var n = d.getTime();
+                return n;
+            }
+
+            function damePos() {
+                return Math.floor((Math.random() * 600) + 1);
+            }
+
+            function dameColor() {
+                var letters = '0123456789ABCDEF'.split('');
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            function ponPunto(x, y, color) {
+                context.fillStyle = color;
+                context.fillRect(x, y, 10, 10);
+            }
+        </script>
+    </head>
+    <body onload="inicia()">
+        <canvas id="myCanvas" width="600" height="600" style="border:2px solid blue" tabindex="1000">
+            Tu navegador no soporta HTML5
+        </canvas>
+        <div id="tiempo"></div>
+    </body>
+</html>
