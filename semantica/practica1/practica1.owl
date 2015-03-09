@@ -30,6 +30,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#conTemario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#conTemario">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Contenidos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Tema"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#coordinadoPor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#coordinadoPor">
@@ -51,6 +60,7 @@
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#enTitulacion -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#enTitulacion">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Competencias"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Contenidos"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Materias"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Titulaciones"/>
@@ -161,11 +171,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#DescripcionTema -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#DescripcionTema">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#HorasActividad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#HorasActividad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ISBN -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ISBN"/>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Nombre -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Nombre">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#DatosAsignatura"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NombreActividad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NombreActividad"/>
     
 
 
@@ -201,6 +237,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NombreTema -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NombreTema"/>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NombreTitulacion -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NombreTitulacion">
@@ -214,6 +256,54 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#PeriodoTitulacion">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Titulaciones"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#TextoEvaluacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#TextoEvaluacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#TextoMetodologia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#TextoMetodologia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoCompetencias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoCompetencias"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoOtrosRequisitos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoOtrosRequisitos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoRelacionAsignaturas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoRelacionAsignaturas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoResultadosAprendizaje -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoResultadosAprendizaje"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoResumen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#textoResumen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tituloLibro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tituloLibro"/>
     
 
 
@@ -252,10 +342,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Competencias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Competencias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Complementarias -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Complementarias">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Referencias"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ConocimientosPrevios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ConocimientosPrevios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
     </owl:Class>
     
 
@@ -284,6 +390,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Evaluacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Evaluacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Libro -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Libro">
@@ -300,10 +414,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Metodologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Metodologia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NoPresenciales -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#NoPresenciales">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Actividades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#OtrosRequisitos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#OtrosRequisitos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ConocimientosPrevios"/>
     </owl:Class>
     
 
@@ -340,9 +470,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#RelacionConOtrasAsignaturas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#RelacionConOtrasAsignaturas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ConocimientosPrevios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ResultadosAprendizaje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#ResultadosAprendizaje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Resumen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Resumen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Tema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Tema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
+    </owl:Class>
     
 
 
@@ -359,6 +521,395 @@
     <owl:Class rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#Trabajo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#SWWS"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor01">
+        <NombrePersona rdf:datatype="&xsd;string">Daconta, Michael C.; Obrst, Leo, J. and Smith, Kevin, T The semantic Web.</NombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor02">
+        <NombrePersona rdf:datatype="&xsd;string">Gómez-Pérez, Asunción; Fernández-López; Mariano and Corcho, Oscar</NombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor03">
+        <NombrePersona rdf:datatype="&xsd;string">Passin, Thomas B.</NombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#centro01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#centro01">
+        <NombreCentro rdf:datatype="&xsd;string">ESCOLA TÈCNICA SUPERIOR D&apos;ENGINYERIA</NombreCentro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#competencias01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#competencias01">
+        <textoCompetencias rdf:datatype="&xsd;string"> - Capacidad de análisis y pensamiento crítico, para investigar con independencia y autocrítica, y de
+buscar y utilizar información para documentar ideas.
+ - Capacidad de identificar y resolver los puntos críticos para realizar una transferencia tecnológica
+efectiva, transformando resultados teóricos en productos y servicios de interés para la sociedad.
+ - Que los/las estudiantes sepan aplicar los conocimientos adquiridos y su capacidad de resolución de
+problemas en entornos nuevos o poco conocidos dentro de contextos más amplios (o
+multidisciplinares) relacionados con su área de estudio.
+ - Que los/las estudiantes sean capaces de integrar conocimientos y enfrentarse a la complejidad de
+formular juicios a partir de una información que, siendo incompleta o limitada, incluya reflexiones
+sobre las responsabilidades sociales y éticas vinculadas a la aplicación de sus conocimientos y
+juicios.
+ - Que los/las estudiantes sepan comunicar sus conclusiones y los conocimientos y razones últimas
+que las sustentan a públicos especializados y no especializados de un modo claro y sin
+ambigüedades.
+ - Que los/las estudiantes posean las habilidades de aprendizaje que les permitan continuar estudiando
+de un modo que habrá de ser en gran medida autodirigido o autónomo
+ - Poseer y comprender conocimientos que aporten una base u oportunidad de ser originales en el
+desarrollo y/o aplicación de ideas, a menudo en un contexto de investigación.
+ - Ser capaces de acceder a herramientas de información en otras áreas del conocimiento y utilizarlas
+apropiadamente.
+ - Ser capaces de valorar la necesidad de completar su formación científica, histórica, en lenguas, en
+informática, en literatura, en ética, social y humana en general, asistiendo a conferencias o cursos
+y/o realizando actividades complementarias, autoevaluando la aportación que la realización de estas
+actividades supone para su formación integral.
+ - Saber seleccionar que patologías mejoran sus resultados funcionales con la aplicación de las
+técnicas y equipos de baja visión.
+ - Capacidad para identificar áreas de investigación y necesidades sociales emergentes relacionadas
+con la tecnología Web.
+ - Capacidad de presentar/suministrar la información al usuario de forma personalizada según las
+necesidades
+ - Abordar el desarrollo y gestionar ontologías, lenguajes, estándares (XML, RDF, FOAF, OWL etc.) y
+herramientas, servicios Web, y principales áreas de aplicación.
+ - Utilizar lenguajes y herramientas específicos para la web semántica y aplicarlos en entornos reales.</textoCompetencias>
+        <enTitulacion rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#titulacion01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#contenidos01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#contenidos01">
+        <conTemario rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tema01"/>
+        <conTemario rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tema02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#coordinacion01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#coordinacion01">
+        <coordinadoPor rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#profesor01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#datosAsignatura01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#datosAsignatura01">
+        <Curso rdf:datatype="&xsd;string">2014-2015</Curso>
+        <Creditos rdf:datatype="&xsd;float">3.0</Creditos>
+        <Codigo rdf:datatype="&xsd;string">43966
+</Codigo>
+        <Ciclo rdf:datatype="&xsd;string">Máster</Ciclo>
+        <Nombre rdf:datatype="&xsd;string">Servicios web y web semántica</Nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#evaluacion01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#evaluacion01">
+        <TextoEvaluacion rdf:datatype="&xsd;string">Los resultados del aprendizaje se evalúan a través de los siguientes criterios:
+SE1 - Evaluación continua del estudiante, basada en la participación y grado de implicación en el
+proceso de enseñanza-aprendizaje, teniendo en cuenta la asistencia regulada a las actividades
+presenciales previstas y la resolución de cuestiones y problemas propuestos.
+•
+SE2 - Evaluación de las actividades prácticas a partir de la elaboración de trabajos, memorias y
+exposiciones orales.
+•
+SE3 - Prueba objetiva, consistente en uno o varios exámenes presenciales que podrán constar de
+cuestiones teórico-prácticas y de problemas
+•
+Los conocimientos adquiridos por el estudiante se podrán evaluar de las dos formas siguientes:
+• Sistema de evaluación continua
+• Sistema de evaluación única
+Sistema de evaluación continua ( 1ª y 2ªConvocatoria):
+Nota Final = 10% SE1 + 35% SE2 + 55% SE3
+Será necesario obtener, al menos el 40 % sobre la nota máxima en SE3 y SE2 para poder aprobar la
+asignatura.
+Si un alumno no puede asistir regularmente a clase, y por tanto no puede acogerse a este modelo de
+evaluación, debe comunicarlo al inicio de curso, y en ese caso se estudiará la aplicación de una
+evaluación única.
+Sistema de Evaluación Única
+En este sentido, la calificación se obtendrá a partir del 60% de la nota obtenida en un único examen
+global de la asignatura (SE3) y un 40% de la actividad relacionada con los trabajos que habrá debido
+realizar durante el transcurso del curso. La realización de este examen global coincidirá con las fechas
+oficiales de exámenes finales de Teoría de los alumnos que hayan proseguido el sistema de evaluación
+continua.
+
+</TextoEvaluacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro01">
+        <ISBN rdf:datatype="&xsd;string">0-471-43257-1</ISBN>
+        <tituloLibro rdf:datatype="&xsd;string">The semantic Web. A guide to the future of XML, Web services, and knowledge management.</tituloLibro>
+        <escritoPor rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro02">
+        <ISBN rdf:datatype="&xsd;string"> 1-85233-551-3</ISBN>
+        <tituloLibro rdf:datatype="&xsd;string">Ontological Engineering with examples from the areas of Knowledge Management, e-Commerce and the Semantic Web</tituloLibro>
+        <escritoPor rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro03">
+        <tituloLibro rdf:datatype="&xsd;string"> Explore´s Guide to the Semantic Web</tituloLibro>
+        <ISBN rdf:datatype="&xsd;string">1-932394-20-6</ISBN>
+        <escritoPor rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#autor03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#materia01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#materia01">
+        <NombreMateria rdf:datatype="&xsd;string">2 - Lenguajes y tecnologías semánticos </NombreMateria>
+        <CaracterMateria rdf:datatype="&xsd;string">Obligatoria</CaracterMateria>
+        <dadaEn rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#titulacion01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#metodologia01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#metodologia01">
+        <TextoMetodologia rdf:datatype="&xsd;string">Las metodologías docentes que se utilizarán son:
+MD1 - Actividades teóricas. Desarrollo expositivo de la materia con la participación del estudiante en
+la resolución de cuestiones puntuales. Realización de cuestionarios individuales de evaluación.
+•
+MD2 - Actividades prácticas. Aprendizaje mediante resolución de problemas, ejercicios y casos de
+estudio a través de los cuales se adquieren competencias sobre los diferentes aspectos de la materia.
+</TextoMetodologia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#noPresencial01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#noPresencial01">
+        <HorasActividad rdf:datatype="&xsd;int">8</HorasActividad>
+        <NombreActividad rdf:datatype="&xsd;string">Elaboración de trabajos individuales</NombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#noPresencial02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#noPresencial02">
+        <HorasActividad rdf:datatype="&xsd;int">4</HorasActividad>
+        <NombreActividad rdf:datatype="&xsd;string">Estudio y trabajo autónomo</NombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#otrosRequisitos01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#otrosRequisitos01">
+        <textoOtrosRequisitos>No se requieren conocimientos previos adicionales a los requisitos oficiales de acceso al máster.</textoOtrosRequisitos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#presencial01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#presencial01">
+        <HorasActividad rdf:datatype="&xsd;int">12</HorasActividad>
+        <NombreActividad rdf:datatype="&xsd;string">Clases de teoría</NombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#presencial02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#presencial02">
+        <HorasActividad rdf:datatype="&xsd;int">12</HorasActividad>
+        <NombreActividad rdf:datatype="&xsd;string">Prácticas en aula</NombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#profesor01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#profesor01">
+        <DepartamentoProfesor rdf:datatype="&xsd;string">240 - INFORMÁTICA</DepartamentoProfesor>
+        <NombrePersona rdf:datatype="&xsd;string">SAMPER ZAPATER, JOSE JAVIER </NombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#reBasica02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#reBasica02">
+        <listaBasica rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#refBasica01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#refBasica01">
+        <listaBasica rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#refComplementaria01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#refComplementaria01">
+        <listaComplementarias rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#libro03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#relacionConOtras01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#relacionConOtras01">
+        <textoRelacionAsignaturas>No se han especificado restricciones de matrícula con otras asignaturas del plan de estudios.</textoRelacionAsignaturas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#resultados01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#resultados01">
+        <textoResultadosAprendizaje rdf:datatype="&xsd;string">Esta asignatura permite obtener los siguientes resultados de aprendizaje:
+Proporcionar una visión en profundidad de lo que entendemos por servicios Web y Web semántica:
+estado del arte, metas, logros, problemas por resolver y perspectivas.
+•
+• Mostrar al alumno una selección de los resultados, iniciativas y líneas de trabajo más significativos.
+Hacer comprender como se debe abordar el desarrollo y gestión de ontologías, lenguajes, estándares
+(XML, RDF, FOAF, OWL etc.) y herramientas, servicios Web, y principales áreas de aplicación.
+•
+Para lograr dichos resultados, los contenidos principales de Servicios Web y Web Semántica se
+enmarcan en tres bloques temáticos bien diferenciados: (1) Servicios Web, (2) Web Semántica y (3)
+Servicios Web Semánticos. Los contenidos que abarca cada bloque temático se resumen a
+continuación:
+• Parte I
+• Servicios Web.
+El contenido de esta parte se basa en hacer comprender la arquitectura SOA, entender como estas
+aplicaciones han sido clave en la evolución de la Web, el estudio de las diferentes tecnologías
+involucradas en los servicios web y por último el despliegue de servicios.
+• Parte II: Web Semántica
+• Elementos de la Web Semántica.
+• Infraestructura para la descripción de recursos ( RDF y RDF Schema)
+• Metadatos, tipos y dominios de aplicación más representativos.
+• Representación del conocimiento. Componentes de su arquitectura. Ontologías.
+• Lenguajes de marcado ontológico: OWL
+El contenido de esta parte se basa en hacer:
+•
+• Entender las limitaciones la Web Actual
+• Comprender el significado de la Web Semántica
+• Conocer las diferentes tecnologías y aplicaciones basadas en la Web Semántica.
+• Conocer el estado actual
+• Parte III. Servicios Web Semánticos
+• Servicios Web Semánticos (p.e. OWL-S)
+• Concepto de emparejamiento semántico.
+En esta parte, se intenta dar una visión de las limitaciones de los servicios Web y como el uso de
+semántica, puede hacer posible la descripción de las capacidades de estos y la posterior búsqueda
+mediante el uso de algoritmos de emparejamiento.
+Como complemento a los resultados anteriores, esta asignatura también permite adquirir las siguientes
+destrezas y habilidades sociales:
+
+</textoResultadosAprendizaje>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#resumen01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#resumen01">
+        <textoResumen>Esta asignatura forma parte del módulo &quot;Lenguajes de marcado y Servicios para la Web&quot; de carácter
+obligatorio.
+El objetivo de esta asignatura es proporcionar una visión en profundidad de lo que entendemos por
+servicios web y web semántica: estado del arte, metas, logros, problemas por resolver y perspectivas.
+Se presentará una selección de los resultados, iniciativas y líneas de trabajo más significativos. Se
+abordarán temas tales como el desarrollo y gestión de ontologías, lenguajes, estándares y
+herramientas, servicios web, y principales áreas de aplicación.
+Las líneas básicas contenidas en el programa de la asignatura se articulan alrededor del concepto de
+Web, pero desde una nueva perspectiva como es el uso de tecnologías emergentes y nuevos
+estándares. Los dos principales puntos desarrollados en esta asignatura son servicios web y web
+semántica. Desde esta asignatura se pretende analizar y comprender el abanico de posibilidades que
+ofrecen ambas tecnologías, limitaciones y su posible aplicación en algunas áreas
+</textoResumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tema01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tema01">
+        <NombreTema rdf:datatype="&xsd;string">1. Introducción a los Servicios Web</NombreTema>
+        <DescripcionTema rdf:datatype="&xsd;string">¿Qué son los servicios Web?.
+¿Por qué usar Servicios Web?
+Entendiendo la base de los servicios Web.</DescripcionTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tema02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#tema02">
+        <NombreTema rdf:datatype="&xsd;string">2. Tecnologías Básicas de Servicios Web</NombreTema>
+        <DescripcionTema rdf:datatype="&xsd;string">Protocolo de mensajería SOAP
+Lenguaje de descripción de Servicios Web: WSDL
+Registros UDDI</DescripcionTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#titulacion01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#titulacion01">
+        <CursoTitulacion rdf:datatype="&xsd;int">1</CursoTitulacion>
+        <NombreTitulacion rdf:datatype="&xsd;string">2182 - M.U. en Ingeniería de Servicios y Aplicaciones Web 13-V.1</NombreTitulacion>
+        <PeriodoTitulacion rdf:datatype="&xsd;string">Segundo cuatrimestre
+</PeriodoTitulacion>
+        <dadaEn rdf:resource="http://www.semanticweb.org/miau/ontologies/2015/2/untitled-ontology-4#centro01"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
