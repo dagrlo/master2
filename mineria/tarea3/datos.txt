@@ -1,0 +1,284 @@
+cargo el de departments_tfidf
+
+ahora para quedarme con los mejores voy a:
+select atts->att evaluator->infogainatteval
+pregunta no se que. le doy a si y sale la listaca.
+
+Para 5 pillo:
+
+307-research
+317-science
+79-concentrations
+327-social
+37-ba
+
+quito el resto con preprocess->remove
+
+ahora la clasificacion: classify->classifier->lazy->ibk->KNN=1
+
+ESTAMOS SIN DISTANCE WEIGHT
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.3067
+Mean absolute error                      0.3809
+Root mean squared error                  0.6989
+Relative absolute error                 71      %
+Root relative squared error            104.0765 %
+Total Number of Instances               20     
+
+
+Ahora para KNN=3
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 3 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.5496
+Mean absolute error                      0.2815
+Root mean squared error                  0.5536
+Relative absolute error                 52.4773 %
+Root relative squared error             82.4493 %
+Total Number of Instances               20     
+
+
+Para KNN=5
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 5 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 5 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.6381
+Mean absolute error                      0.2844
+Root mean squared error                  0.5114
+Relative absolute error                 53.013  %
+Root relative squared error             76.1586 %
+Total Number of Instances               20     
+
+KNN=19
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 19 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 19 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                 -0.6124
+Mean absolute error                      0.5365
+Root mean squared error                  0.6715
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances               20     
+
+AHORA CON DISTANCE WEIGHT con weight by 1/distance
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 1 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.3067
+Mean absolute error                      0.3809
+Root mean squared error                  0.6989
+Relative absolute error                 71      %
+Root relative squared error            104.0765 %
+Total Number of Instances               20     
+
+KNN=3
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 3 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 3 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.3109
+Mean absolute error                      0.3792
+Root mean squared error                  0.6952
+Relative absolute error                 70.6916 %
+Root relative squared error            103.5256 %
+Total Number of Instances               20     
+
+KNN=5
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 5 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 5 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.3119
+Mean absolute error                      0.3825
+Root mean squared error                  0.6912
+Relative absolute error                 71.2978 %
+Root relative squared error            102.9365 %
+Total Number of Instances               20     
+
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 19 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     departments_TFIDF-weka.filters.unsupervised.attribute.Remove-R1-36,38-78,80-306,308-316,318-326,328-612
+Instances:    20
+Attributes:   5
+              ba
+              concentrations
+              research
+              science
+              social
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 19 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Cross-validation ===
+=== Summary ===
+
+Correlation coefficient                  0.1937
+Mean absolute error                      0.4243
+Root mean squared error                  0.7318
+Relative absolute error                 79.0974 %
+Root relative squared error            108.9758 %
+Total Number of Instances               20     
+
+
+
