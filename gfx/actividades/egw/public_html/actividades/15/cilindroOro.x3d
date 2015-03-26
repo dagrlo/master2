@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "http://www.web3d.org/specifications/x3d-3.3.dtd">
+<X3D profile='Immersive' version='3.3' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+   
+    <Scene>
+        
+        <Shape>
+            <Cylinder height='2.0' radius='1.0' bottom='true' side='true' top='true'/>
+            <Appearance>
+                <Material diffuseColor="0.49 0.34 0.0"
+                specularColor="0.89 0.79 0.0"
+                shininess="0.13"/>
+      
+     
+            </Appearance>
+        </Shape>
+    </Scene>
+</X3D>
