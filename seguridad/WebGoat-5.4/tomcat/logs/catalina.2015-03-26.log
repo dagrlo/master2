@@ -1,0 +1,266 @@
+mar 26, 2015 12:39:45 PM org.apache.catalina.core.AprLifecycleListener init
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: D:\MASTER\master2\seguridad\WebGoat-5.4\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;.
+mar 26, 2015 12:39:45 PM org.apache.catalina.startup.SetAllPropertiesRule begin
+Advertencia: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'maxSpareThreads' to '75' did not find a matching property.
+mar 26, 2015 12:39:47 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:39:47 PM org.apache.coyote.AbstractProtocol init
+Grave: Failed to initialize end point associated with ProtocolHandler ["http-bio-127.0.0.1-80"]
+java.net.BindException: Address already in use: JVM_Bind /127.0.0.1:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:566)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:417)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:956)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:624)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:649)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:55)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:383)
+	... 17 more
+
+mar 26, 2015 12:39:47 PM org.apache.catalina.core.StandardService initInternal
+Grave: No pude inicializar el conector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:624)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:649)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Falló la inicialización del manejador de protocolo
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:958)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind /127.0.0.1:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:566)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:417)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:956)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:55)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:383)
+	... 17 more
+
+mar 26, 2015 12:39:47 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:39:47 PM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 2760 ms
+mar 26, 2015 12:39:47 PM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+mar 26, 2015 12:39:47 PM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.27
+mar 26, 2015 12:39:47 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\WebGoat.war de la aplicación web
+mar 26, 2015 12:39:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\host-manager de la aplicación web
+mar 26, 2015 12:39:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\manager de la aplicación web
+mar 26, 2015 12:39:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\ROOT de la aplicación web
+mar 26, 2015 12:39:49 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:39:49 PM org.apache.catalina.startup.Catalina start
+Información: Server startup in 2641 ms
+mar 26, 2015 12:39:55 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:39:55 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:39:55 PM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+mar 26, 2015 12:39:55 PM org.apache.catalina.loader.WebappClassLoader checkThreadLocalMapForLeaks
+Grave: La aplicación web [/WebGoat] creó un ThreadLocal con clave del tipo [org.apache.axis.utils.XMLUtils.ThreadLocalDocumentBuilder] (valor [org.apache.axis.utils.XMLUtils$ThreadLocalDocumentBuilder@8fa261]) y un valor del tipo [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl] (valor [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl@1edc4ee]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+mar 26, 2015 12:39:55 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:39:55 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:39:55 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:39:55 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:41:58 PM org.apache.catalina.core.AprLifecycleListener init
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: D:\MASTER\master2\seguridad\WebGoat-5.4\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\programar\Git\git-cheetah\..\bin;.
+mar 26, 2015 12:41:58 PM org.apache.catalina.startup.SetAllPropertiesRule begin
+Advertencia: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'maxSpareThreads' to '75' did not find a matching property.
+mar 26, 2015 12:41:58 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:41:58 PM org.apache.coyote.AbstractProtocol init
+Grave: Failed to initialize end point associated with ProtocolHandler ["http-bio-127.0.0.1-80"]
+java.net.BindException: Address already in use: JVM_Bind /127.0.0.1:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:566)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:417)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:956)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:624)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:649)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:55)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:383)
+	... 17 more
+
+mar 26, 2015 12:41:58 PM org.apache.catalina.core.StandardService initInternal
+Grave: No pude inicializar el conector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:624)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:649)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:449)
+Caused by: org.apache.catalina.LifecycleException: Falló la inicialización del manejador de protocolo
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:958)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind /127.0.0.1:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:566)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:417)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:956)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:55)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:383)
+	... 17 more
+
+mar 26, 2015 12:41:58 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:41:58 PM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 244 ms
+mar 26, 2015 12:41:58 PM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+mar 26, 2015 12:41:58 PM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.27
+mar 26, 2015 12:41:58 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\WebGoat.war de la aplicación web
+mar 26, 2015 12:41:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\host-manager de la aplicación web
+mar 26, 2015 12:41:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\manager de la aplicación web
+mar 26, 2015 12:41:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\ROOT de la aplicación web
+mar 26, 2015 12:41:59 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:41:59 PM org.apache.catalina.startup.Catalina start
+Información: Server startup in 419 ms
+mar 26, 2015 12:43:11 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:43:11 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:43:11 PM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+mar 26, 2015 12:43:11 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:43:11 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:43:11 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-127.0.0.1-80"]
+mar 26, 2015 12:43:11 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:43:15 PM org.apache.catalina.core.AprLifecycleListener init
+Información: La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: D:\MASTER\master2\seguridad\WebGoat-5.4\java\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\programar\Git\git-cheetah\..\bin;.
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.SetAllPropertiesRule begin
+Advertencia: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'maxSpareThreads' to '75' did not find a matching property.
+mar 26, 2015 12:43:15 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["http-bio-127.0.0.1-8080"]
+mar 26, 2015 12:43:15 PM org.apache.coyote.AbstractProtocol init
+Información: Initializing ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.Catalina load
+Información: Initialization processed in 232 ms
+mar 26, 2015 12:43:15 PM org.apache.catalina.core.StandardService startInternal
+Información: Arrancando servicio Catalina
+mar 26, 2015 12:43:15 PM org.apache.catalina.core.StandardEngine startInternal
+Información: Starting Servlet Engine: Apache Tomcat/7.0.27
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.HostConfig deployWAR
+Información: Despliegue del archivo D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\WebGoat.war de la aplicación web
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\host-manager de la aplicación web
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\manager de la aplicación web
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+Información: Despliegue del directorio D:\MASTER\master2\seguridad\WebGoat-5.4\tomcat\webapps\ROOT de la aplicación web
+mar 26, 2015 12:43:15 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["http-bio-127.0.0.1-8080"]
+mar 26, 2015 12:43:15 PM org.apache.coyote.AbstractProtocol start
+Información: Starting ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 12:43:15 PM org.apache.catalina.startup.Catalina start
+Información: Server startup in 427 ms
+mar 26, 2015 2:18:46 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["http-bio-127.0.0.1-8080"]
+mar 26, 2015 2:18:46 PM org.apache.coyote.AbstractProtocol pause
+Información: Pausing ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 2:18:46 PM org.apache.catalina.core.StandardService stopInternal
+Información: Parando servicio Catalina
+mar 26, 2015 2:18:46 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+Grave: La aplicación web [/WebGoat] registró el conductor JDBC [org.hsqldb.jdbcDriver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+mar 26, 2015 2:18:46 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["http-bio-127.0.0.1-8080"]
+mar 26, 2015 2:18:46 PM org.apache.coyote.AbstractProtocol stop
+Información: Stopping ProtocolHandler ["ajp-bio-8009"]
+mar 26, 2015 2:18:46 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["http-bio-127.0.0.1-8080"]
+mar 26, 2015 2:18:46 PM org.apache.coyote.AbstractProtocol destroy
+Información: Destroying ProtocolHandler ["ajp-bio-8009"]

