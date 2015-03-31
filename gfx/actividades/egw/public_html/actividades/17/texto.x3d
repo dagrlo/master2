@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
  
-<X3D profile="Interchange" version="3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation=" http://www.web3d.org/specifications/x3d-3.2.xsd ">
+<X3D profile="Full" version="3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation=" http://www.web3d.org/specifications/x3d-3.2.xsd ">
     <Scene>
         <Shape>
             <Appearance>
                 <Material diffuseColor='0.0 0.0 1.0' shininess='.1' specularColor='.7 .7 .7' />
             </Appearance> 
-            <Text string='David Grau dagrlo@yahoo.es'>
-                <FontStyle style="BOLD,ITALIC" justify='"BEGIN" "END"' size="1"/>
+            <Text string='David Grau'>
+                <FontStyle style="BOLD" justify="END"  size="1"/>
+            </Text>
+            
+        </Shape>
+        
+        <Shape>
+            <Appearance>
+                <Material diffuseColor='0.0 0.0 1.0' shininess='.1' specularColor='.7 .7 .7' />
+            </Appearance> 
+            <Text string='  dagrlo@yahoo.es'>
+                <FontStyle style= "ITALIC" justify= "BEGIN" size="1"/>
             </Text>
             
         </Shape>

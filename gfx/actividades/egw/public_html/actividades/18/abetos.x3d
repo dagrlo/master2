@@ -1,0 +1,65 @@
+<?xml version="1.0"?> 
+<X3D profile='Immersive' version='3.2'>
+    <Scene>        
+        
+        <Group DEF="abeto">
+            <Transform translation="0 .5 .0">
+                <Shape>
+                    <Appearance>
+                        <Material diffuseColor=".5 .25 0"/>
+                    </Appearance>
+                    <Cylinder height="1" radius=".25"/>
+                </Shape>
+            </Transform>
+            <Transform translation="0 2 0">
+                <Shape>
+                    <Appearance DEF="App_Copa">
+                        <Material diffuseColor="0 .7 0"/>
+                    </Appearance>
+                    <Cone height="2" bottomRadius="1.25"/>
+                </Shape>
+            </Transform>
+            <Transform translation="0 3 0">
+                <Shape>
+                    <Appearance USE="App_Copa"/>
+                    <Cone height="1.5" bottomRadius="1"/>
+                </Shape>
+            </Transform>
+        </Group>
+        
+        <Shape>
+            <Box size='20.0 0.1 20.0'/>
+            <Appearance>
+                <Material diffuseColor='0.0 0.6 0.0'/>      
+            </Appearance>
+        </Shape>
+ 
+    
+        <Transform translation="4 0 4">
+            <Shape USE="abeto"/>
+        </Transform>
+        
+         <Transform translation="6 0 4" scale="0.5 0.5 0.5">
+            <Shape USE="abeto"/>
+        </Transform>
+        
+         <Transform translation="4 0 4">
+            <Shape USE="abeto"/>
+        </Transform>
+        
+         <Transform translation="1 0 4">
+            <Shape USE="abeto"/>
+        </Transform>
+        
+         <Transform translation="9 0 1" scale="0.5 0.5 0.4">
+            <Shape USE="abeto"/>
+        </Transform>
+        
+         <Transform translation="4 0 4">
+            <Shape USE="abeto"/>
+        </Transform>
+    
+	
+
+    </Scene>
+</X3D>
