@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' >
+  <Scene>
+    <Shape>
+	  <Appearance>
+          <Material diffuseColor='0.8 0 0.3' shininess='.1' specularColor='.7 .7 .7' />
+      </Appearance>
+      <Text string='"X3D" "3D Anywhere"'>
+        <FontStyle style="PLAIN" justify="CENTER" family="SANS" size="10"/>
+      </Text>
+    </Shape>
+  </Scene>
+</X3D>

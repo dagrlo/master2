@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Interactive' version='3.0'>
+  <Scene>
+    <Group>
+      <Transform>
+        <SphereSensor DEF='SPHERE_SENSOR' description='click and drag to rotate'/>
+        <Transform DEF='BOX'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='1 0 0'/>
+            </Appearance>
+            <Box/>
+          </Shape>
+          <Shape DEF='AXIS'>
+            <Appearance>
+              <Material emissiveColor='1 1 1'/>
+            </Appearance>
+            <IndexedLineSet coordIndex='0 1 -1 0 2 -1 0 3 -1'>
+              <Coordinate point='0 0 0 3 0 0 0 3 0 0 0 3'/>
+            </IndexedLineSet>
+          </Shape>
+        </Transform>
+      </Transform>
+    </Group>
+    <ROUTE fromField='rotation_changed' fromNode='SPHERE_SENSOR' toField='set_rotation' toNode='BOX'/>
+  </Scene>
+</X3D>

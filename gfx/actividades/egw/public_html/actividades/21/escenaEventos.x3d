@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+ 
+<X3D profile="Inmersive" version="3.2" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation=" http://www.web3d.org/specifications/x3d-3.2.xsd ">
+    <Scene> 
+        
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaDO' loop='false'  url='do.wav'/>                
+        </Sound>
+        
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaRE' loop='false'  url='re.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaMI' loop='false'  url='mi.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaFA' loop='false'  url='fa.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaSOL' loop='false'  url='sol.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaLA' loop='false'  url='la.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaSI' loop='false'  url='si.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaDO2' loop='false'  url='do2.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaRE2' loop='false'  url='re2.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaFA2' loop='false'  url='fa2.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaSOL2' loop='false'  url='sol2.wav'/>
+        </Sound>
+        <Sound maxFront='20' minFront='15' maxBack='20' minBack='15'>
+            <AudioClip DEF='notaLA2' loop='false'  url='la2.wav'/>       
+        </Sound>
+        
+        <Appearance DEF="madera">
+            <Material diffuseColor="0.6 0.6 0.6"/>
+            <ImageTexture url="madera.jpg"/>
+            <TextureTransform scale="2.0 2.0"/>
+        </Appearance>
+        
+      
+        <Transform DEF="do" translation="-3.3 0 0" >        
+            <TouchSensor DEF='TOUCH' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME' cycleInterval='.5'/>
+            <PositionInterpolator DEF='INTERP_POS1' key='0 0.5 1' keyValue='-3.3 0 0,-3.3 -0.6 0,-3.3 0 0 '/>               
+            <ROUTE fromField='touchTime' fromNode='TOUCH' toField='startTime' toNode='TIME'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME' toField='set_fraction' toNode='INTERP_POS1'/>            
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS1' toField='translation' toNode='do'/>    
+            <ROUTE fromField='touchTime' fromNode='TOUCH' toField='set_startTime' toNode='notaDO'/>
+            
+           
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="re" translation="-2.2 0 0">     
+            <TouchSensor DEF='TOUCH2' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME2' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS2' key='0 0.5 1' keyValue='-2.2 0 0,-2.2 -0.6 0,-2.2 0 0 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH2' toField='startTime' toNode='TIME2'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME2' toField='set_fraction' toNode='INTERP_POS2'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS2' toField='translation' toNode='re'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH2' toField='set_startTime' toNode='notaRE'/>
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="mi" translation="-1.1 0 0">        
+            <TouchSensor DEF='TOUCH3' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME3' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS3' key='0 0.5 1' keyValue='-1.1 0 0,-1.1 -0.6 0,-1.1 0 0 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH3' toField='startTime' toNode='TIME3'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME3' toField='set_fraction' toNode='INTERP_POS3'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS3' toField='translation' toNode='mi'/>     
+            <ROUTE fromField='touchTime' fromNode='TOUCH3' toField='set_startTime' toNode='notaMI'/>
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="fa" translation="0 0 0">     
+            <TouchSensor DEF='TOUCH4' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME4' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS4' key='0 0.5 1' keyValue='0 0 0,0 -0.6 0,0 0 0 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH4' toField='startTime' toNode='TIME4'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME4' toField='set_fraction' toNode='INTERP_POS4'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS4' toField='translation' toNode='fa'/>     
+            <ROUTE fromField='touchTime' fromNode='TOUCH4' toField='set_startTime' toNode='notaFA'/>   
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="sol" translation="1.1 0 0">            
+            <TouchSensor DEF='TOUCH5' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME5' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS5' key='0 0.5 1' keyValue='1.1 0 0,1.1 -0.6 0,1.1 0 0 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH5' toField='startTime' toNode='TIME5'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME5' toField='set_fraction' toNode='INTERP_POS5'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS5' toField='translation' toNode='sol'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH5' toField='set_startTime' toNode='notaSOL'/>
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="la" translation="2.2 0 0">            
+            <TouchSensor DEF='TOUCH6' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME6' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS6' key='0 0.5 1' keyValue='2.2 0 0,2.2 -0.6 0,2.2 0 0 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH6' toField='startTime' toNode='TIME6'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME6' toField='set_fraction' toNode='INTERP_POS6'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS6' toField='translation' toNode='la'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH6' toField='set_startTime' toNode='notaLA'/>
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="si" translation="3.3 0 0">            
+            <TouchSensor DEF='TOUCH7' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME7' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS7' key='0 0.5 1' keyValue='3.3 0 0,3.3 -0.6 0,3.3 0 0 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH7' toField='startTime' toNode='TIME7'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME7' toField='set_fraction' toNode='INTERP_POS7'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS7' toField='translation' toNode='si'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH7' toField='set_startTime' toNode='notaSI'/>
+            <Shape>
+                <Box size='1.0 1.0 4.0'/>
+                <Appearance>
+                    <Material diffuseColor="0.8 0.8 0.8"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="do2" translation="-2.8 0.6 -0.8">            
+            <TouchSensor DEF='TOUCH8' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME8' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS8' key='0 0.5 1' keyValue='-2.8 0.6 -0.8,-2.8 0.15 -0.8,-2.8 0.6 -0.8 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH8' toField='startTime' toNode='TIME8'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME8' toField='set_fraction' toNode='INTERP_POS8'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS8' toField='translation' toNode='do2'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH8' toField='set_startTime' toNode='notaDO2'/>
+            
+            <Shape>
+                <Box size='0.8 0.8 2.5'/>
+                <Appearance>
+                    <Material diffuseColor="0.1 0.1 0.1"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="re2" translation="-1.6 0.6 -0.8">            
+            <TouchSensor DEF='TOUCH9' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME9' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS9' key='0 0.5 1' keyValue='-1.6 0.6 -0.8,-1.6 0.15 -0.8,-1.6 0.6 -0.8 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH9' toField='startTime' toNode='TIME9'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME9' toField='set_fraction' toNode='INTERP_POS9'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS9' toField='translation' toNode='re2'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH9' toField='set_startTime' toNode='notaRE2'/>
+            <Shape>
+                <Box size='0.8 0.8 2.5'/>
+                <Appearance>
+                    <Material diffuseColor="0.1 0.1 0.1"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+               
+        
+        <Transform DEF="fa2" translation="0.5 0.6 -0.8">            
+            <TouchSensor DEF='TOUCH10' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME10' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS10' key='0 0.5 1' keyValue='0.5 0.6 -0.8,0.5 0.15 -0.8,0.5 0.6 -0.8 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH10' toField='startTime' toNode='TIME10'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME10' toField='set_fraction' toNode='INTERP_POS10'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS10' toField='translation' toNode='fa2'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH10' toField='set_startTime' toNode='notaFA2'/>
+            <Shape>
+                <Box size='0.8 0.8 2.5'/>
+                <Appearance>
+                    <Material diffuseColor="0.1 0.1 0.1"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="sol2" translation="1.6 0.6 -0.8">            
+            <TouchSensor DEF='TOUCH11' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME11' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS11' key='0 0.5 1' keyValue='1.6 0.6 -0.8,1.6 0.15 -0.8,1.6 0.6 -0.8 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH11' toField='startTime' toNode='TIME11'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME11' toField='set_fraction' toNode='INTERP_POS11'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS11' toField='translation' toNode='sol2'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH11' toField='set_startTime' toNode='notaSOL2'/>
+            <Shape>
+                <Box size='0.8 0.8 2.5'/>
+                <Appearance>
+                    <Material diffuseColor="0.1 0.1 0.1"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        <Transform DEF="la2" translation="2.8 0.6 -0.8">            
+            <TouchSensor DEF='TOUCH12' description='Toca las teclas'/>
+            <TimeSensor DEF='TIME12' cycleInterval='.5'/>      
+            <PositionInterpolator DEF='INTERP_POS12' key='0 0.5 1' keyValue='2.8 0.6 -0.8,2.8 0.15 -0.8,2.8 0.6 -0.8 '/>
+            <ROUTE fromField='touchTime' fromNode='TOUCH12' toField='startTime' toNode='TIME12'/>
+            <ROUTE fromField='fraction_changed' fromNode='TIME12' toField='set_fraction' toNode='INTERP_POS12'/>                
+            <ROUTE fromField='value_changed' fromNode='INTERP_POS12' toField='translation' toNode='la2'/> 
+            <ROUTE fromField='touchTime' fromNode='TOUCH12' toField='set_startTime' toNode='notaLA2'/>
+            <Shape>
+                <Box size='0.8 0.8 2.5'/>
+                <Appearance>
+                    <Material diffuseColor="0.1 0.1 0.1"/>
+                </Appearance>                                
+            </Shape>
+        </Transform>
+        
+        
+        <Group DEF="cuerpo">
+            <Transform translation="0 -1.0 0">            
+                <Shape>
+                    <Box size='10 1 6'/>
+                    <Appearance  USE="madera"/> 
+                </Shape>
+            </Transform>
+            
+            <Transform translation="0 -1.0 -3.7">            
+                <Shape>
+                    <Box size='10 4 3'/>
+                    <Appearance  USE="madera"/> 
+                </Shape>
+            </Transform>
+            
+            <Transform translation="-4 -3.2 2.4">            
+                <Shape>
+                    <Box size='1 5.0 1'/>
+                    <Appearance  USE="madera"/> 
+                </Shape>
+            </Transform>
+            
+            <Transform translation="4 -3.2 2.4">            
+                <Shape>
+                    <Box size='1 5.0 1'/>
+                    <Appearance  USE="madera"/> 
+                </Shape>
+            </Transform>
+            
+            <Transform translation="-4 -3.2 -3.8">            
+                <Shape>
+                    <Box size='1 5.0 1'/>
+                    <Appearance  USE="madera"/> 
+                </Shape>
+            </Transform>
+            
+            <Transform translation="4 -3.2 -3.8">            
+                <Shape>
+                    <Box size='1 5.0 1'/>
+                    <Appearance  USE="madera"/> 
+                </Shape>
+            </Transform>
+            
+            
+        </Group>
+       
+        
+       
+        
+       
+        
+       
+      
+                        
+       
+    </Scene>
+</X3D>
+

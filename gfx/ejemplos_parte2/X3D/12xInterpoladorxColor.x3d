@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+  <Scene>
+
+    <Transform DEF='Bombilla'>
+      <Transform translation='0 .027 0'>
+        <Shape>
+          <Appearance>
+            <Material DEF='Mat_Bombilla' diffuseColor='.2 .2 .2' emissiveColor='1 1 .2'/>
+          </Appearance>
+          <Sphere radius='.02'/>
+        </Shape>
+      </Transform>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='.4 .4 .4' shininess='.6' specularColor='.7 .7 .7'/>
+        </Appearance>
+        <Cylinder height='.02' radius='.01'/>
+      </Shape>
+      <Transform translation='0 -.01 0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='1 1 1'/>
+          </Appearance>
+          <Sphere radius='.005'/>
+        </Shape>
+      </Transform>
+    </Transform>
+
+    <TimeSensor DEF="Reloj" cycleInterval="5" loop="TRUE"/>
+    <ColorInterpolator DEF="Interp_Color" key="0, 0.5, 1" keyValue="0 0 0, 1 1 .2, 0 0 0"/>
+    <ROUTE fromNode="Reloj" fromField="fraction_changed" toNode="Interp_Color" toField="set_fraction"/>
+    <ROUTE fromNode="Interp_Color" fromField="value_changed" 
+           toNode="Mat_Bombilla" toField="set_emissiveColor"/>
+
+  </Scene>
+</X3D>

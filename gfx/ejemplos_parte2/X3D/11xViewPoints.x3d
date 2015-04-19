@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Interchange" version="3.2">
+<Scene>
+  <Viewpoint description='Default model orientation: nose +X axis, up +Y axis, right-hand side +Z axis'/>
+  <Viewpoint description="desde el sur" position="0 0 20" jump="FALSE"/>
+  <Viewpoint description="desde arriba"	orientation="1 0 0 -.785" position="0 15 12"  jump="FALSE"/>
+  <Transform translation="0 15 12">
+    <Transform rotation="1 0 0 -.785">
+	  <Transform translation="0 0 -10">
+	    <Viewpoint description="equivalente desde arriba"/>
+      </Transform>
+    </Transform>
+  </Transform>
+
+  <Transform scale='2 2 2'>
+    <Inline DEF='CoordinateAxes' url='"04-CoordinateAxes.x3d"'/>
+  </Transform>
+</Scene>
+</X3D>

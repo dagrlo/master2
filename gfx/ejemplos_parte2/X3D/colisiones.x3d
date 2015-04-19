@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile='Immersive' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>  
+<head>  
+<meta name='filename' content='Figure27.3CollisionDetectionSpinningOrb.x3d'/>  
+<meta name='author' content='Figure 27.3, The VRML 2.0 Sourcebook, Copyright [1997] By Andrea L. Ames, David R. Nadeau, and John L. Moreland'/>  
+<meta name='translator' content='Don Brutzman'/>  
+<meta name='created' content='26 October 2000'/>  
+<meta name='revised' content='23 October 2003'/>  
+<meta name='description' content='An orb that animates (for a single revolution) when the viewer collides with its box proxy shape. Walk towards the orb by using the up-arrow key.'/>  
+<meta name='url' content='http://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/Chapter27-VisibilityProximityCollisionSensing/Figure27.3CollisionDetectionSpinningOrb.x3d'/>  
+<meta name='generator' content='X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html'/>  
+</head>  
+
+
+<Scene>
+<Viewpoint position='0.0 0.0 4.0' fieldOfView='0.7854' retainUserOffsets='false'/> 
+<Group>
+<CollidableShape DEF='BALL-GEOM' containerField='children' enabled='true' rotation='0 0 1 0' translation='0 0 0'>
+<Shape containerField='shape'>
+<Appearance>
+<Material emissiveColor='1.0 0.0 0.0'/>
+</Appearance> 
+<Sphere radius='0.1'/>
+</Shape>
+</CollidableShape> 
+<CollidableShape DEF='GROUND-GEOM' containerField='children' translation='0.0 -0.5 0.0' enabled='true' rotation='0 0 1 0'>
+<Shape containerField='shape'>
+<Appearance>
+<Material emissiveColor='0.0 1.0 0.0'/>
+</Appearance> 
+<Box size='20.0 0.1 20.0'/>
+</Shape>
+</CollidableShape>
+</Group> 
+<!-- BODY-COLLECTION ROUTE:  [from COLLISION-OUTPUT.contacts to set_contacts ] -->
+<RigidBodyCollection DEF='BODY-COLLECTION' containerField='children' autoDisable='false' constantForceMix='0.0001' contactSurfaceThickness='0' disableAngularSpeed='0' disableLinearSpeed='0' disableTime='0' enabled='true' errorCorrection='0.8' gravity='0 -9.8 0' iterations='10' maxCorrectionSpeed='-1' preferAccuracy='false'>
+<RigidBody DEF='BODY-1' containerField='bodies' position='0.0 2.0 0.0' angularDampingFactor='0.001' angularVelocity='0 0 0' autoDamp='false' autoDisable='false' centerOfMass='0 0 0' disableAngularSpeed='0' disableLinearSpeed='0' disableTime='0' enabled='true' finiteRotationAxis='0 1 0' fixed='false' inertia='1 0 0 0 1 0 0 0 1' linearDampingFactor='0.001' linearVelocity='0 0 0' mass='1' orientation='0 0 1 0' useFiniteRotation='false' useGlobalGravity='true'>
+<CollidableShape USE='BALL-GEOM' containerField='geometry' enabled='true' rotation='0 0 1 0' translation='0 0 0'/>
+</RigidBody>
+</RigidBodyCollection> 
+<!-- COLLISION-OUTPUT ROUTE:  [from contacts to BODY-COLLECTION.set_contacts ] -->
+<CollisionSensor DEF='COLLISION-OUTPUT' enabled='true'>
+<CollisionCollection DEF='COLLISION-GROUP' bounce='1.0' containerField='collidables' minBounceSpeed='1.0' appliedParameters='BOUNCE' enabled='true' frictionCoefficients='0 0' slipFactors='0 0' softnessConstantForceMix='0.0001' softnessErrorCorrection='0.8' surfaceSpeed='0 0'>
+<CollidableShape USE='BALL-GEOM' containerField='collidables' enabled='true' rotation='0 0 1 0' translation='0 0 0'/> 
+<CollidableShape USE='GROUND-GEOM' containerField='collidables' enabled='true' rotation='0 0 1 0' translation='0 0 0'/>
+</CollisionCollection>
+</CollisionSensor> 
+<ROUTE fromNode='COLLISION-OUTPUT' fromField='contacts' toNode='BODY-COLLECTION' toField='set_contacts'/>
+</Scene>
+</X3D> 

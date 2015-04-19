@@ -1,0 +1,12 @@
+<?xml version="1.0"?> 
+<X3D profile='Immersive' version='3.2'>
+<Scene>
+  <!-- Una esfera de color purpura -->
+  <Shape>
+    <Appearance>
+      <Material diffuseColor="1 0 1" ambientIntensity="0.8"/>
+    </Appearance>
+    <Sphere radius="1"/>
+  </Shape>
+</Scene>
+</X3D>

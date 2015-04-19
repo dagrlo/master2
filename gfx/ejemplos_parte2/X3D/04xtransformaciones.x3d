@@ -1,0 +1,30 @@
+<?xml version="1.0"?> 
+<X3D profile='Immersive' version='3.2'>
+<Scene>
+  <Shape>
+    <Appearance>
+	  <Material/>
+	</Appearance>
+    <Sphere radius="0.1" />
+  </Shape>
+
+  <Transform scale='0.5 0.5 0.5'> 
+    <Transform translation='-2 1 0' > 
+      <Shape>
+	   <Appearance>
+		   <Material/>
+	   </Appearance>
+       <Cone/>
+      </Shape>
+    </Transform>
+  </Transform>
+  <Transform scale='0.5 0.5 0.5' translation='2 1 0' > 
+    <Shape>
+	   <Appearance>
+		   <Material/>
+	   </Appearance>
+       <Cone/>
+    </Shape>
+  </Transform>
+</Scene>
+</X3D>

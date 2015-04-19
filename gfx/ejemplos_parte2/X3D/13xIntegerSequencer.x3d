@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive' version='3.3' >
+  <Scene>
+	<Viewpoint position="0 0 10"/>
+    <Switch DEF='ShapeSwitcher' whichChoice='-1'>
+      <Shape DEF='Child0'>
+        <Box/> <Appearance> <Material/> </Appearance>
+      </Shape>
+      <Shape DEF='Child1'>
+        <Cone/> <Appearance> <Material/> </Appearance>
+      </Shape>
+      <Shape DEF='Child2'>
+        <Cylinder/> <Appearance> <Material/> </Appearance>
+      </Shape>
+      <Shape DEF='Child3'>
+        <Sphere/> <Appearance> <Material/> </Appearance>
+      </Shape>
+    </Switch>
+    
+    <TimeSensor DEF='Clock' cycleInterval='2' loop='true'/>
+    <IntegerSequencer DEF='ChildSequencer' key='0 0.2 0.4 0.6 0.8 1' keyValue='0 1 2 3 -1 0'/>
+    <ROUTE fromField='fraction_changed' fromNode='Clock' toField='set_fraction' toNode='ChildSequencer'/>
+    <ROUTE fromField='value_changed' fromNode='ChildSequencer' toField='whichChoice' toNode='ShapeSwitcher'/>
+  </Scene>
+</X3D>

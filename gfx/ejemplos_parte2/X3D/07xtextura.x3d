@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+ 
+
+<X3D profile="Interchange" version='3.2'>
+<head>
+<meta name="filename" content="ImageTexture.x3d"/>
+</head>
+<Scene>
+<!-- Una caja con textura de ladrillos -->
+<Shape>
+  <Appearance>
+	<ImageTexture url='"brick_8.jpg"'/>
+	<TextureTransform scale="2 2"/>
+	<Material ambientIntensity="1.0" />
+  </Appearance>
+  <Box size="4 2 1"/>
+</Shape>
+</Scene>
+</X3D>

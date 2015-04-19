@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Interactive' version='3.0'>
+  <Scene>
+    <Shape DEF='RECTANG'>
+      <Appearance>
+        <Material emissiveColor='1 1 1'/>
+      </Appearance>
+      <IndexedLineSet coordIndex='0 1 2 3 0 -1'>
+        <Coordinate point='-2 -2 1 2 -2 1 2 2 1 -2 2 1'/>
+      </IndexedLineSet>
+    </Shape>
+    <Transform translation='0 0 1'>
+      <PlaneSensor DEF='PLANE_SENSOR' description='click and drag to move object' maxPosition='2 2' minPosition='-2 -2'/>
+      <Transform DEF='BOX'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='1 0 0'/>
+          </Appearance>
+          <Box size='0.5 0.5 0.5'/>
+        </Shape>
+      </Transform>
+    </Transform>
+    <ROUTE fromField='translation_changed' fromNode='PLANE_SENSOR' toField='translation' toNode='BOX'/>
+  </Scene>
+</X3D>

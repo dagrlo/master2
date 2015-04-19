@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Full' version='3.2'>
+  <Scene DEF='scene'>
+	<Shape>
+           <Text DEF='Text' string='"Hola"'/>
+    </Shape>
+    <StringSensor DEF='Tecla'/>
+    
+    <!-- convert StringSensor SFString into Text node MFString by using explicit typecasting in ECMAScript -->
+    <Script DEF="Converter">
+        <field accessType='inputOnly' name='input' type='SFString'/>
+        <field accessType='outputOnly' name='output' type='MFString'/>
+        <![CDATA[castlescript: 
+			function input(cadena, timestamp)
+			output := array(cadena)
+		]]>
+    </Script>
+    <ROUTE fromNode='Tecla' fromField='enteredText' toNode='Converter' toField='input'/>
+    <ROUTE fromNode='Converter' fromField='output' toNode='Text' toField='set_string'/>
+   </Scene>
+</X3D>

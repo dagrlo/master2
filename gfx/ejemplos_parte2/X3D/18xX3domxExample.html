@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<html >
+<head>
+	<title>Hello World</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="x3dom.css" />
+	<script type="text/javascript" src="x3dom.js"></script>
+</head>
+       
+<body>
+   <h1>HTML5 X3dom Hello World</h1>
+   <p>
+   Ojo que por ahora no funciona bien con algunas etiquetas que no se cierran explícitamente (Viewpoint,Material,Box)
+   </p>
+
+   <x3d xmlns="http://www.x3dom.org/x3dom" showStat="false" showLog="false" x="0px" y="0px" width="400px" height="400px" altImg="helloX3D-alt.png">
+    <scene>
+      <Viewpoint position='0 0 10'></Viewpoint>
+       <shape>
+         <appearance>
+             <Material diffuseColor='1 0 0'></Material>
+         </appearance>
+         <box></box>
+      </shape>
+  	  <Inline DEF="tambor" url="TamborGirando.x3d" />
+    </scene>
+   </x3d>
+</body>
+
+</html>

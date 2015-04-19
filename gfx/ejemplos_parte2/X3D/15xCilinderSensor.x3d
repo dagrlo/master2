@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Interactive' version='3.0'>
+  <Scene>
+    <NavigationInfo type='"EXAMINE" "WALK" "FLY" "ANY"'/>
+    <Group>
+      <Viewpoint description='Top View' orientation='1 0 0 -1.57' position='0 10 0'/>
+      <Viewpoint description='Front View'/>
+      <Viewpoint description='Rear View' orientation='0 1 0 3.14' position='0 0 -10'/>
+      <Viewpoint description='Bottom View' orientation='1 0 0 1.57' position='0 -10 0'/>
+      <Viewpoint description='Right View' orientation='0 1 0 1.57' position='10 0 0'/>
+      <Viewpoint description='Left View' orientation='0 1 0 -1.57' position='-10 0 0'/>
+    </Group>
+    <Group>
+      <Transform DEF='MYCYL'>
+        <CylinderSensor DEF='CYLSENSOR' description='click and drag to rotate'/>
+        <Shape>
+          <Appearance>
+            <Material/>
+          </Appearance>
+          <IndexedFaceSet colorPerVertex='false' coordIndex='0 1 3 2 -1 4 5 7 6 -1 6 7 1 0 -1 2 3 5 4 -1 6 0 2 4 -1 1 7 5 3 -1'>
+            <Color color='1 0 0 0 1 0 0 0 1 1 1 0 1 1 1 1 1 1'/>
+            <Coordinate point='-1 1 1 -1 -1 1 1 1 1 1 -1 1 1 1 -1 1 -1 -1 -1 1 -1 -1 -1 -1'/>
+          </IndexedFaceSet>
+        </Shape>
+      </Transform>
+    </Group>
+    <ROUTE fromField='rotation_changed' fromNode='CYLSENSOR' toField='set_rotation' toNode='MYCYL'/>
+  </Scene>
+</X3D>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?> 
+<X3D profile='Immersive' version='3.2'>
+<Scene>
+  <Shape>
+     <Box/>
+  </Shape>
+</Scene>
+</X3D>

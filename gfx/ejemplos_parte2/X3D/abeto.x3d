@@ -1,0 +1,29 @@
+<?xml version="1.0"?> 
+<X3D profile='Immersive' version='3.2'>
+<Scene>
+  <!-- Un abeto-->
+	<Transform translation="0 .5 .0">
+      <Shape>
+        <Appearance>
+	    <Material diffuseColor=".5 .25 0"/>
+        </Appearance>
+        <Cylinder height="1" radius=".25"/>
+      </Shape>
+    </Transform>
+    <Transform translation="0 2 0">
+      <Shape>
+        <Appearance DEF="App_Copa">
+	    <Material diffuseColor="0 .7 0"/>
+        </Appearance>
+        <Cone height="2" bottomRadius="1.25"/>
+      </Shape>
+    </Transform>
+    <Transform translation="0 3 0">
+      <Shape>
+	  <Appearance USE="App_Copa"/>
+	  <Cone height="1.5" bottomRadius="1"/>
+      </Shape>
+    </Transform>
+
+</Scene>
+</X3D>

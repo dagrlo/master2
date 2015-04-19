@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive' version='3.2'>
+  <Scene>
+    <Transform DEF='Pila' rotation='1 0 0 1.57'>
+      <Shape DEF='Pir'>
+        <Appearance>
+          <Material DEF="Material" diffuseColor='1 0 0' shininess='.15' specularColor='.5 .5 .5'/>
+        </Appearance>
+        <Cone bottomRadius='2' height='3'/>
+      </Shape>
+      <Transform rotation='0 0 1 3.14'>
+        <Shape USE='Pir'/>
+      </Transform>
+    </Transform>
+ 
+    <TimeSensor DEF='Reloj' cycleInterval='2' loop='true'/>
+    <OrientationInterpolator DEF='AngleInterpolator' key='0 0.5 1' keyValue='1 1 0 0 1 1 0 3.14 1 1 0 6.28'/>
+    <ROUTE fromField='fraction_changed' fromNode='Reloj' toField='set_fraction' toNode='AngleInterpolator'/>
+    <ROUTE fromField='value_changed' fromNode='AngleInterpolator' toField='rotation' toNode='Pila'/>
+    <ColorInterpolator DEF='ColorInterpolator' key='0 0.2 0.4 0.6 0.8 1' keyValue='1 0 1 0 0 1 0 1 1 0 1 0 1 1 0 1 0 0'/>
+    <ROUTE fromField='fraction_changed' fromNode='Reloj' toField='set_fraction' toNode='ColorInterpolator'/>
+    <ROUTE fromField='value_changed' fromNode='ColorInterpolator' toField='diffuseColor' toNode='Material'/>
+  </Scene>
+</X3D>

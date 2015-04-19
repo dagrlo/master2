@@ -1,0 +1,29 @@
+<?xml version="1.0"?> 
+<X3D profile='Immersive' version='3.2'>
+<Scene>
+  <NavigationInfo headlight='false' />
+  <Transform translation='-2.0 0.0 0.0'>
+    <Shape>
+      <Sphere radius="1"/>
+      <Appearance>
+        <Material 
+           ambientIntensity="0"
+           emissiveColor=".2 0 0"
+           diffuseColor="1 1 1"
+        />
+      </Appearance>
+    </Shape>
+  </Transform>
+   <Transform translation='2.0 0.0 0.0'>
+    <Shape>
+      <Appearance>
+        <Material 
+           ambientIntensity="1"
+           diffuseColor="1 0 0"
+        />
+      </Appearance>
+      <Sphere radius="1"/>
+    </Shape>
+  </Transform>
+ </Scene>
+</X3D>

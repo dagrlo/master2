@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Interactive' version='3.0'>
+  <Scene>
+    <Viewpoint position="0 .3 2"/>
+    <Transform DEF="Pelota" rotation="1 1 1 .785">
+	  <Shape>
+		<Appearance>
+			<ImageTexture url='"pelota.png"'/>
+		</Appearance>
+		<Sphere radius=".25"/>
+	  </Shape>
+    </Transform>
+
+    <TimeSensor DEF="Reloj" cycleInterval="3.5" loop="TRUE"/>
+    <PositionInterpolator DEF="Interp_Posicion"
+	   key=" 0, .166, .333, .5, .666, .833, 1"
+	   keyValue="0 0 0, 0 .4 0, 0 .6 0, 0 .7 0, 0 .6 0, 0 .4 0, 0 0 0"/>
+    <ROUTE fromNode="Reloj" fromField="fraction_changed" toNode="Interp_Posicion" toField="set_fraction"/>
+    <ROUTE fromNode="Interp_Posicion" fromField="value_changed" toNode="Pelota" toField="set_translation"/>
+  </Scene>
+</X3D>
