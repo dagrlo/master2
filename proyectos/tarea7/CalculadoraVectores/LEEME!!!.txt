@@ -1,0 +1,2 @@
+El archivo build.xml para la parte de ant es el de esta carpeta. El de la carpeta del proyecto es 
+el generado por netbeans.

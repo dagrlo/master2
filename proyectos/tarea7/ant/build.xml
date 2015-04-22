@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project name="prueba_ant" default="main" basedir=".">
+    <!-- Directorios -->
+	<property name="resultadoCompilacion" value="./resultadoCompilacion"/>
+	<property name="resultadoCompilacionTest" value="./resultadoCompilacionTest"/>
+	<property name="srcDir" value="./src"/>
+	<property name="testDir" value="./CalculadoraVectores/test"/>
+	<property name="docDir" value="./docs"/>
+	<property name="claseSrc" value="./src/Principal.java"/>
+	
+	
+	<!-- Operaciones -->
+	<target name="dir_res">
+		<mkdir dir="${resultadoCompilacion}"/>
+	</target>
+	
+	<target name="dir_test">
+		<mkdir dir="${resultadoCompilacionTest}"/>
+	</target>
+	
+	<target name="limpiar">
+		<delete dir="${resultadoCompilacion}"/>
+		<delete dir="${resultadoCompilacionTest}"/>
+	</target>
+	
+	<target name="compilarFuncionalidad" depends="limpiar">
+		<mkdir dir="${resultadoCompilacion}"/>
+		<javac srcdir="${srcDir}" destdir="${resultadoCompilacion}" />
+	</target>
+	
+	<target name="compilarTest" depends="limpiar">
+		<mkdir dir="${resultadoCompilacionTest}" />
+		<javac srcdir="${testDir}" destdir="${resultadoCompilacionTest}" classpath="${classpath}"/>
+	</target>
+	
+	<target name="jarFuncionalidad" depends="compilarFuncionalidad">
+		<jar destfile="${resultadoCompilacion}" jarfile="${resultadoCompilacion}/clases.jar" basedir="${resultadoCompilacion}" includes="**"/>
+	</target>
+	
+	<target name="crearDocumentacion" depends="limpiar">
+		<mkdir dir="${docDir}"/>
+		<javadoc  sourceFiles="${claseSrc}" destdir="${docDir}"/>
+	</target>
+	
+</project>

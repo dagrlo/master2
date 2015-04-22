@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="copito22" name="servidorEstadoTrafico.TramoTest" skipped="0" tests="1" time="0.087" timestamp="2014-04-02T13:57:30">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="netbeans.user" value="C:\Users\jopana\AppData\Roaming\NetBeans\8.0" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="os.name" value="Windows 7" />
+    <property name="ant.file.JUnitSample-impl" value="C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\nbproject\build-impl.xml" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_07\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_07\jre\classes" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\Program Files\NetBeans 8.0\extide\ant" />
+    <property name="java.runtime.version" value="1.7.0_07-b11" />
+    <property name="netbeans.default_userdir_root" value="C:\Users\jopana\AppData\Roaming\NetBeans" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="classcode" value="./src/servidorEstadoTrafico" />
+    <property name="user.name" value="jopana" />
+    <property name="guice.disable.misplaced.annotation.check" value="true" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="user.language" value="es" />
+    <property name="build" value="build22" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\bin" />
+    <property name="nb.native.filechooser" value="false" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
+    <property name="ant.project.name" value="JUnitSample" />
+    <property name="java.version" value="1.7.0_07" />
+    <property name="sun.java2d.dpiaware" value="true" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|copito22" />
+    <property name="ant.file.type.JUnitSample-impl" value="file" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\endorsed" />
+    <property name="doc" value="doc" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="netbeans.productversion" value="NetBeans IDE 8.0 (Build 201403101706)" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="src" value="." />
+    <property name="user.country" value="ES" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_07\jre" />
+    <property name="netbeans.buildnumber" value="201403101706" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="ant.file" value="C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="netbeans.hash.code" value="unique=NB_EXTIDE_JAVA0cc13d9f2-cf05-4912-b6d7-614e92178db0_d2c4a130-16ce-4058-bcc7-7d43043a240d" />
+    <property name="netbeans.autoupdate.country" value="ES" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|copito22" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="23.3-b01" />
+    <property name="user.variant" value="" />
+    <property name="netbeans.dynamic.classpath" value="C:\Program Files\NetBeans 8.0\platform\core\core.jar;C:\Program Files\NetBeans 8.0\platform\core\org-openide-filesystems.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files\NetBeans 8.0\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 8.0\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 8.0\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
+    <property name="jna.boot.library.name" value="jnidispatch-340" />
+    <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="ant.file.JUnitSample" value="C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\build.xml" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="classpathJavac" value="C:/Program Files/Java/jdk1.7.0_07/bin" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="testcode" value="./test/servidorEstadoTrafico" />
+    <property name="user.script" value="" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="user.home" value="C:\Users\jopana" />
+    <property name="netbeans.home" value="C:\Program Files\NetBeans 8.0\platform" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_07\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\PHP\;C:\Program Files (x86)\Integranova\Integranova Modeler\Integranova Comparator;C:\Program Files (x86)\Integranova\Integranova Modeler\Integranova STAR Client;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Microsoft SQL Server\90\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 8\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft Visual Studio 8\SDK\v2.0\Bin;C:\Windows\Microsoft.NET\Framework64\v2.0.50727;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files\Java\jdk1.7.0_07\bin;C:\Ignacio\Paper Juan Domingo\poco-1.4.6p1\poco-1.4.6p1\bin;C:\perl\c\bin;C:\perl\perl\site\bin;C:\perl\perl\bin;C:\Ignacio\EMINTWEB;C:\cygwin\bin;C:\Ignacio\Programas\ANT\apache-ant-1.9.2\bin;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;C:\Ignacio\Programas\JUnit;." />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner servidorEstadoTrafico.TramoTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\TEST-servidorEstadoTrafico.TramoTest.xml crashfile=C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\junitvmwatcher2373751108788597759.properties propsfile=C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\junit1801336864467927640.properties" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+    <property name="java.class.path" value="C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\junit\junit.jar;C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample\clases.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.0\extide\ant\lib\ant-junit4.jar" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="jdk.home" value="C:\Program Files\Java\jdk1.7.0_07" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="ant.file.type.JUnitSample" value="file" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.io.tmpdir" value="C:\Users\jopana\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="netbeans.dirs" value="C:\Program Files\NetBeans 8.0\nb;C:\Program Files\NetBeans 8.0\ergonomics;C:\Program Files\NetBeans 8.0\ide;C:\Program Files\NetBeans 8.0\extide;C:\Program Files\NetBeans 8.0\java;C:\Program Files\NetBeans 8.0\apisupport;C:\Program Files\NetBeans 8.0\webcommon;C:\Program Files\NetBeans 8.0\websvccommon;C:\Program Files\NetBeans 8.0\enterprise;C:\Program Files\NetBeans 8.0\mobility;C:\Program Files\NetBeans 8.0\profiler;C:\Program Files\NetBeans 8.0\python;C:\Program Files\NetBeans 8.0\php;C:\Program Files\NetBeans 8.0\identity;C:\Program Files\NetBeans 8.0\harness;C:\Program Files\NetBeans 8.0\cnd;C:\Program Files\NetBeans 8.0\dlight;C:\Program Files\NetBeans 8.0\groovy;C:\Program Files\NetBeans 8.0\extra;C:\Program Files\NetBeans 8.0\javacard;C:\Program Files\NetBeans 8.0\javafx" />
+    <property name="netbeans.autoupdate.language" value="es" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_07\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="C:\Program Files\NetBeans 8.0" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="C:\Ignacio\Curso 2013-2014\GPW\Pruebas software\JUnitSample" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="sun.awt.datatransfer.timeout" value="1000" />
+    <property name="classpathJunit" value="./junit/junit.jar" />
+    <property name="ant.core.lib" value="C:\Program Files\NetBeans 8.0\extide\ant\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="ant.project.invoked-targets" value="lanzarjunit" />
+  </properties>
+  <testcase classname="servidorEstadoTrafico.TramoTest" name="comprobarFormato" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
