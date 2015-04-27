@@ -1,0 +1,98 @@
+
+package servidorEstadoTrafico;
+
+import java.net.*;
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+/**
+* Lee los registros con informacin del estado del trfico desde un fichero 
+* @author   Daniel Bolaos Alonso, Daniel.Bolanos@uam.es, Febrero 2004, EPS, Ingeniera Informtica, UAM
+*/
+
+public class LectorRegistros {
+   
+   /**
+    * Archivo del que leer los registros
+    */
+   String m_strArchivo;          
+   
+   /**
+    * Constructor de la clase
+    * @param strArchivo      archivo del que leer los registros
+    */
+   public LectorRegistros(String strArchivo) {
+      
+      this.m_strArchivo = strArchivo;
+   }   
+   
+   /**
+    * Lee los registros del archivo
+    * @return     vector de objetos <code>Registro</code> que contiene los registros leidos
+    * @throws     IOExpeption
+    */
+   public Vector leerRegistros() throws IOException {
+      
+      StringTokenizer strTokenizer;
+      String strRegistro;
+      String strToken;
+      Registro registro;
+      Tramo tramo;
+      Vector<Registro> vRegistros;
+      
+      //Creamos un objeto para acceder al fichero
+      File archivo = new File(this.m_strArchivo);
+     
+      //Creamos un objeto para la lectura desde el archivo
+      FileInputStream entrada = new FileInputStream(archivo);
+     
+      //Creamos un objeto para leer lineas del dichero        
+      BufferedReader buffered = new BufferedReader(new InputStreamReader(entrada));
+     
+      //Creamos un vector para almacenar los registros
+      vRegistros = new Vector<Registro>();
+     
+      do {       
+     
+         //Leemos un registro del archivo         
+         strRegistro = buffered.readLine();
+         if (strRegistro == null)
+            break; 
+        
+         //Creamos un objeto para extraer los elementos del String
+         strTokenizer = new StringTokenizer(strRegistro,"|");
+         //Tomamos los elementos del String
+         String strCarretera = strTokenizer.nextToken();
+         String strFecha = strTokenizer.nextToken();
+         String strHora = strTokenizer.nextToken();
+         String strClima = strTokenizer.nextToken();
+         String strObras = strTokenizer.nextToken();
+         registro = new Registro(strCarretera,strFecha,strHora,strClima,strObras);
+        
+        
+         //Comprobamos si hay tramos         
+         while (strTokenizer.hasMoreElements()) { 
+            String strKMInicio = strTokenizer.nextToken();
+            String strKMFin = strTokenizer.nextToken();
+            String strCarriles = strTokenizer.nextToken();
+            String strCarrilesCortados = strTokenizer.nextToken();
+            String strEstado = strTokenizer.nextToken();
+            String strAccidentes = strTokenizer.nextToken();
+            //Creamos un nuevo tramo
+            tramo = new Tramo(strKMInicio,strKMFin,strCarriles,strCarrilesCortados,strEstado,strAccidentes);
+            //Lo guardamos 
+            registro.anadirTramo(tramo);           
+         }          
+        
+         //Anadimos el registro al vector de registros
+         vRegistros.add(registro); 
+        
+      } while (true);         
+       
+      return vRegistros;            
+   }   
+}
+      
+
+

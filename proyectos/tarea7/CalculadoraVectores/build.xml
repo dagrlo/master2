@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<project name="prueba_ant" default="main" basedir=".">
+    <!-- Directorios -->
+	<property name="resultadoCompilacion" value="./resultadoCompilacion"/>
+	<property name="resultadoCompilacionTest" value="./resultadoCompilacionTest"/>
+	<property name="srcDir" value="./CalculadoraVectores/src"/>
+	<property name="testDir" value="./CalculadoraVectores/test"/>
+	<property name="docDir" value="./docs"/>
+	<!-- por alguna extraña razon si le paso el directorio me da error, tengo que pasasarle un fichero concreto -->
+	<property name="claseSrc" value="./CalculadoraVectores/src/Principal.java"/>
+	<property name="classpathJunit" value="junit.jar"/>
+	<property name="classpathCode" value="./CalculadoraVectores/src"/>
+	
+	<path id="test.classpath">
+		<pathelement location="${classes}"/>
+		<pathelement location="junit.jar"/>
+		<fileset dir="${srcDir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<!-- Operaciones -->
+	<target name="dir_res">
+		<mkdir dir="${resultadoCompilacion}"/>
+	</target>
+	
+	<target name="dir_test">
+		<mkdir dir="${resultadoCompilacionTest}"/>
+	</target>
+	
+	<target name="limpiar">
+		<delete dir="${resultadoCompilacion}"/>
+		<delete dir="${resultadoCompilacionTest}"/>
+	</target>
+	
+	<target name="compilarFuncionalidad" depends="limpiar">
+		<mkdir dir="${resultadoCompilacion}"/>
+		<javac srcdir="${srcDir}" destdir="${resultadoCompilacion}" />
+	</target>
+	
+	<target name="compilarTest" depends="limpiar">
+		<mkdir dir="${resultadoCompilacionTest}" />
+		<javac srcdir="${testDir};${srcDir}" destdir="${resultadoCompilacionTest}">
+		<classpath>
+			<pathelement path="${classpathJunit}"/>
+			<pathelement path="${classpathCode}"/>
+		</classpath>
+		</javac>
+	</target>
+	
+	<target name="jarFuncionalidad" depends="compilarFuncionalidad">
+		<jar destfile="${resultadoCompilacion}" jarfile="${resultadoCompilacion}/clases.jar" basedir="${resultadoCompilacion}" includes="**"/>
+	</target>
+	
+	<target name="jarTest" depends="compilarTest">
+		<jar destfile="${resultadoCompilacionTest}" jarfile="test.jar" basedir="${resultadoCompilacionTest}" includes="*"/>
+	</target>
+	
+	<target name="crearDocumentacion" depends="limpiar">
+		<mkdir dir="${docDir}"/>
+		<javadoc  sourceFiles="${claseSrc}" destdir="${docDir}"/>
+	</target>
+	
+	<target name="test" depends="compilarTest,jarFuncionalidad,jarTest">
+		<junit printsummary="yes" fork="yes" haltonerror="no" haltonfailure="no" showoutput="yes">
+			<formatter type="xml"/>
+			<classpath path="${classpathJunit};${resultadoCompilacion}/clases.jar;${resultadoCompilacionTest}/test.jar"/>
+			<test name="PrincipalTest"/>
+		</junit>
+		<junitreport name="crearHTML" todir="${resultadoCompilacionTest}">
+			<fileset dir=".">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${resultadoCompilacionTest}/html"/>
+		</junitreport>
+	</target>
+	
+	
+	
+</project>
