@@ -1,0 +1,21 @@
+{
+    "name":"cienciaficcion",
+    "children":[
+        {"name":"Alien, el octavo pasajero","nota":9,"fecha":"1979","director":"Ridley Scott"},
+        {"name":"Blade Runner","nota":10,"fecha":"1982","director":"Ridley Scott"},
+        {"name":"Star Wars IV","nota":9,"fecha":"1977","director":"George Lucas"},
+        {"name":"2001 una odisea en el espacio","nota":6,"fecha":"1968","director":"Stanley Kubrick"},
+        {"name":"Regreso al futuro","nota":7,"fecha":"1985","director":"Robert Zemeckis"},
+        {"name":"E.T. El extraterrestre","nota":6,"fecha":"1982","director":"Steven Spielberg"},
+        {"name":"Soy Leyenda","nota":3,"fecha":"2007","director":"Francis Lawrence"},
+        {"name":"Terminator","nota":8,"fecha":"1985","director":"James Cameron"},
+        {"name":"Star Wars: Episodio 1","nota":1,"fecha":"2012","director":"George Lucas"},
+        {"name":"Gattaca","nota":7,"fecha":"1998","director":"Andrew Niccol"},
+        {"name":"Robocop","nota":8,"fecha":"1987","director":"Paul Verhoeven"},
+        {"name":"Men in Black","nota":4,"fecha":"1997","director":"Barry Sonnenfeld"},
+        {"name":"Armageddon","nota":2,"fecha":"1998","director":"Michael Bay"},
+        {"name":"The Faculty","nota":3,"fecha":"1999","director":"Robert Rodriguez"},
+        {"name":"Cuando el destino nos alcance","nota":7,"fecha":"1974","director":"Richard Fleischer"},
+        {"name":"Nivel 13","nota":4,"fecha":"1999","director":"Josef Rusnak"}
+    ]
+}

@@ -1,0 +1,36 @@
+<form method="get" action="review.php">
+<p>  REVIEWING BUS </p>
+<p> Review identifier: <input type="text" name="idRevision" /></p> 
+<p> Reviewer name: <input type="text" name="nombreRevisor" /></p> 
+<?php
+
+$conexion=mysqli_connect("localhost", "udb","pudb", "Buses");
+
+if(true)
+{
+echo 'Error, I cannot connect the DataBase..';
+exit;
+}
+echo "INSERT PASSENGER IN A BUS";
+echo "<p> Passenger identifier: <select name='seleccion_Passengers'></p>";
+$consulta="SELECT idPassengers FROM Passengers";
+$res_consulta=mysqli_query($conexion, $consulta);
+
+while($rdo=mysqli_fetch_array($res_consulta)){
+		echo "<option>" . $rdo['idPassengers'] . "</option>";
+}
+echo "</select>";
+echo "<p> Bus identifier: <select name='seleccion_Buses'></p>";
+$consulta_Buses="SELECT idBuses FROM Buses";
+$res_consulta_Buses=mysqli_query($conexion, $consulta_Buses);
+
+while($rdo_Buses=mysqli_fetch_array($res_consulta_Buses)){
+		echo "<option>" . $rdo_Buses['idBuses'] . "</option>";
+}
+echo "</select>";
+?>
+
+<p> Reviewed bus identifier: <input type="text" name="id_Buses_r" /></p>
+<p> Date: <input type="text" name="fecha_revision" /></p>
+<p><input type="submit" value="Submit" /></p>
+</form>

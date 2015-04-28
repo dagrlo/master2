@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="x3dom.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            var ge;
+            google.load("earth", "1");
+            function init() {
+                google.earth.createInstance('map3d', initCB, failureCB);
+            }
+            function initCB(instance) {
+                ge = instance;
+                ge.getWindow().setVisibility(true);
+            }
+            function failureCB(errorCode) {
+            }
+            google.setOnLoadCallback(init);
+            function addKmlFromUrl(kmlUrl) {
+
+                var link = ge.createLink('');
+                link.setHref(kmlUrl);
+                var networkLink = ge.createNetworkLink('');
+                networkLink.setLink(link);
+                networkLink.setFlyToView(true);
+                ge.getFeatures().appendChild(networkLink);
+            }
+            function initCB(instance) {
+                ge = instance;
+                ge.getWindow().setVisibility(true);
+                addKmlFromUrl('escena.kml');
+            }
+        </script>
+    </head>
+    <body>
+    <x3d showStat="false" showLog="false" x="0px" y="0px" width="500px" height="500px">
+        <scene>
+            <Viewpoint position='0 0 10'></Viewpoint>
+
+            <group DEF="ufo">
+                <Transform scale="1 0.2 1">
+                    <shape>
+                        <appearance>
+                            <Material diffuseColor='0 0 0.6'></Material>
+                        </appearance>
+                        <Sphere></Sphere>
+                    </shape>
+                </Transform>
+
+                <Transform scale="0.5 0.5 0.5">
+                    <shape>
+                        <appearance>
+                            <Material diffuseColor='0 0.8 0'></material>
+                        </appearance>
+                        <Sphere></Sphere>
+                    </shape>
+                </Transform>
+
+                <Transform translation="0 -1.8 0" scale="1 2.2 1">
+                    <shape>
+                        <appearance>
+                            <Material diffuseColor="1 1 0" transparency="0.3"></Material>                    
+                        </appearance>
+                        <cone></cone>
+                    </shape>
+                </Transform>
+            </group>
+
+            <Transform translation="3 1 2">
+                <Shape USE="ufo"></shape>
+            </Transform>
+
+            <Transform translation="-3 0.4 4">
+                <Shape USE="ufo"></Shape>
+            </Transform>
+
+            <Transform translation="0 -3 0">
+                <Shape>
+                    <appearance>
+                        <Material diffuseColor="0.2 0.2 0.2"></Material>
+                    </appearance>
+                    <Box size="20 0.2 20"></Box>
+                </Shape>
+            </Transform>
+        </scene>
+    </x3d>
+
+    <div id="map3d" style="height: 400px; width: 600px;"></div>
+</body>
+</html>
