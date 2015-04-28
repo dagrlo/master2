@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+   <kml xmlns="http://www.opengis.net/kml/2.2"> 
+   <Folder>
+     <name>Folder.kml</name>
+     <open>1</open>
+     <description>
+       A folder is a container that can hold multiple other objects
+     </description>
+     <Placemark>
+       <name>Burjassot</name> 
+       <description>Campus de Burjassot</description>
+       <Point> 
+         <coordinates>-0.4204,39.5085,0</coordinates> 
+       </Point> 
+     </Placemark> 
+     <Placemark>
+       <name>Blasco Ibañez</name> 
+       <description>Campus de Blasco Ibanez</description>
+       <Point> 
+         <coordinates>-0.35984,39.47804,0</coordinates> 
+       </Point> 
+     </Placemark> 
+     <Placemark>
+       <name>Tarongers</name> 
+       <description>Campus de Tarongers</description>
+       <Point> 
+         <coordinates>-0.3398,39.4781,0</coordinates> 
+       </Point> 
+     </Placemark> 
+   </Folder>
+</kml>
+

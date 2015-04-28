@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            var ge;
+            google.load("earth", "1");
+
+            function init() {
+                google.earth.createInstance('map3d', initCB, failureCB);
+            }
+
+            function addKmlFromUrl(kmlUrl) {
+                var link = ge.createLink('');
+                link.setHref(kmlUrl);
+
+                var networkLink = ge.createNetworkLink('');
+                networkLink.setLink(link);
+                networkLink.setFlyToView(true);
+
+                ge.getFeatures().appendChild(networkLink);
+            }
+
+            function initCB(instance) {
+                ge = instance;
+                ge.getWindow().setVisibility(true);
+                addKmlFromUrl('http://mural.uv.es/dagraulo/egw/actividades/23/mapas/metro.kmz');
+            }
+
+            function failureCB(errorCode) {
+            }
+
+            google.setOnLoadCallback(init);
+        </script>
+    </head>
+    <body>
+        <div id = "map3d" style = "height: 400px; width: 600px;" > </div>
+    </body>
+</html>
