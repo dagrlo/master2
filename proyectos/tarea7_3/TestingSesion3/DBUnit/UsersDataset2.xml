@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ 
+<dataset>
+ 
+ <USERS ID="1" FIRST_NAME="Jose" LAST_NAME="Lopez" DATE_CREATED="2013-01-04" IS_ADMIN="true"	NUM_POINTS="7" />
+ 
+ <USERS ID="2" FIRST_NAME="Lorena" LAST_NAME="Martinez"  DATE_CREATED="2013-01-24" IS_ADMIN="true" NUM_POINTS="6" />
+ 
+ </dataset>
+ 
