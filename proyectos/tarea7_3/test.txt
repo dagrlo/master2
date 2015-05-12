@@ -1,0 +1,77 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.io.File;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+
+import org.junit.After;
+import org.junit.AfterClass;
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+/**
+ *
+ * @author jopana
+ */
+public class CineTest {
+     //Mockery context = new JUnit4Mockery();
+     ArrayList<String> poblaciones;
+     private static Connection con;   
+     
+     
+    public CineTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() throws Exception {
+        //Base de datos real
+        Conexion setupC=new Conexion();
+        con=setupC.conecta();
+        IDatabaseConnection conexion=new DatabaseConnection(con);
+        //Dataset
+        
+        IDataSet dataset=new FlatXmlDataSet(new File(""));
+        try{
+            DatabaseOperation.CLEAN_INSERT.execute(conexion, dataset);
+        }finally{
+            con.close();
+        }
+        
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+        poblaciones= new ArrayList<String>(Arrays.asList("Valencia", "Alicante","Castellon"));
+    }
+    
+    @After
+    public void tearDown() {
+    }
+
+    
+   
+    @Test
+    public void testListarPoblacionesConCine() {                             
+        DBUnit repository =new DBUnit();
+        assertEquals(poblaciones.size(), 3);
+        // int basura=currency.getPesetavalue(166);
+    }
+
+    
+
+    
+}
