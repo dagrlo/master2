@@ -1,0 +1,4 @@
+#GlassFish 3
+#Tue May 19 22:53:51 CEST 2015
+org.eclipse.jst.jee.server\:guia_1ClientEAR=D\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\guia_1ClientEAR
+org.eclipse.jst.jee.server\:guia_1EAR=D\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\guia_1EAR

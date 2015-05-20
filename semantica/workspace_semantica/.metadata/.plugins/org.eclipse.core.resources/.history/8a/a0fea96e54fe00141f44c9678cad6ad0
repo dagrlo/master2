@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://wssw" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://wssw" xmlns:intf="http://wssw" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://wssw" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="limpiaResultado">
+    <complexType>
+     <sequence>
+      <element name="texto" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="limpiaResultadoResponse">
+    <complexType>
+     <sequence>
+      <element name="limpiaResultadoReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getkk">
+    <complexType/>
+   </element>
+   <element name="getkkResponse">
+    <complexType>
+     <sequence>
+      <element name="getkkReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCodigoAsignatura">
+    <complexType>
+     <sequence>
+      <element name="nombreDuenyo" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCodigoAsignaturaResponse">
+    <complexType>
+     <sequence>
+      <element name="getCodigoAsignaturaReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getkkRequest">
+
+      <wsdl:part element="impl:getkk" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCodigoAsignaturaRequest">
+
+      <wsdl:part element="impl:getCodigoAsignatura" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="limpiaResultadoResponse">
+
+      <wsdl:part element="impl:limpiaResultadoResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getkkResponse">
+
+      <wsdl:part element="impl:getkkResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="limpiaResultadoRequest">
+
+      <wsdl:part element="impl:limpiaResultado" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCodigoAsignaturaResponse">
+
+      <wsdl:part element="impl:getCodigoAsignaturaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Guia">
+
+      <wsdl:operation name="limpiaResultado">
+
+         <wsdl:input message="impl:limpiaResultadoRequest" name="limpiaResultadoRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:limpiaResultadoResponse" name="limpiaResultadoResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getkk">
+
+         <wsdl:input message="impl:getkkRequest" name="getkkRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getkkResponse" name="getkkResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCodigoAsignatura">
+
+         <wsdl:input message="impl:getCodigoAsignaturaRequest" name="getCodigoAsignaturaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCodigoAsignaturaResponse" name="getCodigoAsignaturaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="GuiaSoapBinding" type="impl:Guia">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="limpiaResultado">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="limpiaResultadoRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="limpiaResultadoResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getkk">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getkkRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getkkResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCodigoAsignatura">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCodigoAsignaturaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCodigoAsignaturaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="GuiaService">
+
+      <wsdl:port binding="impl:GuiaSoapBinding" name="Guia">
+
+         <wsdlsoap:address location="http://localhost:8080/guia_1/services/Guia"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

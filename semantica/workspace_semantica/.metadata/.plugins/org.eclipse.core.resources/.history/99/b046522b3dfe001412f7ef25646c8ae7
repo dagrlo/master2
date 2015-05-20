@@ -1,0 +1,3 @@
+function prueba(datos){
+	alert(datos);
+}

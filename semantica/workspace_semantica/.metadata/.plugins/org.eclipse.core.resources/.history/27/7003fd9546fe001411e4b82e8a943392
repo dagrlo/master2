@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from GuiaService WSDL service -->
+
+  <service name="Guia" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://wssw"/>
+      <parameter name="wsdlServiceElement" value="GuiaService"/>
+      <parameter name="schemaQualified" value="http://wssw"/>
+      <parameter name="wsdlServicePort" value="Guia"/>
+      <parameter name="className" value="wssw.Guia"/>
+      <parameter name="wsdlPortType" value="Guia"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://wssw" xmlns:retNS="http://wssw" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getCodigoAsignatura" qname="operNS:getCodigoAsignatura" returnQName="retNS:getCodigoAsignaturaReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://wssw" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:nombreDuenyo" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://wssw" xmlns:retNS="http://wssw" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="limpiaResultado" qname="operNS:limpiaResultado" returnQName="retNS:limpiaResultadoReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://wssw" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:texto" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://wssw" xmlns:retNS="http://wssw" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getkk" qname="operNS:getkk" returnQName="retNS:getkkReturn" returnType="rtns:string" soapAction="">
+      </operation>
+      <parameter name="allowedMethods" value="getCodigoAsignatura getkk limpiaResultado"/>
+
+  </service>
+</deployment>

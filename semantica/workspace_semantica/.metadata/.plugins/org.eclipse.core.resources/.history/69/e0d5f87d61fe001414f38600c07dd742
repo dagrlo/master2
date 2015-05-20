@@ -1,0 +1,290 @@
+<%@page contentType="text/html;charset=UTF-8"%>
+<% request.setCharacterEncoding("UTF-8"); %>
+<HTML>
+<HEAD>
+<TITLE>Result</TITLE>
+</HEAD>
+<BODY>
+<H1>Result</H1>
+
+<jsp:useBean id="sampleGuiaProxyid" scope="session" class="wssw.GuiaProxy" />
+<%
+if (request.getParameter("endpoint") != null && request.getParameter("endpoint").length() > 0)
+sampleGuiaProxyid.setEndpoint(request.getParameter("endpoint"));
+%>
+
+<%
+String method = request.getParameter("method");
+int methodID = 0;
+if (method == null) methodID = -1;
+
+if(methodID != -1) methodID = Integer.parseInt(method);
+boolean gotMethod = false;
+
+try {
+switch (methodID){ 
+case 2:
+        gotMethod = true;
+        java.lang.String getEndpoint2mtemp = sampleGuiaProxyid.getEndpoint();
+if(getEndpoint2mtemp == null){
+%>
+<%=getEndpoint2mtemp %>
+<%
+}else{
+        String tempResultreturnp3 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getEndpoint2mtemp));
+        %>
+        <%= tempResultreturnp3 %>
+        <%
+}
+break;
+case 5:
+        gotMethod = true;
+        String endpoint_0id=  request.getParameter("endpoint8");
+            java.lang.String endpoint_0idTemp = null;
+        if(!endpoint_0id.equals("")){
+         endpoint_0idTemp  = endpoint_0id;
+        }
+        sampleGuiaProxyid.setEndpoint(endpoint_0idTemp);
+break;
+case 10:
+        gotMethod = true;
+        wssw.Guia getGuia10mtemp = sampleGuiaProxyid.getGuia();
+if(getGuia10mtemp == null){
+%>
+<%=getGuia10mtemp %>
+<%
+}else{
+%>
+<TABLE>
+<TR>
+<TD COLSPAN="3" ALIGN="LEFT">returnp:</TD>
+</TABLE>
+<%
+}
+break;
+case 43:
+        gotMethod = true;
+        java.lang.String getMetodologiaDocente43mtemp = sampleGuiaProxyid.getMetodologiaDocente();
+if(getMetodologiaDocente43mtemp == null){
+%>
+<%=getMetodologiaDocente43mtemp %>
+<%
+}else{
+        String tempResultreturnp44 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getMetodologiaDocente43mtemp));
+        %>
+        <%= tempResultreturnp44 %>
+        <%
+}
+break;
+case 46:
+        gotMethod = true;
+        java.lang.String getDatosAsignatura46mtemp = sampleGuiaProxyid.getDatosAsignatura();
+if(getDatosAsignatura46mtemp == null){
+%>
+<%=getDatosAsignatura46mtemp %>
+<%
+}else{
+        String tempResultreturnp47 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getDatosAsignatura46mtemp));
+        %>
+        <%= tempResultreturnp47 %>
+        <%
+}
+break;
+case 49:
+        gotMethod = true;
+        java.lang.String getRelacionConOtrasAsignaturas49mtemp = sampleGuiaProxyid.getRelacionConOtrasAsignaturas();
+if(getRelacionConOtrasAsignaturas49mtemp == null){
+%>
+<%=getRelacionConOtrasAsignaturas49mtemp %>
+<%
+}else{
+        String tempResultreturnp50 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getRelacionConOtrasAsignaturas49mtemp));
+        %>
+        <%= tempResultreturnp50 %>
+        <%
+}
+break;
+case 52:
+        gotMethod = true;
+        java.lang.String getOtrosRequisitos52mtemp = sampleGuiaProxyid.getOtrosRequisitos();
+if(getOtrosRequisitos52mtemp == null){
+%>
+<%=getOtrosRequisitos52mtemp %>
+<%
+}else{
+        String tempResultreturnp53 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getOtrosRequisitos52mtemp));
+        %>
+        <%= tempResultreturnp53 %>
+        <%
+}
+break;
+case 55:
+        gotMethod = true;
+        java.lang.String getDescripcionDeContenidos55mtemp = sampleGuiaProxyid.getDescripcionDeContenidos();
+if(getDescripcionDeContenidos55mtemp == null){
+%>
+<%=getDescripcionDeContenidos55mtemp %>
+<%
+}else{
+        String tempResultreturnp56 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getDescripcionDeContenidos55mtemp));
+        %>
+        <%= tempResultreturnp56 %>
+        <%
+}
+break;
+case 58:
+        gotMethod = true;
+        java.lang.String getActividadesPresenciales58mtemp = sampleGuiaProxyid.getActividadesPresenciales();
+if(getActividadesPresenciales58mtemp == null){
+%>
+<%=getActividadesPresenciales58mtemp %>
+<%
+}else{
+        String tempResultreturnp59 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getActividadesPresenciales58mtemp));
+        %>
+        <%= tempResultreturnp59 %>
+        <%
+}
+break;
+case 61:
+        gotMethod = true;
+        java.lang.String getResultadosAprendizaje61mtemp = sampleGuiaProxyid.getResultadosAprendizaje();
+if(getResultadosAprendizaje61mtemp == null){
+%>
+<%=getResultadosAprendizaje61mtemp %>
+<%
+}else{
+        String tempResultreturnp62 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getResultadosAprendizaje61mtemp));
+        %>
+        <%= tempResultreturnp62 %>
+        <%
+}
+break;
+case 64:
+        gotMethod = true;
+        java.lang.String getActividadesNoPresenciales64mtemp = sampleGuiaProxyid.getActividadesNoPresenciales();
+if(getActividadesNoPresenciales64mtemp == null){
+%>
+<%=getActividadesNoPresenciales64mtemp %>
+<%
+}else{
+        String tempResultreturnp65 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getActividadesNoPresenciales64mtemp));
+        %>
+        <%= tempResultreturnp65 %>
+        <%
+}
+break;
+case 67:
+        gotMethod = true;
+        java.lang.String getReferenciasBasicas67mtemp = sampleGuiaProxyid.getReferenciasBasicas();
+if(getReferenciasBasicas67mtemp == null){
+%>
+<%=getReferenciasBasicas67mtemp %>
+<%
+}else{
+        String tempResultreturnp68 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getReferenciasBasicas67mtemp));
+        %>
+        <%= tempResultreturnp68 %>
+        <%
+}
+break;
+case 70:
+        gotMethod = true;
+        java.lang.String getCompetencias70mtemp = sampleGuiaProxyid.getCompetencias();
+if(getCompetencias70mtemp == null){
+%>
+<%=getCompetencias70mtemp %>
+<%
+}else{
+        String tempResultreturnp71 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getCompetencias70mtemp));
+        %>
+        <%= tempResultreturnp71 %>
+        <%
+}
+break;
+case 73:
+        gotMethod = true;
+        java.lang.String getEvaluacion73mtemp = sampleGuiaProxyid.getEvaluacion();
+if(getEvaluacion73mtemp == null){
+%>
+<%=getEvaluacion73mtemp %>
+<%
+}else{
+        String tempResultreturnp74 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getEvaluacion73mtemp));
+        %>
+        <%= tempResultreturnp74 %>
+        <%
+}
+break;
+case 76:
+        gotMethod = true;
+        java.lang.String getCoordinacion76mtemp = sampleGuiaProxyid.getCoordinacion();
+if(getCoordinacion76mtemp == null){
+%>
+<%=getCoordinacion76mtemp %>
+<%
+}else{
+        String tempResultreturnp77 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getCoordinacion76mtemp));
+        %>
+        <%= tempResultreturnp77 %>
+        <%
+}
+break;
+case 79:
+        gotMethod = true;
+        java.lang.String getResumen79mtemp = sampleGuiaProxyid.getResumen();
+if(getResumen79mtemp == null){
+%>
+<%=getResumen79mtemp %>
+<%
+}else{
+        String tempResultreturnp80 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getResumen79mtemp));
+        %>
+        <%= tempResultreturnp80 %>
+        <%
+}
+break;
+case 82:
+        gotMethod = true;
+        java.lang.String getTitulacion82mtemp = sampleGuiaProxyid.getTitulacion();
+if(getTitulacion82mtemp == null){
+%>
+<%=getTitulacion82mtemp %>
+<%
+}else{
+        String tempResultreturnp83 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getTitulacion82mtemp));
+        %>
+        <%= tempResultreturnp83 %>
+        <%
+}
+break;
+case 85:
+        gotMethod = true;
+        java.lang.String getMaterias85mtemp = sampleGuiaProxyid.getMaterias();
+if(getMaterias85mtemp == null){
+%>
+<%=getMaterias85mtemp %>
+<%
+}else{
+        String tempResultreturnp86 = org.eclipse.jst.ws.util.JspUtils.markup(String.valueOf(getMaterias85mtemp));
+        %>
+        <%= tempResultreturnp86 %>
+        <%
+}
+break;
+}
+} catch (Exception e) { 
+%>
+Exception: <%= org.eclipse.jst.ws.util.JspUtils.markup(e.toString()) %>
+Message: <%= org.eclipse.jst.ws.util.JspUtils.markup(e.getMessage()) %>
+<%
+return;
+}
+if(!gotMethod){
+%>
+result: N/A
+<%
+}
+%>
+</BODY>
+</HTML>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://wssw" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://wssw" xmlns:intf="http://wssw" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://wssw" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getRelacionConOtrasAsignaturas">
+    <complexType/>
+   </element>
+   <element name="getRelacionConOtrasAsignaturasResponse">
+    <complexType>
+     <sequence>
+      <element name="getRelacionConOtrasAsignaturasReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getDatosAsignatura">
+    <complexType/>
+   </element>
+   <element name="getDatosAsignaturaResponse">
+    <complexType>
+     <sequence>
+      <element name="getDatosAsignaturaReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getOtrosRequisitos">
+    <complexType/>
+   </element>
+   <element name="getOtrosRequisitosResponse">
+    <complexType>
+     <sequence>
+      <element name="getOtrosRequisitosReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getMaterias">
+    <complexType/>
+   </element>
+   <element name="getMateriasResponse">
+    <complexType>
+     <sequence>
+      <element name="getMateriasReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getTitulacion">
+    <complexType/>
+   </element>
+   <element name="getTitulacionResponse">
+    <complexType>
+     <sequence>
+      <element name="getTitulacionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getResumen">
+    <complexType/>
+   </element>
+   <element name="getResumenResponse">
+    <complexType>
+     <sequence>
+      <element name="getResumenReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getCoordinacion">
+    <complexType/>
+   </element>
+   <element name="getCoordinacionResponse">
+    <complexType>
+     <sequence>
+      <element name="getCoordinacionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getCoordinacionRequest">
+
+      <wsdl:part element="impl:getCoordinacion" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMateriasResponse">
+
+      <wsdl:part element="impl:getMateriasResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDatosAsignaturaRequest">
+
+      <wsdl:part element="impl:getDatosAsignatura" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getResumenResponse">
+
+      <wsdl:part element="impl:getResumenResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getOtrosRequisitosRequest">
+
+      <wsdl:part element="impl:getOtrosRequisitos" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getOtrosRequisitosResponse">
+
+      <wsdl:part element="impl:getOtrosRequisitosResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCoordinacionResponse">
+
+      <wsdl:part element="impl:getCoordinacionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getRelacionConOtrasAsignaturasResponse">
+
+      <wsdl:part element="impl:getRelacionConOtrasAsignaturasResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getRelacionConOtrasAsignaturasRequest">
+
+      <wsdl:part element="impl:getRelacionConOtrasAsignaturas" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getMateriasRequest">
+
+      <wsdl:part element="impl:getMaterias" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getDatosAsignaturaResponse">
+
+      <wsdl:part element="impl:getDatosAsignaturaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getResumenRequest">
+
+      <wsdl:part element="impl:getResumen" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTitulacionRequest">
+
+      <wsdl:part element="impl:getTitulacion" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getTitulacionResponse">
+
+      <wsdl:part element="impl:getTitulacionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Guia">
+
+      <wsdl:operation name="getRelacionConOtrasAsignaturas">
+
+         <wsdl:input message="impl:getRelacionConOtrasAsignaturasRequest" name="getRelacionConOtrasAsignaturasRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getRelacionConOtrasAsignaturasResponse" name="getRelacionConOtrasAsignaturasResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDatosAsignatura">
+
+         <wsdl:input message="impl:getDatosAsignaturaRequest" name="getDatosAsignaturaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getDatosAsignaturaResponse" name="getDatosAsignaturaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getOtrosRequisitos">
+
+         <wsdl:input message="impl:getOtrosRequisitosRequest" name="getOtrosRequisitosRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getOtrosRequisitosResponse" name="getOtrosRequisitosResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaterias">
+
+         <wsdl:input message="impl:getMateriasRequest" name="getMateriasRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getMateriasResponse" name="getMateriasResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTitulacion">
+
+         <wsdl:input message="impl:getTitulacionRequest" name="getTitulacionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getTitulacionResponse" name="getTitulacionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getResumen">
+
+         <wsdl:input message="impl:getResumenRequest" name="getResumenRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getResumenResponse" name="getResumenResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCoordinacion">
+
+         <wsdl:input message="impl:getCoordinacionRequest" name="getCoordinacionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCoordinacionResponse" name="getCoordinacionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="GuiaSoapBinding" type="impl:Guia">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getRelacionConOtrasAsignaturas">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getRelacionConOtrasAsignaturasRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getRelacionConOtrasAsignaturasResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getDatosAsignatura">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getDatosAsignaturaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getDatosAsignaturaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getOtrosRequisitos">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getOtrosRequisitosRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getOtrosRequisitosResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getMaterias">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getMateriasRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getMateriasResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getTitulacion">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getTitulacionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getTitulacionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getResumen">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getResumenRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getResumenResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="getCoordinacion">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCoordinacionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCoordinacionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="GuiaService">
+
+      <wsdl:port binding="impl:GuiaSoapBinding" name="Guia">
+
+         <wsdlsoap:address location="http://localhost:8080/guia_1/services/Guia"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

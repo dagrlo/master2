@@ -1,0 +1,109 @@
+package boletin6.entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
+
+
+/**
+ * The persistent class for the empresas database table.
+ * 
+ */
+@Entity
+@Table(name="empresas")
+@DiscriminatorValue("E")
+@NamedQuery(name="Empresa.findAll", query="SELECT e FROM Empresa e")
+public class Empresa extends Cliente implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+
+	//bi-directional many-to-one association to Actividad
+	@ManyToOne
+	@JoinColumn(name="actividad")
+	private Actividad actividade;
+
+	//bi-directional one-to-one association to Cliente
+	@OneToOne
+	@JoinColumn(name="idCliente")
+	private Cliente cliente;
+
+	//bi-directional many-to-one association to Empresa
+	@ManyToOne
+	@JoinColumn(name="empresaMatriz")
+	private Empresa empresa;
+
+	//bi-directional many-to-one association to Empresa
+	@OneToMany(mappedBy="empresa", fetch=FetchType.EAGER)
+	private List<Empresa> empresas;
+
+	//bi-directional many-to-one association to Persona
+	@ManyToOne
+	@JoinColumn(name="gerente")
+	private Persona persona;
+
+	public Empresa() {
+	}
+
+	public int getIdCliente() {
+		return this.idCliente;
+	}
+
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public Actividad getActividade() {
+		return this.actividade;
+	}
+
+	public void setActividade(Actividad actividade) {
+		this.actividade = actividade;
+	}
+
+	public Cliente getCliente() {
+		return this.cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Empresa getEmpresa() {
+		return this.empresa;
+	}
+
+	public void setEmpresa(Empresa empresa) {
+		this.empresa = empresa;
+	}
+
+	public List<Empresa> getEmpresas() {
+		return this.empresas;
+	}
+
+	public void setEmpresas(List<Empresa> empresas) {
+		this.empresas = empresas;
+	}
+
+	public Empresa addEmpresa(Empresa empresa) {
+		getEmpresas().add(empresa);
+		empresa.setEmpresa(this);
+
+		return empresa;
+	}
+
+	public Empresa removeEmpresa(Empresa empresa) {
+		getEmpresas().remove(empresa);
+		empresa.setEmpresa(null);
+
+		return empresa;
+	}
+
+	public Persona getPersona() {
+		return this.persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
+	}
+
+}

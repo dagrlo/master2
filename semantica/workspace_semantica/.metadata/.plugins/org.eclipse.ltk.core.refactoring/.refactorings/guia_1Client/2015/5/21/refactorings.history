@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;guia_1Client/WebContent/sampleGuiaProxy/js/jquery-1.11.3.min.js&apos; to &apos;jquery.js&apos;" description="Rename resource &apos;jquery-1.11.3.min.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/sampleGuiaProxy/js/jquery-1.11.3.min.js" name="jquery.js" stamp="1432056351390" updateReferences="true"/>
+</session>

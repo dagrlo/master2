@@ -1,0 +1,68 @@
+package boletin6.entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
+
+
+/**
+ * The persistent class for the actividades database table.
+ * 
+ */
+@Entity
+@NamedQuery(name="Actividades.findAll", query="SELECT a FROM Actividades a")
+public class Actividades implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private String idActividad;
+
+	private String actividad;
+
+	//bi-directional many-to-one association to Empresas
+	@OneToMany(mappedBy="actividade", fetch=FetchType.EAGER)
+	private List<Empresas> empresas;
+
+	public Actividades() {
+	}
+
+	public String getIdActividad() {
+		return this.idActividad;
+	}
+
+	public void setIdActividad(String idActividad) {
+		this.idActividad = idActividad;
+	}
+
+	public String getActividad() {
+		return this.actividad;
+	}
+
+	public void setActividad(String actividad) {
+		this.actividad = actividad;
+	}
+
+	public List<Empresas> getEmpresas() {
+		return this.empresas;
+	}
+
+	public void setEmpresas(List<Empresas> empresas) {
+		this.empresas = empresas;
+	}
+
+	public Empresas addEmpresa(Empresas empresa) {
+		getEmpresas().add(empresa);
+		empresa.setActividade(this);
+
+		return empresa;
+	}
+
+	public Empresas removeEmpresa(Empresas empresa) {
+		getEmpresas().remove(empresa);
+		empresa.setActividade(null);
+
+		return empresa;
+	}
+
+}

@@ -1,0 +1,82 @@
+package boletin6.entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
+
+
+/**
+ * The persistent class for the personas database table.
+ * 
+ */
+@Entity
+@Table(name="personas")
+@NamedQuery(name="Persona.findAll", query="SELECT p FROM Persona p")
+public class Persona implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int idCliente;
+
+	private String apellidos;
+
+	//bi-directional many-to-one association to Empresa
+	@OneToMany(mappedBy="persona", fetch=FetchType.EAGER)
+	private List<Empresa> empresas;
+
+	//bi-directional one-to-one association to Cliente
+	@OneToOne
+	@JoinColumn(name="idCliente")
+	private Cliente cliente;
+
+	public Persona() {
+	}
+
+	public int getIdCliente() {
+		return this.idCliente;
+	}
+
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public String getApellidos() {
+		return this.apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public List<Empresa> getEmpresas() {
+		return this.empresas;
+	}
+
+	public void setEmpresas(List<Empresa> empresas) {
+		this.empresas = empresas;
+	}
+
+	public Empresa addEmpresa(Empresa empresa) {
+		getEmpresas().add(empresa);
+		empresa.setPersona(this);
+
+		return empresa;
+	}
+
+	public Empresa removeEmpresa(Empresa empresa) {
+		getEmpresas().remove(empresa);
+		empresa.setPersona(null);
+
+		return empresa;
+	}
+
+	public Cliente getCliente() {
+		return this.cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+}

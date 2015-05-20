@@ -1,0 +1,167 @@
+package wssw;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Control
+ */
+@WebServlet("/Control")
+public class Control extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public Control() {
+		super();
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		GuiaProxy guia = new GuiaProxy();
+		StringTokenizer tokens;
+		String resultado = "";
+		String salida = "";
+		boolean ponSalto=false;
+		ArrayList<String> atributos = new ArrayList<String>();
+		int i = 0;
+		int j=0;
+
+		response.setContentType("text/xml");
+		int consulta = Integer.parseInt(request.getParameter("consulta"));
+
+		switch (consulta) {
+		case 1:
+			resultado = guia.getDatosAsignatura();
+			atributos.add("Codigo de asignatura: ");
+			atributos.add("Nombre de asignatura: ");
+			atributos.add("Ciclo: ");
+			atributos.add("Creditos: ");
+			atributos.add("Curso academico: ");
+			break;
+
+		case 2:
+			resultado = guia.getTitulacion();
+			atributos.add("Curso: ");
+			atributos.add("Periodo: ");
+			atributos.add("Titulacion: ");
+			atributos.add("Centro: ");
+			break;
+
+		case 3:
+			resultado = guia.getMaterias();
+			atributos.add("Titulacion: ");
+			atributos.add("Materia: ");
+			atributos.add("Caracter: ");
+			break;
+
+		case 4:
+			resultado = guia.getCoordinacion();
+			atributos.add("Profesor: ");
+			atributos.add("Departamento: ");
+
+			break;
+
+		case 5:
+			resultado = guia.getResumen();
+			atributos.add("");
+			break;
+
+		case 6:
+			resultado = guia.getRelacionConOtrasAsignaturas();
+			atributos.add("");
+			break;
+			
+		case 7:
+			resultado = guia.getOtrosRequisitos();
+			atributos.add("");
+			break;
+			
+		case 8:
+			resultado = guia.getCompetencias();
+			atributos.add("");
+			
+		case 9:
+			resultado = guia.getResultadosAprendizaje();
+			atributos.add("");
+			break;
+		
+		case 10:
+			resultado = guia.getDescripcionDeContenidos();
+			atributos.add("Tema:");
+			atributos.add("  ");
+			
+			ponSalto=true;
+			break;
+			
+		case 11:
+			resultado = guia.getActividadesPresenciales();
+			
+			ponSalto=true;
+			break;
+			
+		case 12:
+			resultado = guia.getActividadesNoPresenciales();
+			
+			ponSalto=true;
+			break;
+			
+		case 13:
+			resultado = guia.getMetodologiaDocente();
+			atributos.add("");
+			
+			break;
+			
+		}
+
+		if (resultado.compareTo("") != 0) {
+			tokens = new StringTokenizer(resultado, "%");
+			salida = "<?xml version=\"1.0\"?>\n";
+			salida += "<Respuesta>\n";
+			i = 0;
+		
+			System.out.println("-"+tokens.countTokens());
+			while (tokens.hasMoreElements()) {
+				if (ponSalto==false){
+					salida += "<mensaje titulo=\"" + atributos.get(i) + "\">"
+							+ tokens.nextElement() + "</mensaje>\n";
+				} else {
+					
+					salida += "<mensaje titulo=\"\">"
+							+ tokens.nextElement() + "</mensaje>\n";
+					
+				}
+				
+				i++;
+				
+			}
+			salida += "</Respuesta>\n";
+			System.out.println(salida);
+			response.getWriter().print(salida);
+		} else {
+			response.getWriter()
+					.print("<?xml version=\"1.0\"?><Vacia><mensaje>La consulta no ha tenido resultados</mensaje></Vacia>");
+		}
+	}
+
+}

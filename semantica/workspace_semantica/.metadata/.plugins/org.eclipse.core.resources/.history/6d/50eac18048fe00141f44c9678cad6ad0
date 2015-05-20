@@ -1,0 +1,112 @@
+package wssw;
+
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
+public class Guia {
+
+	public String getCodigoAsignatura(String nombreDuenyo) {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory
+				.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://protege.cim3.net/file/pub/ontologies/people.pets/people+pets.owl");
+
+		String queryString = "PREFIX po: <http://cohse.semanticweb.org/ontologies/people#>"
+				+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>"
+				+ "SELECT ?nombre "
+				+ "WHERE "
+				+ "{ "
+				+ " po:"
+				+ nombreDuenyo
+				+ " po:has_pet ?mascota ."
+				+ " ?mascota rdfs:label ?nombre ."
+				+ "}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+				QuerySolution soln = results.nextSolution();
+				RDFNode title = soln.get("nombre");
+				result.append(title.toString());
+				result.append(" - ");
+			}
+			resultado += result;
+		} finally {
+			qe.close();
+		}
+		resultado += "a";
+		return resultado;
+	}
+
+	public String getkk() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT  ?nombre ?curso"+  
+"	WHERE { ?subject mia:conDatos ?object."+
+		
+"		?object mia:nombreAsignatura ?nombre."+
+		
+"		?object mia:cursoAcademico ?curso"+
+"		}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+				/*QuerySolution soln = results.nextSolution();
+				RDFNode title = soln.get("nombre");
+				result.append(title.toString());
+				result.append(" - ");*/
+				
+				QuerySolution soln=results.nextSolution();
+				//RDFNode data=soln.get("nombre");
+				//result.append(limpiaResultado(soln.get("nombre").toString()));
+				//result.append(limpiaResultado(soln.get("nombre").toString()));
+				
+				resultado+="-"+limpiaResultado(soln.get("curso").toString());
+				
+				//data=soln.get("curso");
+				//result.append(","+limpiaResultado(data.toString()));
+				
+			}
+			//resultado += result;
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String limpiaResultado(String texto){
+		String resultado;
+		
+		resultado=texto.substring(0,texto.indexOf("^"));
+		
+		return resultado;
+	}
+
+}

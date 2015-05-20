@@ -1,0 +1,77 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="D:\glassfish4\glassfish\domains\domain1\eclipseApps\guia_1EAR\guia_1_war\WEB-INF\attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="Guia" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="getMetodologiaDocente" qname="ns1:getMetodologiaDocente" returnQName="ns1:getMetodologiaDocenteReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/"/>
+  <ns1:operation name="getDatosAsignatura" qname="ns2:getDatosAsignatura" returnQName="ns2:getDatosAsignaturaReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getRelacionConOtrasAsignaturas" qname="ns3:getRelacionConOtrasAsignaturas" returnQName="ns3:getRelacionConOtrasAsignaturasReturn" returnType="xsd:string" soapAction="" xmlns:ns3="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getOtrosRequisitos" qname="ns4:getOtrosRequisitos" returnQName="ns4:getOtrosRequisitosReturn" returnType="xsd:string" soapAction="" xmlns:ns4="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getDescripcionDeContenidos" qname="ns5:getDescripcionDeContenidos" returnQName="ns5:getDescripcionDeContenidosReturn" returnType="xsd:string" soapAction="" xmlns:ns5="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getActividadesPresenciales" qname="ns6:getActividadesPresenciales" returnQName="ns6:getActividadesPresencialesReturn" returnType="xsd:string" soapAction="" xmlns:ns6="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getResultadosAprendizaje" qname="ns7:getResultadosAprendizaje" returnQName="ns7:getResultadosAprendizajeReturn" returnType="xsd:string" soapAction="" xmlns:ns7="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getActividadesNoPresenciales" qname="ns8:getActividadesNoPresenciales" returnQName="ns8:getActividadesNoPresencialesReturn" returnType="xsd:string" soapAction="" xmlns:ns8="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getReferenciasBasicas" qname="ns9:getReferenciasBasicas" returnQName="ns9:getReferenciasBasicasReturn" returnType="xsd:string" soapAction="" xmlns:ns9="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getCompetencias" qname="ns10:getCompetencias" returnQName="ns10:getCompetenciasReturn" returnType="xsd:string" soapAction="" xmlns:ns10="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getEvaluacion" qname="ns11:getEvaluacion" returnQName="ns11:getEvaluacionReturn" returnType="xsd:string" soapAction="" xmlns:ns11="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getCoordinacion" qname="ns12:getCoordinacion" returnQName="ns12:getCoordinacionReturn" returnType="xsd:string" soapAction="" xmlns:ns12="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getResumen" qname="ns13:getResumen" returnQName="ns13:getResumenReturn" returnType="xsd:string" soapAction="" xmlns:ns13="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getTitulacion" qname="ns14:getTitulacion" returnQName="ns14:getTitulacionReturn" returnType="xsd:string" soapAction="" xmlns:ns14="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:operation name="getMaterias" qname="ns15:getMaterias" returnQName="ns15:getMateriasReturn" returnType="xsd:string" soapAction="" xmlns:ns15="http://wssw" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+  <ns1:parameter name="allowedMethods" value="getActividadesNoPresenciales getDescripcionDeContenidos getMetodologiaDocente getEvaluacion getRelacionConOtrasAsignaturas getMaterias getResultadosAprendizaje getReferenciasBasicas getTitulacion getCompetencias getActividadesPresenciales getResumen getCoordinacion getDatosAsignatura getOtrosRequisitos"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="Guia"/>
+  <ns1:parameter name="className" value="wssw.Guia"/>
+  <ns1:parameter name="wsdlServicePort" value="Guia"/>
+  <ns1:parameter name="schemaQualified" value="http://wssw"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://wssw"/>
+  <ns1:parameter name="wsdlServiceElement" value="GuiaService"/>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

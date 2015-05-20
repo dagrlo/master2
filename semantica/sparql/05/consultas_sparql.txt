@@ -1,0 +1,168 @@
+PREFIJO:
+
+PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>
+
+Ficha identificativa:
+---------------------------
+
+SELECT ?subject ?object ?codigo ?nombre ?ciclo  ?creditos ?curso
+	WHERE { ?subject mia:conDatos ?object.
+		?object mia:codigoAsignatura ?codigo.
+		?object mia:nombreAsignatura ?nombre.
+		?object mia:ciclo ?ciclo.
+		?object mia:creditos ?creditos.
+		?object mia:cursoAcademico ?curso
+		}
+	
+titulacion:
+--------------
+SELECT ?subject ?object ?curso ?periodo ?nTitulacion ?nCentro
+	WHERE { ?subject mia:conTitulaciones ?object.
+		?object mia:curso ?curso.
+		?object mia:periodo ?periodo.
+		?object mia:enTitulacion ?titulacion.
+		?titulacion mia:nombreTitulacion ?nTitulacion.
+		?object mia:enCentro ?centro.
+		?centro mia:nombreCentro ?nCentro
+		}
+		
+
+materia:
+-----------
+SELECT ?subject ?object ?caracter ?materia ?titulacion
+	WHERE { ?subject mia:conMaterias ?object.
+		?object mia:caracter ?caracter.
+		?object mia:materia ?materia.
+		?object mia:enTitulacion ?titulaciones.
+		?titulaciones mia:nombreTitulacion ?titulacion
+		}
+
+	
+coordinacion. profesor:
+---------------------------------
+
+SELECT ?subject ?object ?profesor ?departamento
+	WHERE { ?subject mia:coordina ?object.
+		?object mia:coordinadoPor ?coordinado.
+		?coordinado mia:nombrePersona ?profesor.
+		?object mia:deDepartamento ?depto.
+		?depto mia:nombreDepartamento ?departamento
+		}
+	
+Resumen:
+--------------
+
+SELECT ?subject ?object ?resumen
+	WHERE { ?subject mia:conResumen ?object.
+		?object mia:textoResumen ?resumen
+
+		}
+
+Conocimientos previos:
+---------------------------------
+
+relacion con otras:
+	
+SELECT ?subject ?object ?txt_relacion
+	WHERE { ?subject mia:conRelacionOtras ?object.
+		?object mia:texto_relacion ?txt_relacion
+		}
+	
+otros requisitos:
+
+SELECT ?subject ?object ?txt_otros
+	WHERE { ?subject mia:conOtrosRequisitos ?object.
+		?object mia:texto_otros ?txt_otros
+		}
+	
+Competencias:
+---------------------
+
+SELECT ?subject ?object ?txt_relacion
+	WHERE { ?subject mia:conCompetencias ?object.
+		?object mia:textoCompetencias ?txt_relacion
+		}
+	
+Resultados aprendizaje:
+----------------------------------
+
+SELECT ?subject ?object ?txt_relacion
+	WHERE { ?subject mia:conResultados ?object.
+		?object mia:textoResultados ?txt_relacion
+		}
+	
+Descripcion de contenidos:
+---------------------------------------
+
+SELECT ?subject ?object ?x ?y
+	WHERE { ?subject mia:conTema ?object.
+		?object mia:nombreTema ?x.
+		?object mia:textoTema ?y} ORDER BY ASC(?object)
+		
+Volumen de trabajo:
+-----------------------------
+
+Presenciales:
+
+SELECT ?subject ?object ?x ?y ?z
+	WHERE { ?subject mia:conActividadP ?object.
+		?object mia:nombreActividad ?x.
+		?object mia:horasActividad ?y.
+		?subject mia:totalHorasActividad ?z}
+
+		
+no presenciales:
+
+
+SELECT ?subject ?object ?x ?y ?z
+	WHERE { ?subject mia:conActividadNP ?object.
+		?object mia:nombreActividad ?x.
+		?object mia:horasActividad ?y.
+		?subject mia:totalHorasActividad ?z}
+		
+Metodologia docente:
+-------------------------------
+
+SELECT ?subject ?object ?txt_relacion
+	WHERE { ?subject mia:conMetodologia ?object.
+		?object mia:textoMetodologia ?txt_relacion
+		}
+	
+Evaluacion:
+-----------------
+
+SELECT ?subject ?object ?txt_relacion
+	WHERE { ?subject mia:conEvaluacion ?object.
+		?object mia:textoEvaluacion ?txt_relacion
+		}
+	
+Referencias:
+------------------
+
+Basicas:
+
+SELECT ?subject ?object ?x ?y ?z ?i ?j
+	WHERE { ?subject mia:conLibro ?object.
+		?object mia:nombreLibro ?x.
+		 OPTIONAL{?object mia:editorial ?y}.
+		 {?object mia:fecha ?z}.
+		 {?object mia:isbn ?i}.
+		  {?object mia:escritoPor ?nombre}.
+		?nombre mia:nombrePersona ?j}
+		
+Complementarias:
+
+SELECT ?subject ?object ?x ?y ?z ?i ?j
+	WHERE { ?subject mia:conLibroC ?object.
+		?object mia:nombreLibro ?x.
+		 OPTIONAL{?object mia:editorial ?y}.
+		 {?object mia:fecha ?z}.
+		 OPTIONAL{?object mia:isbn ?i}.
+		  {?object mia:escritoPor ?nombre}.
+		?nombre mia:nombrePersona ?j}
+
+		
+
+
+
+

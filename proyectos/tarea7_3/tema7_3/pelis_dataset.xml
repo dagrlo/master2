@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ 
+<dataset>
+ 
+	<pelicula id_pelicula="0" titulo="peli1" id_actor="0"/>
+	<pelicula id_pelicula="1" titulo="peli2" id_actor="0"/>
+	<pelicula id_pelicula="2" titulo="peli3" id_actor="0"/>
+	
+ 
+ </dataset>
+ 

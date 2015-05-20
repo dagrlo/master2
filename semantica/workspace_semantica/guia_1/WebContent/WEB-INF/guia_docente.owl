@@ -1,0 +1,1626 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY guiaDocente "http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#"
+     xml:base="http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:guiaDocente="http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#conActividadNP -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;conActividadNP">
+        <rdfs:range rdf:resource="&guiaDocente;actividad"/>
+        <rdfs:domain rdf:resource="&guiaDocente;actividades_no_presenciales"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#conActividadP -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;conActividadP">
+        <rdfs:range rdf:resource="&guiaDocente;actividad"/>
+        <rdfs:domain rdf:resource="&guiaDocente;actividades_presenciales"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#conLibro -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;conLibro">
+        <rdfs:domain rdf:resource="&guiaDocente;basicas"/>
+        <rdfs:range rdf:resource="&guiaDocente;libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#conLibroC -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;conLibroC">
+        <rdfs:domain rdf:resource="&guiaDocente;complementarias"/>
+        <rdfs:range rdf:resource="&guiaDocente;libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#conTema -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;conTema">
+        <rdfs:domain rdf:resource="&guiaDocente;descripcion_de_contenidos"/>
+        <rdfs:range rdf:resource="&guiaDocente;tema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#coordinadoPor -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;coordinadoPor">
+        <rdfs:domain rdf:resource="&guiaDocente;coordinacion"/>
+        <rdfs:range rdf:resource="&guiaDocente;profesor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#deDepartamento -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;deDepartamento">
+        <rdfs:range rdf:resource="&guiaDocente;departamento"/>
+        <rdfs:domain rdf:resource="&guiaDocente;profesor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#enCentro -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;enCentro">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&guiaDocente;centro"/>
+        <rdfs:domain rdf:resource="&guiaDocente;titulaciones"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#enTitulacion -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;enTitulacion">
+        <rdfs:range rdf:resource="&guiaDocente;materias"/>
+        <rdfs:domain rdf:resource="&guiaDocente;titulacion"/>
+        <rdfs:range rdf:resource="&guiaDocente;titulaciones"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#escritoPor -->
+
+    <owl:ObjectProperty rdf:about="&guiaDocente;escritoPor">
+        <rdfs:range rdf:resource="&guiaDocente;autor"/>
+        <rdfs:domain rdf:resource="&guiaDocente;libro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#caracter -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;caracter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ciclo -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;ciclo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#codigoAsignatura -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;codigoAsignatura"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#creditos -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;creditos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#curso -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;curso">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#cursoAcademico -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;cursoAcademico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#editorial -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;editorial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#fecha -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;fecha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#horasActividad -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;horasActividad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#isbn -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;isbn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#materia -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;materia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreActividad -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreActividad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreAsignatura -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreAsignatura"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreCentro -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreCentro">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreDepartamento -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreDepartamento">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreLibro -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreLibro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombrePersona -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombrePersona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreTema -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreTema">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreTitulacion -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;nombreTitulacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#periodo -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;periodo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoCompetencias -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;textoCompetencias">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoEvaluacion -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;textoEvaluacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoMetodologia -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;textoMetodologia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoResultados -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;textoResultados"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoResumen -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;textoResumen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoTema -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;textoTema">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#texto_otros -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;texto_otros"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#texto_relacion -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;texto_relacion">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#totalHorasActividad -->
+
+    <owl:DatatypeProperty rdf:about="&guiaDocente;totalHorasActividad">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#Guia_Docente -->
+
+    <owl:Class rdf:about="&guiaDocente;Guia_Docente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#actividad -->
+
+    <owl:Class rdf:about="&guiaDocente;actividad">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;horasActividad"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreActividad"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#actividades_no_presenciales -->
+
+    <owl:Class rdf:about="&guiaDocente;actividades_no_presenciales">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;volumen_de_trabajo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;totalHorasActividad"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;conActividadNP"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;actividad"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&guiaDocente;actividades_presenciales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#actividades_presenciales -->
+
+    <owl:Class rdf:about="&guiaDocente;actividades_presenciales">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;volumen_de_trabajo"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;conActividadP"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;actividad"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;totalHorasActividad"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor -->
+
+    <owl:Class rdf:about="&guiaDocente;autor">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;persona"/>
+        <owl:disjointWith rdf:resource="&guiaDocente;profesor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#basicas -->
+
+    <owl:Class rdf:about="&guiaDocente;basicas">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;referencias"/>
+        <owl:disjointWith rdf:resource="&guiaDocente;complementarias"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#centro -->
+
+    <owl:Class rdf:about="&guiaDocente;centro">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreCentro"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#competencias -->
+
+    <owl:Class rdf:about="&guiaDocente;competencias">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;textoCompetencias"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#complementarias -->
+
+    <owl:Class rdf:about="&guiaDocente;complementarias">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;referencias"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#conocimientos_previos -->
+
+    <owl:Class rdf:about="&guiaDocente;conocimientos_previos">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#coordinacion -->
+
+    <owl:Class rdf:about="&guiaDocente;coordinacion">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;ficha_identificativa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;deDepartamento"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;departamento"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;coordinadoPor"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;profesor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#datos_asignatura -->
+
+    <owl:Class rdf:about="&guiaDocente;datos_asignatura">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;ficha_identificativa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;creditos"/>
+                <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;codigoAsignatura"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreAsignatura"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;ciclo"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;cursoAcademico"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#departamento -->
+
+    <owl:Class rdf:about="&guiaDocente;departamento">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreDepartamento"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#descripcion_de_contenidos -->
+
+    <owl:Class rdf:about="&guiaDocente;descripcion_de_contenidos">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;conTema"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;tema"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#evaluacion -->
+
+    <owl:Class rdf:about="&guiaDocente;evaluacion">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;textoEvaluacion"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ficha_identificativa -->
+
+    <owl:Class rdf:about="&guiaDocente;ficha_identificativa">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro -->
+
+    <owl:Class rdf:about="&guiaDocente;libro">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreLibro"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;editorial"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;fecha"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;isbn"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;escritoPor"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;autor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#materias -->
+
+    <owl:Class rdf:about="&guiaDocente;materias">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;ficha_identificativa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;caracter"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;enTitulacion"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;titulacion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;materia"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#metodologia_docente -->
+
+    <owl:Class rdf:about="&guiaDocente;metodologia_docente">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;textoMetodologia"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#otros_requisitos -->
+
+    <owl:Class rdf:about="&guiaDocente;otros_requisitos">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;conocimientos_previos"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;texto_otros"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&guiaDocente;relacion_con_otras_asignaturas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#persona -->
+
+    <owl:Class rdf:about="&guiaDocente;persona">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombrePersona"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#profesor -->
+
+    <owl:Class rdf:about="&guiaDocente;profesor">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#referencias -->
+
+    <owl:Class rdf:about="&guiaDocente;referencias">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#relacion_con_otras_asignaturas -->
+
+    <owl:Class rdf:about="&guiaDocente;relacion_con_otras_asignaturas">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;conocimientos_previos"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;texto_relacion"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#resultados_aprendizaje -->
+
+    <owl:Class rdf:about="&guiaDocente;resultados_aprendizaje">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;textoResultados"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#resumen -->
+
+    <owl:Class rdf:about="&guiaDocente;resumen">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;textoResumen"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema -->
+
+    <owl:Class rdf:about="&guiaDocente;tema">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;textoTema"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreTema"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#titulacion -->
+
+    <owl:Class rdf:about="&guiaDocente;titulacion">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;nombreTitulacion"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#titulaciones -->
+
+    <owl:Class rdf:about="&guiaDocente;titulaciones">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;ficha_identificativa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;curso"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;enCentro"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;centro"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;enTitulacion"/>
+                <owl:someValuesFrom rdf:resource="&guiaDocente;titulacion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&guiaDocente;periodo"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#volumen_de_trabajo -->
+
+    <owl:Class rdf:about="&guiaDocente;volumen_de_trabajo">
+        <rdfs:subClassOf rdf:resource="&guiaDocente;Guia_Docente"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#actividades_NO_presenciales -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;actividades_NO_presenciales">
+        <totalHorasActividad rdf:datatype="&xsd;string">45</totalHorasActividad>
+        <conActividadNP rdf:resource="&guiaDocente;anp01"/>
+        <conActividadNP rdf:resource="&guiaDocente;anp02"/>
+        <conActividadNP rdf:resource="&guiaDocente;anp03"/>
+        <conActividadNP rdf:resource="&guiaDocente;anp04"/>
+        <conActividadNP rdf:resource="&guiaDocente;anp05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#actividades_presenciales -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;actividades_presenciales">
+        <totalHorasActividad rdf:datatype="&xsd;string">30</totalHorasActividad>
+        <conActividadP rdf:resource="&guiaDocente;ap01"/>
+        <conActividadP rdf:resource="&guiaDocente;ap02"/>
+        <conActividadP rdf:resource="&guiaDocente;ap03"/>
+        <conActividadP rdf:resource="&guiaDocente;ap04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#anp01 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;anp01">
+        <horasActividad rdf:datatype="&xsd;string">8</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Elaboración de trabajos individuales</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#anp02 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;anp02">
+        <horasActividad rdf:datatype="&xsd;string">4</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Estudio y trabajo autónomo</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#anp03 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;anp03">
+        <nombreActividad rdf:datatype="&xsd;string">6</nombreActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Preparación de actividades de evaluación </nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#anp04 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;anp04">
+        <horasActividad rdf:datatype="&xsd;string">14</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Preparación de clases de teoría</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#anp05 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;anp05">
+        <horasActividad rdf:datatype="&xsd;string">13</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Preparación de clases prácticas y de problemas</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ap01 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;ap01">
+        <horasActividad rdf:datatype="&xsd;string">12</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Clases de teoría</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ap02 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;ap02">
+        <horasActividad rdf:datatype="&xsd;string">12</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Prácticas en aula</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ap03 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;ap03">
+        <horasActividad rdf:datatype="&xsd;string">4</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Tutorías regladas</nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ap04 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;ap04">
+        <horasActividad rdf:datatype="&xsd;string">2</horasActividad>
+        <nombreActividad rdf:datatype="&xsd;string">Otras actividades </nombreActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor0 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor0">
+        <nombrePersona rdf:datatype="&xsd;string">Daconta, Michael C.; Obrst, Leo, J. and Smith, Kevin</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor1 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor1">
+        <nombrePersona rdf:datatype="&xsd;string">Gómez-Pérez, Asunción; Fernández-López; Mariano and Corcho, Oscar</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor10 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor10">
+        <nombrePersona rdf:datatype="&xsd;string">Davis John, Fensel Dieter Frank van Harmelen</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor2 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor2">
+        <nombrePersona rdf:datatype="&xsd;string">Alesso H. Peter, Smith Craig F.</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor3 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor3">
+        <nombrePersona rdf:datatype="&xsd;string">David A Chappell, Tyler Jewell</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor4 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor4">
+        <nombrePersona rdf:datatype="&xsd;string">Hjelm, Johan</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor5 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor5">
+        <nombrePersona rdf:datatype="&xsd;string">Patrick Cauldwell and al</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor6 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor6">
+        <nombrePersona rdf:datatype="&xsd;string"> M. Wooldridge</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor7 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor7">
+        <nombrePersona rdf:datatype="&xsd;string"> A. Mas</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor8 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor8">
+        <nombrePersona rdf:datatype="&xsd;string">Passin, Thomas B</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#autor9 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;autor9">
+        <nombrePersona rdf:datatype="&xsd;string">Fensel, Dieter. Ontologies</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#caracter -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;caracter">
+        <caracter rdf:datatype="&xsd;string">Obligatoria</caracter>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#centro0 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;centro0">
+        <nombreCentro rdf:datatype="&xsd;string">ESCOLA TÈCNICA SUPERIOR D&apos;ENGINYERIA</nombreCentro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#ciclo -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;ciclo">
+        <ciclo rdf:datatype="&xsd;string">Máster</ciclo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#codigoAsignatura -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;codigoAsignatura">
+        <codigoAsignatura rdf:datatype="&xsd;string">43966
+</codigoAsignatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#contenidos -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;contenidos">
+        <conTema rdf:resource="&guiaDocente;tema1"/>
+        <conTema rdf:resource="&guiaDocente;tema2"/>
+        <conTema rdf:resource="&guiaDocente;tema3"/>
+        <conTema rdf:resource="&guiaDocente;tema4"/>
+        <conTema rdf:resource="&guiaDocente;tema5"/>
+        <conTema rdf:resource="&guiaDocente;tema6"/>
+        <conTema rdf:resource="&guiaDocente;tema7"/>
+        <conTema rdf:resource="&guiaDocente;tema8"/>
+        <conTema rdf:resource="&guiaDocente;tema9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#creditos -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;creditos">
+        <creditos rdf:datatype="&xsd;decimal">3.0</creditos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#curso -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;curso">
+        <curso rdf:datatype="&xsd;integer">1</curso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#cursoAcademico -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;cursoAcademico">
+        <cursoAcademico rdf:datatype="&xsd;string">2014-2015</cursoAcademico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#departamento0 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;departamento0">
+        <nombreDepartamento rdf:datatype="&xsd;string">Informática</nombreDepartamento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro01 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro01">
+        <isbn rdf:datatype="&xsd;string"> 0-471-43257-1</isbn>
+        <fecha rdf:datatype="&xsd;string"> Ed. Wiley</fecha>
+        <nombreLibro rdf:datatype="&xsd;string"> The semantic Web. A guide to the future of
+XML, Web services, and knowledge management</nombreLibro>
+        <fecha rdf:datatype="&xsd;string">(2003)
+</fecha>
+        <escritoPor rdf:resource="&guiaDocente;autor0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro02 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro02">
+        <nombreLibro rdf:datatype="&xsd;string"> Ontological Engineering with
+examples from the areas of Knowledge Management, e-Commerce and the Semantic Web</nombreLibro>
+        <isbn rdf:datatype="&xsd;string">1-85233-551-3</isbn>
+        <fecha rdf:datatype="&xsd;string">2004</fecha>
+        <editorial rdf:datatype="&xsd;string">Springer</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro03 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro03">
+        <isbn rdf:datatype="&xsd;string"> 1-56881-212-4</isbn>
+        <nombreLibro rdf:datatype="&xsd;string"> Developing Semantic web Services</nombreLibro>
+        <fecha rdf:datatype="&xsd;string">2005</fecha>
+        <escritoPor rdf:resource="&guiaDocente;autor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro04 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro04">
+        <isbn rdf:datatype="&xsd;string"> 0-596-00269-6</isbn>
+        <nombreLibro rdf:datatype="&xsd;string"> Java Web Services</nombreLibro>
+        <fecha rdf:datatype="&xsd;string">2002</fecha>
+        <editorial rdf:datatype="&xsd;string">O&apos;Reilly Media</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro05 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro05">
+        <isbn rdf:datatype="&xsd;string"> 0-471-40259-1</isbn>
+        <nombreLibro rdf:datatype="&xsd;string">,Creating the Semantic Web with RDF, Professional Developers Guide</nombreLibro>
+        <fecha rdf:datatype="&xsd;string">2001</fecha>
+        <editorial rdf:datatype="&xsd;string">Wiley</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro06 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro06">
+        <nombreLibro rdf:datatype="&xsd;string"> Profesional Servicios Web XML</nombreLibro>
+        <fecha rdf:datatype="&xsd;string">2002</fecha>
+        <isbn rdf:datatype="&xsd;string">84-415-1363-5</isbn>
+        <editorial rdf:datatype="&xsd;string">Anaya</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro07 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro07">
+        <fecha rdf:datatype="&xsd;string">2009</fecha>
+        <nombreLibro rdf:datatype="&xsd;string">An Introduction to MultiAgent Systems (2ª Ed.)</nombreLibro>
+        <editorial rdf:datatype="&xsd;string">Wiley</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro08 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro08">
+        <editorial rdf:datatype="&xsd;string"> A. Mas. Pearson Educacion</editorial>
+        <fecha rdf:datatype="&xsd;string">2005</fecha>
+        <nombreLibro rdf:datatype="&xsd;string">Agentes Software y Sistemas Multi-agente</nombreLibro>
+        <escritoPor rdf:resource="&guiaDocente;autor7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro09 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro09">
+        <nombreLibro rdf:datatype="&xsd;string"> Explore´s Guide to the Semantic Web</nombreLibro>
+        <isbn rdf:datatype="&xsd;string">1-932394-20-6</isbn>
+        <fecha rdf:datatype="&xsd;string">2004</fecha>
+        <editorial rdf:datatype="&xsd;string">Manning Publications Co</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro10 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro10">
+        <isbn rdf:datatype="&xsd;string"> 3-540-00302-9</isbn>
+        <fecha rdf:datatype="&xsd;string">2004</fecha>
+        <nombreLibro rdf:datatype="&xsd;string">A Silver Bullet for Knowledge Management and Electronic Commerce</nombreLibro>
+        <editorial rdf:datatype="&xsd;string">Springer</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#libro11 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;libro11">
+        <isbn rdf:datatype="&xsd;string"> 0-470-84867-7</isbn>
+        <fecha rdf:datatype="&xsd;string">2004</fecha>
+        <editorial rdf:datatype="&xsd;string">Towards the Semantic Web, Ontology-Driven Knowledge Management</editorial>
+        <editorial rdf:datatype="&xsd;string">Wiley</editorial>
+        <escritoPor rdf:resource="&guiaDocente;autor10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#materia -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;materia">
+        <materia rdf:datatype="&xsd;string">2 - Lenguajes y tecnologías semánticos </materia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#nombreAsignatura -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;nombreAsignatura">
+        <nombreAsignatura rdf:datatype="&xsd;string">Servicios web y web semántica</nombreAsignatura>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#otrosRequisitos -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;otrosRequisitos">
+        <texto_otros rdf:datatype="&xsd;string">No es necesario tener conocimientos previos para cursar esta asignatura.
+</texto_otros>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#periodo -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;periodo">
+        <periodo rdf:datatype="&xsd;string">Segundo cuatrimestre</periodo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#profesor01 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;profesor01">
+        <nombrePersona rdf:datatype="&xsd;string">SAMPER ZAPATER, JOSE JAVIER</nombrePersona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#referencias_basicas -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;referencias_basicas">
+        <conLibro rdf:resource="&guiaDocente;libro01"/>
+        <conLibro rdf:resource="&guiaDocente;libro02"/>
+        <conLibro rdf:resource="&guiaDocente;libro03"/>
+        <conLibro rdf:resource="&guiaDocente;libro04"/>
+        <conLibro rdf:resource="&guiaDocente;libro05"/>
+        <conLibro rdf:resource="&guiaDocente;libro06"/>
+        <conLibro rdf:resource="&guiaDocente;libro07"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#referencias_complementarias -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;referencias_complementarias">
+        <conLibroC rdf:resource="&guiaDocente;libro08"/>
+        <conLibroC rdf:resource="&guiaDocente;libro09"/>
+        <conLibroC rdf:resource="&guiaDocente;libro10"/>
+        <conLibroC rdf:resource="&guiaDocente;libro11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#relacionConOtras -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;relacionConOtras">
+        <texto_relacion rdf:datatype="&xsd;string">No se han especificado restricciones de matrícula con otras asignaturas del plan de estudios.
+</texto_relacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema1 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema1">
+        <nombreTema rdf:datatype="&xsd;string">1. Introducción a los Servicios Web
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">¿Qué son los servicios Web?.
+¿Por qué usar Servicios Web?
+Entendiendo la base de los servicios Web.
+</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema2 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema2">
+        <nombreTema rdf:datatype="&xsd;string">2. Tecnologías Básicas de Servicios Web
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">Protocolo de mensajería SOAP
+Lenguaje de descripción de Servicios Web: WSDL
+Registros UDDI</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema3 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema3">
+        <nombreTema rdf:datatype="&xsd;string">3. Tecnologías JAVA para el desarrollo y despliegue en Servicios Web
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">Plataforma Java EE y Java SE.
+Tecnologías JAVA para Servicios Web: JAX-WS, JAXP, JAXB, SAAJ, JAXR, etc. Proceso de desarrollo
+de un Servicio Web: Servicio Web y aplicación cliente. Composición, interoperabilidad y seguridad en
+Servicios Web
+</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema4 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema4">
+        <nombreTema rdf:datatype="&xsd;string">4. Introducción al web semántico
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">Motivación, aplicaciones. Visión de la Web Semántica. ¿Qué es la Web Semántica?. Casos de Uso.
+Estructura de la Web Semántica</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema5 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema5">
+        <nombreTema rdf:datatype="&xsd;string">5. Marco para la descripción de recursos: RDF
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">Introducción a RDF. Declaraciones sobre Recursos. Modelo RDF. Sintaxis XML para RDF ( RDF/XML).
+Abreviaciones RDF.
+RDF Schema:Introducción a RDF Schema. Definición de vocabularios en RDF Schema. Definición de
+Clases y Propiedades. Declaración de restricciones .</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema6 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema6">
+        <nombreTema rdf:datatype="&xsd;string">6. Uso de Metadatos
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">Significado de los Metadatos. ¿Qué es Dublín Core Metadata Initiative?.Elementos del Dublín Core.
+Extensiones de Dublín Core. ¿Qué es FOAF?. Elementos de FOAF.
+Metadatos Educativos: LOM y sus elementos</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema7 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema7">
+        <nombreTema rdf:datatype="&xsd;string">7. Representación de Conocimiento: Ontologías
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">Ontologías: componentes, tipos, metodologías. Inferencia y mecanismos de razonamiento: Lógica
+Descriptiva (DL) y sistemas terminológicos. Bases de Conocimiento DL vs. Bases de Datos
+Relacionales
+</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema8 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema8">
+        <nombreTema rdf:datatype="&xsd;string">8. Lenguajes de marcado ontológico:OWL
+</nombreTema>
+        <textoTema rdf:datatype="&xsd;string">¿Qué es OWL?. Elementos básicos de OWL y ejemplos. Herramientas: Editores de Ontologías,
+Sistemas de almacenamiento, Razonadores, Lenguajes de reglas,	 Lenguajes de consultas
+</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#tema9 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;tema9">
+        <textoTema rdf:datatype="&xsd;string">9. Servicio Web Semántico
+</textoTema>
+        <textoTema rdf:datatype="&xsd;string">Concepto de Servicio Web Semántico: Tareas asociadas a una ontología de descripción de servicio.
+Evolución tecnológica hacia Servicios Web Semánticos. Arquitecturas para diseño conceptual de SWS.
+Ontologías para la descripción de servicios Web: DAML-S (OWL-S). Limitaciones de los estándares.
+Concepto de emparejamiento semántico
+</textoTema>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoCompetencias -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;textoCompetencias">
+        <textoCompetencias rdf:datatype="&xsd;string"> - Capacidad de análisis y pensamiento crítico, para investigar con independencia y autocrítica, y de
+buscar y utilizar información para documentar ideas.
+ - Capacidad de identificar y resolver los puntos críticos para realizar una transferencia tecnológica
+efectiva, transformando resultados teóricos en productos y servicios de interés para la sociedad.
+ - Que los/las estudiantes sepan aplicar los conocimientos adquiridos y su capacidad de resolución de
+problemas en entornos nuevos o poco conocidos dentro de contextos más amplios (o
+multidisciplinares) relacionados con su área de estudio.
+ - Que los/las estudiantes sean capaces de integrar conocimientos y enfrentarse a la complejidad de
+formular juicios a partir de una información que, siendo incompleta o limitada, incluya reflexiones
+sobre las responsabilidades sociales y éticas vinculadas a la aplicación de sus conocimientos y
+juicios.
+ - Que los/las estudiantes sepan comunicar sus conclusiones y los conocimientos y razones últimas
+que las sustentan a públicos especializados y no especializados de un modo claro y sin
+ambigüedades.
+ - Que los/las estudiantes posean las habilidades de aprendizaje que les permitan continuar estudiando
+de un modo que habrá de ser en gran medida autodirigido o autónomo
+ - Poseer y comprender conocimientos que aporten una base u oportunidad de ser originales en el
+desarrollo y/o aplicación de ideas, a menudo en un contexto de investigación.
+ - Ser capaces de acceder a herramientas de información en otras áreas del conocimiento y utilizarlas
+apropiadamente.
+ - Ser capaces de valorar la necesidad de completar su formación científica, histórica, en lenguas, en
+informática, en literatura, en ética, social y humana en general, asistiendo a conferencias o cursos
+y/o realizando actividades complementarias, autoevaluando la aportación que la realización de estas
+actividades supone para su formación integral.
+ - Saber seleccionar que patologías mejoran sus resultados funcionales con la aplicación de las
+técnicas y equipos de baja visión.
+ - Capacidad para identificar áreas de investigación y necesidades sociales emergentes relacionadas
+con la tecnología Web.
+ - Capacidad de presentar/suministrar la información al usuario de forma personalizada según las
+necesidades
+ - Abordar el desarrollo y gestionar ontologías, lenguajes, estándares (XML, RDF, FOAF, OWL etc.) y
+herramientas, servicios Web, y principales áreas de aplicación.
+ - Utilizar lenguajes y herramientas específicos para la web semántica y aplicarlos en entornos reales.</textoCompetencias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoEvaluacion -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;textoEvaluacion">
+        <textoEvaluacion rdf:datatype="&xsd;string">Los resultados del aprendizaje se evalúan a través de los siguientes criterios:
+SE1 - Evaluación continua del estudiante, basada en la participación y grado de implicación en el
+proceso de enseñanza-aprendizaje, teniendo en cuenta la asistencia regulada a las actividades
+presenciales previstas y la resolución de cuestiones y problemas propuestos.
+•
+SE2 - Evaluación de las actividades prácticas a partir de la elaboración de trabajos, memorias y
+exposiciones orales.
+•
+SE3 - Prueba objetiva, consistente en uno o varios exámenes presenciales que podrán constar de
+cuestiones teórico-prácticas y de problemas
+•
+Los conocimientos adquiridos por el estudiante se podrán evaluar de las dos formas siguientes:
+• Sistema de evaluación continua
+• Sistema de evaluación única
+Sistema de evaluación continua ( 1ª y 2ªConvocatoria):
+Nota Final = 10% SE1 + 35% SE2 + 55% SE3
+Será necesario obtener, al menos el 40 % sobre la nota máxima en SE3 y SE2 para poder aprobar la
+asignatura.
+Si un alumno no puede asistir regularmente a clase, y por tanto no puede acogerse a este modelo de
+evaluación, debe comunicarlo al inicio de curso, y en ese caso se estudiará la aplicación de una
+evaluación única.
+Sistema de Evaluación Única
+En este sentido, la calificación se obtendrá a partir del 60% de la nota obtenida en un único examen
+global de la asignatura (SE3) y un 40% de la actividad relacionada con los trabajos que habrá debido
+realizar durante el transcurso del curso. La realización de este examen global coincidirá con las fechas
+oficiales de exámenes finales de Teoría de los alumnos que hayan proseguido el sistema de evaluación
+continua
+La evaluación se ajustará a la Normativa de Calificaciones de la Universitat de València. En el momento
+de redacción de la presente guía docente, la normativa vigente es la aprobada por el Consejo de
+Gobierno de la UVEG de 27 de enero de 2004, que se ajusta a lo establecido a tal efecto por los Reales
+Decretos 1044/2003 y 1125/2003. En ella se establece básicamente que las calificaciones serán
+numéricas de 0 a 10 con expresión de un decimal y a las que se debe añadir la calificación cualitativa
+correspondiente a la escala siguiente:
+De 0 a 4,9: “Suspenso”
+De 5 a 6,9: “Aprobado”
+De 7 a 8,9: “Notable”
+De 9 a 10: “Sobresaliente” o “Sobresaliente con Matrícula de Honor”</textoEvaluacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoMetodologia -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;textoMetodologia">
+        <textoMetodologia rdf:datatype="&xsd;string">Las metodologías docentes que se utilizarán son:
+MD1 - Actividades teóricas. Desarrollo expositivo de la materia con la participación del estudiante en
+la resolución de cuestiones puntuales. Realización de cuestionarios individuales de evaluación.
+•
+MD2 - Actividades prácticas. Aprendizaje mediante resolución de problemas, ejercicios y casos de
+estudio a través de los cuales se adquieren competencias sobre los diferentes aspectos de la materia.</textoMetodologia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoResultados -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;textoResultados">
+        <textoResultados rdf:datatype="&xsd;string">Esta asignatura permite obtener los siguientes resultados de aprendizaje:
+Proporcionar una visión en profundidad de lo que entendemos por servicios Web y Web semántica:
+estado del arte, metas, logros, problemas por resolver y perspectivas.
+•
+• Mostrar al alumno una selección de los resultados, iniciativas y líneas de trabajo más significativos.
+Hacer comprender como se debe abordar el desarrollo y gestión de ontologías, lenguajes, estándares
+(XML, RDF, FOAF, OWL etc.) y herramientas, servicios Web, y principales áreas de aplicación.
+•
+Para lograr dichos resultados, los contenidos principales de Servicios Web y Web Semántica se
+enmarcan en tres bloques temáticos bien diferenciados: (1) Servicios Web, (2) Web Semántica y (3)
+Servicios Web Semánticos. Los contenidos que abarca cada bloque temático se resumen a
+continuación:
+• Parte I
+• Servicios Web.
+El contenido de esta parte se basa en hacer comprender la arquitectura SOA, entender como estas
+aplicaciones han sido clave en la evolución de la Web, el estudio de las diferentes tecnologías
+involucradas en los servicios web y por último el despliegue de servicios.
+• Parte II: Web Semántica
+• Elementos de la Web Semántica.
+• Infraestructura para la descripción de recursos ( RDF y RDF Schema)
+• Metadatos, tipos y dominios de aplicación más representativos.
+• Representación del conocimiento. Componentes de su arquitectura. Ontologías.
+• Lenguajes de marcado ontológico: OWL
+El contenido de esta parte se basa en hacer:
+•
+• Entender las limitaciones la Web Actual
+• Comprender el significado de la Web Semántica
+• Conocer las diferentes tecnologías y aplicaciones basadas en la Web Semántica.
+• Conocer el estado actual
+• Parte III. Servicios Web Semánticos
+• Servicios Web Semánticos (p.e. OWL-S)
+• Concepto de emparejamiento semántico.
+En esta parte, se intenta dar una visión de las limitaciones de los servicios Web y como el uso de
+semántica, puede hacer posible la descripción de las capacidades de estos y la posterior búsqueda
+mediante el uso de algoritmos de emparejamiento.
+Como complemento a los resultados anteriores, esta asignatura también permite adquirir las siguientes
+destrezas y habilidades sociales:
+Fomento del trabajo en equipo: colaborar, liderar, planificar, interactuar, consensuar, negociar,
+resolver conflictos y respetar las opiniones del resto;
+•
+Fomento de la capacidad de trabajar individualmente, organizando el trabajo propio de forma eficiente
+en tareas y sub-tareas;
+•
+Fomento de la capacidad de comunicar información de forma eficiente, tanto de forma escrita como
+oral (en inglés);
+•
+Fomento de la capacidad de iniciarse en tareas de investigación en universidad o industria a través de
+problemas dirigidos.</textoResultados>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#textoResumen -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;textoResumen">
+        <textoResumen rdf:datatype="&xsd;string">Esta asignatura forma parte del módulo &quot;Lenguajes de marcado y Servicios para la Web&quot; de carácter
+obligatorio.
+El objetivo de esta asignatura es proporcionar una visión en profundidad de lo que entendemos por
+servicios web y web semántica: estado del arte, metas, logros, problemas por resolver y perspectivas.
+Se presentará una selección de los resultados, iniciativas y líneas de trabajo más significativos. Se
+abordarán temas tales como el desarrollo y gestión de ontologías, lenguajes, estándares y
+herramientas, servicios web, y principales áreas de aplicación.
+Las líneas básicas contenidas en el programa de la asignatura se articulan alrededor del concepto de
+Web, pero desde una nueva perspectiva como es el uso de tecnologías emergentes y nuevos
+estándares. Los dos principales puntos desarrollados en esta asignatura son servicios web y web
+semántica. Desde esta asignatura se pretende analizar y comprender el abanico de posibilidades que
+ofrecen ambas tecnologías, limitaciones y su posible aplicación en algunas áreas</textoResumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#titulacion0 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;titulacion0">
+        <nombreTitulacion rdf:datatype="&xsd;string">2182 - M.U. en Ingeniería de Servicios y Aplicaciones Web 13-V.1
+</nombreTitulacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#titulaciones0 -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;titulaciones0"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#totalAP -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;totalAP">
+        <totalHorasActividad rdf:datatype="&xsd;string">30</totalHorasActividad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#totalAnp -->
+
+    <owl:NamedIndividual rdf:about="&guiaDocente;totalAnp">
+        <totalHorasActividad rdf:datatype="&xsd;string">45</totalHorasActividad>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

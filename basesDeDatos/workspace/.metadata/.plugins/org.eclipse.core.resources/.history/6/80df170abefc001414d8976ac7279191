@@ -1,0 +1,87 @@
+package boletin6.main;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import boletin6.dao.ActividadDao;
+import boletin6.dao.ClienteDao;
+import boletin6.dao.EmpresaDao;
+import boletin6.dao.PersonaDao;
+import boletin6.entities.Actividad;
+import boletin6.entities.Empresa;
+import boletin6.entities.Persona;
+
+public class Boletin6 {
+
+	private static ClienteDao cDao;
+	private static EmpresaDao eDao;
+	private static PersonaDao pDao;
+	private static ActividadDao aDao;
+
+	public static void main(String[] args) {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("clientes");
+		EntityManager em = emf.createEntityManager();
+
+		cDao = new ClienteDao(em);
+		eDao = new EmpresaDao(em);
+		pDao=new PersonaDao(em);
+		aDao=new ActividadDao(em);
+
+		List<Empresa> listaEmpresas = eDao.getAllEmpresas();
+		List<Persona> listaPersonas=pDao.getAllPersonas();
+		List<Actividad> listaActividades=aDao.getAllActividades();
+		List<Empresa> listaEmpresas2;
+
+		System.out.println("\n\nLista de empresas:");
+		System.out.println("==================\n\n");
+
+		for (Empresa empresa : listaEmpresas) {
+			System.out.println("["+empresa.getIdCliente()+"]  "+empresa.getNombre());
+			System.out.println("Direccion: "+empresa.getDireccion()+"  "+empresa.getPoblacion()+" "+empresa.getProvincia()+" "+empresa.getCodigoPostal());
+			System.out.println("NIF: "+empresa.getNif());
+			System.out.println("Tipo: "+empresa.getTipo());
+			System.out.println("Actividad: "+empresa.getActividade().getActividad());
+			System.out.println("Gerente de la empresa: "+empresa.getPersona().getIdCliente());
+			if (empresa.getEmpresa()==null){
+				System.out.println("Esta es una empresa matriz. Tiene las siguientes empresas:");
+				listaEmpresas2=empresa.getEmpresas();
+				for (Empresa empresa2:listaEmpresas2){
+					System.out.println(empresa2.getNombre());
+				}
+				System.out.println("\n");
+			}
+			System.out.println("--------------------------------------------------------------------------------------------------------------");
+		}
+		
+		System.out.println("\n\nLista de personas:");
+		System.out.println("==================");
+		
+		for (Persona persona:listaPersonas){
+			System.out.println("["+persona.getIdCliente()+"] "+persona.getNombre()+" "+persona.getApellidos());
+			System.out.println("Direccion: "+persona.getDireccion()+"  "+persona.getPoblacion()+" "+persona.getProvincia()+" "+persona.getCodigoPostal());
+			System.out.println("NIF: "+persona.getNif());
+			System.out.println("Tipo: "+persona.getTipo());
+			System.out.println("--------------------------------------------------------------------------------------------------------------");
+		}
+		
+		System.out.println("\n\nLista de actividades:");
+		System.out.println("=====================");
+		
+		for (Actividad actividad:listaActividades){
+			System.out.println("["+actividad.getIdActividad()+"] "+actividad.getActividad());
+			listaEmpresas2=actividad.getEmpresas();
+			System.out.println("Empresas con esta actividad:");
+			System.out.println("----------------------------");
+			for (Empresa empresa:listaEmpresas2){
+				System.out.println(empresa.getNombre()+"\n");
+			}
+			
+		}
+		
+		
+
+	}
+}

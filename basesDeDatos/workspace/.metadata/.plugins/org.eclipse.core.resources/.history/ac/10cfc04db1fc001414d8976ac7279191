@@ -1,0 +1,5 @@
+package boletin6.entities;
+
+public interface Dao<K, E> {
+
+}

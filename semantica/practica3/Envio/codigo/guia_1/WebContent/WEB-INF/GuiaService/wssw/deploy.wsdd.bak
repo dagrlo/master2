@@ -1,0 +1,58 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from GuiaService WSDL service -->
+
+  <service name="Guia" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://wssw"/>
+      <parameter name="wsdlServiceElement" value="GuiaService"/>
+      <parameter name="schemaQualified" value="http://wssw"/>
+      <parameter name="wsdlServicePort" value="Guia"/>
+      <parameter name="className" value="wssw.GuiaSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="Guia"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getCompetencias" qname="operNS:getCompetencias" xmlns:operNS="http://wssw" returnQName="retNS:getCompetenciasReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getEvaluacion" qname="operNS:getEvaluacion" xmlns:operNS="http://wssw" returnQName="retNS:getEvaluacionReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getTitulacion" qname="operNS:getTitulacion" xmlns:operNS="http://wssw" returnQName="retNS:getTitulacionReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMaterias" qname="operNS:getMaterias" xmlns:operNS="http://wssw" returnQName="retNS:getMateriasReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getCoordinacion" qname="operNS:getCoordinacion" xmlns:operNS="http://wssw" returnQName="retNS:getCoordinacionReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getResumen" qname="operNS:getResumen" xmlns:operNS="http://wssw" returnQName="retNS:getResumenReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getDatosAsignatura" qname="operNS:getDatosAsignatura" xmlns:operNS="http://wssw" returnQName="retNS:getDatosAsignaturaReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getOtrosRequisitos" qname="operNS:getOtrosRequisitos" xmlns:operNS="http://wssw" returnQName="retNS:getOtrosRequisitosReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getRelacionConOtrasAsignaturas" qname="operNS:getRelacionConOtrasAsignaturas" xmlns:operNS="http://wssw" returnQName="retNS:getRelacionConOtrasAsignaturasReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getResultadosAprendizaje" qname="operNS:getResultadosAprendizaje" xmlns:operNS="http://wssw" returnQName="retNS:getResultadosAprendizajeReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getDescripcionDeContenidos" qname="operNS:getDescripcionDeContenidos" xmlns:operNS="http://wssw" returnQName="retNS:getDescripcionDeContenidosReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getActividadesNoPresenciales" qname="operNS:getActividadesNoPresenciales" xmlns:operNS="http://wssw" returnQName="retNS:getActividadesNoPresencialesReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getReferenciasBasicas" qname="operNS:getReferenciasBasicas" xmlns:operNS="http://wssw" returnQName="retNS:getReferenciasBasicasReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getActividadesPresenciales" qname="operNS:getActividadesPresenciales" xmlns:operNS="http://wssw" returnQName="retNS:getActividadesPresencialesReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getMetodologiaDocente" qname="operNS:getMetodologiaDocente" xmlns:operNS="http://wssw" returnQName="retNS:getMetodologiaDocenteReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="getReferenciasComplementarias" qname="operNS:getReferenciasComplementarias" xmlns:operNS="http://wssw" returnQName="retNS:getReferenciasComplementariasReturn" xmlns:retNS="http://wssw" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getActividadesNoPresenciales getDescripcionDeContenidos getEvaluacion getMetodologiaDocente getMaterias getRelacionConOtrasAsignaturas getResultadosAprendizaje getReferenciasBasicas getReferenciasComplementarias getTitulacion getCompetencias getActividadesPresenciales getResumen getCoordinacion getDatosAsignatura getOtrosRequisitos"/>
+
+  </service>
+</deployment>

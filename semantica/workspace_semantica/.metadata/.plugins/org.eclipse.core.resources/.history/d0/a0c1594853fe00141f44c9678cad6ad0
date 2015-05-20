@@ -1,0 +1,68 @@
+package wssw;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Control
+ */
+@WebServlet("/Control")
+public class Control extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	private String atributos[][]={{"Codigo de asignatura: ","Nombre de asignatura: ","Ciclo: ","Creditos: "}};
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Control() {
+        super();      
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		GuiaProxy guia=new GuiaProxy();
+		StringTokenizer tokens;
+		String resultado="";
+		String salida="";
+		int i=0;
+		
+		response.setContentType("text/xml");
+		int consulta=Integer.parseInt(request.getParameter("consulta"));
+		
+		switch (consulta){
+			case 1:resultado=guia.getkk();break;
+		}
+		
+		if (resultado.compareTo("")!=0){
+			tokens=new StringTokenizer(resultado,"%");
+			salida="<?xml version=\"1.0\"?>\n";
+			salida+="<Respuesta>\n";
+			while (tokens.hasMoreElements()){
+				salida+="<mensaje titulo="+atributos[i][consulta-1]+">"+tokens.nextElement()+"</mensaje>\n";
+				i++;
+			}
+			salida+="</Respuesta>\n";
+			System.out.println(salida);
+			response.getWriter().print(salida);
+		} else {
+			response.getWriter().print("<?xml version=\"1.0\"?><Vacia><mensaje>La consulta no ha tenido resultados</mensaje></Vacia>");
+		}
+	}
+
+}

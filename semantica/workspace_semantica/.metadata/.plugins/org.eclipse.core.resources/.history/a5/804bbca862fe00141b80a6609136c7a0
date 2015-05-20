@@ -1,0 +1,28 @@
+<%@page contentType="text/html;charset=UTF-8"%><HTML>
+<HEAD>
+<TITLE>Methods</TITLE>
+</HEAD>
+<BODY>
+<H1>Methods</H1>
+<UL>
+<LI><A HREF="Input.jsp?method=2" TARGET="inputs"> getEndpoint()</A></LI>
+<LI><A HREF="Input.jsp?method=5" TARGET="inputs"> setEndpoint(java.lang.String)</A></LI>
+<LI><A HREF="Input.jsp?method=10" TARGET="inputs"> getGuia()</A></LI>
+<LI><A HREF="Input.jsp?method=43" TARGET="inputs"> getCompetencias()</A></LI>
+<LI><A HREF="Input.jsp?method=46" TARGET="inputs"> getEvaluacion()</A></LI>
+<LI><A HREF="Input.jsp?method=49" TARGET="inputs"> getTitulacion()</A></LI>
+<LI><A HREF="Input.jsp?method=52" TARGET="inputs"> getMaterias()</A></LI>
+<LI><A HREF="Input.jsp?method=55" TARGET="inputs"> getCoordinacion()</A></LI>
+<LI><A HREF="Input.jsp?method=58" TARGET="inputs"> getResumen()</A></LI>
+<LI><A HREF="Input.jsp?method=61" TARGET="inputs"> getDatosAsignatura()</A></LI>
+<LI><A HREF="Input.jsp?method=64" TARGET="inputs"> getOtrosRequisitos()</A></LI>
+<LI><A HREF="Input.jsp?method=67" TARGET="inputs"> getRelacionConOtrasAsignaturas()</A></LI>
+<LI><A HREF="Input.jsp?method=70" TARGET="inputs"> getResultadosAprendizaje()</A></LI>
+<LI><A HREF="Input.jsp?method=73" TARGET="inputs"> getDescripcionDeContenidos()</A></LI>
+<LI><A HREF="Input.jsp?method=76" TARGET="inputs"> getActividadesNoPresenciales()</A></LI>
+<LI><A HREF="Input.jsp?method=79" TARGET="inputs"> getReferenciasBasicas()</A></LI>
+<LI><A HREF="Input.jsp?method=82" TARGET="inputs"> getActividadesPresenciales()</A></LI>
+<LI><A HREF="Input.jsp?method=85" TARGET="inputs"> getMetodologiaDocente()</A></LI>
+</UL>
+</BODY>
+</HTML>

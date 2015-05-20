@@ -1,0 +1,133 @@
+!SESSION 2015-05-17 17:50:32.139 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-17 17:50:53.311
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-05-17 17:56:07.049 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data D:\MASTER\master2\basesDeDatos\workspace -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-17 17:56:11.692
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2015-05-17 18:17:24.175
+!MESSAGE Overlapping text edits
+!STACK 0
+org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.ltk.core.refactoring.TextChange.addEdit(TextChange.java:167)
+	at org.eclipse.jpt.jpa.core.internal.refactoring.AbstractJpaDeleteTypeParticipant.addEdits(AbstractJpaDeleteTypeParticipant.java:295)
+	at org.eclipse.jpt.jpa.core.internal.refactoring.AbstractJpaDeleteTypeParticipant.addPersistenceXmlDeleteTypeChange(AbstractJpaDeleteTypeParticipant.java:243)
+	at org.eclipse.jpt.jpa.core.internal.refactoring.AbstractJpaDeleteTypeParticipant.createChange(AbstractJpaDeleteTypeParticipant.java:162)
+	at org.eclipse.ltk.core.refactoring.participants.ProcessorBasedRefactoring.createChange(ProcessorBasedRefactoring.java:310)
+	at org.eclipse.ltk.core.refactoring.CreateChangeOperation.run(CreateChangeOperation.java:124)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:209)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jpt.common.ui 4 0 2015-05-17 18:18:40.304
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.jpa.ui.internal.persistence.PersistenceUnitClassesComposite$ClassRefLabelImageDescriptorTransformer.getManagedTypeUiDefinition(PersistenceUnitClassesComposite.java:231)
+	at org.eclipse.jpt.jpa.ui.internal.persistence.PersistenceUnitClassesComposite$ClassRefLabelImageDescriptorTransformer.getImageDescriptor(PersistenceUnitClassesComposite.java:223)
+	at org.eclipse.jpt.jpa.ui.internal.persistence.PersistenceUnitClassesComposite$ClassRefLabelImageDescriptorTransformer.transform_(PersistenceUnitClassesComposite.java:216)
+	at org.eclipse.jpt.jpa.ui.internal.persistence.PersistenceUnitClassesComposite$ClassRefLabelImageDescriptorTransformer.transform_(PersistenceUnitClassesComposite.java:1)
+	at org.eclipse.jpt.common.utility.internal.transformer.AbstractTransformer.transform(AbstractTransformer.java:28)
+	at org.eclipse.jpt.common.ui.internal.jface.ResourceManagerLabelProvider.getImageDescriptor(ResourceManagerLabelProvider.java:98)
+	at org.eclipse.jpt.common.ui.internal.jface.ResourceManagerLabelProvider.getImage(ResourceManagerLabelProvider.java:92)
+	at org.eclipse.jpt.common.ui.internal.widgets.AddRemoveListPane$TableLabelProvider.getColumnImage(AddRemoveListPane.java:463)
+	at org.eclipse.jpt.common.ui.internal.swt.TableItemModelAdapter.updateTableItemImage(TableItemModelAdapter.java:171)
+	at org.eclipse.jpt.common.ui.internal.swt.TableItemModelAdapter.tableItemChanged(TableItemModelAdapter.java:154)
+	at org.eclipse.jpt.common.ui.internal.swt.TableModelAdapter.listItemsReplaced(TableModelAdapter.java:502)
+	at org.eclipse.jpt.common.ui.internal.swt.TableModelAdapter$2.itemsReplaced(TableModelAdapter.java:247)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListChangeListenerWrapper.forward(SWTListChangeListenerWrapper.java:70)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListChangeListenerWrapper.forward(SWTListChangeListenerWrapper.java:1)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListenerWrapperDelegate.forwardEvents(SWTListenerWrapperDelegate.java:92)
+	at org.eclipse.jpt.common.ui.internal.swt.listeners.SWTListenerWrapperDelegate$ForwardEventsRunnable.run(SWTListenerWrapperDelegate.java:81)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2015-05-17 19:28:38.289
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jpt.common.core.internal.utility.jdt.ASTTools.buildParameterTypes(ASTTools.java:189)
+	at org.eclipse.jpt.common.core.internal.utility.jdt.ASTTools.buildMethodSignature(ASTTools.java:179)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.initializeMethods(SourceType.java:573)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.initialize(SourceType.java:132)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.newInstance(SourceType.java:113)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.buildType(SourceType.java:400)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.syncTypes(SourceType.java:390)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceType.synchronizeWith(SourceType.java:151)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.syncPrimaryType(SourceTypeCompilationUnit.java:131)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceTypeCompilationUnit.synchronizeWith(SourceTypeCompilationUnit.java:71)
+	at org.eclipse.jpt.common.core.internal.resource.java.source.SourceCompilationUnit.synchronizeWithJavaSource(SourceCompilationUnit.java:157)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaCompilationUnitDelta(AbstractJpaProject.java:1389)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.processJavaDelta(AbstractJpaProject.java:1225)
+	at org.eclipse.jpt.jpa.core.internal.AbstractJpaProject.javaElementChanged(AbstractJpaProject.java:1198)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.javaElementChanged_(InternalJpaProjectManager.java:895)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$JavaChangeEventHandlerCommand.execute(InternalJpaProjectManager.java:878)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-05-18 13:51:11.517 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 13:51:21.164
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

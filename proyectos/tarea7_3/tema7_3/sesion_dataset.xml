@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ 
+<dataset>
+ 
+	<sesion id_sesion="0" hora="h1" id_sala="0" id_pelicula="0" id_cine="0" nombre="sesion01" entradas="10"/>
+	<sesion id_sesion="1" hora="h1" id_sala="1" id_pelicula="1" id_cine="0" nombre="sesion02" entradas="10"/>
+	<sesion id_sesion="2" hora="h2" id_sala="2" id_pelicula="0" id_cine="0" nombre="sesion03" entradas="10"/>
+	<sesion id_sesion="3" hora="h2" id_sala="3" id_pelicula="1" id_cine="0" nombre="sesion04" entradas="10"/>
+	
+	
+ 
+ </dataset>
+ 

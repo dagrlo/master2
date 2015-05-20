@@ -1,0 +1,1066 @@
+!SESSION 2015-05-18 13:22:03.960 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 13:22:36.514
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 13:41:50.173
+!MESSAGE GlassFish: Error Reading DB data
+!STACK 0
+java.io.FileNotFoundException: D:\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at oracle.eclipse.tools.glassfish.derby.DerbyConfigurator.readProperties(DerbyConfigurator.java:95)
+	at oracle.eclipse.tools.glassfish.derby.DerbyConfigurator.configure(DerbyConfigurator.java:63)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.initialize(GlassfishServerBehaviourDelegate.java:125)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.initialize(ServerBehaviourDelegate.java:101)
+	at org.eclipse.wst.server.core.model.InternalInitializer.initializeServerBehaviourDelegate(InternalInitializer.java:41)
+	at org.eclipse.wst.server.core.internal.Server.getBehaviourDelegate(Server.java:528)
+	at org.eclipse.wst.server.core.internal.Server.loadAdapter(Server.java:1613)
+	at org.eclipse.wst.server.core.internal.UpdateServerJob.run(UpdateServerJob.java:40)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-05-18 13:41:50.541
+!MESSAGE GlassFish: Deploy direcotry D:\eclipseApps\guia_01EAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 13:41:50.711
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-05-18 13:41:50.831
+!MESSAGE cannot Deploy guia_01EAR
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-05-18 13:43:02.763
+!MESSAGE GlassFish: Deploy direcotry D:\eclipseApps\guia_01EAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 13:43:02.780
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-05-18 13:43:02.783
+!MESSAGE cannot Deploy guia_01EAR
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-05-18 13:45:07.239
+!MESSAGE GlassFish: Deploy direcotry D:\eclipseApps\guia_01EAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 13:45:07.253
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-05-18 13:45:07.256
+!MESSAGE cannot Deploy guia_01EAR
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-05-18 13:47:06.261
+!MESSAGE GlassFish: Deploy direcotry D:\eclipseApps\guia_01EAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 13:47:06.276
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-05-18 13:47:06.279
+!MESSAGE cannot Deploy guia_01EAR
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:610)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-18 13:47:25.730
+!MESSAGE An internal error occurred during: "Loading descriptor for guia_01EAR.".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.wst.common.componentcore.internal.resources.VirtualComponent cannot be cast to org.eclipse.jst.j2ee.componentcore.util.EARVirtualComponent
+	at org.eclipse.jst.jee.ui.internal.navigator.Ear5ContentProvider.getNewContentProviderInstance(Ear5ContentProvider.java:153)
+	at org.eclipse.jst.jee.ui.internal.navigator.LoadingJeeDDJob.run(LoadingJeeDDJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2015-05-18 13:47:25.782
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete '/guia_01EAR/.settings'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:387)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1987)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR\.settings\org.eclipse.wst.common.component.
+Contains: Could not delete: D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR\.settings.
+Contains: Could not delete 'D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR'.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2015-05-18 13:47:25.783
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-05-18 13:47:25.783
+!MESSAGE Could not delete '/guia_01EAR/.settings'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:387)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:837)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1987)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR\.settings\org.eclipse.wst.common.component.
+Contains: Could not delete: D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR\.settings.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2015-05-18 13:47:25.783
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2015-05-18 13:47:25.783
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-05-18 13:47:25.783
+!MESSAGE Could not delete: D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR\.settings\org.eclipse.wst.common.component.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2015-05-18 13:47:25.783
+!MESSAGE Could not delete: D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR\.settings.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2015-05-18 13:47:25.783
+!MESSAGE Could not delete 'D:\MASTER\master2\semantica\workspaceSemantica\guia_01EAR'.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 13:47:36.346
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:457)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2015-05-18 13:47:53.897
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+java.lang.IllegalStateException: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:114)
+	at org.glassfish.tools.ide.server.ServerTasks.startServer(ServerTasks.java:173)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:796)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:110)
+	... 7 more
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2015-05-18 13:48:23.082
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+java.lang.IllegalStateException: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:114)
+	at org.glassfish.tools.ide.server.ServerTasks.startServer(ServerTasks.java:173)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:796)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:110)
+	... 7 more
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2015-05-18 13:50:13.845
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+java.lang.IllegalStateException: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:114)
+	at org.glassfish.tools.ide.server.ServerTasks.startServer(ServerTasks.java:173)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:796)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:110)
+	... 7 more
+
+!ENTRY org.eclipse.ui.console 4 2 2015-05-18 13:50:41.331
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.glassfish.tools.ide.server.FetchLogException: Reader task thrown an exception
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:391)
+	at org.glassfish.tools.ide.server.FetchLogPiped.close(FetchLogPiped.java:407)
+	at oracle.eclipse.tools.glassfish.log.LogReader.stop(LogReader.java:55)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLoggingImpl(GlassfishConsole.java:89)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLogging(GlassfishConsole.java:82)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.dispose(GlassfishConsole.java:104)
+	at org.eclipse.ui.console.AbstractConsole.destroy(AbstractConsole.java:265)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesRemoved(AbstractConsole.java:74)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:158)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:180)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:279)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(ConsoleManager.java:258)
+	at org.eclipse.ui.console.ConsolePlugin.stop(ConsolePlugin.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:386)
+	... 30 more
+Caused by: java.lang.NullPointerException
+	at org.glassfish.tools.ide.utils.ServerUtils.getDomainPath(ServerUtils.java:820)
+	at org.glassfish.tools.ide.utils.ServerUtils.getServerLogFile(ServerUtils.java:894)
+	at org.glassfish.tools.ide.server.FetchLogLocal.initInputFile(FetchLogLocal.java:119)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:166)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+
+!ENTRY org.eclipse.ui.console 4 120 2015-05-18 13:50:41.335
+!MESSAGE An exception occurred during console notification
+!STACK 0
+org.glassfish.tools.ide.server.FetchLogException: Reader task thrown an exception
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:391)
+	at org.glassfish.tools.ide.server.FetchLogPiped.close(FetchLogPiped.java:407)
+	at oracle.eclipse.tools.glassfish.log.LogReader.stop(LogReader.java:55)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLoggingImpl(GlassfishConsole.java:89)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLogging(GlassfishConsole.java:82)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.dispose(GlassfishConsole.java:104)
+	at org.eclipse.ui.console.AbstractConsole.destroy(AbstractConsole.java:265)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesRemoved(AbstractConsole.java:74)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:158)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:180)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:279)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(ConsoleManager.java:258)
+	at org.eclipse.ui.console.ConsolePlugin.stop(ConsolePlugin.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:386)
+	... 30 more
+Caused by: java.lang.NullPointerException
+	at org.glassfish.tools.ide.utils.ServerUtils.getDomainPath(ServerUtils.java:820)
+	at org.glassfish.tools.ide.utils.ServerUtils.getServerLogFile(ServerUtils.java:894)
+	at org.glassfish.tools.ide.server.FetchLogLocal.initInputFile(FetchLogLocal.java:119)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:166)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+!SESSION 2015-05-18 13:50:43.659 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 13:50:51.595
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2015-05-18 13:50:58.479
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+java.lang.IllegalStateException: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:114)
+	at org.glassfish.tools.ide.server.ServerTasks.startServer(ServerTasks.java:173)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:796)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:110)
+	... 7 more
+
+!ENTRY org.eclipse.ui.console 4 2 2015-05-18 13:51:09.892
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.glassfish.tools.ide.server.FetchLogException: Reader task thrown an exception
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:391)
+	at org.glassfish.tools.ide.server.FetchLogPiped.close(FetchLogPiped.java:407)
+	at oracle.eclipse.tools.glassfish.log.LogReader.stop(LogReader.java:55)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLoggingImpl(GlassfishConsole.java:89)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLogging(GlassfishConsole.java:82)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.dispose(GlassfishConsole.java:104)
+	at org.eclipse.ui.console.AbstractConsole.destroy(AbstractConsole.java:265)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesRemoved(AbstractConsole.java:74)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:158)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:180)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:279)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(ConsoleManager.java:258)
+	at org.eclipse.ui.console.ConsolePlugin.stop(ConsolePlugin.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:386)
+	... 30 more
+Caused by: java.lang.NullPointerException
+	at org.glassfish.tools.ide.utils.ServerUtils.getDomainPath(ServerUtils.java:820)
+	at org.glassfish.tools.ide.utils.ServerUtils.getServerLogFile(ServerUtils.java:894)
+	at org.glassfish.tools.ide.server.FetchLogLocal.initInputFile(FetchLogLocal.java:119)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:166)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+
+!ENTRY org.eclipse.ui.console 4 120 2015-05-18 13:51:09.895
+!MESSAGE An exception occurred during console notification
+!STACK 0
+org.glassfish.tools.ide.server.FetchLogException: Reader task thrown an exception
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:391)
+	at org.glassfish.tools.ide.server.FetchLogPiped.close(FetchLogPiped.java:407)
+	at oracle.eclipse.tools.glassfish.log.LogReader.stop(LogReader.java:55)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLoggingImpl(GlassfishConsole.java:89)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLogging(GlassfishConsole.java:82)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.dispose(GlassfishConsole.java:104)
+	at org.eclipse.ui.console.AbstractConsole.destroy(AbstractConsole.java:265)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesRemoved(AbstractConsole.java:74)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:158)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:180)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:279)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(ConsoleManager.java:258)
+	at org.eclipse.ui.console.ConsolePlugin.stop(ConsolePlugin.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:386)
+	... 30 more
+Caused by: java.lang.NullPointerException
+	at org.glassfish.tools.ide.utils.ServerUtils.getDomainPath(ServerUtils.java:820)
+	at org.glassfish.tools.ide.utils.ServerUtils.getServerLogFile(ServerUtils.java:894)
+	at org.glassfish.tools.ide.server.FetchLogLocal.initInputFile(FetchLogLocal.java:119)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:166)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+!SESSION 2015-05-18 19:07:57.007 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 19:08:16.173
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2015-05-18 19:08:28.639
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+java.lang.IllegalStateException: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:114)
+	at org.glassfish.tools.ide.server.ServerTasks.startServer(ServerTasks.java:173)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:796)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:110)
+	... 7 more
+
+!ENTRY oracle.eclipse.tools.glassfish 4 150 2015-05-18 19:11:01.477
+!MESSAGE Unable to start server due following issues:
+!STACK 0
+java.lang.IllegalStateException: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:114)
+	at org.glassfish.tools.ide.server.ServerTasks.startServer(ServerTasks.java:173)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:796)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StartJob.call(GlassfishServerBehaviourDelegate.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.FileNotFoundException: null\config\domain.xml (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.glassfish.tools.ide.server.parser.TreeParser.readXml(TreeParser.java:110)
+	... 7 more
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-05-18 19:14:24.582
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:39)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:861)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:384)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:420)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:77)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:113)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:128)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:133)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:229)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:137)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:98)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$9.run(MarketplaceCatalog.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-05-18 19:14:30.785
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:39)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:861)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:384)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:420)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:77)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:113)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:128)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:133)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:229)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:137)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:98)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$9.run(MarketplaceCatalog.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2015-05-18 19:14:30.789
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at org.eclipse.core.internal.jobs.Semaphore.acquire(Semaphore.java:29)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:861)
+	at org.eclipse.core.internal.jobs.InternalJob.join(InternalJob.java:384)
+	at org.eclipse.core.runtime.jobs.Job.join(Job.java:420)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.waitOnSelf(FileInfoReader.java:77)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:113)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:128)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:133)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:229)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:137)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:98)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:668)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog$9.run(MarketplaceCatalog.java:229)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.console 4 2 2015-05-18 19:16:37.688
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.glassfish.tools.ide.server.FetchLogException: Reader task thrown an exception
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:391)
+	at org.glassfish.tools.ide.server.FetchLogPiped.close(FetchLogPiped.java:407)
+	at oracle.eclipse.tools.glassfish.log.LogReader.stop(LogReader.java:55)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLoggingImpl(GlassfishConsole.java:89)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLogging(GlassfishConsole.java:82)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.dispose(GlassfishConsole.java:104)
+	at org.eclipse.ui.console.AbstractConsole.destroy(AbstractConsole.java:265)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesRemoved(AbstractConsole.java:74)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:158)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:180)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:279)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(ConsoleManager.java:258)
+	at org.eclipse.ui.console.ConsolePlugin.stop(ConsolePlugin.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:386)
+	... 30 more
+Caused by: java.lang.NullPointerException
+	at org.glassfish.tools.ide.utils.ServerUtils.getDomainPath(ServerUtils.java:820)
+	at org.glassfish.tools.ide.utils.ServerUtils.getServerLogFile(ServerUtils.java:894)
+	at org.glassfish.tools.ide.server.FetchLogLocal.initInputFile(FetchLogLocal.java:119)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:166)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+
+!ENTRY org.eclipse.ui.console 4 120 2015-05-18 19:16:37.692
+!MESSAGE An exception occurred during console notification
+!STACK 0
+org.glassfish.tools.ide.server.FetchLogException: Reader task thrown an exception
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:391)
+	at org.glassfish.tools.ide.server.FetchLogPiped.close(FetchLogPiped.java:407)
+	at oracle.eclipse.tools.glassfish.log.LogReader.stop(LogReader.java:55)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLoggingImpl(GlassfishConsole.java:89)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.stopLogging(GlassfishConsole.java:82)
+	at oracle.eclipse.tools.glassfish.log.GlassfishConsole.dispose(GlassfishConsole.java:104)
+	at org.eclipse.ui.console.AbstractConsole.destroy(AbstractConsole.java:265)
+	at org.eclipse.ui.console.AbstractConsole$Lifecycle.consolesRemoved(AbstractConsole.java:74)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.run(ConsoleManager.java:158)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.console.ConsoleManager$ConsoleNotifier.notify(ConsoleManager.java:180)
+	at org.eclipse.ui.internal.console.ConsoleManager.fireUpdate(ConsoleManager.java:279)
+	at org.eclipse.ui.internal.console.ConsoleManager.removeConsoles(ConsoleManager.java:258)
+	at org.eclipse.ui.console.ConsolePlugin.stop(ConsolePlugin.java:177)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:950)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:324)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:145)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:160)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.server.FetchLogPiped.stop(FetchLogPiped.java:386)
+	... 30 more
+Caused by: java.lang.NullPointerException
+	at org.glassfish.tools.ide.utils.ServerUtils.getDomainPath(ServerUtils.java:820)
+	at org.glassfish.tools.ide.utils.ServerUtils.getServerLogFile(ServerUtils.java:894)
+	at org.glassfish.tools.ide.server.FetchLogLocal.initInputFile(FetchLogLocal.java:119)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:166)
+	at org.glassfish.tools.ide.server.FetchLogLocal.call(FetchLogLocal.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	... 1 more
+!SESSION 2015-05-18 19:16:38.693 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 19:16:53.077
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-05-18 19:38:01.893 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 19:38:11.530
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 19:38:21.776
+!MESSAGE GlassFish: Stop server could not be finished because of exception.
+!STACK 0
+java.util.concurrent.ExecutionException: org.glassfish.tools.ide.GlassFishIdeException: DAS stop failed.
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.stopImpl(GlassfishServerBehaviourDelegate.java:410)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.stopServer(GlassfishServerBehaviourDelegate.java:399)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.stop(GlassfishServerBehaviourDelegate.java:387)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3673)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3630)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.glassfish.tools.ide.GlassFishIdeException: DAS stop failed.
+	at org.glassfish.tools.ide.admin.CommandStopDAS.stopDAS(CommandStopDAS.java:90)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StopJob.call(GlassfishServerBehaviourDelegate.java:872)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.admin.CommandStopDAS.stopDAS(CommandStopDAS.java:87)
+	... 5 more
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	... 4 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-05-18 19:40:11.213
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$StopJob
+!SESSION 2015-05-18 19:40:11.780 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-18 19:40:19.314
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Yo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-05-18 19:40:29.683
+!MESSAGE GlassFish: Stop server could not be finished because of exception.
+!STACK 0
+java.util.concurrent.ExecutionException: org.glassfish.tools.ide.GlassFishIdeException: DAS stop failed.
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.stopImpl(GlassfishServerBehaviourDelegate.java:410)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.stopServer(GlassfishServerBehaviourDelegate.java:399)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.stop(GlassfishServerBehaviourDelegate.java:387)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3673)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3630)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.glassfish.tools.ide.GlassFishIdeException: DAS stop failed.
+	at org.glassfish.tools.ide.admin.CommandStopDAS.stopDAS(CommandStopDAS.java:90)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate$StopJob.call(GlassfishServerBehaviourDelegate.java:872)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: port out of range:-1
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.glassfish.tools.ide.admin.CommandStopDAS.stopDAS(CommandStopDAS.java:87)
+	... 5 more
+Caused by: java.lang.IllegalArgumentException: port out of range:-1
+	at java.net.InetSocketAddress.checkPort(Unknown Source)
+	at java.net.InetSocketAddress.<init>(Unknown Source)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:320)
+	at org.glassfish.tools.ide.utils.NetUtils.isSecurePort(NetUtils.java:292)
+	at org.glassfish.tools.ide.admin.RunnerHttp.getHttpListenerProtocol(RunnerHttp.java:229)
+	at org.glassfish.tools.ide.admin.RunnerHttp.constructCommandUrl(RunnerHttp.java:372)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:924)
+	at org.glassfish.tools.ide.admin.Runner.call(Runner.java:1)
+	... 4 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-05-18 19:43:14.540
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.wst.server.core.internal.Server$StopJob

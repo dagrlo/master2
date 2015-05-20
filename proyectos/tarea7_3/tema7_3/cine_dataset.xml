@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <cine id_cine="0" nombre="cine_0" direccion="dir_1" id_provincia="0"/>
+    <cine id_cine="1" nombre="cine_1" direccion="dir_2" id_provincia="1"/>
+    <cine id_cine="2" nombre="cine_2" direccion="dir_3" id_provincia="2"/>
+</dataset>

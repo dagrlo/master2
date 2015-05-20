@@ -1,0 +1,132 @@
+package boletin6.entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.Date;
+
+
+/**
+ * The persistent class for the allempresas database table.
+ * 
+ */
+@Entity
+@Table(name="allempresas")
+@NamedQuery(name="Allempresa.findAll", query="SELECT a FROM Allempresa a")
+public class Allempresa implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	private String actividad;
+
+	private String codigoPostal;
+
+	private String direccion;
+
+	private int empresaMatriz;
+
+	@Temporal(TemporalType.DATE)
+	private Date fechaAlta;
+
+	private int gerente;
+
+	private int idCliente;
+
+	private String nif;
+
+	private String nombre;
+
+	private String poblacion;
+
+	private String provincia;
+
+	public Allempresa() {
+	}
+
+	public String getActividad() {
+		return this.actividad;
+	}
+
+	public void setActividad(String actividad) {
+		this.actividad = actividad;
+	}
+
+	public String getCodigoPostal() {
+		return this.codigoPostal;
+	}
+
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+
+	public String getDireccion() {
+		return this.direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public int getEmpresaMatriz() {
+		return this.empresaMatriz;
+	}
+
+	public void setEmpresaMatriz(int empresaMatriz) {
+		this.empresaMatriz = empresaMatriz;
+	}
+
+	public Date getFechaAlta() {
+		return this.fechaAlta;
+	}
+
+	public void setFechaAlta(Date fechaAlta) {
+		this.fechaAlta = fechaAlta;
+	}
+
+	public int getGerente() {
+		return this.gerente;
+	}
+
+	public void setGerente(int gerente) {
+		this.gerente = gerente;
+	}
+
+	public int getIdCliente() {
+		return this.idCliente;
+	}
+
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public String getNif() {
+		return this.nif;
+	}
+
+	public void setNif(String nif) {
+		this.nif = nif;
+	}
+
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getPoblacion() {
+		return this.poblacion;
+	}
+
+	public void setPoblacion(String poblacion) {
+		this.poblacion = poblacion;
+	}
+
+	public String getProvincia() {
+		return this.provincia;
+	}
+
+	public void setProvincia(String provincia) {
+		this.provincia = provincia;
+	}
+
+}

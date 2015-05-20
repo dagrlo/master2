@@ -1,0 +1,56 @@
+package boletin6.main;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import boletin6.dao.ClienteDao;
+import boletin6.dao.EmpresaDao;
+import boletin6.dao.PersonaDao;
+import boletin6.entities.Empresa;
+import boletin6.entities.Persona;
+
+public class Boletin6 {
+
+	private static ClienteDao cDao;
+	private static EmpresaDao eDao;
+	private static PersonaDao pDao;
+
+	public static void main(String[] args) {
+		EntityManagerFactory emf = Persistence
+				.createEntityManagerFactory("clientes");
+		EntityManager em = emf.createEntityManager();
+
+		cDao = new ClienteDao(em);
+		eDao = new EmpresaDao(em);
+		pDao=new PersonaDao(em);
+
+		List<Empresa> listaEmpresas = eDao.getAllEmpresas();
+		List<Persona> listaPersonas=pDao.getAllPersonas();
+
+		System.out.println("\n\nLista de empresas:");
+		System.out.println("==================\n\n");
+
+		for (Empresa empresa : listaEmpresas) {
+			System.out.println("["+empresa.getIdCliente()+"]  "+empresa.getNombre());
+			System.out.println("Direccion: "+empresa.getDireccion()+"  "+empresa.getPoblacion()+" "+empresa.getProvincia()+" "+empresa.getCodigoPostal());
+			System.out.println("NIF: "+empresa.getNif());
+			System.out.println("Tipo: "+empresa.getTipo());
+			System.out.println("--------------------------------------------------------------------------------------------------------------");
+		}
+		
+		System.out.println("\n\nLista de personas:");
+		System.out.println("==================");
+		
+		for (Persona persona:listaPersonas){
+			System.out.println("["+persona.getIdCliente()+"] "+persona.getNombre()+" "+persona.getApellidos());
+			System.out.println("Direccion: "+persona.getDireccion()+"  "+persona.getPoblacion()+" "+persona.getProvincia()+" "+persona.getCodigoPostal());
+			System.out.println("NIF: "+persona.getNif());
+			System.out.println("Tipo: "+persona.getTipo());
+			System.out.println("--------------------------------------------------------------------------------------------------------------");
+		}
+
+	}
+}

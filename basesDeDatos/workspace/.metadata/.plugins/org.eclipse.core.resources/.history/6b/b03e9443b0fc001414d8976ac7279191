@@ -1,0 +1,159 @@
+package boletin6.entities;
+
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.Date;
+import java.sql.Timestamp;
+
+
+/**
+ * The persistent class for the clientes database table.
+ * 
+ */
+@Entity
+@Table(name="clientes")
+@NamedQuery(name="Cliente.findAll", query="SELECT c FROM Cliente c")
+public class Cliente implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int idCliente;
+
+	private String codigoPostal;
+
+	private String direccion;
+
+	@Temporal(TemporalType.DATE)
+	private Date fechaAlta;
+
+	private Timestamp fechaModificacion;
+
+	private String nif;
+
+	private String nombre;
+
+	private String pais;
+
+	private String poblacion;
+
+	private String provincia;
+
+	private String tipo;
+
+	//bi-directional one-to-one association to Empresa
+	@OneToOne(mappedBy="cliente")
+	private Empresa empresa;
+
+	//bi-directional one-to-one association to Persona
+	@OneToOne(mappedBy="cliente")
+	private Persona persona;
+
+	public Cliente() {
+	}
+
+	public int getIdCliente() {
+		return this.idCliente;
+	}
+
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
+	}
+
+	public String getCodigoPostal() {
+		return this.codigoPostal;
+	}
+
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+
+	public String getDireccion() {
+		return this.direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public Date getFechaAlta() {
+		return this.fechaAlta;
+	}
+
+	public void setFechaAlta(Date fechaAlta) {
+		this.fechaAlta = fechaAlta;
+	}
+
+	public Timestamp getFechaModificacion() {
+		return this.fechaModificacion;
+	}
+
+	public void setFechaModificacion(Timestamp fechaModificacion) {
+		this.fechaModificacion = fechaModificacion;
+	}
+
+	public String getNif() {
+		return this.nif;
+	}
+
+	public void setNif(String nif) {
+		this.nif = nif;
+	}
+
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getPais() {
+		return this.pais;
+	}
+
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+
+	public String getPoblacion() {
+		return this.poblacion;
+	}
+
+	public void setPoblacion(String poblacion) {
+		this.poblacion = poblacion;
+	}
+
+	public String getProvincia() {
+		return this.provincia;
+	}
+
+	public void setProvincia(String provincia) {
+		this.provincia = provincia;
+	}
+
+	public String getTipo() {
+		return this.tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public Empresa getEmpresa() {
+		return this.empresa;
+	}
+
+	public void setEmpresa(Empresa empresa) {
+		this.empresa = empresa;
+	}
+
+	public Persona getPersona() {
+		return this.persona;
+	}
+
+	public void setPersona(Persona persona) {
+		this.persona = persona;
+	}
+
+}

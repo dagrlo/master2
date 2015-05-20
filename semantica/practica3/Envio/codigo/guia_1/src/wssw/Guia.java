@@ -1,0 +1,645 @@
+package wssw;
+
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
+public class Guia {
+	
+	public String getDatosAsignatura() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT  ?codigo ?nombre ?ciclo  ?creditos ?curso"+  
+"	WHERE { ?subject mia:conDatos ?object."+
+		
+"?object mia:codigoAsignatura ?codigo."+
+"		?object mia:nombreAsignatura ?nombre."+
+"		?object mia:ciclo ?ciclo."+
+"		?object mia:creditos ?creditos."+
+"		?object mia:cursoAcademico ?curso"+
+"		}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("codigo").toString());
+				resultado+="%"+limpiaResultado(soln.get("nombre").toString());
+				resultado+="%"+limpiaResultado(soln.get("ciclo").toString());
+				resultado+="%"+limpiaResultado(soln.get("creditos").toString());
+				resultado+="%"+limpiaResultado(soln.get("curso").toString());
+				
+			
+				
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getTitulacion() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?curso ?periodo ?nTitulacion ?nCentro"+
+"		WHERE { ?subject mia:conTitulaciones ?object."+
+"			?object mia:curso ?curso."+
+"			?object mia:periodo ?periodo."+
+"			?object mia:enTitulacion ?titulacion."+
+"			?titulacion mia:nombreTitulacion ?nTitulacion."+
+"			?object mia:enCentro ?centro."+
+"			?centro mia:nombreCentro ?nCentro"+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("curso").toString());
+				resultado+="%"+limpiaResultado(soln.get("periodo").toString());
+				resultado+="%"+limpiaResultado(soln.get("nTitulacion").toString());
+				resultado+="%"+limpiaResultado(soln.get("nCentro").toString());
+				
+				
+			
+				
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getMaterias() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?caracter ?materia ?titulacion"+
+"		WHERE { ?subject mia:conMaterias ?object."+
+"			?object mia:caracter ?caracter."+
+"			?object mia:materia ?materia."+
+"			?object mia:enTitulacion ?titulaciones."+
+"			?titulaciones mia:nombreTitulacion ?titulacion"+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("titulacion").toString());
+				resultado+="%"+limpiaResultado(soln.get("materia").toString());
+				resultado+="%"+limpiaResultado(soln.get("caracter").toString());
+				
+				
+				
+			
+				
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getCoordinacion() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?profesor ?departamento"+
+"		WHERE { ?subject mia:coordina ?object."+
+"			?object mia:coordinadoPor ?coordinado."+
+"			?coordinado mia:nombrePersona ?profesor."+
+"			?object mia:deDepartamento ?depto."+
+"			?depto mia:nombreDepartamento ?departamento"+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("profesor").toString());
+				resultado+="%"+limpiaResultado(soln.get("departamento").toString());					
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getResumen() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?resumen"+
+"		WHERE { ?subject mia:conResumen ?object."+
+"			?object mia:textoResumen ?resumen"+
+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("resumen").toString());
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getRelacionConOtrasAsignaturas() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?txt_relacion"+
+"		WHERE { ?subject mia:conRelacionOtras ?object."+
+"			?object mia:texto_relacion ?txt_relacion"+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("txt_relacion").toString());
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getOtrosRequisitos() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?txt_otros"+
+"		WHERE { ?subject mia:conOtrosRequisitos ?object."+
+"			?object mia:texto_otros ?txt_otros"+
+"			}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("txt_otros").toString());
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getCompetencias() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?txt_relacion"+
+"		WHERE { ?subject mia:conCompetencias ?object."+
+"			?object mia:textoCompetencias ?txt_relacion"+
+"			}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("txt_relacion").toString());
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getResultadosAprendizaje() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?txt_relacion"+
+"		WHERE { ?subject mia:conResultados ?object."+
+"			?object mia:textoResultados ?txt_relacion"+
+"			}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("txt_relacion").toString());
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getDescripcionDeContenidos() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?x ?y"+
+"		WHERE { ?subject mia:conTema ?object."+
+"			?object mia:nombreTema ?x."+
+"			?object mia:textoTema ?y} ORDER BY ASC(?object)";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("x").toString());
+				resultado+="%"+limpiaResultado(soln.get("y").toString());
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getActividadesPresenciales() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?x ?y ?z"+
+"		WHERE { ?subject mia:conActividadP ?object."+
+"			?object mia:nombreActividad ?x."+
+"			?object mia:horasActividad ?y."+
+"			?subject mia:totalHorasActividad ?z}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("x").toString());
+				resultado+="%"+limpiaResultado(soln.get("y").toString());
+				
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getActividadesNoPresenciales() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?x ?y ?z"+
+"		WHERE { ?subject mia:conActividadNP ?object."+
+"			?object mia:nombreActividad ?x."+
+"			?object mia:horasActividad ?y."+
+"			?subject mia:totalHorasActividad ?z}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("x").toString());
+				resultado+="%"+limpiaResultado(soln.get("y").toString());
+				
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getMetodologiaDocente() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?txt_relacion"+
+"		WHERE { ?subject mia:conMetodologia ?object."+
+"			?object mia:textoMetodologia ?txt_relacion"+
+"			}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("txt_relacion").toString());
+				
+				
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getEvaluacion() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?txt_relacion"+
+"		WHERE { ?subject mia:conEvaluacion ?object."+
+"			?object mia:textoEvaluacion ?txt_relacion"+
+"			}";
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("txt_relacion").toString());
+				
+				
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getReferenciasBasicas() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?titulo ?fecha ?isbn ?autores"+
+"		WHERE { ?subject mia:conLibro ?object."+
+"			?object mia:nombreLibro ?titulo."+
+"?object mia:isbn ?isbn."+
+" ?object mia:fecha ?fecha."+
+"  ?object mia:escritoPor ?nombre."+
+"		?nombre mia:nombrePersona ?autores}";
+
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("titulo").toString());
+				resultado+="%"+limpiaResultado(soln.get("fecha").toString());
+				resultado+="%"+limpiaResultado(soln.get("isbn").toString());
+				resultado+="%"+limpiaResultado(soln.get("autores").toString());
+				
+				
+				
+				
+				
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getReferenciasComplementarias() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?titulo ?fecha ?isbn ?autores"+
+"		WHERE { ?subject mia:conLibroC ?object."+
+"			?object mia:nombreLibro ?titulo."+
+
+"			 ?object mia:fecha ?fecha."+
+"			 ?object mia:isbn ?isbn."+
+"			  {?object mia:escritoPor ?nombre}."+
+"			?nombre mia:nombrePersona ?autores}";
+
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("titulo").toString());
+				resultado+="%"+limpiaResultado(soln.get("fecha").toString());
+				resultado+="%"+limpiaResultado(soln.get("isbn").toString());
+				resultado+="%"+limpiaResultado(soln.get("autores").toString());
+				
+				
+				
+				
+				
+									
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	private String limpiaResultado(String texto){
+		String resultado;
+		
+		resultado=texto.substring(0,texto.indexOf("^"));
+		
+		return resultado;
+	}
+
+}

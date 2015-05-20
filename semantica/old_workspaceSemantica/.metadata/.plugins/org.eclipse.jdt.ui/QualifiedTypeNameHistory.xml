@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.ModelFactory"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.ontology.OntModelSpec"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.query.QueryFactory"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.query.Query"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.query.QueryExecutionFactory"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.query.ResultSet"/>
+</qualifiedTypeNameHistroy>

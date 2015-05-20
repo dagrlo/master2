@@ -1,0 +1,160 @@
+package wssw;
+
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.OntModelSpec;
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
+public class Guia {
+	
+	public String getDatosAsignatura() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT  ?codigo ?nombre ?ciclo  ?creditos ?curso"+  
+"	WHERE { ?subject mia:conDatos ?object."+
+		
+"?object mia:codigoAsignatura ?codigo."+
+"		?object mia:nombreAsignatura ?nombre."+
+"		?object mia:ciclo ?ciclo."+
+"		?object mia:creditos ?creditos."+
+"		?object mia:cursoAcademico ?curso"+
+"		}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("codigo").toString());
+				resultado+="%"+limpiaResultado(soln.get("nombre").toString());
+				resultado+="%"+limpiaResultado(soln.get("ciclo").toString());
+				resultado+="%"+limpiaResultado(soln.get("creditos").toString());
+				resultado+="%"+limpiaResultado(soln.get("curso").toString());
+				
+			
+				
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getTitulacion() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?curso ?periodo ?nTitulacion ?nCentro"+
+"		WHERE { ?subject mia:conTitulaciones ?object."+
+"			?object mia:curso ?curso."+
+"			?object mia:periodo ?periodo."+
+"			?object mia:enTitulacion ?titulacion."+
+"			?titulacion mia:nombreTitulacion ?nTitulacion."+
+"			?object mia:enCentro ?centro."+
+"			?centro mia:nombreCentro ?nCentro"+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("curso").toString());
+				resultado+="%"+limpiaResultado(soln.get("periodo").toString());
+				resultado+="%"+limpiaResultado(soln.get("nTitulacion").toString());
+				resultado+="%"+limpiaResultado(soln.get("nCentro").toString());
+				
+				
+			
+				
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	public String getMaterias() {
+		OntModel m = null;
+		String resultado = "";
+
+		m = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_MINI_RULE_INF);
+
+		m.read("http://mural.uv.es/dagraulo/ontologias/guia_docente3.owl");
+
+		String queryString = "PREFIX mia: <http://www.semanticweb.org/yo/ontologies/2015/4/guiaDocente#>"+
+
+"SELECT ?subject ?object ?caracter ?materia ?titulacion"+
+"		WHERE { ?subject mia:conMaterias ?object."+
+"			?object mia:caracter ?caracter."+
+"			?object mia:materia ?materia."+
+"			?object mia:enTitulacion ?titulaciones."+
+"			?titulaciones mia:nombreTitulacion ?titulacion"+
+"			}";
+	
+
+		Query query = QueryFactory.create(queryString);
+		QueryExecution qe = QueryExecutionFactory.create(query, m);
+		try {
+			ResultSet results = qe.execSelect();
+			StringBuilder result = new StringBuilder();
+			while (results.hasNext()) {
+			
+				QuerySolution soln=results.nextSolution();
+				resultado+="%"+limpiaResultado(soln.get("curso").toString());
+				resultado+="%"+limpiaResultado(soln.get("periodo").toString());
+				resultado+="%"+limpiaResultado(soln.get("nTitulacion").toString());
+				resultado+="%"+limpiaResultado(soln.get("nCentro").toString());
+				
+				
+			
+				
+			}
+	
+		} finally {
+			qe.close();
+		}
+
+		return resultado;
+	}
+	
+	private String limpiaResultado(String texto){
+		String resultado;
+		
+		resultado=texto.substring(0,texto.indexOf("^"));
+		
+		return resultado;
+	}
+
+}

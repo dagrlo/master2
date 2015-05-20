@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://wssw" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://wssw" xmlns:intf="http://wssw" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://wssw" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="getCodigoAsignatura">
+    <complexType/>
+   </element>
+   <element name="getCodigoAsignaturaResponse">
+    <complexType>
+     <sequence>
+      <element name="getCodigoAsignaturaReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getCodigoAsignaturaRequest">
+
+      <wsdl:part element="impl:getCodigoAsignatura" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getCodigoAsignaturaResponse">
+
+      <wsdl:part element="impl:getCodigoAsignaturaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="GuiaDocente">
+
+      <wsdl:operation name="getCodigoAsignatura">
+
+         <wsdl:input message="impl:getCodigoAsignaturaRequest" name="getCodigoAsignaturaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getCodigoAsignaturaResponse" name="getCodigoAsignaturaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="GuiaDocenteSoapBinding" type="impl:GuiaDocente">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getCodigoAsignatura">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getCodigoAsignaturaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getCodigoAsignaturaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="GuiaDocenteService">
+
+      <wsdl:port binding="impl:GuiaDocenteSoapBinding" name="GuiaDocente">
+
+         <wsdlsoap:address location="http://localhost:8080/guia_01/services/GuiaDocente"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

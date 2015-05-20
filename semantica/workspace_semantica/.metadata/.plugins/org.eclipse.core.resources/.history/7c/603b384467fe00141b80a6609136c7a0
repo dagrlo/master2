@@ -1,0 +1,47 @@
+body {
+	background-color: #555;
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0; /* Evitar que los menus se desplacen a derecha */
+}
+
+nav {
+	background-color: #ddd;
+	text-align: center;
+	margin: 20px auto; /* para centrar el div */
+}
+
+.menu{
+	display:inline-block;	
+}
+
+.menu li{
+	float:left;
+}
+
+.menu li ul li{
+	float:none;
+}
+
+.menu li ul{
+	display:none;
+}
+
+.menu li:hover ul{
+	display:block;
+}
+
+.menu li a{
+	background-color:#ddd;
+	color:#fff;
+	display:block;
+	border:1px solid #fff;
+	padding:8px;
+	margin:6px;	
+}
+
+.menu li a:hover{
+	background-color:#333;
+	color:#fff;
+}

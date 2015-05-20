@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#centro"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneAsignatura -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneAsignatura">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#clases"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneDepartamento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneDepartamento">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#departamento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneEdad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneEdad">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#edad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneNombre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneNombre">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneNota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneNota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumno"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneProfesor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#tieneProfesor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nombre">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Alumno_01 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Alumno_01">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumnos"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Centro01"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Alumno_02"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Alumno_02 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Alumno_02">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumnos"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Centro01"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Centro01 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Centro01">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#centro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Profesor_01 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Profesor_01">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesores"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Centro01"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Profesor_02"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Profesor_02 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Profesor_02">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesores"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#Centro01"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nombre"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumnos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumnos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#centro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#centro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#clases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#clases"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#departamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#departamento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#edad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#edad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nombre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nombre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#nota"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#enCentro"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#centro"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#profesor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#pruebaalumno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#pruebaalumno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#alumno"/>
+        <nombre rdf:datatype="&xsd;string">Lolo</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#pruebaalumno2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yo/ontologies/2015/4/untitled-ontology-7#pruebaalumno2">
+        <nombre rdf:datatype="&xsd;string">lili</nombre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

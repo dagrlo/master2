@@ -1,0 +1,58 @@
+
+function getData(url){
+	xmlHttp=getXmlHttpObject();
+	if (xmlHttp==null){
+		alert("Este navegador no soporta XMLHttpRequest!!!");
+		return;
+	}
+	
+	//TODO barra de progreso
+	
+	xmlHttp.onreadystatechange=stateChanged;
+	xmlHttp.open("POST",url,true);
+	xmlHttp.send(null);
+}
+
+function getXmlHttpObject(){
+	var objXMLHttp=null;
+	if (window.XMLHttpRequest){
+		objXMLHttp=new XMLHttpRequest();
+	} else 
+		if(windows.ActiveXObject){
+			objXMLHttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	return objXMLHttp;	
+}
+
+function stateChanged(){
+	var listaNodos;
+	
+	if (xmlHttp.readyState==4|xmlHttp.readyState=="complete"){
+		switch(xmlHttp.responseXML.documentElement.tagName){
+			case 'Respuesta':
+				xmlRespuesta=xmlHttp.responseXML;
+				var mensaje=xmlRespuesta.getElementsByTagName("mensaje");
+				var textoMensaje=mensaje.item(0).lastChild.nodeValue;
+				//mostrarResultado(textoMensaje);
+				console.log(textoMensaje);
+				break;
+				
+			case 'Vacia':
+				xmlRespuesta=xmlHttp.responseXML;
+				var mensaje=xmlRespuesta.getElementsByTagName("mensaje");
+				var textoMensaje=mensaje.item(0).lastChild.nodeValue;
+				mostrarResultado("ERROR: "+textoMensaje);
+				break;
+		}
+	}
+}
+
+function enviarPeticion(idConsulta){
+	getData("Control?consulta="+idConsulta);	
+}
+
+function mostrarResultado(texto){
+	var donde=document.getElementById("resultados");
+	donde.innerHTML=texto;
+}
+

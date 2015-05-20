@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script src="./sampleGuiaProxy/js/utilsAjax.js"></script>
+
+<body >
+	<a href="#" onclick="enviarPeticion(1)">Datos de asignatura</a>
+	<a href="#" onclick="enviarPeticion(2)">Titulaciones</a>
+	<a href="#" onclick="enviarPeticion(3)">Materias</a>
+	<a href="#" onclick="enviarPeticion(4)">Coordinacion</a>
+	<a href="#" onclick="enviarPeticion(5)">Resumen de la asignatura</a>
+	<a href="#" onclick="enviarPeticion(6)">Relacion con otras asignaturas</a>
+	<a href="#" onclick="enviarPeticion(7)">Otros requisitos</a>
+	<a href="#" onclick="enviarPeticion(8)">Competencias</a>
+	<a href="#" onclick="enviarPeticion(9)">Resultados de aprendizaje</a>
+	<a href="#" onclick="enviarPeticion(10)">Descripcion de contenidos</a>
+	<a href="#" onclick="enviarPeticion(11)">Actividades presenciales</a>
+	<a href="#" onclick="enviarPeticion(12)">Actividades no presenciales</a>
+	<a href="#" onclick="enviarPeticion(13)">Metodologia docente</a>
+	<a href="#" onclick="enviarPeticion(14)">Evaluacion</a>
+	<a href="#" onclick="enviarPeticion(15)">Referencias basicas</a>
+	<div id="resultados">
+	
+	</div>
+</body>
+</html>

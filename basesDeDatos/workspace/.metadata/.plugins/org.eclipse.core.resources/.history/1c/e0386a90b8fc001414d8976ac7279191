@@ -1,0 +1,33 @@
+package boletin6.main;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import boletin6.dao.ClienteDao;
+import boletin6.dao.EmpresaDao;
+
+public class Boletin6 {
+
+	private static ClienteDao cDao;
+	private static EmpresaDao eDao;
+
+	public static void main(String[] args) {
+		EntityManagerFactory emf = Persistence
+				.createEntityManagerFactory("clientes");
+		EntityManager em = emf.createEntityManager();
+
+		cDao = new ClienteDao(em);
+		//eDao = new EmpresaDao(em);
+
+		/*List<Empresa> listaEmpresas = eDao.getAllEmpresas();
+
+		System.out.println("Lista de empresas:");
+		System.out.println("------------------\n\n");
+
+		for (Empresa empresa : listaEmpresas) {
+			System.out.println(empresa.getNombre());
+		}*/
+
+	}
+}

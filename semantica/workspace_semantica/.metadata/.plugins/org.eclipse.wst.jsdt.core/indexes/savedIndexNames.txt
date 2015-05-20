@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+D:\MASTER\master2\semantica\workspace_semantica\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3735288905.index
+2420596632.index
+413254417.index
+1042044127.index
+4241657427.index
+3660178991.index
+2097490627.index
+546311944.index

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <poblacion id="0" nombre="Valencia" idProvincia="0"/>
+    <poblacion id="1" nombre="Albal" idProvincia="0"/>
+    <poblacion id="2" nombre="Paiporta" idProvincia="0"/>  
+</dataset>

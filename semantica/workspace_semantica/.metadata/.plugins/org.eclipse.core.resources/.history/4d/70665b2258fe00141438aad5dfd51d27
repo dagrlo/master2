@@ -1,0 +1,20 @@
+<%@page contentType="text/html;charset=UTF-8"%><HTML>
+<HEAD>
+<TITLE>Methods</TITLE>
+</HEAD>
+<BODY>
+<H1>Methods</H1>
+<UL>
+<LI><A HREF="Input.jsp?method=2" TARGET="inputs"> getEndpoint()</A></LI>
+<LI><A HREF="Input.jsp?method=5" TARGET="inputs"> setEndpoint(java.lang.String)</A></LI>
+<LI><A HREF="Input.jsp?method=10" TARGET="inputs"> getGuia()</A></LI>
+<LI><A HREF="Input.jsp?method=27" TARGET="inputs"> getDatosAsignatura()</A></LI>
+<LI><A HREF="Input.jsp?method=30" TARGET="inputs"> getTitulacion()</A></LI>
+<LI><A HREF="Input.jsp?method=33" TARGET="inputs"> getMaterias()</A></LI>
+<LI><A HREF="Input.jsp?method=36" TARGET="inputs"> getCoordinacion()</A></LI>
+<LI><A HREF="Input.jsp?method=39" TARGET="inputs"> getResumen()</A></LI>
+<LI><A HREF="Input.jsp?method=42" TARGET="inputs"> getRelacionConOtrasAsignaturas()</A></LI>
+<LI><A HREF="Input.jsp?method=45" TARGET="inputs"> getOtrosRequisitos()</A></LI>
+</UL>
+</BODY>
+</HTML>
