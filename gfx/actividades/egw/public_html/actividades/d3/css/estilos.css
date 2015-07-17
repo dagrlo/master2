@@ -1,0 +1,17 @@
+body{
+    background-color: #fff;
+    font-family:  sans-serif;
+    color:#000;
+}
+
+#fondo{
+    width:940px;
+    height: 480px;
+    position: relative;
+    left: 10px;
+    top:10px;
+    background-color: #444;
+    color:#0f0;
+}
+
+

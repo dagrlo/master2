@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./css/estilos.css" />
+        <script src="js/pixi.js"></script>        
+
+        <script src="js/utils.js"></script>
+        <script>
+            //TODO pasar codigo a utils...
+            var anchura = 800;
+            var altura = 600;
+            var render = PIXI.autoDetectRenderer(anchura, altura);
+            var escenario;
+            var spriteFondo;
+            var player1;
+            var P1STARTX = 128;
+            var P1STARTY = 400;
+            var SPRITEIZQUIERDA = Math.PI * 2;
+            var SPRITEDERECHA = 0;
+            var TECLAIZQUIERDA = teclado(37);
+            var TECLADERECHA = teclado(39);
+            var TECLAARRIBA = teclado(38);
+            var TECLAABAJO = teclado(40);
+            var estado;
+            var cargado = false;
+            //la posicion va como los botones del teclado numerico
+            //55 y 66 son izq y der parado
+            var player1State = 66;
+            var player1Anda = false;
+            var player1Salta = false
+            var GRAVEDAD = 0.3;//0.025;
+            var MAXFRAME = 300;
+            var frame = 0;
+            var frameActual = 0;
+            var clockTick = 0;
+            var tocaSuelo = false;
+            var caja;
+
+
+
+            var MAPA = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                        , [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                        , [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                        , [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                        , [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+                        , [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                        , [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+                        , [1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0]
+                        , [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+                        , [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]];
+            var tiles = new Array(1000);
+            var maxTiles = 0;
+            var filtros = [];
+            var filtrosAplicados = [];
+
+            function start() {
+
+                render.view.className = "vista";
+                document.body.appendChild(render.view);
+                escenario = new PIXI.Stage(0x000);
+
+                punto = new PIXI.Point();
+                punto.set(-4, 2);
+                punto2 = new PIXI.Point();
+                punto2.set(-6, 2);
+                //blurFilter,pixelateFilter,invertFilter,grayFilter,sepiaFilter,twistFilter,dotScreenFilter,crossHatchFilter,rgbSplitterFilter]
+                var blurFilter = new PIXI.filters.BlurFilter();
+                filtros.push(blurFilter);
+
+                var pixelateFilter = new PIXI.filters.PixelateFilter();
+                filtros.push(pixelateFilter);
+
+                var invertFilter = new PIXI.filters.InvertFilter();
+                filtros.push(invertFilter);
+
+                var grayFilter = new PIXI.filters.GrayFilter();
+                filtros.push(grayFilter);
+
+                var sepiaFilter = new PIXI.filters.SepiaFilter();
+                filtros.push(sepiaFilter);
+
+                var twistFilter = new PIXI.filters.TwistFilter();
+                filtros.push(twistFilter);
+
+                var dotScreenFilter = new PIXI.filters.DotScreenFilter();
+                filtros.push(dotScreenFilter);
+
+                var crossHatchFilter = new PIXI.filters.CrossHatchFilter();
+                filtros.push(crossHatchFilter);
+
+                var rgbSplitterFilter = new PIXI.filters.RGBSplitFilter();
+                rgbSplitterFilter.green = punto;
+                rgbSplitterFilter.red = punto2;
+                filtros.push(rgbSplitterFilter);
+
+
+                // con esto empiezo la animacion
+                clockTick = 0;
+                frame = 0;
+                requestAnimationFrame(animacion);
+                //FONDO
+
+                var texturaFondo = PIXI.Texture.fromImage("./gfx/tiles/fondo.png");
+                //defino el sprite como un tile para que llene el fondo. tengo que poner el tamaño de la region
+                spriteFondo = new PIXI.extras.TilingSprite(texturaFondo, 800, 600);
+                escenario.addChild(spriteFondo);
+
+                //Cargamos los tiles de primer plano
+
+
+                var texturaTiles = PIXI.Texture.fromImage("./gfx/tiles/bloque.png");
+                maxTiles = 0;
+                for (var i = 0; i < 16; i++) {
+                    for (var j = 0; j < 10; j++) {
+                        if (MAPA[j][i] === 1) {
+                            tiles[maxTiles] = new PIXI.Sprite(texturaTiles);
+                            tiles[maxTiles].height = 64;
+                            tiles[maxTiles].width = 64;
+                            tiles[maxTiles].filters = [pixelateFilter];
+                            tiles[maxTiles].x = (i) * 64;
+                            tiles[maxTiles].y = (j) * 64;
+                            escenario.addChild(tiles[maxTiles]);
+                            maxTiles++;
+                        }
+                    }
+                }
+
+                PIXI.loader.add("./gfx/sprites/player1.json").load(function () {
+                    var frames = [];
+                    console.log("cargado");
+                    for (var i = 0; i < 3; i++) {
+                        frames.push(PIXI.Texture.fromFrame('frame0' + i));
+                    }
+                    player1 = new PIXI.extras.MovieClip(frames);
+
+                    player1.animationSpeed = 0.2;
+                    player1.x = 328;
+                    player1.y = 450;
+                    player1.vx = 0;
+                    player1.vy = 0;
+                    player1.width = 64;
+                    player1.height = 128;
+                    player1.anchor.x = 0.5;
+                    player1Anda = false;
+                    player1Salta = false
+                    player1Cae = false;
+                    saltoPos = 0;
+                    tocaSuelo = true;
+                    player1.filters = [rgbSplitterFilter];
+
+                    escenario.addChild(player1);
+                    cargaTeclado();
+
+                });
+
+
+                function cargaTeclado() {
+                    //TECLADO
+                    TECLAIZQUIERDA.press = function () {
+                        player1.vx = -2;
+
+                        player1State = 5;
+                        player1Anda = true;
+
+                    };
+                    TECLAIZQUIERDA.release = function () {
+                        if (!TECLADERECHA.isDown)
+                        {
+                            player1.vx = 0;
+                            player1State = 5;
+                            player1Anda = false;
+                        }
+                    };
+                    TECLADERECHA.press = function () {
+                        player1.vx = 2;
+                        player1State = 6;
+                        player1Anda = true;
+                    };
+                    TECLADERECHA.release = function () {
+                        if (!TECLAIZQUIERDA.isDown)
+                        {
+                            player1.vx = 0;
+                            player1State = 6;
+                            player1Anda = false;
+                        }
+                    };
+                    TECLAARRIBA.press = function () {
+                        if (!player1Salta /*&& tocaSuelo*/) {
+                            tocaSuelo = false;
+                            player1.vy = -16;
+                            player1Salta = true;
+                        }
+
+                    };
+                    TECLAARRIBA.release = function () {
+                        {
+                            player1Salta = false;
+                            player1.vy = 5;
+                        }
+                    };
+                    TECLAABAJO.press = function () {
+                        player1.vy = 1;
+                        player1.vx = 0;
+                    };
+                    TECLAABAJO.release = function () {
+                        if (!TECLAARRIBA && player1.vx === 0) {
+                            player1.vy = 0;
+                        }
+
+                    };
+                    estado = runPlayer;
+                    cargado = true;
+                }
+
+
+            }
+
+            function pos2Map(p) {
+                return Math.round(p / 64);
+            }
+
+            function chocaRight() {
+                result = false;
+                if (pos2Map(player1.y - 32) >= 0) {
+                    if (MAPA[pos2Map(player1.y)][pos2Map(player1.x) ] > 0) {
+                        result = true;
+                    }
+                    if (MAPA[pos2Map(player1.y) + 1][pos2Map(player1.x)] > 0) {
+                        result = true;
+                    }
+                } else {
+                    result = false;
+                }
+                return result;
+            }
+
+            function chocaLeft() {
+                result = false;
+                if (pos2Map(player1.y - 32) >= 0) {
+                    if (MAPA[pos2Map(player1.y)][pos2Map(player1.x) - 1 ] > 0) {
+                        result = true;
+                    }
+                    if (MAPA[pos2Map(player1.y) + 1][pos2Map(player1.x) - 1] > 0) {
+                        result = true;
+                    }
+                } else {
+                    result = false;
+                }
+                return result;
+            }
+
+            function chocaTop() {
+                result = false;
+                if (pos2Map(player1.y - 32) >= 0) {
+                    if (MAPA[pos2Map(player1.y - 32)][pos2Map(player1.x) ] > 0) {
+                        result = true;
+                    }
+                }
+                else
+                    result = false;
+                return result;
+            }
+
+            function chocaBottom() {
+                result = false;
+                if (MAPA[pos2Map(player1.y) + 2][pos2Map(player1.x) - 1] > 0) {
+                    result = true;
+                }
+                if (MAPA[pos2Map(player1.y) + 2][pos2Map(player1.x)] > 0) {
+                    result = true;
+                }
+                return result;
+            }
+
+            function map2Pos(p) {
+                return p * 64;
+            }
+
+            function calculaFrame() {
+
+                player1.vy += GRAVEDAD;
+                escribe("X:" + pos2Map(player1.x) + " Y:" + pos2Map(player1.y));
+                if (chocaRight()) {
+                    player1.vx = 0;
+                    player1.x--;
+                }
+                if (chocaLeft()) {
+                    player1.vx = 0;
+                    player1.x++;
+                }
+                if (chocaTop()) {
+                    player1.vy = 0;
+                    player1Salta = false;
+                    player1.y = player1.y + 10;
+                }
+
+                if (chocaBottom())
+                {
+                    if (player1Salta === false) {
+                        player1.y = map2Pos(pos2Map(player1.y));//altura -158;
+                        player1.vy = 0;
+                        tocaSuelo = true;
+                    }
+
+                    //player1Salta = false;
+
+                } else {
+                    if (player1Salta === false) {
+                        player1.vy += GRAVEDAD;
+                        tocaSuelo = false;
+                    }
+
+                }
+
+                switch (player1State) {
+                    case 6:
+                        player1.scale.x = 1;
+                        if (player1Anda === false) {
+                            player1.gotoAndPlay(0);
+                        }
+
+                        if (player1Anda === true) {
+                            if (frameActual % MAXFRAME === 0) {
+                                if (frameActual < 1000) {
+                                    frameActual++;
+                                } else {
+                                    frameActual = 0;
+                                }
+                                player1.gotoAndPlay(frame);
+
+                                if (frame < 1) {
+                                    frame++;
+                                } else {
+                                    frame = 0;
+                                }
+                            }
+                            spriteFondo.tilePosition.x -= 0.2;
+                        }
+
+                        if (player1Salta === true) {
+                            player1.gotoAndPlay(1);
+                        }
+                        break;
+
+                    case 5:
+
+                        /* if (player1.scale.x!=-1){
+                         player1.x=player1.x+64;
+                         }*/
+                        player1.scale.x = -1;
+                        if (player1Anda === false) {
+                            player1.gotoAndPlay(0);
+                        }
+
+                        if (player1Anda === true) {
+                            if (frameActual % MAXFRAME === 0) {
+                                if (frameActual < 1000) {
+                                    frameActual++;
+                                } else {
+                                    frameActual = 0;
+                                }
+                                player1.gotoAndPlay(frame); //hace lo que le sale del choto
+                                console.log(frame);
+                                if (frame < 1) {
+                                    frame++;
+                                } else {
+                                    frame = 0;
+                                }
+                            }
+                            spriteFondo.tilePosition.x += 0.2;
+                        }
+                        if (player1Salta === true) {
+                            player1.gotoAndPlay(1);
+                        }
+                        break;
+                }
+
+            }
+
+
+
+
+            function runPlayer() {
+
+
+                player1.x += player1.vx;
+
+                if (tocaSuelo) {
+                    player1.vy = 0;
+                }
+
+                player1.y += player1.vy;
+                player1.vy += GRAVEDAD;
+
+                calculaFrame();
+
+            }
+
+            function animacion() {
+
+                if (clockTick < 2001) {
+                    clockTick++;
+                } else {
+                    clockTick = 0;
+                }
+
+                requestAnimationFrame(animacion);
+                if (cargado) {
+                    runPlayer();
+                }
+                if (filtrosAplicados.length != 0) {
+                    escenario.filters = filtrosAplicados;
+                } else {
+                    escenario.filters = null;
+                }
+
+                render.render(escenario);
+            }
+
+
+
+            function teclado(keyCode) {
+                var key = {};
+                key.code = keyCode;
+                key.isDown = false;
+                key.isUp = true;
+                key.press = undefined;
+                key.release = undefined;
+                //The `downHandler`
+                key.downHandler = function (event) {
+                    if (event.keyCode === key.code) {
+                        if (key.isUp && key.press)
+                            key.press();
+                        key.isDown = true;
+                        key.isUp = false;
+                    }
+                    event.preventDefault();
+                };
+                //The `upHandler`
+                key.upHandler = function (event) {
+                    if (event.keyCode === key.code) {
+                        if (key.isDown && key.release)
+                            key.release();
+                        key.isDown = false;
+                        key.isUp = true;
+                    }
+                    event.preventDefault();
+                };
+                //Attach event listeners
+                window.addEventListener(
+                        "keydown", key.downHandler.bind(key), false
+                        );
+                window.addEventListener(
+                        "keyup", key.upHandler.bind(key), false
+                        );
+                return key;
+            }
+
+
+
+
+
+            function escribe(texto) {
+                caja = document.getElementById("datos");
+                caja.innerHTML = texto;
+            }
+
+
+            function filtrosClick() {
+                var select = document.getElementsByName("selfiltro[]");
+                filtrosAplicados = [];
+                for (var i = 0; i < select.length; i++) {
+                    if (select[i].checked) {
+                        filtrosAplicados.push(filtros[i]);
+                    }
+                }
+                console.log(filtrosAplicados);
+            }
+
+        </script>
+    </head>
+    <body onload="start()">
+
+
+        <div id="datos">
+        </div>
+
+        <input type="checkbox" name="selfiltro[]" id="0" onclick="filtrosClick();"/>Blur<br/>
+        <input type="checkbox" name="selfiltro[]" id="1" onclick="filtrosClick();"/>Pixelate<br/>
+        <input type="checkbox" name="selfiltro[]" id="2" onclick="filtrosClick();"/>Invert<br/>
+        <input type="checkbox" name="selfiltro[]" id="3" onclick="filtrosClick();"/>Gray<br/>
+        <input type="checkbox" name="selfiltro[]" id="4" onclick="filtrosClick();"/>Sepia<br/>
+        <input type="checkbox" name="selfiltro[]" id="5" onclick="filtrosClick();"/>Twist<br/>
+        <input type="checkbox" name="selfiltro[]" id="6" onclick="filtrosClick();"/>DotScreen<br/>
+        <input type="checkbox" name="selfiltro[]" id="7" onclick="filtrosClick();"/>CrossHatch<br/>
+        <input type="checkbox" name="selfiltro[]" id="8" onclick="filtrosClick();"/>RGBSplitter<br/>
+    </body>
+</html>

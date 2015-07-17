@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript" src="http://www.billdwhite.com/wordpress/wp-content/js/d3/d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+
+            var width = window.innerWidth,
+                    height = window.innerHeight;
+
+            var fill = d3.scale.category10();
+
+            var nodes = [], labels = [];
+
+            var svg = d3.select("body").append("svg")
+                    .attr("width", "100%")
+                    .attr("height", height)
+                    .call(d3.behavior.zoom().on("zoom", function () {
+                        svg.attr("transform", "translate(" + d3.event.translate + ")");
+                    }));
+
+
+            var force = d3.layout.force()
+                    .nodes(nodes)
+                    .links([])
+                    .charge(-10000)                    
+                    .gravity(0.1)
+                    .friction(0.8)
+                    .size([width, height])
+                    .on("tick", tick);
+
+
+
+            var node = svg.selectAll("g");
+
+            var counter = 0;
+            var cargado = false;
+
+            d3.json("./data/pelis.json", function (json) {
+                data = json;
+                cargado = true;
+            });
+
+
+            function tick(e) {
+                var k = .1 * e.alpha;
+
+                nodes.forEach(function (o, i) {
+                    o.y += (width / 2 - o.y) * k;
+                    o.x += (height / 2 - o.x) * k;
+                });
+
+                node.attr("transform", function (d) {
+                    return "translate(" + d.x + "," + d.y + ")";
+                });
+
+            }
+
+
+            var timer = setInterval(function () {
+                if (cargado === true) {
+                    if (nodes.length > data.length - 1) {
+                        clearInterval(timer);
+                        return;
+                    }
+
+                    var item = data[counter];
+                    nodes.push({fecha: item.fecha, nota: item.nota, name: item.name, img: item.img, director: item.director});
+                    force.start();
+
+                    node = node.data(nodes);
+
+                    var n = node.enter().append("g")
+                            .attr("class", "node")
+                            .attr("transform", function (d) {
+                                return "translate(" + d.x + "," + d.y + ")";
+                            })
+                            .style('cursor', 'pointer')
+                            .on('mousedown', function () {
+                                var sel = d3.select(this);
+                                sel.moveToFront();
+                            })
+                            .call(force.drag);
+
+                    n.append("image")
+                            .attr('xlink:href', img = function (d) {
+                                return  d.img;
+                            })
+                            .attr("width", function (d) {
+                                return 55 * d.nota * 0.03;
+                            })
+                            .attr("height", function (d) {
+                                return 82 * d.nota * 0.03;
+                            })
+                            .attr("transform", function (d) {
+                                return "scale(" + Number(d.nota * 3) + ")";
+                            })
+                            .style("fill", function (d) {
+                                return fill(d.id);
+                            })
+                            .on("mouseover", function (d) {
+                                d3.select(this).attr("transform", "scale(40)");
+
+                            })
+                            .on("mouseout", function (d) {
+                                d3.select(this).attr("transform", "scale(" + d.nota * 3 + ")");
+
+                            });
+
+                    n.append("text")
+                            .text(function (d) {
+                                return d.name + "\n" + d.director + " (" + d.fecha + ")";
+                            })
+                            .style("font-size", function (d) {
+                                return Math.min(2 * d.r, (2 * d.r - 8) / this.getComputedTextLength() * 16) + "px";
+                            })
+                            .attr("dy", "-.75em")
+
+
+                    counter++;
+                }
+            }, 100);
+
+
+            d3.selection.prototype.moveToFront = function () {
+                return this.each(function () {
+                    this.parentNode.appendChild(this);
+                });
+            };
+
+            function resize() {
+                width = window.innerWidth;
+                force.size([width, height]);
+                force.start();
+            }
+
+            d3.select(window).on('resize', resize);
+
+        </script>
+    </body>
+</html>

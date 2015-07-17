@@ -1,0 +1,20 @@
+
+    [
+        {"name":"Alien, el octavo pasajero","nota":9,"fecha":"1979","director":"Ridley Scott","img":"gfx/alien.jpg"},
+        {"name":"Blade Runner","nota":10,"fecha":"1982","director":"Ridley Scott","img":"gfx/blade_runner.jpg"},
+        {"name":"Star Wars IV","nota":9,"fecha":"1977","director":"George Lucas","img":"gfx/star_wars.jpg"},
+        {"name":"2001 odisea del espacio","nota":6,"fecha":"1968","director":"Stanley Kubrick","img":"gfx/2001.jpg"},
+        {"name":"Regreso al futuro","nota":7,"fecha":"1985","director":"Robert Zemeckis","img":"gfx/regreso_al_futuro.jpg"},
+        {"name":"E.T. El extraterrestre","nota":6,"fecha":"1982","director":"Steven Spielberg","img":"gfx/et.jpg"},
+        {"name":"Soy Leyenda","nota":3,"fecha":"2007","director":"Francis Lawrence","img":"gfx/soy_leyenda.jpg"},
+        {"name":"Terminator","nota":8,"fecha":"1985","director":"James Cameron","img":"gfx/terminator.jpg"},
+        {"name":"Star Wars: Episodio 1","nota":1,"fecha":"2012","director":"George Lucas","img":"gfx/starwars_ep1.jpg"},
+        {"name":"Gattaca","nota":7,"fecha":"1998","director":"Andrew Niccol","img":"gfx/gatota.jpg"},
+        {"name":"Robocop","nota":8,"fecha":"1987","director":"Paul Verhoeven","img":"gfx/robocop.jpg"},
+        {"name":"Men in Black","nota":4,"fecha":"1997","director":"Barry Sonnenfeld","img":"gfx/men_in_black.jpg"},
+        {"name":"Armageddon","nota":2,"fecha":"1998","director":"Michael Bay","img":"gfx/armageddon.jpg"},
+        {"name":"The Faculty","nota":3,"fecha":"1999","director":"Robert Rodriguez","img":"gfx/faculty.jpg"},
+        {"name":"Cuando el destino nos alcance","nota":7,"fecha":"1974","director":"Richard Fleischer","img":"gfx/soylent.jpg"},
+        {"name":"Nivel 13","nota":4,"fecha":"1999","director":"Josef Rusnak","img":"gfx/nivel13.jpg"}
+    ]
+
